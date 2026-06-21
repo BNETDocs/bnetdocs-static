@@ -3,17 +3,19 @@ const PAGE_CONTENT = {
     title: 'Credits',
     content: `
       <h4 class="mb-4">Credits</h4>
-      <p>BNETDocs is maintained by volunteers who have dedicated time to documenting
-         Blizzard Entertainment's proprietary network protocols.</p>
-      <p>Special thanks to all contributors, past and present, who have helped build
-         this resource for the reverse-engineering and emulation community.</p>
-      <ul>
-        <li>BNETDocs was originally created by Carl Bennett (<strong>CarlTheExplorer</strong>).</li>
-        <li>Protocol research by countless members of the Battle.net hacking community.</li>
-        <li>Hosted on GitHub Pages.</li>
-      </ul>
       <p>
-        <a href="https://github.com/BNETDocs/bnetdocs-static" class="btn btn-outline-secondary">View on GitHub</a>
+        BNETDocs, the documentation and discussion website for Blizzard protocols<br>
+        Copyright &copy; 2003&ndash;2022 &ldquo;Arta&rdquo;, Don Cullen &ldquo;Kyro&rdquo;, Carl Bennett, others
+      </p>
+      <p>BNETDocs was originally created in 2003 by <strong>Arta</strong> and has been
+         maintained and extended by many contributors over the years, most notably
+         <strong>Don Cullen (Kyro)</strong> and <strong>Carl Bennett</strong>.
+         The current incarnation, BNETDocs: Phoenix, is maintained by Carl Bennett and the community.</p>
+      <p>Protocol documentation is the result of independent reverse-engineering research
+         by countless members of the Battle.net&trade; hacking and emulation community.</p>
+      <p>
+        <a href="https://github.com/BNETDocs/bnetdocs-web" class="btn btn-outline-secondary mr-2">Web App Source</a>
+        <a href="https://github.com/BNETDocs/bnetdocs-static" class="btn btn-outline-secondary">Static Site Source</a>
       </p>
     `,
   },
