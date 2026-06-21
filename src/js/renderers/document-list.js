@@ -1,4 +1,5 @@
-export default async function({ root, fetchJSON }) {
+export default async function({ root, page, fetchJSON }) {
+  const baseUrl = page.baseUrl || '';
   const data = await fetchJSON('/document/index.json');
   const documents = data.documents || [];
 
@@ -46,7 +47,7 @@ export default async function({ root, fetchJSON }) {
     const tr = document.createElement('tr');
     tr.dataset.title = (doc.title || '').toLowerCase();
     tr.innerHTML = `
-      <td><a href="${escHtml(doc.uri)}/">${escHtml(doc.title)}</a> ${statusBadges}</td>
+      <td><a href="${escHtml(baseUrl + doc.uri)}/">${escHtml(doc.title)}</a> ${statusBadges}</td>
       <td class="text-nowrap">${escHtml(doc.author_username || 'unknown')}</td>
       <td class="text-nowrap text-muted small">${escHtml(created)}</td>
     `;

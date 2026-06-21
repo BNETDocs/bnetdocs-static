@@ -1,4 +1,5 @@
-export default async function({ root, fetchJSON, getLookup }) {
+export default async function({ root, page, fetchJSON, getLookup }) {
+  const baseUrl = page.baseUrl || '';
   const [data, lookup] = await Promise.all([
     fetchJSON('/news/index.json'),
     getLookup(),
@@ -14,7 +15,7 @@ export default async function({ root, fetchJSON, getLookup }) {
     : posts.map(post => {
         const category = lookup.newsCategories[post.category_id];
         const categoryBadge = category
-          ? `<img src="/assets/img/news/${escHtml(category.filename)}" alt="" height="14" class="mr-1"><span class="badge badge-secondary mr-2">${escHtml(category.label)}</span>`
+          ? `<img src="${baseUrl}/assets/img/news/${escHtml(category.filename)}" alt="" height="14" class="mr-1"><span class="badge badge-secondary mr-2">${escHtml(category.label)}</span>`
           : '';
 
         const created = post.created_datetime
@@ -29,9 +30,9 @@ export default async function({ root, fetchJSON, getLookup }) {
               ${categoryBadge}
               ${escHtml(created)} &middot; by ${escHtml(post.author_username || 'unknown')}
             </div>
-            <h5><a href="${escHtml(post.uri)}/">${escHtml(post.title)}</a></h5>
+            <h5><a href="${escHtml(baseUrl + post.uri)}/">${escHtml(post.title)}</a></h5>
             ${post.brief_html || ''}
-            <a href="${escHtml(post.uri)}/" class="btn btn-sm btn-outline-secondary mt-2">Read more</a>
+            <a href="${escHtml(baseUrl + post.uri)}/" class="btn btn-sm btn-outline-secondary mt-2">Read more</a>
           </div>
         `;
       }).join('');

@@ -66,6 +66,7 @@ const PAGE_CONTENT = {
 };
 
 export default async function({ root, page }) {
+  const baseUrl = page.baseUrl || '';
   const pageKey = (page.page || '').toLowerCase();
   const entry = PAGE_CONTENT[pageKey];
 
@@ -76,8 +77,12 @@ export default async function({ root, page }) {
       <div class="text-center py-5">
         <h1 class="display-4">404</h1>
         <p class="lead text-muted">Page not found.</p>
-        <a href="/" class="btn btn-outline-info">Home</a>
+        <a href="${escHtml(baseUrl)}/" class="btn btn-outline-info">Home</a>
       </div>
     `;
   }
+}
+
+function escHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }

@@ -11,16 +11,16 @@
   <meta property="og:description" content="{{DESCRIPTION}}">
   <meta property="og:site_name" content="BNETDocs">
   <meta name="twitter:card" content="summary">
-  <link rel="alternate" type="application/rss+xml" title="BNETDocs News" href="/news.rss">
-  <link rel="icon" href="/assets/img/favicon.png">
-  <link rel="stylesheet" href="/assets/css/bootstrap-slate.min.css">
-  <link rel="stylesheet" href="/assets/css/vs2015.min.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="BNETDocs News" href="{{BASE_URL}}/news.rss">
+  <link rel="icon" href="{{BASE_URL}}/assets/img/favicon.png">
+  <link rel="stylesheet" href="{{BASE_URL}}/assets/css/bootstrap-slate.min.css">
+  <link rel="stylesheet" href="{{BASE_URL}}/assets/css/vs2015.min.css">
+  <link rel="stylesheet" href="{{BASE_URL}}/assets/css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bd-navbar">
-    <a class="navbar-brand" href="/">
-      <img src="/assets/img/bnetdocs.png" alt="" height="24" class="d-inline-block align-middle mr-2">
+    <a class="navbar-brand" href="{{BASE_URL}}/">
+      <img src="{{BASE_URL}}/assets/img/bnetdocs.png" alt="" height="24" class="d-inline-block align-middle mr-2">
       BNETDocs
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-nav">
@@ -28,11 +28,11 @@
     </button>
     <div class="collapse navbar-collapse" id="bd-nav">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="/packet/">Packets</a></li>
-        <li class="nav-item"><a class="nav-link" href="/document/">Documents</a></li>
-        <li class="nav-item"><a class="nav-link" href="/news/">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{BASE_URL}}/packet/">Packets</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{BASE_URL}}/document/">Documents</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{BASE_URL}}/news/">News</a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0" id="bd-search-form" action="/search/" method="get">
+      <form class="form-inline my-2 my-lg-0" id="bd-search-form" action="{{BASE_URL}}/search/" method="get">
         <input class="form-control form-control-sm mr-2" type="search" placeholder="Search  (/)" id="bd-search-input" name="q" autocomplete="off">
       </form>
     </div>
@@ -48,24 +48,24 @@
   <footer class="bd-footer py-3 mt-4">
     <div class="container-fluid text-center">
       <p class="text-muted small mb-1">
-        <a href="/">BNETDocs</a> &mdash; Battle.net &amp; in-game protocol documentation
+        <a href="{{BASE_URL}}/">BNETDocs</a> &mdash; Battle.net &amp; in-game protocol documentation
       </p>
       <p class="text-muted small mb-0">
-        <a href="/legal/">Legal</a> &middot;
-        <a href="/privacy/">Privacy</a> &middot;
-        <a href="/credits/">Credits</a> &middot;
+        <a href="{{BASE_URL}}/legal/">Legal</a> &middot;
+        <a href="{{BASE_URL}}/privacy/">Privacy</a> &middot;
+        <a href="{{BASE_URL}}/credits/">Credits</a> &middot;
         <a href="https://github.com/BNETDocs/bnetdocs-static">GitHub</a> &middot;
-        <a href="/news.rss">RSS</a>
+        <a href="{{BASE_URL}}/news.rss">RSS</a>
       </p>
     </div>
   </footer>
-  <script src="/assets/js/jquery.slim.min.js"></script>
-  <script src="/assets/js/bootstrap.min.js"></script>
-  <script src="/assets/js/highlight.min.js"></script>
+  <script src="{{BASE_URL}}/assets/js/jquery.slim.min.js"></script>
+  <script src="{{BASE_URL}}/assets/js/bootstrap.min.js"></script>
+  <script src="{{BASE_URL}}/assets/js/highlight.min.js"></script>
   <script>
     window.BNETDOCS_LOOKUP = null;
     window.BNETDOCS_PAGE = {{PAGE_DATA}};
   </script>
-  <script type="module" src="/assets/js/app.js"></script>
+  <script type="module" src="{{BASE_URL}}/assets/js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-export default async function({ root }) {
+export default async function({ root, page }) {
+  const baseUrl = page.baseUrl || '';
   const query = decodeURIComponent(window.location.hash.slice(1));
 
   root.innerHTML = `
@@ -13,7 +14,7 @@ export default async function({ root }) {
 
   let pagefind;
   try {
-    pagefind = await import('/pagefind/pagefind.js');
+    pagefind = await import(baseUrl + '/pagefind/pagefind.js');
     await pagefind.init();
   } catch {
     results.innerHTML = '<p class="text-muted">Search index not available. Run <code>npm run pagefind</code> to build it.</p>';

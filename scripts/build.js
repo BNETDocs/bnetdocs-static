@@ -19,6 +19,7 @@ const DATA      = path.join(ROOT, 'data');
 
 const SITE_URL  = 'https://bnetdocs.org';
 const SITE_NAME = 'BNETDocs';
+const BASE_URL  = process.env.BASE_URL || '';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 
@@ -129,13 +130,15 @@ function renderPage(opts) {
 
   // PAGE_DATA goes into a <script> tag, so use raw JSON — not HTML-escaped.
   // Escape </script> sequences to prevent early tag termination.
-  const pageDataJson = JSON.stringify(pageData).replace(/<\/script>/gi, '<\\/script>');
+  const enrichedPageData = { ...pageData, baseUrl: BASE_URL };
+  const pageDataJson = JSON.stringify(enrichedPageData).replace(/<\/script>/gi, '<\\/script>');
 
   return PAGE_TEMPLATE
     .replace(/\{\{TITLE\}\}/g,         escAttr(title))
     .replace(/\{\{DESCRIPTION\}\}/g,   escAttr(description))
     .replace(/\{\{CANONICAL_URL\}\}/g, escAttr(canonicalUrl))
     .replace(/\{\{OG_TYPE\}\}/g,       escAttr(ogType))
+    .replace(/\{\{BASE_URL\}\}/g,      BASE_URL)
     .replace(/\{\{PAGE_DATA\}\}/g,     pageDataJson);
 }
 

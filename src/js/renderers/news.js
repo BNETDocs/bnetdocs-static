@@ -1,4 +1,5 @@
 export default async function({ root, page, fetchJSON, getLookup }) {
+  const baseUrl = page.baseUrl || '';
   const [post, lookup] = await Promise.all([
     fetchJSON(`/news/${page.id}.json`),
     getLookup(),
@@ -6,7 +7,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
 
   const category = lookup.newsCategories[post.category_id];
   const categoryBadge = category
-    ? `<img src="/assets/img/news/${escHtml(category.filename)}" alt="" height="16" class="mr-1">
+    ? `<img src="${baseUrl}/assets/img/news/${escHtml(category.filename)}" alt="" height="16" class="mr-1">
        <span class="badge badge-secondary mr-2">${escHtml(category.label)}</span>`
     : '';
 
@@ -22,7 +23,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
   root.innerHTML = `
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bd-breadcrumb">
-        <li class="breadcrumb-item"><a href="/news/">News</a></li>
+        <li class="breadcrumb-item"><a href="${baseUrl}/news/">News</a></li>
         <li class="breadcrumb-item active">${escHtml(post.title)}</li>
       </ol>
     </nav>

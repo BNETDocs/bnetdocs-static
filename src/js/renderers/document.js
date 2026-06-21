@@ -1,4 +1,5 @@
 export default async function({ root, page, fetchJSON }) {
+  const baseUrl = page.baseUrl || '';
   const doc = await fetchJSON(`/document/${page.id}.json`);
 
   const flags = doc.options_bitmask || 0;
@@ -24,7 +25,7 @@ export default async function({ root, page, fetchJSON }) {
   root.innerHTML = `
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bd-breadcrumb">
-        <li class="breadcrumb-item"><a href="/document/">Documents</a></li>
+        <li class="breadcrumb-item"><a href="${baseUrl}/document/">Documents</a></li>
         <li class="breadcrumb-item active">${escHtml(doc.title)}</li>
       </ol>
     </nav>

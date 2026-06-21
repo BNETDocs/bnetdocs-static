@@ -1,4 +1,5 @@
 export default async function({ root, page, fetchJSON, getLookup }) {
+  const baseUrl = page.baseUrl || '';
   const [packet, lookup] = await Promise.all([
     fetchJSON(`/packet/${page.id}.json`),
     getLookup(),
@@ -46,8 +47,8 @@ export default async function({ root, page, fetchJSON, getLookup }) {
   root.innerHTML = `
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb bd-breadcrumb">
-        <li class="breadcrumb-item"><a href="/packet/">Packets</a></li>
-        <li class="breadcrumb-item"><a href="/packet/?layer=${packet.packet_application_layer_id}">${escHtml(appLayer.label)}</a></li>
+        <li class="breadcrumb-item"><a href="${baseUrl}/packet/">Packets</a></li>
+        <li class="breadcrumb-item"><a href="${baseUrl}/packet/?layer=${packet.packet_application_layer_id}">${escHtml(appLayer.label)}</a></li>
         <li class="breadcrumb-item active">${escHtml(packet.packet_name || hexId)}</li>
       </ol>
     </nav>

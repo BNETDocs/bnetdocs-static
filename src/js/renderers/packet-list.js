@@ -1,4 +1,5 @@
 export default async function({ root, page, fetchJSON, getLookup }) {
+  const baseUrl = page.baseUrl || '';
   const [data, lookup] = await Promise.all([
     fetchJSON('/packet/index.json'),
     getLookup(),
@@ -115,7 +116,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
 
     tr.innerHTML = `
       <td class="mono text-nowrap">${escHtml(hexId)}</td>
-      <td class="mono"><a href="${escHtml(p.uri)}/">${escHtml(p.packet_name || hexId)}</a> ${statusBadges}</td>
+      <td class="mono"><a href="${escHtml(baseUrl + p.uri)}/">${escHtml(p.packet_name || hexId)}</a> ${statusBadges}</td>
       <td class="text-nowrap">${escHtml(dirLabel)}</td>
       <td class="text-nowrap">${escHtml(appLayer)}</td>
       <td class="bd-brief-col text-muted small">${escHtml(briefText.slice(0, 80))}${briefText.length > 80 ? '…' : ''}</td>

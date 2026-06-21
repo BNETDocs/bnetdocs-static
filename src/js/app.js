@@ -12,17 +12,19 @@ document.addEventListener('keydown', e => {
 document.getElementById('bd-search-form').addEventListener('submit', e => {
   e.preventDefault();
   const q = document.getElementById('bd-search-input').value.trim();
-  if (q) window.location.href = '/search/#' + encodeURIComponent(q);
+  if (q) window.location.href = (window.BNETDOCS_PAGE.baseUrl || '') + '/search/#' + encodeURIComponent(q);
 });
 
 const page = window.BNETDOCS_PAGE;
 const root = document.getElementById('bd-root');
 const loading = document.getElementById('bd-loading');
 
-// Fetch helper with error handling
+// Fetch helper with error handling; prepends baseUrl for absolute paths
 async function fetchJSON(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`);
+  const baseUrl = (page && page.baseUrl) || '';
+  const fullUrl = (url.startsWith('/') && baseUrl) ? baseUrl + url : url;
+  const res = await fetch(fullUrl);
+  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${fullUrl}`);
   return res.json();
 }
 

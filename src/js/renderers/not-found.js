@@ -1,5 +1,8 @@
-export default async function({ root, fetchJSON }) {
-  const path = window.location.pathname;
+export default async function({ root, page, fetchJSON }) {
+  const baseUrl = page.baseUrl || '';
+  const rawPath = window.location.pathname;
+  // Strip base path so regexes match regardless of deployment subpath
+  const path = baseUrl ? rawPath.slice(baseUrl.length) : rawPath;
 
   const packetMatch  = path.match(/^\/packet\/(\d+)/);
   const docMatch     = path.match(/^\/document\/(\d+)/);
@@ -9,7 +12,7 @@ export default async function({ root, fetchJSON }) {
     try {
       const data = await fetchJSON('/packet/index.json');
       const p = (data.packets || []).find(x => x.id === parseInt(packetMatch[1]));
-      if (p) { window.location.replace(p.uri + '/'); return; }
+      if (p) { window.location.replace(baseUrl + p.uri + '/'); return; }
     } catch {}
   }
 
@@ -17,7 +20,7 @@ export default async function({ root, fetchJSON }) {
     try {
       const data = await fetchJSON('/document/index.json');
       const d = (data.documents || []).find(x => x.id === parseInt(docMatch[1]));
-      if (d) { window.location.replace(d.uri + '/'); return; }
+      if (d) { window.location.replace(baseUrl + d.uri + '/'); return; }
     } catch {}
   }
 
@@ -25,7 +28,7 @@ export default async function({ root, fetchJSON }) {
     try {
       const data = await fetchJSON('/news/index.json');
       const n = (data.news_posts || []).find(x => x.id === parseInt(newsMatch[1]));
-      if (n) { window.location.replace(n.uri + '/'); return; }
+      if (n) { window.location.replace(baseUrl + n.uri + '/'); return; }
     } catch {}
   }
 
@@ -33,10 +36,10 @@ export default async function({ root, fetchJSON }) {
     <div class="text-center py-5">
       <h1 class="display-4">404</h1>
       <p class="lead text-muted">Page not found.</p>
-      <p class="text-muted mb-4"><code>${escHtml(window.location.pathname)}</code></p>
-      <a href="/" class="btn btn-outline-info mr-2">Home</a>
-      <a href="/packet/" class="btn btn-outline-secondary mr-2">Packets</a>
-      <a href="/document/" class="btn btn-outline-secondary">Documents</a>
+      <p class="text-muted mb-4"><code>${escHtml(rawPath)}</code></p>
+      <a href="${escHtml(baseUrl)}/" class="btn btn-outline-info mr-2">Home</a>
+      <a href="${escHtml(baseUrl)}/packet/" class="btn btn-outline-secondary mr-2">Packets</a>
+      <a href="${escHtml(baseUrl)}/document/" class="btn btn-outline-secondary">Documents</a>
     </div>
   `;
 }
