@@ -27,7 +27,8 @@ export default async function({ root, page, fetchJSON }) {
   const TYPE_BADGE = { packet: 'badge-info', document: 'badge-secondary', news: 'badge-primary' };
 
   function doSearch(q) {
-    window.location.hash = q ? encodeURIComponent(q) : '';
+    const url = window.location.pathname + window.location.search + (q ? '#' + encodeURIComponent(q) : '');
+    history.replaceState(null, '', url);
     if (!q) { results.innerHTML = ''; return; }
 
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);

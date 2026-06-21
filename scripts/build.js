@@ -468,32 +468,66 @@ writeFile(path.join(DIST, 'news.rss'), rssFeed);
 log('Generating search index...');
 const searchIndex = [];
 
-for (const p of packets) {
+function buildSearchBody(...parts) {
+  return parts.filter(Boolean).join(' ').replace(/\s+/g, ' ').trim();
+}
+
+function indexComments(comments) {
+  return (comments || []).map(c =>
+    [c.author_username, stripHtml(c.content_html || '')].filter(Boolean).join(' ')
+  ).join(' ');
+}
+
+for (const file of fs.readdirSync(path.join(DATA, 'packets'))) {
+  if (file === 'index.json' || !file.endsWith('.json')) continue;
+  const p = readJSON(path.join(DATA, 'packets', file));
+  if (!p) continue;
   const hexId = '0x' + p.packet_id.toString(16).toUpperCase().padStart(2, '0');
   searchIndex.push({
     type:  'packet',
     url:   p.uri + '/',
     title: p.packet_name ? `${p.packet_name} (${hexId})` : hexId,
-    body:  stripHtml(p.brief_html || ''),
     hex:   hexId,
+    body:  buildSearchBody(
+      p.author_username,
+      stripHtml(p.brief_html || ''),
+      stripHtml(p.remarks_html || ''),
+      indexComments(p.comments),
+    ),
   });
 }
 
-for (const d of documents) {
+for (const file of fs.readdirSync(path.join(DATA, 'documents'))) {
+  if (file === 'index.json' || !file.endsWith('.json')) continue;
+  const d = readJSON(path.join(DATA, 'documents', file));
+  if (!d) continue;
   searchIndex.push({
     type:  'document',
     url:   d.uri + '/',
     title: d.title || '',
-    body:  stripHtml(d.brief_html || ''),
+    body:  buildSearchBody(
+      d.author_username,
+      stripHtml(d.brief_html || ''),
+      stripHtml(d.content_html || ''),
+      indexComments(d.comments),
+    ),
   });
 }
 
-for (const n of newsPosts) {
+for (const file of fs.readdirSync(path.join(DATA, 'news'))) {
+  if (file === 'index.json' || !file.endsWith('.json')) continue;
+  const n = readJSON(path.join(DATA, 'news', file));
+  if (!n) continue;
   searchIndex.push({
     type:  'news',
     url:   n.uri + '/',
     title: n.title || '',
-    body:  stripHtml(n.brief_html || ''),
+    body:  buildSearchBody(
+      n.author_username,
+      stripHtml(n.brief_html || ''),
+      stripHtml(n.content_html || ''),
+      indexComments(n.comments),
+    ),
   });
 }
 
