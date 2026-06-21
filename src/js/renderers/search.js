@@ -27,8 +27,6 @@ export default async function({ root, page, fetchJSON }) {
   const TYPE_BADGE = { packet: 'badge-info', document: 'badge-secondary', news: 'badge-primary' };
 
   function doSearch(q) {
-    const url = window.location.pathname + window.location.search + (q ? '#' + encodeURIComponent(q) : '');
-    history.replaceState(null, '', url);
     if (!q) { results.innerHTML = ''; return; }
 
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -62,7 +60,23 @@ export default async function({ root, page, fetchJSON }) {
     }).join('');
   }
 
-  input.addEventListener('input', e => doSearch(e.target.value.trim()));
+  // Update the URL hash after the user pauses typing — debounced to stay
+  // well within browser replaceState rate limits (Firefox: 50/30s).
+  let urlTimer;
+  function scheduleUrlUpdate(q) {
+    clearTimeout(urlTimer);
+    urlTimer = setTimeout(() => {
+      const url = window.location.pathname + window.location.search + (q ? '#' + encodeURIComponent(q) : '');
+      try { history.replaceState(null, '', url); } catch (_) {}
+    }, 400);
+  }
+
+  input.addEventListener('input', e => {
+    const q = e.target.value.trim();
+    doSearch(q);
+    scheduleUrlUpdate(q);
+  });
+
   if (query) {
     input.focus();
     doSearch(query);
