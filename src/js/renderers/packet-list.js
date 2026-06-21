@@ -28,7 +28,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
         <aside class="bd-filter-sidebar" id="bd-sidebar">
           <div class="bd-filter-section">
             <h6>Search</h6>
-            <input type="search" class="form-control form-control-sm" id="bd-packet-search" placeholder="Packet name...">
+            <input type="search" class="form-control form-control-sm" id="bd-packet-search" placeholder="Name or ID...">
           </div>
           <div class="bd-filter-section">
             <h6>Protocol</h6>
@@ -75,10 +75,10 @@ export default async function({ root, page, fetchJSON, getLookup }) {
           <table class="table table-sm bd-table" id="bd-packet-table">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Direction</th>
-                <th>Protocol</th>
+                <th class="bd-sortable" data-sort="packetId" style="cursor:pointer;">ID <span class="sort-icon"></span></th>
+                <th class="bd-sortable" data-sort="name" style="cursor:pointer;">Name <span class="sort-icon"></span></th>
+                <th class="bd-sortable" data-sort="dirLabel" style="cursor:pointer;">Direction <span class="sort-icon"></span></th>
+                <th class="bd-sortable" data-sort="layerLabel" style="cursor:pointer;">Protocol <span class="sort-icon"></span></th>
                 <th class="bd-brief-col">Brief</th>
               </tr>
             </thead>
@@ -109,10 +109,14 @@ export default async function({ root, page, fetchJSON, getLookup }) {
     ].join('');
 
     const tr = document.createElement('tr');
-    tr.dataset.layerId  = p.packet_application_layer_id;
-    tr.dataset.dirId    = p.packet_direction_id;
-    tr.dataset.flags    = flags;
-    tr.dataset.name     = (p.packet_name || hexId).toLowerCase();
+    tr.dataset.packetId  = p.packet_id;
+    tr.dataset.layerId   = p.packet_application_layer_id;
+    tr.dataset.layerLabel = appLayer.toLowerCase();
+    tr.dataset.dirId     = p.packet_direction_id;
+    tr.dataset.dirLabel  = dirLabel.toLowerCase();
+    tr.dataset.flags     = flags;
+    tr.dataset.name      = (p.packet_name || hexId).toLowerCase();
+    tr.dataset.hexId     = hexId.toLowerCase();
 
     tr.innerHTML = `
       <td class="mono text-nowrap">${escHtml(hexId)}</td>
@@ -142,18 +146,21 @@ export default async function({ root, page, fetchJSON, getLookup }) {
       const layerId = parseInt(tr.dataset.layerId);
       const dirId   = parseInt(tr.dataset.dirId);
       const flags   = parseInt(tr.dataset.flags);
-      const name    = tr.dataset.name;
 
       const isDeprecated = !!(flags & 0x4);
       const isResearch   = !!(flags & 0x8);
       const isDraft      = !!(flags & 0x10);
+
+      const matchesSearch = !searchVal
+        || tr.dataset.name.includes(searchVal)
+        || tr.dataset.hexId.includes(searchVal);
 
       const visible = checkedLayers.has(layerId)
         && checkedDirs.has(dirId)
         && (!isDeprecated || showDeprecated)
         && (!isResearch   || showResearch)
         && (!isDraft      || showDraft)
-        && (!searchVal    || name.includes(searchVal));
+        && matchesSearch;
 
       tr.style.display = visible ? '' : 'none';
       if (visible) visibleCount++;
@@ -162,10 +169,41 @@ export default async function({ root, page, fetchJSON, getLookup }) {
     document.getElementById('bd-no-results').style.display = visibleCount === 0 ? '' : 'none';
   }
 
-  // Attach listeners
+  // Attach filter listeners
   document.getElementById('bd-packet-search').addEventListener('input', applyFilters);
   document.querySelectorAll('.bd-filter-layer, .bd-filter-dir, #show-deprecated, #show-research, #show-draft')
     .forEach(el => el.addEventListener('change', applyFilters));
+
+  // Sortable columns
+  let sortCol = null;
+  let sortAsc = true;
+
+  document.querySelectorAll('.bd-sortable').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.sort;
+      if (sortCol === col) {
+        sortAsc = !sortAsc;
+      } else {
+        sortCol = col;
+        sortAsc = true;
+      }
+      document.querySelectorAll('.bd-sortable .sort-icon').forEach(el => el.textContent = '');
+      th.querySelector('.sort-icon').textContent = sortAsc ? ' ▲' : ' ▼';
+
+      const rows = [...tbody.querySelectorAll('tr')];
+      rows.sort((a, b) => {
+        const va = a.dataset[col] || '';
+        const vb = b.dataset[col] || '';
+        const na = parseFloat(va);
+        const nb = parseFloat(vb);
+        if (!isNaN(na) && !isNaN(nb)) return sortAsc ? na - nb : nb - na;
+        const cmp = va.localeCompare(vb);
+        return sortAsc ? cmp : -cmp;
+      });
+      rows.forEach(r => tbody.appendChild(r));
+      applyFilters();
+    });
+  });
 
   // Check for layer filter from URL
   const urlParams = new URLSearchParams(window.location.search);
@@ -197,7 +235,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
 }
 
 function stripHtml(html) {
-  return html.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').trim();
+  return (html || '').replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').trim();
 }
 
 function escHtml(s) {

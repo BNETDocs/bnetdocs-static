@@ -33,8 +33,7 @@ export default async function({ root, page, fetchJSON }) {
       <div class="col-lg-8">
         <h2 class="font-weight-bold mb-1">${escHtml(doc.title)}</h2>
         <div class="mb-3">${badges}</div>
-        ${doc.brief_html || ''}
-        ${doc.content_html ? `<div class="bd-remarks mt-3">${doc.content_html}</div>` : ''}
+        ${doc.content_html ? `<div class="bd-remarks">${doc.content_html}</div>` : (doc.brief_html || '')}
         <hr>
         <h5 class="text-muted mt-4 mb-2">Comments <span class="text-muted small">(read-only archive)</span></h5>
         ${commentsHtml}

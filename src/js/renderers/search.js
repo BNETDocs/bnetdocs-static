@@ -1,6 +1,10 @@
 export default async function({ root, page }) {
   const baseUrl = page.baseUrl || '';
-  const query = decodeURIComponent(window.location.hash.slice(1));
+
+  // Accept query from either hash (#q) or query string (?q=)
+  const hashQuery = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : '';
+  const urlQuery  = new URLSearchParams(window.location.search).get('q') || '';
+  const query     = hashQuery || urlQuery;
 
   root.innerHTML = `
     <h4 class="mb-4">Search</h4>
@@ -15,9 +19,10 @@ export default async function({ root, page }) {
   let pagefind;
   try {
     pagefind = await import(baseUrl + '/pagefind/pagefind.js');
+    if (pagefind.options) await pagefind.options({ bundlePath: baseUrl + '/pagefind/' });
     await pagefind.init();
   } catch {
-    results.innerHTML = '<p class="text-muted">Search index not available. Run <code>npm run pagefind</code> to build it.</p>';
+    results.innerHTML = '<p class="text-muted">Search index not available.</p>';
     return;
   }
 
