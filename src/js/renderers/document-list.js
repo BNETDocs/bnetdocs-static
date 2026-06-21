@@ -15,7 +15,7 @@ export default async function({ root, page, fetchJSON }) {
         <thead>
           <tr>
             <th class="bd-sortable" data-sort="title" style="cursor:pointer;">Title <span class="sort-icon"></span></th>
-            <th class="bd-brief-col">Brief</th>
+            <th class="bd-brief-col bd-sortable" data-sort="brief" style="cursor:pointer;">Brief <span class="sort-icon"></span></th>
             <th class="bd-sortable" data-sort="author" style="cursor:pointer;">Author <span class="sort-icon"></span></th>
             <th class="bd-sortable" data-sort="date" style="cursor:pointer;">Date <span class="sort-icon"></span></th>
           </tr>

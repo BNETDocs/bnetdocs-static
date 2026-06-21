@@ -72,24 +72,26 @@ samp {
 
 /* ── Breadcrumb ───────────────────────────────────── */
 
-.bd-breadcrumb {
-  background-color: transparent !important;
+.breadcrumb.bd-breadcrumb {
+  background: none;
+  border: none;
   border-radius: 0;
+  box-shadow: none;
   font-size: 0.85rem;
   padding: 0;
   margin-bottom: 0.75rem;
   color: var(--bd-muted);
 }
 
-.bd-breadcrumb .breadcrumb-item a {
+.breadcrumb.bd-breadcrumb .breadcrumb-item a {
   color: var(--bd-link);
 }
 
-.bd-breadcrumb .breadcrumb-item.active {
+.breadcrumb.bd-breadcrumb .breadcrumb-item.active {
   color: var(--bd-muted);
 }
 
-.bd-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb.bd-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   color: var(--bd-muted);
 }
 
