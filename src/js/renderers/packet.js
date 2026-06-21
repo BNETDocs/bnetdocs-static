@@ -94,7 +94,9 @@ export default async function({ root, page, fetchJSON, getLookup }) {
   if (window.hljs) {
     root.querySelectorAll('pre code').forEach(el => {
       if (!el.className) el.classList.add('language-csharp');
-      hljs.highlightElement(el);
+    });
+    requestAnimationFrame(() => {
+      root.querySelectorAll('pre code').forEach(el => window.hljs.highlightElement(el));
     });
   }
 }

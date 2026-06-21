@@ -1,6 +1,10 @@
 export default async function({ root, page, fetchJSON }) {
   const baseUrl = page.baseUrl || '';
 
+  // Hide the navbar search form — redundant on the search page
+  const navSearch = document.getElementById('bd-search-form');
+  if (navSearch) navSearch.style.display = 'none';
+
   const hashQuery = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : '';
   const urlQuery  = new URLSearchParams(window.location.search).get('q') || '';
   const query     = hashQuery || urlQuery;
@@ -27,6 +31,12 @@ export default async function({ root, page, fetchJSON }) {
   const TYPE_BADGE = { packet: 'badge-info', document: 'badge-secondary', news: 'badge-primary' };
 
   function doSearch(q) {
+    // Update URL so Ctrl+R reloads the same query; ignore rate-limit errors
+    try {
+      const url = window.location.pathname + window.location.search + (q ? '#' + encodeURIComponent(q) : '');
+      history.replaceState(null, '', url);
+    } catch (_) {}
+
     if (!q) { results.innerHTML = ''; return; }
 
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -60,22 +70,7 @@ export default async function({ root, page, fetchJSON }) {
     }).join('');
   }
 
-  // Update the URL hash after the user pauses typing — debounced to stay
-  // well within browser replaceState rate limits (Firefox: 50/30s).
-  let urlTimer;
-  function scheduleUrlUpdate(q) {
-    clearTimeout(urlTimer);
-    urlTimer = setTimeout(() => {
-      const url = window.location.pathname + window.location.search + (q ? '#' + encodeURIComponent(q) : '');
-      try { history.replaceState(null, '', url); } catch (_) {}
-    }, 400);
-  }
-
-  input.addEventListener('input', e => {
-    const q = e.target.value.trim();
-    doSearch(q);
-    scheduleUrlUpdate(q);
-  });
+  input.addEventListener('input', e => doSearch(e.target.value.trim()));
 
   if (query) {
     input.focus();

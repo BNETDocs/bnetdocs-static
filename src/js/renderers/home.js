@@ -15,7 +15,7 @@ export default async function({ root, page }) {
     <div class="container-fluid">
       <p class="text-muted">
         BNETDocs is a community-maintained reference for the proprietary network protocols
-        used by Blizzard Entertainment's Battle.net platform and its games, including
+        used by Blizzard Entertainment's Battle.net&trade; platform and its games, including
         StarCraft, Diablo II, Warcraft III, and others.
       </p>
     </div>

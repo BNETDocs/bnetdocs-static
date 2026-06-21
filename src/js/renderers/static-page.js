@@ -23,7 +23,7 @@ const PAGE_CONTENT = {
     title: 'Discord',
     content: `
       <h4 class="mb-4">Discord</h4>
-      <p>Join the BNETDocs Discord server to discuss Battle.net protocols, ask questions,
+      <p>Join the BNETDocs Discord server to discuss Battle.net&trade; protocols, ask questions,
          and connect with other researchers and developers.</p>
       <p>
         <a href="https://discord.gg/u87WVeu" class="btn btn-outline-info">Join Discord</a>
@@ -60,7 +60,7 @@ const PAGE_CONTENT = {
       <p>The protocol documentation on BNETDocs is the result of independent reverse-engineering
          research performed by the community. This site is not affiliated with or endorsed by
          Blizzard Entertainment.</p>
-      <p>Battle.net, StarCraft, Diablo, and Warcraft are trademarks of Blizzard Entertainment, Inc.</p>
+      <p>Battle.net&trade;, StarCraft&trade;, Diablo&trade;, and Warcraft&trade; are trademarks of Blizzard Entertainment, Inc.</p>
       <p>Site content is available under the terms described in the
          <a href="https://github.com/BNETDocs/bnetdocs-static/blob/main/LICENSE.txt">LICENSE.txt</a> file.</p>
     `,
