@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:type" content="{{OG_TYPE}}">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:site_name" content="BNETDocs">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" type="application/rss+xml" title="BNETDocs News" href="/news.rss">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="stylesheet" href="/assets/css/bootstrap-slate.min.css">
+  <link rel="stylesheet" href="/assets/css/vs2015.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bd-navbar">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/img/bnetdocs.png" alt="" height="24" class="d-inline-block align-middle mr-2">
+      BNETDocs
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="bd-nav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="/packet/">Packets</a></li>
+        <li class="nav-item"><a class="nav-link" href="/document/">Documents</a></li>
+        <li class="nav-item"><a class="nav-link" href="/news/">News</a></li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" id="bd-search-form" action="/search/" method="get">
+        <input class="form-control form-control-sm mr-2" type="search" placeholder="Search  (/)" id="bd-search-input" name="q" autocomplete="off">
+      </form>
+    </div>
+  </nav>
+  <main id="bd-main" class="container-fluid py-4">
+    <div id="bd-loading" class="text-center py-5">
+      <div class="spinner-border" role="status" style="width:2rem;height:2rem;">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <div id="bd-root" style="display:none;"></div>
+  </main>
+  <footer class="bd-footer py-3 mt-4">
+    <div class="container-fluid text-center">
+      <p class="text-muted small mb-1">
+        <a href="/">BNETDocs</a> &mdash; Battle.net &amp; in-game protocol documentation
+      </p>
+      <p class="text-muted small mb-0">
+        <a href="/legal/">Legal</a> &middot;
+        <a href="/privacy/">Privacy</a> &middot;
+        <a href="/credits/">Credits</a> &middot;
+        <a href="https://github.com/BNETDocs/bnetdocs-static">GitHub</a> &middot;
+        <a href="/news.rss">RSS</a>
+      </p>
+    </div>
+  </footer>
+  <script src="/assets/js/jquery.slim.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/highlight.min.js"></script>
+  <script>
+    window.BNETDOCS_LOOKUP = null;
+    window.BNETDOCS_PAGE = {{PAGE_DATA}};
+  </script>
+  <script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-21T00:00:00+00:00",
+  "documents": [
+    {
+      "id": 1,
+      "title": "BNCS Protocol Overview",
+      "options_bitmask": 2,
+      "brief_html": "<p>Overview of the Battle.net Chat Service (BNCS) protocol, used by StarCraft, Diablo II, Warcraft III, and other classic Blizzard games.</p>",
+      "author_username": "carlbennett",
+      "uri": "/document/1/bncs-protocol-overview",
+      "created_datetime": "2018-02-13T05:00:00+00:00",
+      "edited_datetime": "2020-03-01T12:00:00+00:00"
+    }
+  ]
+}

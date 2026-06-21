@@ -1,0 +1,8 @@
+[
+  {"bnet_product_id": 1398030674, "label": "StarCraft", "bnet_product_raw": "RATS", "bnls_product_id": 1, "sort": 1},
+  {"bnet_product_id": 1145654354, "label": "Diablo II", "bnet_product_raw": "D2DV", "bnls_product_id": 6, "sort": 2},
+  {"bnet_product_id": 1380009042, "label": "Diablo II: Lord of Destruction", "bnet_product_raw": "D2XP", "bnls_product_id": 7, "sort": 3},
+  {"bnet_product_id": 1465529671, "label": "Warcraft III", "bnet_product_raw": "WAR3", "bnls_product_id": 11, "sort": 4},
+  {"bnet_product_id": 1465529688, "label": "Warcraft III: The Frozen Throne", "bnet_product_raw": "W3XP", "bnls_product_id": 12, "sort": 5},
+  {"bnet_product_id": 1396788291, "label": "StarCraft: Brood War", "bnet_product_raw": "SEXP", "bnls_product_id": 2, "sort": 6}
+]

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-21T00:00:00+00:00",
+  "packets": [
+    {
+      "id": 1,
+      "packet_id": 0,
+      "packet_name": "SID_NULL",
+      "packet_direction_id": 4,
+      "packet_application_layer_id": 1,
+      "packet_transport_layer_id": 1,
+      "options_bitmask": 2,
+      "brief_html": "<p>Null/keepalive packet. Sent by the client to the server to keep the connection alive when there is no other activity.</p>",
+      "used_by": [1398030674, 1396788291, 1145654354, 1380009042, 1465529671, 1465529688],
+      "author_username": "carlbennett",
+      "uri": "/packet/1/sid-null",
+      "created_datetime": "2018-02-13T04:51:50+00:00",
+      "edited_datetime": "2019-12-28T18:39:37+00:00"
+    },
+    {
+      "id": 2,
+      "packet_id": 5,
+      "packet_name": "SID_PING",
+      "packet_direction_id": 2,
+      "packet_application_layer_id": 1,
+      "packet_transport_layer_id": 1,
+      "options_bitmask": 2,
+      "brief_html": "<p>Sent by the server to the client to measure round-trip latency. The client should respond with SID_PING.</p>",
+      "used_by": [1398030674, 1396788291, 1145654354, 1380009042, 1465529671, 1465529688],
+      "author_username": "carlbennett",
+      "uri": "/packet/2/sid-ping",
+      "created_datetime": "2018-02-13T04:52:00+00:00",
+      "edited_datetime": null
+    }
+  ]
+}

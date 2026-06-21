@@ -1,0 +1,9 @@
+[
+  {"id": 1, "label": "BNCS"},
+  {"id": 2, "label": "MCP"},
+  {"id": 3, "label": "D2GS"},
+  {"id": 4, "label": "W3GS"},
+  {"id": 5, "label": "BNLS"},
+  {"id": 6, "label": "BNFTP"},
+  {"id": 7, "label": "Chat"}
+]

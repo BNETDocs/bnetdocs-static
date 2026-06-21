@@ -1,0 +1,7 @@
+[
+  {"id": 1, "label": "Battle.net", "filename": "battlenet.png", "sort_id": 1},
+  {"id": 2, "label": "Blizzard",   "filename": "blizzard.png",  "sort_id": 2},
+  {"id": 3, "label": "Warcraft",   "filename": "warcraft.png",  "sort_id": 3},
+  {"id": 4, "label": "StarCraft",  "filename": "starcraft.png", "sort_id": 4},
+  {"id": 5, "label": "Diablo",     "filename": "diablo.png",    "sort_id": 5}
+]

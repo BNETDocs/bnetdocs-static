@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "title": "BNCS Protocol Overview",
+  "options_bitmask": 2,
+  "brief_html": "<p>Overview of the Battle.net Chat Service (BNCS) protocol, used by StarCraft, Diablo II, Warcraft III, and other classic Blizzard games.</p>",
+  "author_username": "carlbennett",
+  "uri": "/document/1/bncs-protocol-overview",
+  "created_datetime": "2018-02-13T05:00:00+00:00",
+  "edited_datetime": "2020-03-01T12:00:00+00:00",
+  "content_html": "<h3>Introduction</h3>\n<p>The Battle.net Chat Service (BNCS) protocol is the proprietary network protocol used by Blizzard Entertainment's classic Battle.net platform. It facilitates authentication, game listing, chat, and game joining for titles including StarCraft, Diablo II, Warcraft III, and their expansions.</p>\n<h3>Connection</h3>\n<p>BNCS operates over TCP on port 6112. After establishing a TCP connection, the client sends a single byte identifying the protocol variant:</p>\n<ul>\n<li><code>0x01</code> — Game protocol (most clients)</li>\n<li><code>0x02</code> — BNFTP file transfer</li>\n<li><code>0x03</code> — Chat protocol (legacy)</li>\n</ul>\n<h3>Packet Structure</h3>\n<p>All BNCS packets share a common 4-byte header:</p>\n<pre><code>(UINT8)  0xFF        -- Magic byte\n(UINT8)  Packet ID  -- Message identifier\n(UINT16) Length     -- Total length including header\n</code></pre>\n<p>Integers are little-endian. Strings are null-terminated.</p>",
+  "comments": []
+}

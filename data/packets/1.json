@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "packet_id": 0,
+  "packet_name": "SID_NULL",
+  "packet_direction_id": 4,
+  "packet_application_layer_id": 1,
+  "packet_transport_layer_id": 1,
+  "options_bitmask": 2,
+  "brief_html": "<p>Null/keepalive packet. Sent by the client to the server to keep the connection alive when there is no other activity.</p>",
+  "used_by": [1398030674, 1396788291, 1145654354, 1380009042, 1465529671, 1465529688],
+  "author_username": "carlbennett",
+  "uri": "/packet/1/sid-null",
+  "created_datetime": "2018-02-13T04:51:50+00:00",
+  "edited_datetime": "2019-12-28T18:39:37+00:00",
+  "format": "(UINT8) 0xFF\n(UINT8) 0x00\n(UINT16) Length\n",
+  "remarks_html": "<p>This packet is used as a keepalive mechanism. The client sends this when there is no other traffic to prevent the server from timing out the connection.</p>\n<p>Both client and server may send this packet; the recipient should not respond to it.</p>",
+  "comments": [
+    {
+      "id": 1,
+      "author_username": "example_user",
+      "created_datetime": "2019-01-15T10:00:00+00:00",
+      "content_html": "<p>This packet is documented in multiple sources and is consistent across all BNCS-based games.</p>"
+    }
+  ]
+}

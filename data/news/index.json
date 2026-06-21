@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-21T00:00:00+00:00",
+  "news_posts": [
+    {
+      "id": 1,
+      "title": "Welcome to BNETDocs",
+      "category_id": 1,
+      "options_bitmask": 2,
+      "brief_html": "<p>BNETDocs is now available as a static site on GitHub Pages, preserving years of Battle.net protocol documentation for the community.</p>",
+      "author_username": "carlbennett",
+      "uri": "/news/1/welcome-to-bnetdocs",
+      "created_datetime": "2026-06-21T00:00:00+00:00",
+      "edited_datetime": null
+    }
+  ]
+}

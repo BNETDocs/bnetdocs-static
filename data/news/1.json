@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "title": "Welcome to BNETDocs",
+  "category_id": 1,
+  "options_bitmask": 2,
+  "brief_html": "<p>BNETDocs is now available as a static site on GitHub Pages, preserving years of Battle.net protocol documentation for the community.</p>",
+  "author_username": "carlbennett",
+  "uri": "/news/1/welcome-to-bnetdocs",
+  "created_datetime": "2026-06-21T00:00:00+00:00",
+  "edited_datetime": null,
+  "content_html": "<p>We are excited to announce that BNETDocs is now hosted as a static site on GitHub Pages. This transition preserves the community's years of hard work documenting the proprietary network protocols used by Blizzard Entertainment's Battle.net platform.</p>\n<h4>What's included</h4>\n<ul>\n<li>Packet documentation for BNCS, MCP, D2GS, W3GS, BNLS, and more</li>\n<li>General protocol documents and guides</li>\n<li>Full-text search powered by Pagefind</li>\n<li>Open source — contributions welcome on GitHub</li>\n</ul>\n<p>The source data is exported from the original dynamic BNETDocs database and rebuilt into a fully static site on each update.</p>",
+  "comments": []
+}
