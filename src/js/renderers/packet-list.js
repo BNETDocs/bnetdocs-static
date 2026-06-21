@@ -128,15 +128,38 @@ export default async function({ root, page, fetchJSON, getLookup }) {
     tbody.appendChild(tr);
   });
 
+  const allLayerEls = [...document.querySelectorAll('.bd-filter-layer')];
+  const allDirEls   = [...document.querySelectorAll('.bd-filter-dir')];
+
+  // Reflect current filter state into the address bar without triggering navigation
+  function updateUrl() {
+    const params = new URLSearchParams();
+
+    const checkedLayerVals = allLayerEls.filter(el => el.checked).map(el => el.value);
+    if (checkedLayerVals.length > 0 && checkedLayerVals.length < allLayerEls.length) {
+      params.set('layer', checkedLayerVals.join(','));
+    }
+
+    const checkedDirVals = allDirEls.filter(el => el.checked).map(el => el.value);
+    if (checkedDirVals.length > 0 && checkedDirVals.length < allDirEls.length) {
+      params.set('dir', checkedDirVals.join(','));
+    }
+
+    const hidden = [];
+    if (!document.getElementById('show-deprecated').checked) hidden.push('deprecated');
+    if (!document.getElementById('show-research').checked)   hidden.push('research');
+    if (!document.getElementById('show-draft').checked)      hidden.push('draft');
+    if (hidden.length) params.set('hide', hidden.join(','));
+
+    const qs = params.toString();
+    history.replaceState(null, '', qs ? '?' + qs : window.location.pathname);
+  }
+
   // Filter logic
   function applyFilters() {
     const searchVal = document.getElementById('bd-packet-search').value.toLowerCase();
-    const checkedLayers = new Set(
-      [...document.querySelectorAll('.bd-filter-layer:checked')].map(el => parseInt(el.value))
-    );
-    const checkedDirs = new Set(
-      [...document.querySelectorAll('.bd-filter-dir:checked')].map(el => parseInt(el.value))
-    );
+    const checkedLayers = new Set(allLayerEls.filter(el => el.checked).map(el => parseInt(el.value)));
+    const checkedDirs   = new Set(allDirEls.filter(el => el.checked).map(el => parseInt(el.value)));
     const showDeprecated = document.getElementById('show-deprecated').checked;
     const showResearch   = document.getElementById('show-research').checked;
     const showDraft      = document.getElementById('show-draft').checked;
@@ -167,6 +190,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
     });
 
     document.getElementById('bd-no-results').style.display = visibleCount === 0 ? '' : 'none';
+    updateUrl();
   }
 
   // Attach filter listeners
@@ -205,15 +229,34 @@ export default async function({ root, page, fetchJSON, getLookup }) {
     });
   });
 
-  // Check for layer filter from URL
+  // Restore filter state from URL params
   const urlParams = new URLSearchParams(window.location.search);
+  let urlChanged = false;
+
   const layerParam = urlParams.get('layer');
   if (layerParam) {
-    document.querySelectorAll('.bd-filter-layer').forEach(el => {
-      el.checked = el.value === layerParam;
-    });
-    applyFilters();
+    const ids = new Set(layerParam.split(',').map(s => s.trim()));
+    allLayerEls.forEach(el => { el.checked = ids.has(el.value); });
+    urlChanged = true;
   }
+
+  const dirParam = urlParams.get('dir');
+  if (dirParam) {
+    const ids = new Set(dirParam.split(',').map(s => s.trim()));
+    allDirEls.forEach(el => { el.checked = ids.has(el.value); });
+    urlChanged = true;
+  }
+
+  const hideParam = urlParams.get('hide');
+  if (hideParam) {
+    const hidden = new Set(hideParam.split(',').map(s => s.trim()));
+    if (hidden.has('deprecated')) document.getElementById('show-deprecated').checked = false;
+    if (hidden.has('research'))   document.getElementById('show-research').checked   = false;
+    if (hidden.has('draft'))      document.getElementById('show-draft').checked      = false;
+    urlChanged = true;
+  }
+
+  if (urlChanged) applyFilters();
 
   // Mobile sidebar toggle
   const toggleBtn = document.getElementById('bd-filter-toggle-btn');
