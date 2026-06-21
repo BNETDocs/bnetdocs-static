@@ -43,6 +43,22 @@ function copyFile(src, dest) {
 }
 
 /**
+ * Copy a content-bearing JSON file, rewriting absolute HTML paths
+ * (href="/" and src="/") to include BASE_URL.  In JSON, attribute
+ * values are double-quote-escaped, so we match href=\"/ in the raw text.
+ */
+function copyContentJson(src, dest) {
+  mkdirp(path.dirname(dest));
+  let content = fs.readFileSync(src, 'utf8');
+  if (BASE_URL) {
+    content = content
+      .replace(/href=\\"\/(?!\/)/g, `href=\\"${BASE_URL}/`)
+      .replace(/src=\\"\/(?!\/)/g,  `src=\\"${BASE_URL}/`);
+  }
+  fs.writeFileSync(dest, content, 'utf8');
+}
+
+/**
  * Recursively copy all files from srcDir into destDir,
  * preserving relative subdirectory structure.
  */
@@ -202,33 +218,33 @@ function copyDataFile(srcRel, destRel) {
   }
 }
 
-// Root data files
+// Root lookup files (no HTML content, plain copy)
 for (const name of ['products.json', 'application-layers.json', 'transport-layers.json', 'news-categories.json']) {
   copyDataFile(name, name);
 }
 
-// Packet data
-copyDataFile('packets/index.json', 'packet/index.json');
-copyDataFile('documents/index.json', 'document/index.json');
+// Index files (contain brief_html — rewrite paths)
+copyContentJson(path.join(DATA, 'packets/index.json'),   path.join(DIST, 'packet/index.json'));
+copyContentJson(path.join(DATA, 'documents/index.json'), path.join(DIST, 'document/index.json'));
 
-// News data — also copy as news.json for legacy access
+// News index — also expose as news.json for legacy access
 const newsIndexSrc  = path.join(DATA, 'news', 'index.json');
 const newsIndexDest = path.join(DIST, 'news', 'index.json');
 if (fs.existsSync(newsIndexSrc)) {
-  copyFile(newsIndexSrc, newsIndexDest);
-  copyFile(newsIndexSrc, path.join(DIST, 'news.json'));
+  copyContentJson(newsIndexSrc, newsIndexDest);
+  copyContentJson(newsIndexSrc, path.join(DIST, 'news.json'));
 } else {
   warn('data/news/index.json not found, skipping news index copy.');
 }
 
-// Individual packet/document/news JSON files
+// Individual detail files (contain remarks_html / content_html — rewrite paths)
 for (const [subdir, distDir] of [['packets', 'packet'], ['documents', 'document'], ['news', 'news']]) {
   const srcDir = path.join(DATA, subdir);
   if (!fs.existsSync(srcDir)) continue;
   for (const file of fs.readdirSync(srcDir)) {
     if (file === 'index.json') continue;
     if (!file.endsWith('.json')) continue;
-    copyFile(path.join(srcDir, file), path.join(DIST, distDir, file));
+    copyContentJson(path.join(srcDir, file), path.join(DIST, distDir, file));
   }
 }
 

@@ -57,7 +57,10 @@ export default async function({ root, page, fetchJSON }) {
   `;
 
   if (window.hljs) {
-    root.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+    root.querySelectorAll('pre code').forEach(el => {
+      if (!el.className) el.classList.add('language-csharp');
+      hljs.highlightElement(el);
+    });
   }
 }
 

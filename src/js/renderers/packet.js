@@ -31,7 +31,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
   const formatBlock = packet.format
     ? `<div class="packet-format mb-3">
         <button class="copy-btn" onclick="copyFormat(this)" title="Copy to clipboard">Copy</button>
-        <pre class="mb-0"><code>${escHtml(packet.format)}</code></pre>
+        <pre class="mb-0"><code class="language-csharp">${escHtml(packet.format)}</code></pre>
        </div>`
     : '<p class="text-muted font-italic">No format documented.</p>';
 
@@ -92,7 +92,10 @@ export default async function({ root, page, fetchJSON, getLookup }) {
   `;
 
   if (window.hljs) {
-    root.querySelectorAll('pre code').forEach(el => hljs.highlightElement(el));
+    root.querySelectorAll('pre code').forEach(el => {
+      if (!el.className) el.classList.add('language-csharp');
+      hljs.highlightElement(el);
+    });
   }
 }
 
