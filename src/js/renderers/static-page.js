@@ -24,7 +24,7 @@ const PAGE_CONTENT = {
       <p>Join the BNETDocs Discord server to discuss Battle.net protocols, ask questions,
          and connect with other researchers and developers.</p>
       <p>
-        <a href="https://discord.gg/bnetdocs" class="btn btn-outline-info">Join Discord</a>
+        <a href="https://discord.gg/u87WVeu" class="btn btn-outline-info">Join Discord</a>
       </p>
     `,
   },

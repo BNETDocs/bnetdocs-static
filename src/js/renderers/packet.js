@@ -63,7 +63,7 @@ export default async function({ root, page, fetchJSON, getLookup }) {
         <hr>
         <h5 class="text-muted mt-4 mb-2">Comments <span class="text-muted small">(read-only archive)</span></h5>
         ${commentsHtml}
-        <p class="mt-2"><a href="https://discord.gg/bnetdocs" class="btn btn-sm btn-outline-info">Discuss on Discord</a></p>
+        <p class="mt-2"><a href="https://discord.gg/u87WVeu" class="btn btn-sm btn-outline-info">Discuss on Discord</a></p>
       </div>
       <div class="col-lg-4">
         <div class="bd-meta-card card mb-3">
