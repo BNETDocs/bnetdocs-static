@@ -127,7 +127,9 @@ function renderPage(opts) {
     pageData,
   } = opts;
 
-  const pageDataJson = escAttr(JSON.stringify(pageData));
+  // PAGE_DATA goes into a <script> tag, so use raw JSON — not HTML-escaped.
+  // Escape </script> sequences to prevent early tag termination.
+  const pageDataJson = JSON.stringify(pageData).replace(/<\/script>/gi, '<\\/script>');
 
   return PAGE_TEMPLATE
     .replace(/\{\{TITLE\}\}/g,         escAttr(title))
@@ -158,7 +160,7 @@ function redirectShell(uri) {
 
 log('Cleaning dist/...');
 if (fs.existsSync(DIST)) {
-  fs.rmSync(DIST, { recursive: true, force: true });
+  fs.rmdirSync(DIST, { recursive: true });
 }
 mkdirp(DIST);
 

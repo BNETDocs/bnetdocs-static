@@ -67,13 +67,13 @@ async function run() {
   const mod = await loader();
   await mod.default({ root, page, fetchJSON, getLookup });
   loading.style.display = 'none';
-  root.style.display = '';
+  root.style.display = 'block';
 }
 
 run().catch(err => {
   console.error(err);
   loading.style.display = 'none';
-  root.style.display = '';
+  root.style.display = 'block';
   root.innerHTML = `<div class="alert alert-danger mt-3">
     <strong>Error loading page:</strong> ${escHtml(err.message)}
     <br><a href="/">Return to home</a>
