@@ -463,6 +463,42 @@ ${rssItems}  </channel>
 `;
 writeFile(path.join(DIST, 'news.rss'), rssFeed);
 
+// ── Step 11: Search index ──────────────────────────────────────────────────
+
+log('Generating search index...');
+const searchIndex = [];
+
+for (const p of packets) {
+  const hexId = '0x' + p.packet_id.toString(16).toUpperCase().padStart(2, '0');
+  searchIndex.push({
+    type:  'packet',
+    url:   p.uri + '/',
+    title: p.packet_name ? `${p.packet_name} (${hexId})` : hexId,
+    body:  stripHtml(p.brief_html || ''),
+    hex:   hexId,
+  });
+}
+
+for (const d of documents) {
+  searchIndex.push({
+    type:  'document',
+    url:   d.uri + '/',
+    title: d.title || '',
+    body:  stripHtml(d.brief_html || ''),
+  });
+}
+
+for (const n of newsPosts) {
+  searchIndex.push({
+    type:  'news',
+    url:   n.uri + '/',
+    title: n.title || '',
+    body:  stripHtml(n.brief_html || ''),
+  });
+}
+
+writeFile(path.join(DIST, 'search-index.json'), JSON.stringify(searchIndex));
+
 // ── Done ───────────────────────────────────────────────────────────────────
 
 log('');

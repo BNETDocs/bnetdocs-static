@@ -1,7 +1,6 @@
-export default async function({ root, page }) {
+export default async function({ root, page, fetchJSON }) {
   const baseUrl = page.baseUrl || '';
 
-  // Accept query from either hash (#q) or query string (?q=)
   const hashQuery = window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : '';
   const urlQuery  = new URLSearchParams(window.location.search).get('q') || '';
   const query     = hashQuery || urlQuery;
@@ -16,35 +15,50 @@ export default async function({ root, page }) {
   const input   = document.getElementById('bd-search-main');
   const results = document.getElementById('bd-search-results');
 
-  let pagefind;
+  let searchIndex;
   try {
-    pagefind = await import(baseUrl + '/pagefind/pagefind.js');
-    if (pagefind.options) await pagefind.options({ bundlePath: baseUrl + '/pagefind/' });
-    await pagefind.init();
+    searchIndex = await fetchJSON('/search-index.json');
   } catch {
     results.innerHTML = '<p class="text-muted">Search index not available.</p>';
     return;
   }
 
-  async function doSearch(q) {
+  const TYPE_LABEL = { packet: 'Packet', document: 'Document', news: 'News' };
+  const TYPE_BADGE = { packet: 'badge-info', document: 'badge-secondary', news: 'badge-primary' };
+
+  function doSearch(q) {
     window.location.hash = q ? encodeURIComponent(q) : '';
     if (!q) { results.innerHTML = ''; return; }
 
-    results.innerHTML = '<p class="text-muted small">Searching…</p>';
-    const res = await pagefind.search(q);
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
 
-    if (!res.results.length) {
+    const titleHits = [];
+    const bodyHits  = [];
+    for (const item of searchIndex) {
+      const titleText = (item.title + ' ' + (item.hex || '')).toLowerCase();
+      const fullText  = (titleText + ' ' + (item.body || '')).toLowerCase();
+      if (terms.every(t => titleText.includes(t))) {
+        titleHits.push(item);
+      } else if (terms.every(t => fullText.includes(t))) {
+        bodyHits.push(item);
+      }
+    }
+
+    const matches = [...titleHits, ...bodyHits];
+    if (!matches.length) {
       results.innerHTML = '<p class="text-muted">No results found.</p>';
       return;
     }
 
-    const items = await Promise.all(res.results.slice(0, 20).map(r => r.data()));
-    results.innerHTML = items.map(r => `
-      <div class="bd-search-result mb-3">
-        <a href="${escHtml(r.url)}" class="font-weight-bold">${r.meta.title || r.url}</a>
-        <div class="small text-muted mt-1">${r.excerpt}</div>
-      </div>
-    `).join('');
+    results.innerHTML = matches.slice(0, 30).map(r => {
+      const badge = `<span class="badge ${TYPE_BADGE[r.type] || 'badge-secondary'} mr-1">${TYPE_LABEL[r.type] || r.type}</span>`;
+      const excerpt = r.body ? `<div class="small text-muted mt-1">${escHtml(r.body.slice(0, 150))}${r.body.length > 150 ? '…' : ''}</div>` : '';
+      return `
+        <div class="bd-search-result mb-3">
+          <div>${badge}<a href="${escHtml(baseUrl + r.url)}" class="font-weight-bold">${escHtml(r.title)}</a></div>
+          ${excerpt}
+        </div>`;
+    }).join('');
   }
 
   input.addEventListener('input', e => doSearch(e.target.value.trim()));

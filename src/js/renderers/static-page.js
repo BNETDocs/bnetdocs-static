@@ -5,7 +5,7 @@ const PAGE_CONTENT = {
       <h4 class="mb-4">Credits</h4>
       <p>
         BNETDocs, the documentation and discussion website for Blizzard protocols<br>
-        Copyright &copy; 2003&ndash;2022 &ldquo;Arta&rdquo;, Don Cullen &ldquo;Kyro&rdquo;, Carl Bennett, others
+        Copyright &copy; 2003&ndash;2026 &ldquo;Arta&rdquo;, Don Cullen &ldquo;Kyro&rdquo;, Carl Bennett, others
       </p>
       <p>BNETDocs was originally created in 2003 by <strong>Arta</strong> and has been
          maintained and extended by many contributors over the years, most notably
