@@ -1,0 +1,21 @@
+{
+    "id": 239,
+    "packet_id": 18,
+    "packet_name": "BNLS_RESERVESERVERSLOTS",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message reserves a number of slots for concurrent NLS checking operations. No other NLS checking messages can be sent before this message has been sent.This message cannot be sent more than once per connection.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/239/bnls-reserveserverslots",
+    "created_datetime": "2011-02-04T22:37:44+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Number of slots to reserve \r\n",
+    "remarks_html": "<p>This message reserves a number of slots for concurrent NLS checking operations. No other NLS checking messages can be sent before this message has been sent.This message cannot be sent more than once per connection.</p>\n<p>BNLS may limit the number of slots to a reasonable value.</p>",
+    "comments": []
+}

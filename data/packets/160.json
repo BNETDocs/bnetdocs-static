@@ -1,0 +1,21 @@
+{
+    "id": 160,
+    "packet_id": 130,
+    "packet_name": "SID_CLANMEMBERINFORMATION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests information about a member of a clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/160/sid-clanmemberinformation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:43:59+00:00",
+    "format": "(UINT32) Cookie\r\n(UINT32) Clan tag\r\n(STRING) Target username",
+    "remarks_html": "<p>Requests information about a member of a clan.</p>\n<p>Use <a href=\"/packet/409/sid-profile\"><code>C&gt;S 0x35 SID_PROFILE</code></a> to request the <strong>clan tag</strong> that goes along with a <strong>target username</strong>.</p>",
+    "comments": []
+}

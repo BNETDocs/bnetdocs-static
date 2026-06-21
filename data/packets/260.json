@@ -1,0 +1,30 @@
+{
+    "id": 260,
+    "packet_id": 26,
+    "packet_name": "BNLS_VERSIONCHECKEX2",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will request a fast version check and parses the version check filename so the client does not have to. Now works with all products.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/260/bnls-versioncheckex2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-08-20T08:39:57+00:00",
+    "format": "(UINT32) Product ID.*\r\n(UINT32) Flags.**\r\n(UINT32) Cookie.\r\n(FILETIME) Timestamp for version check archive.\r\n(STRING) Version check archive filename.\r\n(STRING) Checksum formula. \r\n",
+    "remarks_html": "<p>This message will request a fast version check and parses the version check filename so the client does not have to. Now works with all products.</p>\n<p>See the <a href=\"/document/44/bnls-product-codes\">BNLS Product Codes</a> document for a list of valid product codes.</p>\n<p>** Currently there are no flags defined, this must be set to zero.</p>",
+    "comments": []
+}

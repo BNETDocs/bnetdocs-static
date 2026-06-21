@@ -1,0 +1,21 @@
+{
+    "id": 108,
+    "packet_id": 85,
+    "packet_name": "SID_AUTH_ACCOUNTCHANGE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is used to change the client's password.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/108/sid-auth-accountchange",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) [32] Client key (A)\r\n(STRING) Username",
+    "remarks_html": "<p>This message is used to change the client's password.</p>",
+    "comments": []
+}

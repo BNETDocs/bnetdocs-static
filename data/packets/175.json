@@ -1,0 +1,21 @@
+{
+    "id": 175,
+    "packet_id": 6,
+    "packet_name": "MCP_GAMEINFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests information about a game.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/175/mcp-gameinfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T20:16:31+00:00",
+    "format": "  (UINT16) Request ID\r\n(STRING) Game name",
+    "remarks_html": "<p>Requests information about a game.</p>",
+    "comments": []
+}

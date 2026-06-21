@@ -1,0 +1,37 @@
+{
+    "id": 134,
+    "packet_id": 16,
+    "packet_name": "BNLS_REQUESTVERSIONBYTE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>On failure, Product is 0. On success, this is equal to the requested Product.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/134/bnls-requestversionbyte",
+    "created_datetime": "2010-09-26T23:55:16+00:00",
+    "edited_datetime": "2018-08-20T08:39:42+00:00",
+    "format": "(UINT32) Product\r\n\r\nIf Product is nonzero:\r\n(UINT32) Version byte \r\n",
+    "remarks_html": "<p>On failure, Product is 0. On success, this is equal to the requested Product.</p>\n<p>If Product is 0, the Version byte UINT32 is not included in the message.</p>\n<p>See the <a href=\"/document/44/bnls-product-codes\">BNLS Product Codes</a> document for a list of valid product codes.</p>",
+    "comments": [
+        {
+            "id": 603,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-01-01T07:17:12+00:00",
+            "content_html": "<p>Idea: return the requested product code in the version byte field if the returned product value is 0 (failure). This way failed requests can be matched to their requested products.</p>"
+        }
+    ]
+}

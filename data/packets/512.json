@@ -1,0 +1,18 @@
+{
+    "id": 512,
+    "packet_id": 9,
+    "packet_name": "BOTNET_CLIENT_VERSION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Acknowledge client awareness level.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/512/botnet-client-version",
+    "created_datetime": "2018-03-12T01:29:20+00:00",
+    "edited_datetime": "2018-03-12T23:05:27+00:00",
+    "format": "(UINT32) Client awareness level",
+    "remarks_html": "<p>Acknowledge client awareness level.</p>\n<p><em>This message is supported as of server revision 4.</em></p>\n<p><strong>Client awareness level</strong>:</p>\n<p>This is a value used by revision 4 servers to add functionality but keep backwards compatibility. Fields marked with <strong>awl: 1</strong> in this documentation require the client to send this message with <strong>Client awareness level</strong> set to <code>0x01</code> for them to be received in <strong>server to client</strong> messages.</p>\n<ul>\n<li><code>0x00</code>: <strong>awl</strong> of 0 (default).</li>\n<li><code>0x01</code>: <strong>awl</strong> of 1.</li>\n</ul>\n<p>Clients should continue to parse assuming an old <strong>awl</strong> until they receive this message as confirmation of their requested change.</p>",
+    "comments": []
+}

@@ -1,0 +1,30 @@
+{
+    "id": 356,
+    "packet_id": 0,
+    "packet_name": "BNLS_NULL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is empty and may be used to keep the connection alive. The client is not required to send this. There is no response from the server.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/356/bnls-null",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank] \r\n",
+    "remarks_html": "<p>This message is empty and may be used to keep the connection alive. The client is not required to send this. There is no response from the server.</p>\n<p>If the connection to the BNLS server is idle for more than one minute, the BNLS server will disconnect the client. To avoid that, use this message.</p>",
+    "comments": []
+}

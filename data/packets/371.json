@@ -1,0 +1,21 @@
+{
+    "id": 371,
+    "packet_id": 97,
+    "packet_name": "D2GS_POTIONTOMERCENARY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Takes the potion your cursor holds and gives it to the mercenary. Please note: This message's official name is not known, and has been invented.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/371/d2gs-potiontomercenary",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Unknown - 0x00 \r\n",
+    "remarks_html": "<p>Takes the potion your cursor holds and gives it to the mercenary. Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

@@ -1,0 +1,26 @@
+{
+    "id": 328,
+    "packet_id": 3,
+    "packet_name": "PKT_CLIENTREQ",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 2,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is used to determine the latency to a game on Battle.net.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/328/pkt-clientreq",
+    "created_datetime": "2012-02-26T04:26:54+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Code ",
+    "remarks_html": "<p>This message is used to determine the latency to a game on Battle.net.</p>\n<p>If code is zero, then the message is a ping request from another client (and this client should respond with a PKT_CLIENTREQ using a non-zero code). Otherwise, the message is a ping response. </p>\n<p>In previous versions of UDP enabled clients they would use GetTickCount() as the return value (the recieving end would then do math on that value to get the latency).<br />\nClients now use 0x01 for the value and do all the math locally, this resolves time zone issues and other stuffs.</p>",
+    "comments": []
+}

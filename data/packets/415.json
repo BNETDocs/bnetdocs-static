@@ -1,0 +1,33 @@
+{
+    "id": 415,
+    "packet_id": 92,
+    "packet_name": "SID_SWITCHPRODUCT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is used to switch from <code>W3XP</code> to <code>WAR3</code>.</p>",
+    "used_by": [
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/415/sid-switchproduct",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-28T05:31:12+00:00",
+    "format": "(UINT32) Product ID",
+    "remarks_html": "<p>This message is used to switch from <code>W3XP</code> to <code>WAR3</code>.</p>\n<p>When running <code>WAR3</code> with <code>W3XP</code> installed, the client sends both <code>WAR3</code> and <code>W3XP</code> keys in <a href=\"/packet/408/sid-auth-check\">SID_AUTH_CHECK</a> and uses <code>W3XP</code> as the <code>Product Id</code> in <a href=\"/packet/279/sid-auth-info\">SID_AUTH_INFO</a>. After a successful <a href=\"/packet/106/sid-auth-check\">SID_AUTH_CHECK</a>, the client sends this message with the Product Id set to <code>WAR3</code> to make the switch from expansion to non-expansion.</p>",
+    "comments": [
+        {
+            "id": 517,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-04-01T20:36:27+00:00",
+            "content_html": "<p>In experimenting I've found:<br />\n(client I identified as in SID_AUTH_INFO) -&gt; (client I sent in SID_SWITCHPRODUCT) = (result):<br />\nW3XP -&gt; WAR3 = intended result, using WAR3 in channel.<br />\nNon-WarCraft III -&gt; anything = short ipban.<br />\nW3XP -&gt; non-WarCraft III = kick.<br />\nWAR3 -&gt; non-WarCraft III = kick.<br />\nW3XP -&gt; W3XP = passes, but obviously does nothing.<br />\nWAR3 -&gt; WAR3 = passes, but obviously does nothing.<br />\nWAR3 -&gt; W3XP = passes, but does nothing (using WAR3 in channel).</p>"
+        },
+        {
+            "id": 568,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-03-28T05:33:58+00:00",
+            "content_html": "<p>I feel like the real purpose for this message is to:</p>\n<ol>\n<li>Ensure both <code>WAR3</code> and <code>W3XP</code> keys show as in-use on Battle.net.</li>\n<li>Allow Battle.net to treat this client as <code>WAR3</code> rather than <code>W3XP</code> as it was originally to trigger both keys being in-use.</li>\n</ol>\n<p>In short, it feels like Blizzard wants the Frozen Throne key to show as in-use even when playing Reign of Chaos.</p>"
+        }
+    ]
+}

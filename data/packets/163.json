@@ -1,0 +1,23 @@
+{
+    "id": 163,
+    "packet_id": 26,
+    "packet_name": "SID_STARTADVEX2",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Creates a game in a manner similar to <a href=\"/packet/291/sid-startadvex\">SID_STARTADVEX</a> and <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a>.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1146246220,
+        1146308690
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/163/sid-startadvex2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-05-18T04:52:52+00:00",
+    "format": "(UINT32) Status\r\n(UINT32) Unknown\r\n(UINT16) Game Type\r\n(UINT16) Unknown\r\n(UINT32) Unknown\r\n(UINT32) Port\r\n(STRING) Game name\r\n(STRING) Game password\r\n(STRING) Game stats - Flags, Creator, Statstring ",
+    "remarks_html": "<p>Creates a game in a manner similar to <a href=\"/packet/291/sid-startadvex\">SID_STARTADVEX</a> and <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a>.</p>\n<p>This message is used by Diablo to create a game. It was also used by Starcraft 1.03.</p>\n<p>See documentation on <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a> for details on the values and their meanings.</p>",
+    "comments": []
+}

@@ -1,0 +1,28 @@
+{
+    "id": 120,
+    "packet_id": 45,
+    "packet_name": "SID_GETICONDATA",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Returns filename and filetime of default icons file. This information can be used to download the file from <a href=\"/document/5/\">BNFTP</a> and information on parsing it can be found be found <a href=\"/document/25/\">here</a>.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/120/sid-geticondata",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2021-09-17T20:20:47+00:00",
+    "format": "(FILETIME) Filetime\r\n(STRING) Filename ",
+    "remarks_html": "<p>Returns filename and filetime of default icons file. This information can be used to download the file from <a href=\"/document/5/\">BNFTP</a> and information on parsing it can be found be found <a href=\"/document/25/\">here</a>.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 205,
+    "packet_id": 8,
+    "packet_name": "BNLS_UPGRADEPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will parse data from SID_AUTH_ACCOUNTUPGRADE (0x57) and will reply with data to send in SID_AUTH_ACCOUNTUPGRADEPROOF (0x58).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/205/bnls-upgradeproof",
+    "created_datetime": "2010-08-06T01:34:49+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Session key from SID_AUTH_ACCOUNTUPGRADE (0x57)",
+    "remarks_html": "<p>This message will parse data from SID_AUTH_ACCOUNTUPGRADE (0x57) and will reply with data to send in SID_AUTH_ACCOUNTUPGRADEPROOF (0x58).</p>\n<p>You must send BNLS_UPGRADECHALLENGE (0x07) before you can send this.</p>",
+    "comments": []
+}

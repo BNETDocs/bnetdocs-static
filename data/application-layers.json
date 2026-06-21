@@ -1,9 +1,47 @@
 [
-  {"id": 1, "label": "BNCS"},
-  {"id": 2, "label": "MCP"},
-  {"id": 3, "label": "D2GS"},
-  {"id": 4, "label": "W3GS"},
-  {"id": 5, "label": "BNLS"},
-  {"id": 6, "label": "BNFTP"},
-  {"id": 7, "label": "Chat"}
+    {
+        "id": 1,
+        "label": "Battle.net v1 TCP Messages",
+        "tag": "SID"
+    },
+    {
+        "id": 2,
+        "label": "Battle.net v1 UDP Messages",
+        "tag": "PKT"
+    },
+    {
+        "id": 3,
+        "label": "Diablo II Realm Messages",
+        "tag": "MCP"
+    },
+    {
+        "id": 4,
+        "label": "Diablo II In-Game Messages",
+        "tag": "D2GS"
+    },
+    {
+        "id": 5,
+        "label": "Warcraft III In-Game Messages",
+        "tag": "W3GS"
+    },
+    {
+        "id": 6,
+        "label": "BotNet Messages",
+        "tag": "PACKET"
+    },
+    {
+        "id": 7,
+        "label": "BNLS Messages",
+        "tag": "BNLS"
+    },
+    {
+        "id": 8,
+        "label": "Starcraft In-Game Messages",
+        "tag": "SCGP"
+    },
+    {
+        "id": 9,
+        "label": "Battle.net v2 TCP Messages",
+        "tag": "SID2"
+    }
 ]

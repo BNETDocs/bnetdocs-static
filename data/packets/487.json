@@ -1,0 +1,23 @@
+{
+    "id": 487,
+    "packet_id": 74,
+    "packet_name": "SCGP_ROOMDATA",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/487/scgp-roomdata",
+    "created_datetime": "2012-03-24T14:20:26+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x4A)\r\n(UINT16) Map Tileset\r\n(UINT16) Map Width\r\n(UINT16) Map Height\r\n(UINT8[12]) OWNR\r\n(UINT8[12]) SIDE\r\n(UINT8[12]) OWNR Default\r\n(UINT8[8]) FORC\r\n(UINT8[4]) FORC Flag\r\n(UINT8[8]) RACE",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>The tileset, width and height are not retrieved from the map in case it hasn't been downloaded yet-- these 3 values are used on failth.<br />\nValid tilesets:<br />\n0x00 = Badlands<br />\n0x01 = Space Platform<br />\n0x02 = Installation<br />\n0x03 = Ashworld<br />\n0x04 = Jungle<br />\n0x05 = Desert<br />\n0x06 = Arctic<br />\n0x07 = Twilight</p>\n<p>The OWNR values are the base room slot values. They are modified values from the map to fit the given game configuration.<br />\nThe OWNR default is simply that, the default values from the map file.<br />\nThe 12 bytes is for each possible player (1 to 12)<br />\nPossible values:<br />\n0x00 = Doesn't exist<br />\n0x02 = Human<br />\n0x03 = Rescuable<br />\n0x05 = Computer<br />\n0x06 = Open<br />\n0x07 = Neutral<br />\n0x08 = Closed<br />\nNote: OWNR of Rescuable and Neutral are not shown.</p>\n<p>The SIDE tells you the race for each player. These are modified SIDE values from the map file, to fit the given game configuration.<br />\n1 SIDE byte for each possible player (1 to 12)<br />\nPossible values:<br />\n0x00 = Zerg<br />\n0x01 = Terran<br />\n0x02 = Protoss<br />\n0x03 = Independent<br />\n0x04 = Neutral<br />\n0x06 = Random</p>\n<p>The FORC tells you the force/team index of each player.<br />\nFor example, 0x00 would mean no team (like melee) and 0x01 to 0x04 means this player/slot belongs to this team.</p>\n<p>The FORC Flag gives you the settings for each force.<br />\n0x01 = Random start locations<br />\n0x02 = Allies<br />\n0x04 = Allie victory<br />\n0x08 = Shared Vision</p>\n<p>The RACE tells you if a player can change their race <em>I think</em>. I'm not to sure about the RACE part, but i'm pretty sure thats what it does. For example, disables a player from changing their race</p>",
+    "comments": []
+}

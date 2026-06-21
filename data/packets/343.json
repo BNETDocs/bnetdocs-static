@@ -1,0 +1,34 @@
+{
+    "id": 343,
+    "packet_id": 12,
+    "packet_name": "BNLS_CDKEY_EX",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The Cookie has no special meaning to the server and will simply be echoed to the client in the response. The client can use multiple types of CD-keys in the same packet. The number of CD Keys to encrypt should be between 1 and 32.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1246975058,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/343/bnls-cdkey-ex",
+    "created_datetime": "2011-09-27T02:58:07+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Cookie\r\n(UINT8) Number of CD-keys to encrypt\r\n(UINT32) Flags\r\n(UINT32) [] Server session key(s), depending on flags\r\n(UINT32) [] Client session key(s), depending on flags\r\n(STRING) [] CD-keys. No dashes or spaces",
+    "remarks_html": "<p>The Cookie has no special meaning to the server and will simply be echoed to the client in the response. The client can use multiple types of CD-keys in the same packet. The number of CD Keys to encrypt should be between 1 and 32.</p>\n<p>The flags may be zero, or any bitwise combination of the defined flags.<br />\nCurrently, the following flags are defined:</p>\n<p>0x01: CDKEY_SAME_SESSION_KEY<br />\n0x02: CDKEY_GIVEN_SESSION_KEY<br />\n0x04: CDKEY_MULTI_SERVER_SESSION_KEYS<br />\n0x08: CDKEY_OLD_STYLE_RESPONSES</p>\n<p>View consts: [pas cpp vb]</p>\n<p>CDKEY_SAME_SESSION_KEY (0x01):<br />\nThis flag specifies that all the returned CD-keys will use the same client session key. When used in combination with CDKEY_GIVEN_SESSION_KEY (0x02), a single client session key is specified immediately after the server session key(s). When used without CDKEY_GIVEN_SESSION_KEY (0x02), a client session key is not sent in the request, and the server will create one.<br />\nWhen not used, each CD-key gets its own client session key. This flag has no effect if the amount of CD-keys to encrypt is 1.</p>\n<p>CDKEY_GIVEN_SESSION_KEY (0x02):<br />\nThis flag specifies that the client session keys to be used are specified in the request. When used in combination with CDKEY_SAME_SESSION_KEY (0x01), a single client session key is specified immediately after the server session key(s). When used without CDKEY_SAME_SESSION_KEY (0x01), an array of client session keys (as many as the amount of CD-keys) is specified. When not used, client session keys are not included in the request.</p>\n<p>CDKEY_MULTI_SERVER_SESSION_KEYS (0x04):<br />\nThis flag specifies that each CD-key has its own server session key. When specified, an array of server session keys (as many as the amount of CD-keys) is specified. When not specified, a single server session key is specified.<br />\nThis flag has no effect if the amount of CD-keys to encrypt is 1.</p>\n<p>CDKEY_OLD_STYLE_RESPONSES (0x08):<br />\nSpecifies that the response to this packet is a number of BNLS_CDKEY (0x01) responses, instead of a BNLS_CDKEY_EX (0x0c) response. The responses are guaranteed to be in the order of the CD-keys' appearance in the request. Note that when this flag is specified, the Cookie cannot be echoed. (It must still be included in the request.)</p>\n<p>Note: When using Lord of Destruction, two CD-keys are encrypted, and they must share the same client session key. There are several ways to do this. One way is to provide both CD-keys in this packet, using the flag CDKEY_SAME_SESSION_KEY (0x01). Another way is to use BNLS_CDKEY (0x01) to encrypt the first CD-key, then use this packet with the flag CDKEY_GIVEN_SESSION_KEY (0x02) to encrypt the second CD-key with the same client session key.</p>",
+    "comments": [
+        {
+            "id": 157,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-04-04T07:56:17+00:00",
+            "content_html": "<p>For the n00bs: The Client session key is the Client token, and the Server session key is the Server token. Use your brain now, c'mon.</p>"
+        }
+    ]
+}

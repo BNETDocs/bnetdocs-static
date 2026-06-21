@@ -1,15 +1,375 @@
 {
-  "generated_at": "2026-06-21T00:00:00+00:00",
-  "documents": [
-    {
-      "id": 1,
-      "title": "BNCS Protocol Overview",
-      "options_bitmask": 2,
-      "brief_html": "<p>Overview of the Battle.net Chat Service (BNCS) protocol, used by StarCraft, Diablo II, Warcraft III, and other classic Blizzard games.</p>",
-      "author_username": "carlbennett",
-      "uri": "/document/1/bncs-protocol-overview",
-      "created_datetime": "2018-02-13T05:00:00+00:00",
-      "edited_datetime": "2020-03-01T12:00:00+00:00"
-    }
-  ]
+    "generated_at": "2026-06-21T13:23:12+00:00",
+    "documents": [
+        {
+            "id": 4,
+            "title": "Clan System Overview",
+            "options_bitmask": 3,
+            "brief_html": "<p>This is a description of WarCraft III's clan system on Battle.net.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/4/clan-system-overview",
+            "created_datetime": "2011-04-02T22:53:05+00:00",
+            "edited_datetime": "2024-12-19T06:58:23+00:00"
+        },
+        {
+            "id": 5,
+            "title": "File Transfer Protocol Version 1",
+            "options_bitmask": 3,
+            "brief_html": "<p>Battle.net's file transfer protocol (often abbreviated BNFTP or BNFTPv1) consists of two packets: the request and the response.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/5/file-transfer-protocol-version-1",
+            "created_datetime": "2012-02-26T04:14:21+00:00",
+            "edited_datetime": "2021-09-24T23:47:11+00:00"
+        },
+        {
+            "id": 6,
+            "title": "File Transfer Protocol Version 2",
+            "options_bitmask": 3,
+            "brief_html": "<p>Version 2 of Battle.net's file transfer protocol (BNFTPv2) is a simple extension to version one, which allows Battle.net to validate a CD key before allowing a file transfer to take place.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/6/file-transfer-protocol-version-2",
+            "created_datetime": "2012-02-26T04:13:54+00:00",
+            "edited_datetime": "2021-09-24T23:49:23+00:00"
+        },
+        {
+            "id": 8,
+            "title": "Diablo II Game Server Buffers And Positions",
+            "options_bitmask": 3,
+            "brief_html": "<p><strong>Various Buffers &amp; Pages</strong></p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/8/diablo-ii-game-server-buffers-and-positions",
+            "created_datetime": "2014-03-25T22:31:28+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 9,
+            "title": "Diablo II Game Server Skill List",
+            "options_bitmask": 3,
+            "brief_html": "<p><strong>Amazon Skills:</strong></p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/9/diablo-ii-game-server-skill-list",
+            "created_datetime": "2014-03-25T22:33:28+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 10,
+            "title": "Battle.net Chat Server Protocol Overview",
+            "options_bitmask": 3,
+            "brief_html": "<p>The Battle.Net Chat Server (&quot;BNCS&quot;) is the unofficial name of the protocol that Blizzard's Battle.net-enabled games used to communicate. The games that historically used this protocol are <strong>Diablo</strong>, <strong>StarCraft</strong>, <strong>WarCraft II</strong>, <strong>Diablo II</strong>, <strong>WarCraft III</strong>, and their expansions. This is now referred to as &quot;Classic&quot; or &quot;Classic Battle.net&quot; these days. The protocol operates on <strong>TCP port 6112</strong> (and <strong>UDP port 6112</strong> for pre-Diablo II player-to-player communication).</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/10/battle-net-chat-server-protocol-overview",
+            "created_datetime": "2013-06-19T14:01:10+00:00",
+            "edited_datetime": "2021-11-25T06:13:29+00:00"
+        },
+        {
+            "id": 12,
+            "title": "Product Identification",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document describes how to supply product information to Classic Battle.net™.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/12/product-identification",
+            "created_datetime": "2011-09-24T04:29:06+00:00",
+            "edited_datetime": "2022-01-08T20:05:29+00:00"
+        },
+        {
+            "id": 13,
+            "title": "Game Statstrings",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document covers the game advertisement statstrings for the various Blizzard games and goes into detail on each one for each game.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/13/game-statstrings",
+            "created_datetime": "2011-02-18T06:13:43+00:00",
+            "edited_datetime": "2021-08-21T22:22:20+00:00"
+        },
+        {
+            "id": 15,
+            "title": "Chat Flags",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document describes the user and channel flags seen in the <code>FLAGS</code> field of <a href=\"/packet/307/sid-chatevent\">SID_CHATEVENT</a>.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/15/chat-flags",
+            "created_datetime": "2011-11-17T01:46:55+00:00",
+            "edited_datetime": "2020-10-31T20:53:02+00:00"
+        },
+        {
+            "id": 16,
+            "title": "Protocol Headers",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document contains the protocol header specifications for the BNCS, Realm, D2GS, BNLS, W3GS, and Storm UDP protocols.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/16/protocol-headers",
+            "created_datetime": "2012-03-10T21:39:48+00:00",
+            "edited_datetime": "2018-03-30T19:51:57+00:00"
+        },
+        {
+            "id": 17,
+            "title": "Chat Gateway Protocol",
+            "options_bitmask": 3,
+            "brief_html": "<p>The chat gateway is a text protocol on Battle.net&trade; that was deprecated in 2005. It has since been disabled entirely; sending the protocol byte for this protocol causes the server to disconnect the client. The information below is retained for completeness and historic purposes.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/17/chat-gateway-protocol",
+            "created_datetime": "2011-09-30T18:42:06+00:00",
+            "edited_datetime": "2018-03-30T02:19:45+00:00"
+        },
+        {
+            "id": 18,
+            "title": "Chat Statstrings",
+            "options_bitmask": 3,
+            "brief_html": "<p>Chat statstrings are space-delimited C strings that communicate attributes of a user in a chat channel. Most notably, game clients use chat statstrings to determine which icons to display for each user. Additionally, game clients will refuse to attempt to create ladder games if not enough normal game wins have been earned.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/18/chat-statstrings",
+            "created_datetime": "2012-06-03T07:03:05+00:00",
+            "edited_datetime": "2020-12-05T23:18:02+00:00"
+        },
+        {
+            "id": 19,
+            "title": "Notational Convention (Sizes & Types)",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document covers the standard sizes and data types that this site references across other documents and packets.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/19/notational-convention-sizes-types",
+            "created_datetime": "2010-09-25T15:43:34+00:00",
+            "edited_datetime": "2020-10-20T02:55:49+00:00"
+        },
+        {
+            "id": 20,
+            "title": "Product Keys and Hashing",
+            "options_bitmask": 3,
+            "brief_html": "<p>Product keys are yielded by purchasing Blizzard games. There are three types of keys varying in length and character masks.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/20/product-keys-and-hashing",
+            "created_datetime": "2010-08-17T09:48:06+00:00",
+            "edited_datetime": "2018-10-13T17:13:40+00:00"
+        },
+        {
+            "id": 22,
+            "title": "BNLS Packet Guide",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document guides a first-time developer on how to use Battle.net and BNLS together, as often it could be confusing at first.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/22/bnls-packet-guide",
+            "created_datetime": "2011-05-30T21:27:36+00:00",
+            "edited_datetime": "2018-03-19T04:01:42+00:00"
+        },
+        {
+            "id": 23,
+            "title": "BNLS Checksum Algorithm",
+            "options_bitmask": 3,
+            "brief_html": "<p>The BNLS checksum algorithm calculates the checksum of a password using the 32-bit server code received in <a href=\"/packet/396/bnls-authorize\"><code>0x0E BNLS_AUTHORIZE</code></a>.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/23/bnls-checksum-algorithm",
+            "created_datetime": "2011-07-31T04:37:24+00:00",
+            "edited_datetime": "2019-12-29T15:34:55+00:00"
+        },
+        {
+            "id": 24,
+            "title": "NLS/SRP Protocol",
+            "options_bitmask": 3,
+            "brief_html": "<p>The New Logon System (NLS) is based on the <a href=\"https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol\">Secure Remote Password protocol</a> (SRP) which was designed to obviate the need to send a password, or its cryptographic equivalent, across a network. This page exists to provide a basic introduction to this protocol. For detailed<br />\nexplanations and information, see <a href=\"http://www.ietf.org/rfc/rfc2945.txt\">RFC 2945</a>.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/24/nls-srp-protocol",
+            "created_datetime": "2011-01-03T19:02:14+00:00",
+            "edited_datetime": "2018-10-13T17:19:22+00:00"
+        },
+        {
+            "id": 25,
+            "title": "Icons.bni",
+            "options_bitmask": 3,
+            "brief_html": "<p>File format and conventions for server-defined chat icons</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/25/icons-bni",
+            "created_datetime": "2011-08-25T08:43:36+00:00",
+            "edited_datetime": "2021-09-23T03:52:38+00:00"
+        },
+        {
+            "id": 27,
+            "title": "WarCraft III Profile Requests",
+            "options_bitmask": 3,
+            "brief_html": "<p>The Warcraft III Profile Request often involves several messages to get complete profile information for a user, partially depending on whether or not the user is in a clan.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/27/warcraft-iii-profile-requests",
+            "created_datetime": "2013-06-20T02:09:38+00:00",
+            "edited_datetime": "2018-03-29T02:03:14+00:00"
+        },
+        {
+            "id": 28,
+            "title": "Diablo II Game Server Accept Sequence",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document describes the steps needed to be accepted by the Diablo II Game Server after <a href=\"/packet/107/mcp-joingame\">[0x04] MCP_JOINGAME</a> is received from the Realm Server. If the result of that message is <code>0x00</code>, then the connection is dropped from the Realm Server and initiated with the Game Server.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/28/diablo-ii-game-server-accept-sequence",
+            "created_datetime": "2014-03-25T22:50:21+00:00",
+            "edited_datetime": "2017-07-03T15:12:03+00:00"
+        },
+        {
+            "id": 29,
+            "title": "Diablo II Realm Server Logon Sequence",
+            "options_bitmask": 3,
+            "brief_html": "<p>In order to make use of the Battle.net Diablo II realms, you must be successfully logged onto your account. See <a href=\"/document/10/logon-sequences\">Logon Sequences</a> for the Diablo II logon sequence.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/29/diablo-ii-realm-server-logon-sequence",
+            "created_datetime": "2012-02-26T03:55:00+00:00",
+            "edited_datetime": "2017-03-29T18:43:43+00:00"
+        },
+        {
+            "id": 31,
+            "title": "Telnet Protocol Message Formatting",
+            "options_bitmask": 3,
+            "brief_html": "<p>The following information is only valid when using protocol <code>0x03</code> (Telnet) on a Classic Battle.net server and only after a successful login handshake. See also <a href=\"/document/17/telnet-protocol\">Telnet Protocol</a> and <a href=\"/document/16/protocol-headers\">Protocol Headers</a>.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/31/telnet-protocol-message-formatting",
+            "created_datetime": "2011-03-13T21:56:53+00:00",
+            "edited_datetime": "2016-08-03T11:00:20+00:00"
+        },
+        {
+            "id": 32,
+            "title": "Battle.net v2 Information",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document serves as an aggregate of information about Battle.net v2. Much of this information is available elsewhere. A lot of information has been taken from public and private repositories around the web.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/32/battle-net-v2-information",
+            "created_datetime": "2011-09-30T05:49:04+00:00",
+            "edited_datetime": "2016-03-26T08:55:23+00:00"
+        },
+        {
+            "id": 33,
+            "title": "Account Closure Codes",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document describes the additional status codes received when attempting to login to a Battle.net account that has been terminated by Blizzard.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/33/account-closure-codes",
+            "created_datetime": "2012-02-26T02:16:47+00:00",
+            "edited_datetime": "2017-04-24T05:04:23+00:00"
+        },
+        {
+            "id": 34,
+            "title": "Storm UDP Protocol",
+            "options_bitmask": 3,
+            "brief_html": "<p>Used by StarCraft, Diablo, and WarCraft II use the Storm UDP Protocol to communicate during games.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/34/storm-udp-protocol",
+            "created_datetime": "2012-03-24T13:49:09+00:00",
+            "edited_datetime": "2016-04-03T12:46:49+00:00"
+        },
+        {
+            "id": 35,
+            "title": "PvPGN Tracking Protocol",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document covers how to successfully use the <a href=\"http://track.pvpgn.org/\">PvPGN tracker system</a> with a custom unofficial Battle.net v1 server.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/35/pvpgn-tracking-protocol",
+            "created_datetime": "2016-04-13T07:39:56+00:00",
+            "edited_datetime": "2019-03-10T07:51:09+00:00"
+        },
+        {
+            "id": 38,
+            "title": "Chat Language Filter",
+            "options_bitmask": 3,
+            "brief_html": "<p>There is a censor on English &quot;swear&quot; words and other words deemed inappropriate.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/38/chat-language-filter",
+            "created_datetime": "2017-11-22T06:38:05+00:00",
+            "edited_datetime": "2017-11-22T07:28:18+00:00"
+        },
+        {
+            "id": 39,
+            "title": "Battle.net History Timeline",
+            "options_bitmask": 3,
+            "brief_html": "<p>Future placeholder document for the page at:<br />\n<a href=\"https://davnit.net/islanti/timeline.html\">https://davnit.net/islanti/timeline.html</a></p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/39/battle-net-history-timeline",
+            "created_datetime": "2018-02-19T23:44:34+00:00",
+            "edited_datetime": "2019-07-31T21:50:21+00:00"
+        },
+        {
+            "id": 40,
+            "title": "Known Server Issues",
+            "options_bitmask": 3,
+            "brief_html": "<p>This focuses on the technical issues present on official Classic Battle.net™ servers.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/40/known-server-issues",
+            "created_datetime": "2018-03-03T22:03:08+00:00",
+            "edited_datetime": "2021-09-26T06:06:51+00:00"
+        },
+        {
+            "id": 41,
+            "title": "Blizzard Weak Digital Signature",
+            "options_bitmask": 3,
+            "brief_html": "<p>The <strong>Blizzard Weak Digital Signature</strong> is a digital signature used by Battle.net(v1) clients used to verify the integrity and authenticity of remotely downloaded MPQ files. The signature is stored in a file named <strong>(signature)</strong>, uncompressed and unencrypted.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/41/blizzard-weak-digital-signature",
+            "created_datetime": "2018-03-08T19:45:19+00:00",
+            "edited_datetime": "2019-12-29T15:47:50+00:00"
+        },
+        {
+            "id": 42,
+            "title": "BotNet Protocol Overview",
+            "options_bitmask": 3,
+            "brief_html": "<p>BotNet is a Valhalla Legends-made service designed for inter-bot communication.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/42/botnet-protocol-overview",
+            "created_datetime": "2018-03-11T20:43:09+00:00",
+            "edited_datetime": "2018-04-04T20:24:09+00:00"
+        },
+        {
+            "id": 43,
+            "title": "ExtraWork",
+            "options_bitmask": 3,
+            "brief_html": "<p><strong>ExtraWork</strong> is a library sent by the server after successfully passing CheckRevision during the connection process. ExtraWork has been used by Battle.net to collect statistics on system hardware and to prevent hacking/botting.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/43/extrawork",
+            "created_datetime": "2018-03-17T23:32:10+00:00",
+            "edited_datetime": "2021-11-14T06:08:26+00:00"
+        },
+        {
+            "id": 44,
+            "title": "BNLS Product Codes",
+            "options_bitmask": 3,
+            "brief_html": "<p>This document is the complete list of BNLS product codes supported by the protocol, however not all implementations have been patched to reflect this complete list and may only support a few of these.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/44/bnls-product-codes",
+            "created_datetime": "2018-08-20T08:27:50+00:00",
+            "edited_datetime": "2018-08-20T08:46:52+00:00"
+        },
+        {
+            "id": 45,
+            "title": "Classic Chat API (CAPI)",
+            "options_bitmask": 3,
+            "brief_html": "<p>On April 28, 2017, <a href=\"https://us.battle.net/forums/en/bnet/topic/20754336617\">Blizzard announced</a> an official API for the classic BNETv1 platform. This is intended to allow bots to easily connect to the platform using secure web sockets instead of needing to emulate the game protocols.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/45/classic-chat-api-capi",
+            "created_datetime": "2018-10-13T19:13:41+00:00",
+            "edited_datetime": "2018-10-31T16:34:48+00:00"
+        },
+        {
+            "id": 47,
+            "title": "CheckRevision",
+            "options_bitmask": 3,
+            "brief_html": "<p>CheckRevision is a module sent by the server during the logon process. The purpose of CheckRevision is to ensure that only official, unmodified Battle.net clients are connecting to Battle.net servers. Some PvPGN servers have been known to compile their own CheckRevision modules to add client-side features or detect hacks.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/47/checkrevision",
+            "created_datetime": "2019-01-07T03:20:58+00:00",
+            "edited_datetime": "2021-11-14T05:50:30+00:00"
+        },
+        {
+            "id": 48,
+            "title": "BNLS Server Historical List",
+            "options_bitmask": 3,
+            "brief_html": "<p>A historical list of BNLS hosts that no longer exist, but are maintained here for reference and documentation purposes.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/48/bnls-server-historical-list",
+            "created_datetime": "2020-01-19T01:04:01+00:00",
+            "edited_datetime": "2021-09-04T20:50:25+00:00"
+        },
+        {
+            "id": 50,
+            "title": "List of Bots",
+            "options_bitmask": 3,
+            "brief_html": "<p>A list of well-known bot software for the Classic Battle.net™ protocol.</p>",
+            "author_username": "BNETDocs",
+            "uri": "/document/50/list-of-bots",
+            "created_datetime": "2025-06-27T03:29:18+00:00",
+            "edited_datetime": "2025-06-28T19:01:07+00:00"
+        }
+    ]
 }

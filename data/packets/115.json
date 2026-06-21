@@ -1,0 +1,21 @@
+{
+    "id": 115,
+    "packet_id": 5,
+    "packet_name": "BNLS_CHANGECHALLENGE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCHANGE (0x55).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/115/bnls-changechallenge",
+    "created_datetime": "2011-02-04T22:07:52+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [8] Data for SID_AUTH_ACCOUNTCHANGE (0x55)",
+    "remarks_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCHANGE (0x55).</p>",
+    "comments": []
+}

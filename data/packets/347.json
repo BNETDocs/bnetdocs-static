@@ -1,0 +1,31 @@
+{
+    "id": 347,
+    "packet_id": 7,
+    "packet_name": "SID_REPORTVERSION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains CheckRevision response, version &amp; EXE info.</p>",
+    "used_by": [
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/347/sid-reportversion",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-10-25T19:41:11+00:00",
+    "format": "(UINT32) Platform ID\r\n(UINT32) Product ID\r\n(UINT32) Version Byte\r\n(UINT32) EXE Version\r\n(UINT32) EXE Hash\r\n(STRING) EXE Information ",
+    "remarks_html": "<p>Contains CheckRevision response, version &amp; EXE info.</p>",
+    "comments": [
+        {
+            "id": 632,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-11-19T07:10:38+00:00",
+            "content_html": "<p>The platform, product, and version byte values in this message (which were already sent once before this in SID_STARTVERSIONING) seem to be ignored by the server.</p>"
+        }
+    ]
+}

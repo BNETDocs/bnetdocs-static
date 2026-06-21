@@ -1,0 +1,30 @@
+{
+    "id": 196,
+    "packet_id": 15,
+    "packet_name": "BNLS_AUTHORIZEPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>If the client sent a valid account name, but the password checksum is incorrect, the connection is terminated. Otherwise, this response is sent.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/196/bnls-authorizeproof",
+    "created_datetime": "2012-02-26T04:22:27+00:00",
+    "edited_datetime": "2017-10-01T18:35:46+00:00",
+    "format": "(UINT32) Status code\r\n(UINT32) Client IP address",
+    "remarks_html": "<p>If the client sent a valid account name, but the password checksum is incorrect, the connection is terminated. Otherwise, this response is sent.</p>\n<p>The following status codes are defined:</p>\n<pre><code>0x00: Authorized\n0x01: Unauthorized</code></pre>\n<ul>\n<li>Authorized means the login was performed as a registered account.</li>\n<li>Unauthorized means the bot ID provided was invalid, so an anonymous login was performed instead.</li>\n</ul>\n<p>This indicates a success condition, and the client is now allowed to send other messages. More status codes may be added in the future.</p>\n<p>The client IP address field was added October 1, 2017 in an update to <a href=\"https://github.com/LexManos/JBLS/pull/3/commits/10aa7777b1883943cc655a3c2e5bf09a292effdb\">JBLS</a>. It is sent in network byte (big endian) order.</p>",
+    "comments": []
+}

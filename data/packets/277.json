@@ -1,0 +1,28 @@
+{
+    "id": 277,
+    "packet_id": 64,
+    "packet_name": "SID_QUERYREALMS2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Realm list.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/277/sid-queryrealms2",
+    "created_datetime": "2012-03-31T13:55:39+00:00",
+    "edited_datetime": "2017-03-29T18:33:05+00:00",
+    "format": "(UINT32) Unknown (0)\r\n(UINT32) Count\r\nFor each Realm:\r\n     (UINT32) Unknown (1)\r\n    (STRING) Realm title\r\n    (STRING) Realm description",
+    "remarks_html": "<p>Realm list.</p>\n<p>The first Unknown is usually 0. The second [and subsequent] Unknown is usually 1.</p>",
+    "comments": [
+        {
+            "id": 652,
+            "author_username": "BNETDocs",
+            "created_datetime": "2022-01-15T10:43:27+00:00",
+            "content_html": "<p>When requesting this on non-D2 products (I've tried W2BN and DRTL) the following response is given:</p>\n<pre><code>SID_QUERYREALMS2 (id: 0x40, length: 12)\nff 40 0c 00 03 00 00 80 00 00 00 00                 .@..........</code></pre>\n<p>The first Unknown is <code>03 00 00 80</code>.</p>"
+        }
+    ]
+}

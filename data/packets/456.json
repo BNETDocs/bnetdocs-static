@@ -1,0 +1,40 @@
+{
+    "id": 456,
+    "packet_id": 5,
+    "packet_name": "W3GS_REJECTJOIN",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent in a response to a request to join the game lobby and indicates that the request was denied.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/456/w3gs-rejectjoin",
+    "created_datetime": "2011-03-13T21:30:17+00:00",
+    "edited_datetime": "2018-03-30T19:41:51+00:00",
+    "format": "(UINT32) Reason",
+    "remarks_html": "<p>This is sent in a response to a request to join the game lobby and indicates that the request was denied.</p>\n<p><strong>Reasons:</strong></p>\n<pre><code>0x09 REJECTJOIN_FULL            The game lobby is full\n0x07 REJECTJOIN_INVALID         There was an error in your request\n0x10 REJECTJOIN_STARTED         The game has already been started\n0x27 REJECTJOIN_WRONGPASSUINT16 The password you sent was incorrect</code></pre>",
+    "comments": [
+        {
+            "id": 442,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-04T18:26:44+00:00",
+            "content_html": "<p>0x07 seems to be returned when you send an invalid join request, atleast thats what I get when I do that.</p>"
+        },
+        {
+            "id": 454,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-14T02:30:38+00:00",
+            "content_html": "<p>Added 0x07 and described each reason code.</p>"
+        },
+        {
+            "id": 455,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-19T14:52:25+00:00",
+            "content_html": "<p>Also GHost++ seems to fail sending the right DWORD (it sends 27 instead of 0x27 etc.), you can see that in the source code ofc</p>"
+        }
+    ]
+}

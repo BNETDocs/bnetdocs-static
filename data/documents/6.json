@@ -1,0 +1,12 @@
+{
+    "id": 6,
+    "title": "File Transfer Protocol Version 2",
+    "options_bitmask": 3,
+    "brief_html": "<p>Version 2 of Battle.net's file transfer protocol (BNFTPv2) is a simple extension to version one, which allows Battle.net to validate a CD key before allowing a file transfer to take place.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/6/file-transfer-protocol-version-2",
+    "created_datetime": "2012-02-26T04:13:54+00:00",
+    "edited_datetime": "2021-09-24T23:49:23+00:00",
+    "content_html": "<p>Version 2 of Battle.net's file transfer protocol (BNFTPv2) is a simple extension to version one, which allows Battle.net to validate a CD key before allowing a file transfer to take place.</p>\n<p>The request is sent to Battle.net after connecting and requesting protocol BNFTP (<code>0x02</code>):</p>\n<pre><code>   (UINT16)    Length of this message\n   (UINT16)    Protocol Version\n   (UINT32)    Platform ID\n   (UINT32)    Product ID\n   (UINT32)    Banner ID*\n   (UINT32)    BannerExtension*</code></pre>\n<p>Battle.net responds to this request by sending a challenge in the form of the Server Token to be used as part of the CD key hash:</p>\n<pre><code>   (UINT32)    Server Token</code></pre>\n<p>The client should respond to this challenge with the following message:</p>\n<pre><code>   (UINT32)    Starting position (facilitates resuming)\n (FILETIME)    Local filetime\n   (UINT32)    Client Token\n   (UINT32)    Key Length\n   (UINT32)    Key's product value\n   (UINT32)    Key's public value\n   (UINT32)    Unknown (Always 0)\n   (UINT32)[5] CD key hash\n   (STRING)    Filename</code></pre>\n<p>The CD key is hashed in exactly the same manner as for SID_AUTH_CHECK. If the key is rejected, the server disconnects. If the key is accepted, the server responds with the following message:</p>\n<pre><code>   (UINT32)    Length of this message (not including file data)\n   (UINT32)    File size\n   (UINT32)    Banner ID*\n   (UINT32)    Banner Extension*\n (FILETIME)    Remote Filetime\n   (STRING)    Filename\n     (VOID)    File data</code></pre>\n<p>After receiving the complete file data (determined by the filesize), the client terminates the connection.</p>\n<p>The starred fields (*) are only required when downloading an ad banner. In other cases, they should be set to 0.<br />\nVersion 2 of BNFTP actually has a version of <code>0x200</code> (512).</p>",
+    "comments": []
+}

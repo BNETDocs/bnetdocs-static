@@ -1,0 +1,43 @@
+{
+    "id": 271,
+    "packet_id": 2,
+    "packet_name": "SID_STOPADV",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is sent to inform the server that a game should no longer be advertised to other users. It is sent when a game starts, or when a game is aborted (the host leaves).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/271/sid-stopadv",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>This message is sent to inform the server that a game should no longer be advertised to other users. It is sent when a game starts, or when a game is aborted (the host leaves).</p>\n<p>All Battle.snp clients (DRTL, DSHR, STAR/SEXP, JSTR, SSHR, and W2BN) always send this message when logging off, even if it not in a game.</p>",
+    "comments": [
+        {
+            "id": 614,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-02T08:46:24+00:00",
+            "content_html": "<p>On Diablo 2 (Open Battle.net), the client sends this packet before sending <a href=\"/packet/340/sid-leavegame\">SID_LEAVEGAME</a>.</p>\n<p>On Diablo 2 (Closed Battle.net), this packet is never sent.</p>"
+        },
+        {
+            "id": 626,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-18T06:17:43+00:00",
+            "content_html": "<p>I observed SEXP 1.16.1 sending this packet even if client has not logged in.</p>"
+        }
+    ]
+}

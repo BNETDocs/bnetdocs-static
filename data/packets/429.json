@@ -1,0 +1,40 @@
+{
+    "id": 429,
+    "packet_id": 78,
+    "packet_name": "SID_TOURNAMENT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Sent after a successful logon to an account in a WCG tournament.</p>",
+    "used_by": [
+        1398030674,
+        1397053520
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/429/sid-tournament",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:18:19+00:00",
+    "format": "(UINT8) Unknown\r\n(UINT8) Unknown, maybe number of non-null strings sent?\r\n(STRING) Description\r\n(STRING) Unknown\r\n(STRING) Website\r\n(UINT32) Unknown\r\n(STRING) Name\r\n(STRING) Unknown\r\n(STRING) Unknown\r\n(STRING) Unknown\r\n(UINT32)[5] Unknown",
+    "remarks_html": "<p>Sent after a successful logon to an account in a WCG tournament.</p>\n<p><strong>Research requested.</strong></p>\n<p>The <a href=\"/packet/227/sid-joinchannel\">C&gt;S 0x0C SID_JOINCHANNEL</a> message sent with <code>0x01</code> (First join) flags would automatically have the user join channel <code>WCG planetname #</code>.</p>\n<p><strong>Packet Log:</strong></p>\n<pre><code>FF 4E 58 00\n01\n03\n57 6F 72 6C 64 20 43 79 62 65 72 20 47 61 6D 65 73 20 28 53 61 74 75 72 6E 29 00\n00\n68 74 74 70 3A 2F 2F 77 77 77 2E 77 63 67 2E 63 6F 6D 00 57 43 47 00\n00 00 00 00\n80 07 01 00\n00\n00\n00\n00 01 01 00\n02 02 00 00\n00 00 01 05\n00 00 00 00\n32 00 00 00</code></pre>",
+    "comments": [
+        {
+            "id": 47,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-03T21:33:26+00:00",
+            "content_html": "<p>The 0x4E packet is sent to Starcraft/Brood War clients, however there is no code in battle.snp to parse that packet. Maybe it's used by warcraft 3 as well, but that's just a guess.</p>"
+        },
+        {
+            "id": 163,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-05-20T07:53:15+00:00",
+            "content_html": "<p>No such packet on Warcraft 3.</p>\n<p><a href=\"http://forum.valhallalegends.com/index.php/topic,17479\">http://forum.valhallalegends.com/index.php/topic,17479</a></p>"
+        },
+        {
+            "id": 649,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-12-18T05:40:06+00:00",
+            "content_html": "<p>From what I can tell, SEXP 1.17.0 does handle this packet.<br />\nSee Battle.snp+0x20BF00 / 0x190217F0</p>"
+        }
+    ]
+}

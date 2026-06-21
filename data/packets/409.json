@@ -1,0 +1,21 @@
+{
+    "id": 409,
+    "packet_id": 53,
+    "packet_name": "SID_PROFILE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests a profile for a user in the WarCraft III profile system.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/409/sid-profile",
+    "created_datetime": "2012-06-12T09:32:04+00:00",
+    "edited_datetime": "2018-03-29T02:05:25+00:00",
+    "format": "(UINT32) Cookie\r\n(STRING) Username",
+    "remarks_html": "<p>Requests a profile for a user in the WarCraft III profile system.</p>\n<p><em>This message's official name is not known, and has been invented.</em></p>\n<p>It is safe to look up any username you want, of any length and validity. It may also be used by any product and not just WarCraft III.</p>\n<p>Battle.net will translate the realm/namespace in the username for you, so you can look up &quot;#Azeroth&quot; as well as &quot;#USEast&quot;, if you want. You cannot perform cross-gateway look ups.</p>\n<p>If you look up a user that is not on their Warcraft III user table, then the clan tag in the replying message will always be null.</p>",
+    "comments": []
+}

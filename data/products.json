@@ -1,8 +1,86 @@
 [
-  {"bnet_product_id": 1398030674, "label": "StarCraft", "bnet_product_raw": "RATS", "bnls_product_id": 1, "sort": 1},
-  {"bnet_product_id": 1145654354, "label": "Diablo II", "bnet_product_raw": "D2DV", "bnls_product_id": 6, "sort": 2},
-  {"bnet_product_id": 1380009042, "label": "Diablo II: Lord of Destruction", "bnet_product_raw": "D2XP", "bnls_product_id": 7, "sort": 3},
-  {"bnet_product_id": 1465529671, "label": "Warcraft III", "bnet_product_raw": "WAR3", "bnls_product_id": 11, "sort": 4},
-  {"bnet_product_id": 1465529688, "label": "Warcraft III: The Frozen Throne", "bnet_product_raw": "W3XP", "bnls_product_id": 12, "sort": 5},
-  {"bnet_product_id": 1396788291, "label": "StarCraft: Brood War", "bnet_product_raw": "SEXP", "bnls_product_id": 2, "sort": 6}
+    {
+        "bnet_product_id": 1144144982,
+        "label": "Diablo II",
+        "bnet_product_raw": "D2DV",
+        "bnls_product_id": 4,
+        "sort": 7
+    },
+    {
+        "bnet_product_id": 1144150096,
+        "label": "Diablo II Lord of Destruction",
+        "bnet_product_raw": "D2XP",
+        "bnls_product_id": 5,
+        "sort": 8
+    },
+    {
+        "bnet_product_id": 1146246220,
+        "label": "Diablo Retail",
+        "bnet_product_raw": "DRTL",
+        "bnls_product_id": 9,
+        "sort": 5
+    },
+    {
+        "bnet_product_id": 1146308690,
+        "label": "Diablo Shareware",
+        "bnet_product_raw": "DSHR",
+        "bnls_product_id": 10,
+        "sort": 6
+    },
+    {
+        "bnet_product_id": 1246975058,
+        "label": "Starcraft Japanese",
+        "bnet_product_raw": "JSTR",
+        "bnls_product_id": 6,
+        "sort": 4
+    },
+    {
+        "bnet_product_id": 1397053520,
+        "label": "Starcraft Broodwar",
+        "bnet_product_raw": "SEXP",
+        "bnls_product_id": 2,
+        "sort": 2
+    },
+    {
+        "bnet_product_id": 1397966930,
+        "label": "Starcraft Shareware",
+        "bnet_product_raw": "SSHR",
+        "bnls_product_id": 11,
+        "sort": 3
+    },
+    {
+        "bnet_product_id": 1398030674,
+        "label": "Starcraft Original",
+        "bnet_product_raw": "STAR",
+        "bnls_product_id": 1,
+        "sort": 1
+    },
+    {
+        "bnet_product_id": 1462911566,
+        "label": "Warcraft II BNE",
+        "bnet_product_raw": "W2BN",
+        "bnls_product_id": 3,
+        "sort": 9
+    },
+    {
+        "bnet_product_id": 1462977613,
+        "label": "Warcraft III Demo",
+        "bnet_product_raw": "W3DM",
+        "bnls_product_id": 12,
+        "sort": 12
+    },
+    {
+        "bnet_product_id": 1462982736,
+        "label": "Warcraft III The Frozen Throne",
+        "bnet_product_raw": "W3XP",
+        "bnls_product_id": 8,
+        "sort": 11
+    },
+    {
+        "bnet_product_id": 1463898675,
+        "label": "Warcraft III Reign of Chaos",
+        "bnet_product_raw": "WAR3",
+        "bnls_product_id": 7,
+        "sort": 10
+    }
 ]

@@ -1,0 +1,22 @@
+{
+    "id": 390,
+    "packet_id": 47,
+    "packet_name": "SID_FINDLADDERUSER",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the rank of the user specified by the request.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/390/sid-findladderuser",
+    "created_datetime": "2012-06-01T21:13:12+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Rank.",
+    "remarks_html": "<p>Contains the rank of the user specified by the request.</p>\n<p>Rank is 0-based. A rank of 0xFFFFFFFF is no rank.</p>",
+    "comments": []
+}

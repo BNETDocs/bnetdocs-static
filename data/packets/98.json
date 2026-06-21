@@ -1,0 +1,21 @@
+{
+    "id": 98,
+    "packet_id": 79,
+    "packet_name": "D2GS_TRADE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message should be used for manipulating the trading window, the Horadric Cube item window, and the Stash window.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/98/d2gs-trade",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Request ID\r\n(UINT16)  Gold Amount \r\n",
+    "remarks_html": "<p>This message should be used for manipulating the trading window, the Horadric Cube item window, and the Stash window.</p>\n<p>Possible Request ID's:<br />\n[0x02] Cancel trade request<br />\n[0x03] Accept trade request<br />\n[0x04] Press Accept button (accept)<br />\n[0x07] Press Accept button (unaccept) - This should be sent when placing items in the trade window as well.<br />\n[0x08] Refresh window (See below for examples on usage)<br />\n[0x12] Close stash window<br />\n[0x13] Move gold (stash to inventory)<br />\n[0x14] Move gold (inventory to stash)<br />\n[0x17] Close Horadric Cube window</p>\n<p>Examples of using Refresh ID:<br />\nItem has been picked up to mouse cursor buffer.<br />\nItem has been placed in the trade screen.<br />\nAccepted or closed a trade window.<br />\nManual unclick of Accept button.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

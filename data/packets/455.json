@@ -1,0 +1,21 @@
+{
+    "id": 455,
+    "packet_id": 7,
+    "packet_name": "W3GS_PLAYERLEFT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is received from the game host when a player leaves.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/455/w3gs-playerleft",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Player number\r\n(UINT32) Reason",
+    "remarks_html": "<p>This is received from the game host when a player leaves.</p>\n<p><strong>Reason:</strong></p>\n<pre><code>0x01 PLAYERLEAVE_DISCONNECT\n0x07 PLAYERLEAVE_LOST\n0x08 PLAYERLEAVE_LOSTBUILDINGS\n0x09 PLAYERLEAVE_WON\n0x0A PLAYERLEAVE_DRAW\n0x0B PLAYERLEAVE_OBSERVER\n0x0D PLAYERLEAVE_LOBBY</code></pre>",
+    "comments": []
+}

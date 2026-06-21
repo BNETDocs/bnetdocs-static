@@ -1,0 +1,37 @@
+{
+    "id": 382,
+    "packet_id": 51,
+    "packet_name": "SID_GETFILETIME",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet requests the filetime of the specified file. The second field appears to always be null.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/382/sid-getfiletime",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-05-21T22:07:04+00:00",
+    "format": "(UINT32) Request ID\r\n(UINT32) Unknown\r\n(STRING) Filename",
+    "remarks_html": "<p>This packet requests the filetime of the specified file. The second field appears to always be null.</p>\n<p><strong>Known <em>Request ID</em> Values</strong></p>\n<table>\n<thead>\n<tr>\n<th>Value</th>\n<th>File</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0x01</td>\n<td>tos_usa.txt</td>\n</tr>\n<tr>\n<td>0x03</td>\n<td>bnserver-WAR3.ini</td>\n</tr>\n<tr>\n<td>0x1A</td>\n<td>tos_USA.txt</td>\n</tr>\n<tr>\n<td>0x1B</td>\n<td>bnserver.ini</td>\n</tr>\n<tr>\n<td>0x1D</td>\n<td>icons_STAR.bni</td>\n</tr>\n<tr>\n<td>0x80000004</td>\n<td>bnserver-D2DV.ini</td>\n</tr>\n<tr>\n<td>0x80000005</td>\n<td><a href=\"https://bnetdocs.org/packet/102/sid-optionalwork\">[0x4A] IX86ExtraWork.mpq</a></td>\n</tr>\n<tr>\n<td>0x80000006</td>\n<td><a href=\"https://bnetdocs.org/packet/182/sid-requiredwork\">[0x4C] IX86ExtraWork.mpq</a></td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 640,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-09-04T06:21:48+00:00",
+            "content_html": "<p>Just for the record, the request ID is more like a cookie and the given values are just what the client at some point was seen using... they aren't actually required to be set that way to make the request.</p>"
+        }
+    ]
+}

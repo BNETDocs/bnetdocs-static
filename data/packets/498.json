@@ -1,0 +1,23 @@
+{
+    "id": 498,
+    "packet_id": 66,
+    "packet_name": "SCGP_CHANGETEAM",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/498/scgp-changeteam",
+    "created_datetime": "2012-03-24T14:59:52+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x42)\r\n(UINT8) Team Index",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent to other players requesting you be moved to the given team.</p>\n<p>Used in non-UMS games. To move team in a UMS game, use CLS 2, packet 0x43.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 432,
+    "packet_id": 88,
+    "packet_name": "SID_AUTH_ACCOUNTUPGRADEPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Converts the stored XSHA-1 password hash to a new NLS/SRP password. However, this message is no longer responded to, and upgrading accounts is therefore impossible.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/432/sid-auth-accountupgradeproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:07:15+00:00",
+    "format": "(UINT32) Client Token\r\n(UINT32) [5] Old Password Hash\r\n(UINT8) [32] New Password Salt\r\n(UINT8) [32] New Password Verifier",
+    "remarks_html": "<p>Converts the stored XSHA-1 password hash to a new NLS/SRP password. However, this message is no longer responded to, and upgrading accounts is therefore impossible.</p>\n<p>Note: If you have an account in need of upgrading (created with <a href=\"/packet/226/sid-createaccount2\">C&gt;S 0x3D SID_CREATEACCOUNT2</a>), you can let the account expire and recreate it with <a href=\"/packet/274/sid-auth-accountcreate\">C&gt;S 0x52 SID_AUTH_ACCOUNTCREATE</a>.</p>\n<p>*<em>Old Password Hash:</em></p>\n<p>Broken SHA-1 Double password hash as seen in <a href=\"/packet/225/sid-logonresponse2\">C&gt;S 0x3A SID_LOGONRESPONSE2</a>.</p>\n<p><strong>New Password Salt &amp; Verifier:</strong></p>\n<p>Salt and Verifier values as seen in <a href=\"/packet/274/sid-auth-accountcreate\">C&gt;S 0x52 SID_AUTH_ACCOUNTCREATE</a>.</p>\n<p>Old Password is the account's current password. The New Password can be the same as the Old Password, but it can be used to change the password as well.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 317,
+    "packet_id": 26,
+    "packet_name": "D2GS_ITEMTOBODY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Moves item from player's cursor buffer to body location. Body locations are identified by the line number in the data file bodylocs.txt.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/317/d2gs-itemtobody",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID\r\n(UINT32) Body Location \r\n",
+    "remarks_html": "<p>Moves item from player's cursor buffer to body location. Body locations are identified by the line number in the data file bodylocs.txt.</p>\n<p>Possible Body Locations:<br />\n0x01 - Helm<br />\n0x02 - Amulet<br />\n0x03 - Armor<br />\n0x04 - Left-hand weapon<br />\n0x05 - Right-hand weapon<br />\n0x06 - Left-hand ring<br />\n0x07 - Right-hand ring<br />\n0x08 - Belt<br />\n0x09 - Boots<br />\n0x0A - Gloves</p>\n<p>These values have been recorded for mercenary body locations, but aren't confirmed: (Note, each location ID is prefixed with 0x61)<br />\nExample: 1A 64 00 00 00 61 02 00 00 (Move item 0x64 to Mercenary Right-hand weapon)</p>\n<p>0x01 - Mercenary Helm<br />\n0x02 - Mercenary Right-hand Weapon<br />\n0x03 - Mercenary Armor<br />\n0x04 - Mercenary Left-hand Weapon </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

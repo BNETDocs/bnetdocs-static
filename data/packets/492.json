@@ -1,0 +1,23 @@
+{
+    "id": 492,
+    "packet_id": 64,
+    "packet_name": "SCGP_UNKNOWNRESPONSE",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 11,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/492/scgp-unknownresponse",
+    "created_datetime": "2012-03-24T14:27:42+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x40)\r\n(UINT32) 0x00\r\n(UINT32) 0x00\r\n(UINT16) A\r\n(UINT16) B\r\n(UINT8) 0x00\r\n(UINT32) Uniqueness",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Send to the host in response to CLS 1, packet 0x50.</p>\n<p>I'm not sure what the A and B values in this message mean. However, it seems the host sends them to other players in CLS 2, packet 0x3F.</p>",
+    "comments": []
+}

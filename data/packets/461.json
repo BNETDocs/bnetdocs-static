@@ -1,0 +1,21 @@
+{
+    "id": 461,
+    "packet_id": 9,
+    "packet_name": "W3GS_SLOTINFO",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent for slot updates.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/461/w3gs-slotinfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Length of Slot Info\r\n\r\nSlot Info:\r\n(UINT8) Player number\r\n(UINT8) Download status\r\n(UINT8) Slot status\r\n(UINT8) Computer status\r\n(UINT8) Team\r\n(UINT8) Color\r\n(UINT8) Race\r\n(UINT8) Computer type\r\n(UINT8) Handicap",
+    "remarks_html": "<p>This is sent for slot updates.</p>\n<p>The length of slot info should always be <code>0x0B</code>.</p>",
+    "comments": []
+}

@@ -1,0 +1,35 @@
+{
+    "id": 194,
+    "packet_id": 34,
+    "packet_name": "SID_NOTIFYJOIN",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Notifies Battle.net that the client has joined a game. This is what causes you to receive &quot;Your friend <em> entered a </em> game called _.&quot; from Battle.net if you are mutual friends with this client.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/194/sid-notifyjoin",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Product ID *\r\n(UINT32) Product version\r\n(STRING) Game Name\r\n(STRING) Game Password",
+    "remarks_html": "<p>Notifies Battle.net that the client has joined a game. This is what causes you to receive &quot;Your friend <em> entered a </em> game called _.&quot; from Battle.net if you are mutual friends with this client.</p>\n<p>SID_LEAVECHAT (0x10) does not need to be sent after this, since this does what LEAVECHAT does but with an added notification.</p>\n<ul>\n<li>This can be any valid Product ID, even if you are not connected with that ID.</li>\n</ul>",
+    "comments": [
+        {
+            "id": 106,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-02-15T20:21:36+00:00",
+            "content_html": "<p>Ripple Chat Bot is awesome for this...<br />\nOpen RCB, connect, enter a channel or something...<br />\nPress Ctrl+P to open the Packet Builder.</p>\n<ul>\n<li>Packet ID: 22</li>\n<li>String: The client ID your using (I used NB2W, while using Diablo II)</li>\n<li>DWORD: Anything you want... (I used 79 which is 4F)</li>\n<li>NTString: A game that's currently online (find one with /games).</li>\n<li>NTString: The password, leave blank if no password.<br />\nPress Send and then type &quot;/whoami&quot;, or look at the channel you were in and notice your not in it.</li>\n</ul>\n<p>I have messed with this packet enough to know that, the first DWORD must be a valid game ID (doesn't have to be your current client) and the second DWORD can be anything you wish (0-255).</p>\n<p>I assume these:</p>\n<ul>\n<li>The first DWORD is used to tell other clients that you are or are not playing the same game id as they are.</li>\n<li>The second DWORD is used to tell other clients that you are or are not playing the same game version as they are.</li>\n</ul>"
+        }
+    ]
+}

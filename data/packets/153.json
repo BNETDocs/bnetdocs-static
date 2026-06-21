@@ -1,0 +1,30 @@
+{
+    "id": 153,
+    "packet_id": 101,
+    "packet_name": "SID_FRIENDSLIST",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet contains the current user's Friends List. If the friend is offline, their <code>Product id</code> is <code>0x00</code>. <code>Location</code> is only supplied when it is relevant; for example, if <code>Status</code> is set to offline (<code>0x00</code>), the location string will be empty.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/153/sid-friendslist",
+    "created_datetime": "2011-06-02T21:39:30+00:00",
+    "edited_datetime": "2020-10-10T13:07:18+00:00",
+    "format": "(UINT8) Number of entries\r\n\r\nFor each entry:\r\n  (STRING) Account name\r\n   (UINT8) Status\r\n   (UINT8) Location id\r\n  (UINT32) Product id\r\n  (STRING) Location name",
+    "remarks_html": "<p>This packet contains the current user's Friends List. If the friend is offline, their <code>Product id</code> is <code>0x00</code>. <code>Location</code> is only supplied when it is relevant; for example, if <code>Status</code> is set to offline (<code>0x00</code>), the location string will be empty.</p>\n<ul>\n<li>\n<p>Possible bitwise values for <code>Status</code>:</p>\n<pre><code>0x01: Mutual\n0x02: DND\n0x04: Away</code></pre>\n</li>\n<li>\n<p>Possible values for <code>Location id</code>:</p>\n<pre><code>0x00: Offline\n0x01: Not in chat\n0x02: In chat\n0x03: In a public game\n0x04: In a private game\n0x05: In a private game and mutual friend</code></pre>\n</li>\n</ul>\n<p>Whether you are a particular user's friend causes different behavior when receiving information about the type of game the user is in (this is true when receiving friend updates, too). When the <code>Location</code> field is <code>0x04</code>, the user is in a password-protected game, and you are not on that user's friends list. When it is <code>0x05</code>, the user is in a password-protected game, and you are on that user's friends list.</p>\n<p>For example, let's say <code>MyndFyre</code> is logging on and <code>Arta[vL]</code> is on his friends list. <code>Arta[vL]</code> is also in a password-protected game. <code>MyndFyre</code> is not on <code>Arta[vL]</code>'s friends list. <code>MyndFyre</code> will receive location <code>0x04</code> for <code>Arta[vL]</code> and the <code>Location name</code> parameter will be an empty string. And, if <code>MyndFyre</code> were to type in <code>/f l</code>, Battle.net would respond with <code>SID_CHATEVENT</code> saying <code>1. Arta[vL] is in a private game.</code></p>\n<p>On the other hand, if <code>Arta[vL]</code> had listed <code>MyndFyre</code> as a friend, then on logon, <code>MyndFyre</code> will receive location <code>0x05</code> for <code>Arta[vL]</code> and the name of the password-protected game will come through the <code>Location name</code> parameter of the message. If <code>MyndFyre</code> were to type in <code>/f l</code>, Battle.net would respond with <code>1. Arta[vL] is in the private game vL.</code></p>",
+    "comments": [
+        {
+            "id": 368,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-03T16:44:57+00:00",
+            "content_html": "<p>Enum in wc3tft beta:</p>\n<p><strong>Unknown:</strong></p>\n<p>Couldn't find the values for these, but you can guess where they go anyway.</p>\n<pre><code>BNET_FRIEND_MUTUAL_FRIEND\nBNET_FRIEND_DND\nBNET_FRIEND_AFK\nBNET_FRIEND_ONLINE</code></pre>\n<p><strong>Location:</strong></p>\n<pre><code>0 BNET_FRIEND_OFFLINE\n2 BNET_FRIEND_IN_CHANNEL\n3 BNET_FRIEND_IN_PUBLIC_GAME\n4 BNET_FRIEND_IN_PRIVATE_GAME\n5 BNET_FRIEND_IN_PASSWORD_GAME</code></pre>"
+        }
+    ]
+}

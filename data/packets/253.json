@@ -1,0 +1,23 @@
+{
+    "id": 253,
+    "packet_id": 102,
+    "packet_name": "SID_FRIENDSUPDATE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message requests an update on a specific user on the friends list. Battle.net should reply immediately with the same packet (see related).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/253/sid-friendsupdate",
+    "created_datetime": "2011-06-02T18:32:22+00:00",
+    "edited_datetime": "2017-03-28T20:28:17+00:00",
+    "format": "(UINT8) Entry number",
+    "remarks_html": "<p>This message requests an update on a specific user on the friends list. Battle.net should reply immediately with the same packet (see related).</p>\n<p>The first friend is <code>Entry number</code> 0.</p>\n<p>Works for all clients, however D2DV/D2XP will not receive friend updates automatically. For those clients, you must request the list at your own intervals if you wish to know about any updates.</p>",
+    "comments": []
+}

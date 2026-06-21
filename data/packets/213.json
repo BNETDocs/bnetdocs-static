@@ -1,0 +1,30 @@
+{
+    "id": 213,
+    "packet_id": 9,
+    "packet_name": "BNLS_VERSIONCHECK",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message contains the information required for the specified product.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/213/bnls-versioncheck",
+    "created_datetime": "2011-02-04T22:31:32+00:00",
+    "edited_datetime": null,
+    "format": "(BOOLEAN) Success\r\n\r\nIf Success is TRUE:\r\n(UINT32) Version\r\n(UINT32) Checksum\r\n(STRING) Version check stat string",
+    "remarks_html": "<p>This message contains the information required for the specified product.</p>\n<p>Success is TRUE if successful, FALSE otherwise. If this is FALSE, there is no more data in this message.</p>",
+    "comments": []
+}

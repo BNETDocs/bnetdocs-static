@@ -1,0 +1,32 @@
+{
+    "id": 240,
+    "packet_id": 75,
+    "packet_name": "SID_EXTRAWORK",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Response for both <a href=\"/packet/102/sid-optionalwork\">S&gt;C 0x4A SID_OPTIONALWORK</a> and <a href=\"/packet/182/sid-requiredwork\">S&gt;C 0x4C SID_REQUIREDWORK</a>. See <a href=\"/document/43/extrawork\">ExtraWork</a> document for more details.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/240/sid-extrawork",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-27T04:30:51+00:00",
+    "format": "(UINT16) Game type\r\n(UINT16) Length\r\n(STRING) Data\r\n",
+    "remarks_html": "<p>Response for both <a href=\"/packet/102/sid-optionalwork\">S&gt;C 0x4A SID_OPTIONALWORK</a> and <a href=\"/packet/182/sid-requiredwork\">S&gt;C 0x4C SID_REQUIREDWORK</a>. See <a href=\"/document/43/extrawork\">ExtraWork</a> document for more details.</p>\n<table>\n<thead>\n<tr>\n<th>Game type</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x01</code></td>\n<td>Diablo II</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Warcraft III</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Starcraft</td>\n</tr>\n<tr>\n<td><code>0x04</code></td>\n<td>World of Warcraft; reason for this is not known, but most recent libraries have included it</td>\n</tr>\n</tbody>\n</table>\n<p>Length: Likely the length of the <em>Data</em>, in number of bytes.</p>\n<p>Data: A string usually containing computer information.</p>",
+    "comments": [
+        {
+            "id": 607,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-05-27T04:50:28+00:00",
+            "content_html": "<p>Diablo 2 1.14d sends 0x04 as the game type.</p>"
+        }
+    ]
+}

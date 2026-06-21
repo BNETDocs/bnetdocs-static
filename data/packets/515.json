@@ -1,0 +1,18 @@
+{
+    "id": 515,
+    "packet_id": 12,
+    "packet_name": "BOTNET_ADMIN",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Use admin features.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/515/botnet-admin",
+    "created_datetime": "2018-03-12T01:30:20+00:00",
+    "edited_datetime": "2018-03-13T05:00:57+00:00",
+    "format": "[unknown]",
+    "remarks_html": "<p>Use admin features.</p>\n<p><em>This message is supported as of server revision 2.</em></p>\n<p>Documentation on this message was never written.</p>",
+    "comments": []
+}

@@ -1,0 +1,43 @@
+{
+    "id": 361,
+    "packet_id": 9,
+    "packet_name": "BNLS_VERSIONCHECK",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will request a fast version check. Now works with all products.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/361/bnls-versioncheck",
+    "created_datetime": "2011-09-30T08:04:20+00:00",
+    "edited_datetime": "2018-08-20T08:39:24+00:00",
+    "format": "(UINT32) Product ID\r\n(UINT32) Version DLL digit\r\n(STRING) Checksum formula.",
+    "remarks_html": "<p>This message will request a fast version check. Now works with all products.</p>\n<p>Version DLL Digit must be in the range 0-7. (For example, for IX86Ver1.mpq this is 1)</p>\n<p>See the <a href=\"/document/44/bnls-product-codes\">BNLS Product Codes</a> document for a list of valid product codes.</p>",
+    "comments": [
+        {
+            "id": 58,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-10T17:44:17+00:00",
+            "content_html": "<p>if someone could, please update this list JBLS supports more products</p>"
+        },
+        {
+            "id": 146,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-08-08T17:26:46+00:00",
+            "content_html": "<p>Updated, to a comment that's 2 years old lol.</p>"
+        }
+    ]
+}

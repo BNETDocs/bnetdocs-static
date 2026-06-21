@@ -1,0 +1,139 @@
+{
+    "id": 20,
+    "title": "Product Keys and Hashing",
+    "options_bitmask": 3,
+    "brief_html": "<p>Product keys are yielded by purchasing Blizzard games. There are three types of keys varying in length and character masks.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/20/product-keys-and-hashing",
+    "created_datetime": "2010-08-17T09:48:06+00:00",
+    "edited_datetime": "2018-10-13T17:13:40+00:00",
+    "content_html": "<p>Product keys are yielded by purchasing Blizzard games. There are three types of keys varying in length and character masks.</p>\n<table>\n<thead>\n<tr>\n<th>Length</th>\n<th>Character Mask</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>13</td>\n<td>0123456789</td>\n<td>These keys contain only numbers, of which the thirteenth is a checksum to validate the other twelve, used by older Starcraft releases. These keys are no longer sold by Blizzard and can be easily generated with a high yield of success.</td>\n</tr>\n<tr>\n<td>16</td>\n<td>246789BCDEFGHJKMNPRTVWXZ</td>\n<td>These keys are used by older copies of Warcraft II, Diablo II, and Lord of Destruction. These keys are no longer sold by Blizzard.</td>\n</tr>\n<tr>\n<td>26</td>\n<td>246789BCDEFGHJKMNPRTVWXYZ</td>\n<td>These are the more modern keys; currently this is the scheme used and sold by Blizzard, including for newer games. These keys use the same mask as 16-length keys but with the inclusion of the Y character.</td>\n</tr>\n</tbody>\n</table>\n<p>Note that none of these keys' masks contain dashes/hyphens, dots, spaces, or any sort of punctuation. Any character outside of these masks with these specific lengths should be trimmed.</p>\n<p>Each key is the result of an algorithm to encode three values, commonly referred to as the Product, Public, and Private key values. The Product and Public values are sent raw to the server as part of the connection, as well as a hash of all three, allowing the server to verify the key as a legitimate match without the opportunity of theft. This is done in the <a href=\"/packet/359/sid-cdkey2\"><code>SID_CDKEY2</code></a> and <a href=\"/packet/408/sid-auth-check\"><code>SID_AUTH_CHECK</code></a> messages. For the <a href=\"/packet/170/sid-cdkey\"><code>SID_CDKEY</code></a> message, the key is passed as typed and is vulnerable to packet sniffing.</p>\n<p>The Product value is used to identify the key's client, and relate as follows:</p>\n<table>\n<thead>\n<tr>\n<th>Product value</th>\n<th>Key length</th>\n<th>Product title</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0x01</td>\n<td>13</td>\n<td>Starcraft</td>\n<td></td>\n</tr>\n<tr>\n<td>0x02</td>\n<td>13</td>\n<td>Starcraft</td>\n<td>Opened later due to the success and continuing sales of Starcraft</td>\n</tr>\n<tr>\n<td>0x04</td>\n<td>16</td>\n<td>Warcraft II</td>\n<td></td>\n</tr>\n<tr>\n<td>0x05</td>\n<td>16</td>\n<td>Diablo II Beta</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x05</td>\n<td>26</td>\n<td>Starcraft II Beta</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x05</td>\n<td>26</td>\n<td>WoW: Wrath of the Lich King Alpha</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x06</td>\n<td>16</td>\n<td>Diablo II</td>\n<td></td>\n</tr>\n<tr>\n<td>0x07</td>\n<td>16</td>\n<td>Diablo II</td>\n<td></td>\n</tr>\n<tr>\n<td>0x09</td>\n<td>16</td>\n<td>Diablo II Stress Test</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x0A</td>\n<td>16</td>\n<td>D2: Lord of Destruction</td>\n<td></td>\n</tr>\n<tr>\n<td>0x0B</td>\n<td>16</td>\n<td>D2: Lord of Destruction Beta</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x0C</td>\n<td>16</td>\n<td>D2: Lord of Destruction</td>\n<td></td>\n</tr>\n<tr>\n<td>0x0D</td>\n<td>26</td>\n<td>Warcraft III Beta</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x0E</td>\n<td>26</td>\n<td>Warcraft III</td>\n<td></td>\n</tr>\n<tr>\n<td>0x0F</td>\n<td>26</td>\n<td>Warcraft III</td>\n<td></td>\n</tr>\n<tr>\n<td>0x11</td>\n<td>26</td>\n<td>WC3: Frozen Throne Beta</td>\n<td>Defunct</td>\n</tr>\n<tr>\n<td>0x12</td>\n<td>26</td>\n<td>WC3: Frozen Throne</td>\n<td></td>\n</tr>\n<tr>\n<td>0x13</td>\n<td>26</td>\n<td>WC3: Frozen Throne</td>\n<td>Product appears disabled and may have something to do with Chinese region</td>\n</tr>\n<tr>\n<td>0x15</td>\n<td>26</td>\n<td>WoW: Burning Crusade</td>\n<td></td>\n</tr>\n<tr>\n<td>0x16</td>\n<td>26</td>\n<td>WoW: 14-day Trial</td>\n<td></td>\n</tr>\n<tr>\n<td>0x17</td>\n<td>26</td>\n<td>Starcraft</td>\n<td>Upgrade when Starcraft was released as a digital download and the game CD was removed from requirements to run the application</td>\n</tr>\n<tr>\n<td>0x18</td>\n<td>26</td>\n<td>Diablo II</td>\n<td>Released at the same time as the 26-length Starcraft keys for same reason</td>\n</tr>\n<tr>\n<td>0x19</td>\n<td>26</td>\n<td>D2: Lord of Destruction</td>\n<td>See 0x17 and 0x18</td>\n</tr>\n<tr>\n<td>0x1A</td>\n<td>26</td>\n<td>WoW: Wrath of the Lich King</td>\n<td></td>\n</tr>\n<tr>\n<td>0x1C</td>\n<td>26</td>\n<td>Starcraft II</td>\n<td></td>\n</tr>\n<tr>\n<td>0x1E</td>\n<td>26</td>\n<td>Diablo III</td>\n<td></td>\n</tr>\n<tr>\n<td>0x24</td>\n<td>26</td>\n<td>Heroes of the Storm</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>For each key, the public and private value lengths differ, with the lengths usually being 32-bit unsigned integers, but with an 80-bit unsigned integer private value for 26-length keys.</p>\n<p>Example code for encoding and decoding these keys is around, and <a href=\"/user/33/realityripple\">RealityRipple</a> would like to thank Yegg for his work in creating more efficient Key coding in the linked examples: <a href=\"https://pastebin.com/iUmw6Dc8\">VB.NET|Battle.net CD-Key Encoding/Decoding</a>.</p>\n<p><a href=\"/user/63/carl-bennett\">Jailout2000</a> has also provided an example to Realbasic programmers for encoding and decoding 13-digit keys: <a href=\"https://pastebin.com/YcvTfbrJ\">Realbasic 13-digit Key Encoder/Decoder</a>.</p>\n<p><a href=\"/user/62/davnit\">Davnit</a> has provided python implementations of decoding for each type of key: <a href=\"https://github.com/Davnit/bncs.py/blob/master/bncs/hashing/cdkeys.py\">Python CD Key encoding</a></p>",
+    "comments": [
+        {
+            "id": 351,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-08-17T09:48:06+00:00",
+            "content_html": "<p>Nice reference. I give props to the VB.NET examples. Although I must add, where is the StarCraft II Wings of Liberty Demo Product Key? I only see the Beta and what looks like Retail versions.</p>"
+        },
+        {
+            "id": 354,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-08-31T03:22:35+00:00",
+            "content_html": "<p>I don't have a copy of the game, but so far as I know, the SC2 guest pass keys use the same product value as the actual game, using the Public value to identify it as a guest pass (the two I examined started with 0x1EBA--).</p>"
+        },
+        {
+            "id": 355,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-08-31T06:07:51+00:00",
+            "content_html": "<p>I'm surprised you don't have SC2, Andy. I have it, and so far, I'm definitely not disappointed. :)</p>"
+        },
+        {
+            "id": 377,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-05T00:46:44+00:00",
+            "content_html": "<p>Retrieved the following from the game installers:</p>\n<p>0x05: 16-digit Diablo II Beta Key<br />\n0x06: 16-digit Diablo II Retail Key<br />\n0x07: 16-digit Diablo II Retail Key<br />\n0x09: 16-digit Diablo II Stress Test Key<br />\n0x0A: 16-digit Diablo II: Lord of Destruction Retail Key<br />\n0x0C: 16-digit Diablo II: Lord of Destruction Retail Key<br />\n0x0D: 26-digit Warcraft III: Reign Of Chaos Beta key<br />\n0x0E: 26-digit Warcraft III: Reign Of Chaos Retail Key<br />\n0x0F: 26-digit Warcraft III: Reign Of Chaos Retail Key<br />\n0x11: 26-digit Warcraft III: The Frozen Throne Beta key<br />\n0x12: 26-digit Warcraft III: The Frozen Throne Retail key<br />\n0x13: 26-digit Warcraft III: The Frozen Throne Retail key (NOTE: This product seems disabled? Has something to do with Chinese region)</p>\n<p>Any conflicts are intentional. Product IDs that havn't been seen before are reserved by the appropriate installer.<br />\nStarcraft II and the other digital keys might also have reservations, but I havn't been able to really grab it from the installer.</p>"
+        },
+        {
+            "id": 378,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-05T01:34:15+00:00",
+            "content_html": "<p>Added Heinermann's notes. Just need SC/BW Beta.</p>\n<p>Should we include WoW Keys as well, since we're keeping track of SC2 Keys?</p>"
+        },
+        {
+            "id": 380,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-05T22:31:35+00:00",
+            "content_html": "<p>I think you should if the product, pubic, and private values are associated with it. AFAIK it is for any Blizzard key</p>\n<p>Confirmation: The Starcraft Anthology digital installer uses product value 0x17, there are no reservations.<br />\nConfirmation: The Diablo II digital installer uses product value 0x18, there are no reservations.</p>"
+        },
+        {
+            "id": 386,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-13T20:44:36+00:00",
+            "content_html": "<p>Um... pretty sure the WoW guest passes are 0x1B, but I'm not sure which copy of WoW.</p>"
+        },
+        {
+            "id": 390,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-18T12:24:41+00:00",
+            "content_html": "<p>WoW TBC Retail: 0x15<br />\nWoW WotLK Retail: 0x1A</p>"
+        },
+        {
+            "id": 392,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-19T03:07:52+00:00",
+            "content_html": "<p>Added.</p>"
+        },
+        {
+            "id": 382,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-19T03:08:08+00:00",
+            "content_html": "<p>With that in mind then.. We need the following:</p>\n<ul>\n<li>SC Beta</li>\n<li>BW Beta</li>\n<li>WoW Alpha/Beta/Retail/Guest</li>\n<li>WoW TBC Alpha/Beta/Guest</li>\n<li>WoW WotLK Alpha/Beta/Guest</li>\n<li>WoW Cata Alpha/Beta/Retail/Guest</li>\n</ul>"
+        },
+        {
+            "id": 443,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-05T05:53:06+00:00",
+            "content_html": "<p>WoW (14-day Trial): 0x16</p>"
+        },
+        {
+            "id": 451,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-14T02:20:44+00:00",
+            "content_html": "<p>Added.</p>"
+        },
+        {
+            "id": 462,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-06-16T05:21:10+00:00",
+            "content_html": "<p>Added a couple functions for encoding/decoding 13-digit keys in REALbasic. May be helpful, or maybe not...</p>"
+        },
+        {
+            "id": 519,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-05-16T06:12:45+00:00",
+            "content_html": "<p>Diablo III: 0x1E</p>"
+        },
+        {
+            "id": 520,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-05-18T06:27:38+00:00",
+            "content_html": "<p>Added.</p>"
+        },
+        {
+            "id": 561,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-03-08T07:24:20+00:00",
+            "content_html": "<p>I've modernized this document using Markdown syntax.</p>"
+        },
+        {
+            "id": 572,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-05-01T05:00:42+00:00",
+            "content_html": "<p>Added Heroes of the Storm Beta key (<a href=\"https://www.facebook.com/Heroesofthestormbetakeygenerator/posts/1714378338789153\">public source</a>, <a href=\"https://web.archive.org/web/20200928193121if_/https://www.facebook.com/Heroesofthestormbetakeygenerator/posts/1714378338789153\">archive link 1</a>, <a href=\"https://archive.is/k14us\">archive link 2</a>)</p>"
+        },
+        {
+            "id": 573,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-05-01T05:12:05+00:00",
+            "content_html": "<p>Added WoW: Wrath of the Lich King Beta key from <a href=\"/user/4997/kaylin\">@Kaylin</a></p>"
+        },
+        {
+            "id": 577,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-09-04T04:01:45+00:00",
+            "content_html": "<p>Thanks for the info. I would like to confirm the &quot;D2: Lord of Destruction Beta&quot; uses product code 0x0B, a 16 digit key. You can find info/download the LOD beta here: <a href=\"https://www.betaarchive.com/forum/viewtopic.php?f=16&amp;t=35744\">https://www.betaarchive.com/forum/viewtopic.php?f=16&amp;t=35744</a></p>"
+        },
+        {
+            "id": 578,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-01-26T18:35:20+00:00",
+            "content_html": "<p>Info looks good. I'll add the code to the reference. Thanks <a href=\"/user/5019/galaxyhaxz\">galaxyhaxz</a>!</p>"
+        },
+        {
+            "id": 589,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-07-23T06:39:04+00:00",
+            "content_html": "<p>Hello,</p>\n<p>I was just wondering does anyone hash anymore? If so, is there a tutorial on how to do it?</p>\n<p>thanks,  </p>"
+        }
+    ]
+}

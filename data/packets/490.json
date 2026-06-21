@@ -1,0 +1,23 @@
+{
+    "id": 490,
+    "packet_id": 79,
+    "packet_name": "SCGP_MAP",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Used to manage <strong>map downloads</strong> during game setup. This is classified as <strong>Packet CLS 1</strong>.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/490/scgp-map",
+    "created_datetime": "2012-03-24T14:34:14+00:00",
+    "edited_datetime": "2025-05-24T21:30:41+00:00",
+    "format": "(UINT8) ID (always 0x4F)\r\n(UINT16) Payload Length (excluding this field)\r\n(UINT16) Event\r\n\r\nEvent 0x00 [Client → Host]:\r\n  (UINT16) 0x0100\r\n  (UINT32) File Position\r\n\r\nEvent 0x01 [Host → Client]:\r\n  (UINT32) File Length\r\n  (UINT32) File Checksum\r\n  (STRING) File Name\r\n\r\nEvent 0x02 [Host → Client]:\r\n  (UINT8) Player ID\r\n  (UINT32) File Position\r\n\r\nEvent 0x03 [Host → Client]:\r\n  [no additional data]\r\n\r\nEvent 0x04 [Client → Client]:\r\n  (UINT8) 0x00\r\n  (UINT32) File Position\r\n  (UINT16) Data Block Length\r\n  (VOID) File Data Block\r\n\r\nEvent 0x05 [Client → Client]:\r\n  (UINT8) 0x00\r\n  (UINT32) File Position",
+    "remarks_html": "<p>Used to manage <strong>map downloads</strong> during game setup. This is classified as <strong>Packet CLS 1</strong>.</p>\n<h3>Key Behavior</h3>\n<ul>\n<li>Players <strong>do not</strong> always download the map from the host. The host can request that other players (who already have the map) send it instead.</li>\n<li>Data is typically sent in <strong>128-byte blocks</strong>, though <strong>256-byte blocks</strong> generally work without issue.</li>\n</ul>\n<h3>Event Breakdown</h3>\n<p><strong>Event 0x00 [Client → Host]:</strong></p>\n<ul>\n<li>Informs the host whether the client has the map.</li>\n<li>The <strong>File Position</strong> indicates where to start sending from. If the player already has the map, this should match the total file length.</li>\n</ul>\n<p><strong>Event 0x01 [Host → Client]:</strong></p>\n<ul>\n<li>Asks a player if they have the specified map.</li>\n<li>The player should respond with <strong>Event 0x00</strong>.</li>\n</ul>\n<p><strong>Event 0x02 [Host → Client]:</strong></p>\n<ul>\n<li>Tells the receiving player to send the map to another player.</li>\n</ul>\n<p><strong>Event 0x03 [Host → Client]:</strong></p>\n<ul>\n<li>Unclear purpose. Observed when a player sending a map to another player finishes sending the map, and when the game is starting.</li>\n</ul>\n<p><strong>Event 0x04 [Client → Client]:</strong></p>\n<ul>\n<li>Used to send a map block to another player.</li>\n<li>The receiver must verify the block by replying with <strong>Event 0x05</strong>.</li>\n<li>Any breaks in the UDP stream should be managed with standard resend requests.</li>\n</ul>\n<p><strong>Event 0x05 [Client → Client]:</strong></p>\n<ul>\n<li>Acknowledges receipt of the map block and confirms the current position.</li>\n<li>Sent in response to <strong>Event 0x04</strong>.</li>\n</ul>",
+    "comments": []
+}

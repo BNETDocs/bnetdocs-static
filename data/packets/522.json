@@ -1,0 +1,18 @@
+{
+    "id": 522,
+    "packet_id": 28,
+    "packet_name": "W3GS_HOST_KICK_PLAYER",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/522/w3gs-host-kick-player",
+    "created_datetime": "2019-12-29T16:33:23+00:00",
+    "edited_datetime": null,
+    "format": "(unknown)",
+    "remarks_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
+    "comments": []
+}

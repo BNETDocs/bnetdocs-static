@@ -1,0 +1,21 @@
+{
+    "id": 257,
+    "packet_id": 116,
+    "packet_name": "SID_CLANMAKECHIEFTAIN",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Changes the clan's chieftain.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/257/sid-clanmakechieftain",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-28T21:36:47+00:00",
+    "format": "(UINT32) Cookie\r\n(STRING) Target username",
+    "remarks_html": "<p>Changes the clan's chieftain.</p>\n<p>The chieftain is changed from you to the <strong>target username</strong>. You must be the leader of your clan and <strong>target username</strong> must be a member.</p>",
+    "comments": []
+}

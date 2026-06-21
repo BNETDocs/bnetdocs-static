@@ -1,0 +1,23 @@
+{
+    "id": 485,
+    "packet_id": 76,
+    "packet_name": "SCGP_LOBBYCHAT",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/485/scgp-lobbychat",
+    "created_datetime": "2012-03-24T14:20:49+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x4C)\r\n(STRING) Chat message",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>Sent to talk to other players in the game lobby.<br />\nNote: If you're no longer in the game lobby, and are playing the game, you must use CLS 1, packet 0x00 to talk to other players.</p>",
+    "comments": []
+}

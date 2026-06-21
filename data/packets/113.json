@@ -1,0 +1,21 @@
+{
+    "id": 113,
+    "packet_id": 10,
+    "packet_name": "BNLS_CONFIRMLOGON",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will confirm that the server really knows your password.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/113/bnls-confirmlogon",
+    "created_datetime": "2011-02-04T22:33:58+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [5] Password proof from Battle.net",
+    "remarks_html": "<p>This message will confirm that the server really knows your password.</p>\n<p>This packet may only be used after &quot;proof&quot; messages: BNLS_LOGONPROOF (0x03), BNLS_CHANGEPROOF (0x06), BNLS_UPGRADEPROOF (0x08).</p>",
+    "comments": []
+}

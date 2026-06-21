@@ -1,0 +1,24 @@
+{
+    "id": 127,
+    "packet_id": 6,
+    "packet_name": "SID_STARTVERSIONING",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Provides values used with <a href=\"/document/47/checkrevision\">CheckRevision()</a>.</p>",
+    "used_by": [
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/127/sid-startversioning",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-12-06T05:34:48+00:00",
+    "format": "(FILETIME) CheckRevision MPQ filetime\r\n  (STRING) CheckRevision MPQ filename\r\n  (STRING) CheckRevision Formula",
+    "remarks_html": "<p>Provides values used with <a href=\"/document/47/checkrevision\">CheckRevision()</a>.</p>",
+    "comments": []
+}

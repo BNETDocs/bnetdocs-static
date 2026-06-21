@@ -1,0 +1,24 @@
+{
+    "id": 397,
+    "packet_id": 50,
+    "packet_name": "SID_CHECKDATAFILE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>This message is no longer used; developers should use the <a href=\"/packet/318/sid-checkdatafile2\">S&gt;C 0x3C SID_CHECKDATAFILE2</a> message.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/397/sid-checkdatafile",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T22:45:25+00:00",
+    "format": "(UINT32) Status",
+    "remarks_html": "<p>This message is no longer used; developers should use the <a href=\"/packet/318/sid-checkdatafile2\">S&gt;C 0x3C SID_CHECKDATAFILE2</a> message.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Rejected</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Approved</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Ladder approved</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

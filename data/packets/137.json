@@ -1,0 +1,21 @@
+{
+    "id": 137,
+    "packet_id": 80,
+    "packet_name": "D2GS_DROPGOLD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Drops a pile of gold to the ground. </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/137/d2gs-dropgold",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) PlayerID\r\n(UINT32) GoldAmount \r\n",
+    "remarks_html": "<p>Drops a pile of gold to the ground. </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

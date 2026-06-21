@@ -1,0 +1,54 @@
+{
+    "id": 186,
+    "packet_id": 10,
+    "packet_name": "SID_ENTERCHAT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains Client product, realm, statstring, and is sent as the response when the client sends SID_ENTERCHAT. Unique name is the users unique name in chat (Which may be Arta, Arta#2, Arta#3, etc).  Account name is the users account name (Which in all 3 previous examples would be Arta).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/186/sid-enterchat",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Unique name\r\n(STRING) Statstring\r\n(STRING) Account name \r\n",
+    "remarks_html": "<p>Contains Client product, realm, statstring, and is sent as the response when the client sends SID_ENTERCHAT. Unique name is the users unique name in chat (Which may be Arta, Arta#2, Arta#3, etc).  Account name is the users account name (Which in all 3 previous examples would be Arta).</p>\n<p>Once you receive this packet, you are not in a channel, but can join/host games and join channels. Because you are not in a channel, you cannot send text messages yet (but you will not be disconnected if you do). See SID_JOINCHANNEL.</p>",
+    "comments": [
+        {
+            "id": 95,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-24T22:33:37+00:00",
+            "content_html": "<p>The info above is mostly complete just curious about one thing, example log:<br />\n0a 49 00 42 6f 72 65 64 6f 6d 00 50 58 32 44 55             .I.Boredom.PX2DU<br />\n53 45 61 73 74 2c 46 61 72 43 72 61 70 2c 84 80            SEast,FarCrap,..<br />\nff ff ff ff ff 1b ff 4f ff ff ff 01 ff ff ff ff                                       ÿÿÿÿÿ.ÿOÿÿÿ.ÿÿÿÿ<br />\nff ff ff ff ff ff ff 01 80 80 ff ff ff ff ff 00                                    ÿÿÿÿÿÿÿ...ÿÿÿÿÿ.<br />\n42 6f 72 65 64 6f 6d 00                                                      Boredom.</p>\n<p>Breaks down to:<br />\n(DWORD) Protocal Header: ff 0a 49 00<br />\n(STRING)  Unique Name (Account always?): 42 6f 72 65 64 6f 6d 00<br />\n(STRING)  Realm Character Statstring:  (P)50 (X)58 (2)32 (D)44 (U)55 (S)53 (E)45 (a)61 (s)73 (t)74 (,)2c (F)46 (a)61 (r)72 (C)43 (r)72 (a)61 (p)70 (,)2c 84 80 ff ff ff ff ff 1b ff 4f ff ff ff 01 ff ff ff ff ff ff ff ff ff ff ff 01 80 80 ff ff ff ff ff 00<br />\n(STRING)  Account name: 42 6f 72 65 64 6f 6d 00</p>\n<p>Mainly the unique name is the account name, and the 2nd instance of the account is just a repeat? Or is it possibly used to indicate the account used when logging onto the character thru mcp//realm?</p>"
+        },
+        {
+            "id": 130,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-04-09T03:22:07+00:00",
+            "content_html": "<p>@LordVader: Unique name is the name that everyone see's on Battle.net. Account name is the account you used to login. There is no difference if no one is on your account with you, but if someone is then this would be different than the account name (a #2 and so on would be appended).</p>"
+        },
+        {
+            "id": 137,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-04-10T12:15:46+00:00",
+            "content_html": "<p>Just to provide an example to clarify what JailOut2000 is saying: lets say my bnet username is Kyro. I login with that.</p>\n<p>My account name would show as Kyro, while unique name would show as Kyro.</p>\n<p>Now, lets say somehow someone else had my username and password, and logged in via a different cdkey using my login info <strong><em>WHILE</em></strong> I was still online.</p>\n<p>That persons account name would show as Kyro, while the unique name would show as Kyro#2.</p>"
+        },
+        {
+            "id": 344,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-07-20T01:02:52+00:00",
+            "content_html": "<p>In most cases you can safely ignore the Account name and just use the Unique name, but you may find it useful later, such as when editing your own profile and comparing the names to see if it is your profile or someone else's. Battle.net will allow you to change your profile, even if you're editing it from Kyro#2 (for example), but it will not show the profile data if you have the #2 (or anything other than Account name). So, again, account name is useful for some things, but usually it can be ignored.</p>"
+        }
+    ]
+}

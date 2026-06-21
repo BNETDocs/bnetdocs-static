@@ -1,0 +1,21 @@
+{
+    "id": 132,
+    "packet_id": 5,
+    "packet_name": "BNLS_CHANGECHALLENGE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCHANGE (0x55). This message is used to change the password of an existing account.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/132/bnls-changechallenge",
+    "created_datetime": "2011-02-04T22:07:35+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Account name\r\n(STRING) Account old password\r\n(STRING) Account new password",
+    "remarks_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCHANGE (0x55). This message is used to change the password of an existing account.</p>\n<p>You must send this before you can send BNLS_CHANGEPROOF (0x06).</p>",
+    "comments": []
+}

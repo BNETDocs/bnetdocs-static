@@ -1,0 +1,21 @@
+{
+    "id": 423,
+    "packet_id": 7,
+    "packet_name": "D2GS_LEFTSKILLONENTITYEX",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Uses your left skill on the Entity specefied in Entity ID, while holding the hotkey for standing still(shift).</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/423/d2gs-leftskillonentityex",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Entity Type\r\n(UINT32) Entity ID",
+    "remarks_html": "<p>Uses your left skill on the Entity specefied in Entity ID, while holding the hotkey for standing still(shift).</p>\n<h2>Entity types</h2>\n<p>00 - Players<br />\n01 - Monsters, NPCs, and Mercenaries<br />\n02 - Stash, Waypoint, Chests, Portals, others.<br />\n03 - Missiles<br />\n04 - Items<br />\n05 - Entrances</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

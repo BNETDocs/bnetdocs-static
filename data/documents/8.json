@@ -1,0 +1,12 @@
+{
+    "id": 8,
+    "title": "Diablo II Game Server Buffers And Positions",
+    "options_bitmask": 3,
+    "brief_html": "<p><strong>Various Buffers &amp; Pages</strong></p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/8/diablo-ii-game-server-buffers-and-positions",
+    "created_datetime": "2014-03-25T22:31:28+00:00",
+    "edited_datetime": null,
+    "content_html": "<p><strong>Various Buffers &amp; Pages</strong></p>\n<pre><code>Buffer 0x00 - Inventories\nPage 0x00 - Inventory\nPage 0x01 - NPC Trade &amp; Other player's Trade Window\nPage 0x02 - Trade Screen\nPage 0x03 - Horadric Cube\nPage 0x04 - Stash\nBuffer 0x01 - Body\nBuffer 0x02 - Belt\nBuffer 0x03 - Ground\nBuffer 0x04 - Cursor\nBuffer 0x05 - World\nBuffer 0x06 - Sockets</code></pre>\n<p><strong>Body Equipment Positions</strong></p>\n<pre><code>0x01 - Helmet\n0x02 - Amulet\n0x03 - Armor\n0x04 - Left Weapon/Shield\n0x05 - Right Weapon/Shield\n0x06 - Left Ring\n0x07 - Right Ring\n0x08 - Belt\n0x09 - Boots\n0x0A - Gloves</code></pre>\n<p><strong>Belt Positions</strong></p>\n<pre><code>1st Row - 0C 0D 0E 0F (top)\n2nd Row - 08 09 0A 0B\n3rd Row - 04 05 06 07\n4th Row - 00 01 02 03 (bottom)</code></pre>\n<p><strong>Entity types</strong></p>\n<pre><code>00 - Players\n01 - Monsters, NPCs, and Mercenaries\n02 - Stash, Waypoint, Chests, Portals, others.\n03 - Missiles\n04 - Items\n05 - Entrances</code></pre>",
+    "comments": []
+}

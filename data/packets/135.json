@@ -1,0 +1,30 @@
+{
+    "id": 135,
+    "packet_id": 22,
+    "packet_name": "SID_CLICKAD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The clients send this when an ad is clicked.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/135/sid-clickad",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Ad ID\r\n(UINT32) Request type",
+    "remarks_html": "<p>The clients send this when an ad is clicked.</p>\n<p>Request Type is 0 if the client used SID_QUERYADURL to get the ad's data, 1 otherwise. </p>",
+    "comments": []
+}

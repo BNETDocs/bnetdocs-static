@@ -1,0 +1,21 @@
+{
+    "id": 402,
+    "packet_id": 115,
+    "packet_name": "SID_CLANDISBAND",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Response to a clan disband request.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/402/sid-clandisband",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:15:53+00:00",
+    "format": "(UINT32) Cookie\r\n (UINT8) Status",
+    "remarks_html": "<p>Response to a clan disband request.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Successfully disbanded</li>\n<li><code>0x02</code>: Too soon because the clan is not old enough (must be one week old)</li>\n<li><code>0x07</code>: Not authorized because you are not the clan leader</li>\n<li><code>0x08</code>: Not allowed</li>\n</ul>",
+    "comments": []
+}

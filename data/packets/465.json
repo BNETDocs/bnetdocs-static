@@ -1,0 +1,21 @@
+{
+    "id": 465,
+    "packet_id": 40,
+    "packet_name": "W3GS_CHAT_TO_HOST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent from the client to the host to send a message to the other clients.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/465/w3gs-chat-to-host",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2025-05-24T22:29:01+00:00",
+    "format": "(UINT8) Total\r\n\r\nFor each total:\r\n(UINT8) To player number\r\n(UINT8) From player number\r\n(UINT8) Flags\r\n\r\nFor Flag 0x10:\r\n   (STRING) Message\r\nFor Flag 0x11:\r\n   (UINT8) Team\r\nFor Flag 0x12:\r\n   (UINT8) Color\r\nFor Flag 0x13:\r\n   (UINT8) Race\r\nFor Flag 0x14:\r\n   (UINT8) Handicap\r\nFor Flag 0x20:\r\n   (UINT32) Extra Flags\r\n   (STRING) Message",
+    "remarks_html": "<p>This is sent from the client to the host to send a message to the other clients.</p>",
+    "comments": []
+}

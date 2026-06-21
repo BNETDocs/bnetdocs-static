@@ -1,0 +1,21 @@
+{
+    "id": 206,
+    "packet_id": 47,
+    "packet_name": "D2GS_NPCINIT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Initiate an NPC sesstion, sent following:<br />\nC-&gt;S 0x13<br />\nIt indicates that you are now interacting with an NPC, and a dialog window is opened.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/206/d2gs-npcinit",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Entity Type\r\n(UINT32) Entity ID \r\n\r\nEntity types\r\n--------\r\n00 - Players\r\n01 - Monsters, NPCs, and Mercenaries\r\n02 - Stash, Waypoint, Chests, Portals, others.\r\n03 - Missiles\r\n04 - Items\r\n05 - Entrances",
+    "remarks_html": "<p>Initiate an NPC sesstion, sent following:<br />\nC-&gt;S 0x13<br />\nIt indicates that you are now interacting with an NPC, and a dialog window is opened.</p>\n<p>This is prior to any choices being made to talk or trade etc.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

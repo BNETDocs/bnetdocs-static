@@ -1,0 +1,21 @@
+{
+    "id": 468,
+    "packet_id": 72,
+    "packet_name": "W3GS_INCOMING_ACTION2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Informs the client about an action in-game.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/468/w3gs-incoming-action2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Send interval\r\n(UINT16) CRC-16 encryption\r\n\r\nFor each action:\r\n(UINT8) Player number\r\n(UINT16) Length of action data\r\n(VOID) Action data",
+    "remarks_html": "<p>Informs the client about an action in-game.</p>\n<p>This is used when there is not enough room inside 0x0C W3GS_INCOMING_ACTION. If there are 1452 actions or more, then this packet should be used instead.</p>",
+    "comments": []
+}

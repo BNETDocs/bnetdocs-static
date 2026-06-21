@@ -1,0 +1,21 @@
+{
+    "id": 350,
+    "packet_id": 3,
+    "packet_name": "BNLS_LOGONPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Data for SID_AUTH_ACCOUNTLOGONPROOF (0x54).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/350/bnls-logonproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32)[5] Data for SID_AUTH_ACCOUNTLOGONPROOF",
+    "remarks_html": "<p>Data for SID_AUTH_ACCOUNTLOGONPROOF (0x54).</p>",
+    "comments": []
+}

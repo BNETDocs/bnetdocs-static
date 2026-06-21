@@ -1,0 +1,21 @@
+{
+    "id": 258,
+    "packet_id": 27,
+    "packet_name": "D2GS_SWAP2HANDEDITEM",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Moves item from body location to player's cursor buffer.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/258/d2gs-swap2handeditem",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID\r\n*(UINT32)  Body Location\r\n\r\n*0x04 is left hand\r\n*0x05 is right hand",
+    "remarks_html": "<p>Moves item from body location to player's cursor buffer.</p>\n<p>Body locations are the same as in D2GS_ITEMTOBODY</p>\n<p>Please note: This message's official name is not known, and has been invented. </p>",
+    "comments": []
+}

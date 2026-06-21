@@ -1,0 +1,21 @@
+{
+    "id": 448,
+    "packet_id": 70,
+    "packet_name": "W3GS_PONG_TO_HOST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent in response to <a href=\"/packet/447/w3gs-ping-from-host\">S&gt;C 0x01 W3GS_HOSTECHOREQ</a>.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/448/w3gs-pong-to-host",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-29T16:41:49+00:00",
+    "format": "(UINT32) tickCount",
+    "remarks_html": "<p>This is sent in response to <a href=\"/packet/447/w3gs-ping-from-host\">S&gt;C 0x01 W3GS_HOSTECHOREQ</a>.</p>\n<p>The tickCount value is from <code>GetTickCount()</code>.</p>\n<p><code>Ping = (GetTickCount()-tickCount)/2</code></p>\n<p>For the local area network, it can be 0.</p>",
+    "comments": []
+}

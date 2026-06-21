@@ -1,0 +1,21 @@
+{
+    "id": 321,
+    "packet_id": 124,
+    "packet_name": "SID_CLANMOTD",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the current message of the day.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/321/sid-clanmotd",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:27:40+00:00",
+    "format": "(UINT32) Cookie\r\n(UINT32) Unknown (0)\r\n(STRING) Message",
+    "remarks_html": "<p>Contains the current message of the day.</p>",
+    "comments": []
+}

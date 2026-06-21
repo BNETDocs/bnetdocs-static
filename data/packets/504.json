@@ -1,0 +1,23 @@
+{
+    "id": 504,
+    "packet_id": 2,
+    "packet_name": "SCGP_GAMECHATNULL",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 7,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/504/scgp-gamechatnull",
+    "created_datetime": "2012-03-24T15:31:38+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x00)\r\n(UINT8) 0x00\r\n(STRING) Chat message",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>&quot;Null&quot; chat. Not used.</p>",
+    "comments": []
+}

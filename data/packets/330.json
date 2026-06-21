@@ -1,0 +1,28 @@
+{
+    "id": 330,
+    "packet_id": 84,
+    "packet_name": "SID_AUTH_ACCOUNTLOGONPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message confirms the validity of the client password proof and supplies the server password proof. See <a href=\"/document/24/nls-srp-protocol\">NLS/SRP Protocol</a> for more information.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/330/sid-auth-accountlogonproof",
+    "created_datetime": "2012-02-26T02:11:20+00:00",
+    "edited_datetime": "2019-12-28T22:54:27+00:00",
+    "format": "(UINT32) Status\r\n(UINT8) [20] Server Password Proof (M2)\r\n(STRING) Additional information",
+    "remarks_html": "<p>This message confirms the validity of the client password proof and supplies the server password proof. See <a href=\"/document/24/nls-srp-protocol\">NLS/SRP Protocol</a> for more information.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Logon successful</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Incorrect password</td>\n</tr>\n<tr>\n<td><code>0x06</code></td>\n<td>Account closed</td>\n</tr>\n<tr>\n<td><code>0x0E</code></td>\n<td>An email address should be registered for this account</td>\n</tr>\n<tr>\n<td><code>0x0F</code></td>\n<td>Custom error. A string at the end of this message contains the error</td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 134,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-03-06T16:37:39+00:00",
+            "content_html": "<p>Status 0x48: Logon successful. Account has no salt.</p>"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": 521,
+    "packet_id": 41,
+    "packet_name": "W3GS_DROPREQ",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/521/w3gs-dropreq",
+    "created_datetime": "2019-12-29T16:20:18+00:00",
+    "edited_datetime": "2019-12-29T16:30:21+00:00",
+    "format": "(unknown)",
+    "remarks_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
+    "comments": []
+}

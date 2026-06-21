@@ -1,0 +1,21 @@
+{
+    "id": 142,
+    "packet_id": 119,
+    "packet_name": "D2GS_TRADEACTION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A character is trading with you.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/142/d2gs-tradeaction",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Request Type \r\n",
+    "remarks_html": "<p>A character is trading with you.</p>\n<p>Possible Request Type values:<br />\n0x01 - Player requests trade initiation<br />\n0x05 - Player presses 'Accept'<br />\n0x06 - 'Accept' button disabled for both players<br />\n0x09 - Out of inventory space<br />\n0x0C - Player cancels trade<br />\n0x0D - You accepted the trade agreement<br />\n0x0E - Your 'Accept' button is disabled<br />\n0x0F - 'Accept' buttons re-enabled Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

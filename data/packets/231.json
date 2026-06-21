@@ -1,0 +1,18 @@
+{
+    "id": 231,
+    "packet_id": 1,
+    "packet_name": "BOTNET_LOGON",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Identify yourself with BotNet.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/231/botnet-logon",
+    "created_datetime": "2011-08-21T19:55:49+00:00",
+    "edited_datetime": "2018-03-11T22:03:49+00:00",
+    "format": "(STRING) Bot name     [max: 32]\r\n(STRING) Bot password [max: 64]\r\n",
+    "remarks_html": "<p>Identify yourself with BotNet.</p>\n<p>This should be the first message sent to the server and identifies the client's bot name and password.</p>\n<p>For server revisions 2 and newer, the server responds with S&gt;C 0x0A BOTNET_REVISION before the response to this packet in S&gt;C 0x01 BOTNET_LOGON.</p>\n<p>For server revisions 4 and newer, the server closes the connection if the client is rejected instead of sending any data. Older revisions would respond with S&gt;C 0x01 BOTNET_LOGON with <strong>Result</strong> set to <code>0x00</code> (failure).</p>\n<p>In order to get a name and password, contact the BotNet server admin.</p>\n<p>The <strong>Bot name</strong> may also be called the &quot;bot ID&quot; or &quot;hub ID&quot;.</p>",
+    "comments": []
+}

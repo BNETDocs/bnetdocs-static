@@ -1,0 +1,46 @@
+{
+    "id": 158,
+    "packet_id": 130,
+    "packet_name": "SID_CLANMEMBERINFORMATION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Result of a member information request.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/158/sid-clanmemberinformation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:50:22+00:00",
+    "format": "  (UINT32) Cookie\r\n   (UINT8) Status\r\n  (STRING) Clan name    [present if status = 0]\r\n   (UINT8) Rank         [present if status = 0]\r\n(FILETIME) Date joined  [present if status = 0]",
+    "remarks_html": "<p>Result of a member information request.</p>\n<p>This contains the <strong>clan's name</strong>, <strong>rank</strong>, and <strong>date joined</strong> for the member in the given clan tag.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Successfully retrieved</li>\n<li><code>0x0C</code>: User not in that clan</li>\n</ul>",
+    "comments": [
+        {
+            "id": 40,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-01T16:11:38+00:00",
+            "content_html": "<p>....Are you sure about the remarks? According to the Clan Message Codes, 0 is the code for success. Anything non-zero would indicate failure**** heh. Also, what's 0x0C? It's not documented in the clan message codes. I'm getting that for some reason, and my packet's len is 9 bytes. (5 bytes + 4 byte header, get it right.) Who documented this ? They did a bad job imo.</p>"
+        },
+        {
+            "id": 42,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-01T20:26:38+00:00",
+            "content_html": "<p>To brew: I think by successful the original author meant that it returned data about the user's tag, rank, join date etc. By failure it meant the data didn't exist because the user wasn't in a clan. Poor wording, but I can understand what the author was trying to say.</p>\n<p>Also it seems odd how the Clan Message Codes would even be used since you technically aren't requesting that user to join your clan. You're just asking for information. So maybe 0x0C means there is no information??</p>"
+        },
+        {
+            "id": 44,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-01T21:39:55+00:00",
+            "content_html": "<p>from what brew is telling me (he is getting it for everything including people in a clan)</p>\n<p>and he has yet to provide a packet log of what he's sending i can only assume he's sending the message incorrect and 0x0C means invalid request...</p>\n<p>why else would it send that for people who are in clans and out of clans?</p>"
+        },
+        {
+            "id": 45,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-02T16:06:42+00:00",
+            "content_html": "<p>Corrected page as per brew's research</p>"
+        }
+    ]
+}

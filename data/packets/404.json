@@ -1,0 +1,21 @@
+{
+    "id": 404,
+    "packet_id": 19,
+    "packet_name": "BNLS_SERVERLOGONCHALLENGE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The slot index is returned since individual operations may be returned in a different order than they are requested.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/404/bnls-serverlogonchallenge",
+    "created_datetime": "2011-06-19T19:36:41+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Slot index\r\n(UINT32) [16] Data for the server's SID_AUTH_ACCOUNTLOGON (0x53) response",
+    "remarks_html": "<p>The slot index is returned since individual operations may be returned in a different order than they are requested.</p>\n<p>This message can also be used to calculate the server's SID_AUTH_ACCOUNTCHANGE (0x55) response. Simply substitute the SID_AUTH_ACCOUNTLOGON (0x53) data with the SID_AUTH_ACCOUNTCHANGE (0x55) data.</p>",
+    "comments": []
+}

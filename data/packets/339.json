@@ -1,0 +1,30 @@
+{
+    "id": 339,
+    "packet_id": 16,
+    "packet_name": "SID_LEAVECHAT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Leaves chat mode but does not disconnect. Generally sent when entering a game. This is also sent by D2DV/D2XP when switching characters, and by all products when logging off.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/339/sid-leavechat",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank] \r\n",
+    "remarks_html": "<p>Leaves chat mode but does not disconnect. Generally sent when entering a game. This is also sent by D2DV/D2XP when switching characters, and by all products when logging off.</p>\n<p>After you send this, normal chat functions to not work. In order to enter a channel when you are not in chat mode, you must send SID_JOINCHANNEL.</p>",
+    "comments": []
+}

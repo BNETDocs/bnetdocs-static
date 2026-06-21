@@ -1,0 +1,21 @@
+{
+    "id": 444,
+    "packet_id": 67,
+    "packet_name": "W3GS_MAPPART",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is received when you are downloading a map from the host.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/444/w3gs-mappart",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) To player number\r\n(UINT8) From player number\r\n(UINT32) Unknown (0x01)\r\n(UINT32) Chunk position in file\r\n(UINT32) CRC-32 encryption\r\n(UINT8)[1442] Data",
+    "remarks_html": "<p>This is received when you are downloading a map from the host.</p>\n<p>You can calculate how many more chunks you have left based on the file size and the chunk position in file. You are done downloading when the chunk position in file (plus the size of the chunk) matches the file size received in 0x42 W3GS_MAPSIZE.</p>\n<p>If the data does not match the CRC-32, you should send the host 0x45 W3GS_MAPPARTNOTOK, otherwise you should always send 0x44 W3GS_MAPPARTOK in reply to this packet.</p>",
+    "comments": []
+}

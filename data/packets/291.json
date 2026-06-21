@@ -1,0 +1,20 @@
+{
+    "id": 291,
+    "packet_id": 8,
+    "packet_name": "SID_STARTADVEX",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Creates a game in a manner similar to <a href=\"/packet/163/sid-startadvex2\">SID_STARTADVEX2</a> and <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a>.</p>",
+    "used_by": [
+        1397966930
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/291/sid-startadvex",
+    "created_datetime": "2010-10-07T17:36:25+00:00",
+    "edited_datetime": "2020-09-25T01:55:56+00:00",
+    "format": "(UINT32) Game State\r\n(UINT32) Game Elapsed Time (in seconds)\r\n(UINT16) Game Type\r\n(UINT16) Parameter\r\n(UINT32) Unknown (0x00)\r\n(UINT32) Unknown (Likely ladder, but will always be 0x00 because there is no SSHR ladder)\r\n(STRING) Game name\r\n(STRING) Game password\r\n(STRING) Game Statstring",
+    "remarks_html": "<p>Creates a game in a manner similar to <a href=\"/packet/163/sid-startadvex2\">SID_STARTADVEX2</a> and <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a>.</p>\n<p>This is only used by Starcraft Shareware.</p>\n<p>See documentation on <a href=\"/packet/265/sid-startadvex3\">SID_STARTADVEX3</a> for details on the values and their meanings.</p>",
+    "comments": []
+}

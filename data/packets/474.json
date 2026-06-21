@@ -1,0 +1,45 @@
+{
+    "id": 474,
+    "packet_id": 23,
+    "packet_name": "SID_READMEMORY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Rudimentary hack detection system. Was never used probably due to terrible implementation with little security.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/474/sid-readmemory",
+    "created_datetime": "2010-09-25T23:15:05+00:00",
+    "edited_datetime": "2025-05-24T22:32:00+00:00",
+    "format": "(UINT32) Request ID\r\n(VOID) Memory",
+    "remarks_html": "<p>Rudimentary hack detection system. Was never used probably due to terrible implementation with little security.</p>\n<p>Yes, it is possible for a PvPGN server to read <strong>EVERYTHING</strong> that is in the process' memory, including sensitive information such as your CDKey.</p>\n<p>Found at:<br />\n<code>battle!1901D470h</code> (as of 1.16.1)</p>",
+    "comments": [
+        {
+            "id": 465,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-03T02:55:41+00:00",
+            "content_html": "<p>It's not defunct.</p>"
+        },
+        {
+            "id": 466,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-05T05:44:10+00:00",
+            "content_html": "<p>You have logs of its use?</p>"
+        },
+        {
+            "id": 470,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-19T00:14:03+00:00",
+            "content_html": "<p>Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
+        }
+    ]
+}

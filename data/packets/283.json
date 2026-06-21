@@ -1,0 +1,30 @@
+{
+    "id": 283,
+    "packet_id": 13,
+    "packet_name": "BNLS_CHOOSENLSREVISION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message instructs the server which revision of NLS you want to use.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/283/bnls-choosenlsrevision",
+    "created_datetime": "2011-02-04T21:57:07+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) NLS revision number",
+    "remarks_html": "<p>This message instructs the server which revision of NLS you want to use.</p>\n<p>The NLS revision number is given by Battle.net in SID_AUTH_INFO (0x50).</p>",
+    "comments": []
+}

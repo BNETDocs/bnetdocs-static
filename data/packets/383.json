@@ -1,0 +1,28 @@
+{
+    "id": 383,
+    "packet_id": 11,
+    "packet_name": "BNLS_HASHDATA",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message contains the hashed data.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/383/bnls-hashdata",
+    "created_datetime": "2011-02-04T21:56:28+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [5] The data hash.\r\n(UINT32) Cookie (Optional). Same as the cookie from the request. \r\n",
+    "remarks_html": "<p>This message contains the hashed data.</p>\n<p>Cookie is only in this packet if you supplied it first.</p>",
+    "comments": []
+}

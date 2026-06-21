@@ -1,0 +1,24 @@
+{
+    "id": 348,
+    "packet_id": 7,
+    "packet_name": "BNLS_UPGRADECHALLENGE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>If the success code is TRUE, you may send SID_AUTH_ACCOUNTUPGRADE (0x57).</p>",
+    "used_by": [
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/348/bnls-upgradechallenge",
+    "created_datetime": "2010-08-06T01:38:27+00:00",
+    "edited_datetime": null,
+    "format": "(BOOLEAN) Success code",
+    "remarks_html": "<p>If the success code is TRUE, you may send SID_AUTH_ACCOUNTUPGRADE (0x57).</p>\n<p>Currently, no error conditions are defined, so this is always TRUE.</p>",
+    "comments": []
+}

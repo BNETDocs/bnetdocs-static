@@ -1,0 +1,21 @@
+{
+    "id": 520,
+    "packet_id": 17,
+    "packet_name": "W3GS_STOP_LAG",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Player returned, stopped lagging</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/520/w3gs-stop-lag",
+    "created_datetime": "2019-12-29T15:11:35+00:00",
+    "edited_datetime": "2019-12-29T16:27:10+00:00",
+    "format": "(UINT8) player_number\r\n(UINT32) lagging_ticks",
+    "remarks_html": "<p>Player returned, stopped lagging</p>\n<p><strong>Packet dump:</strong> (provided by kano)</p>\n<pre><code>F7 11 09 00 03 35 A0 BC 18</code></pre>",
+    "comments": []
+}

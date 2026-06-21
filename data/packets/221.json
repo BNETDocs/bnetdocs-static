@@ -1,0 +1,21 @@
+{
+    "id": 221,
+    "packet_id": 29,
+    "packet_name": "D2GS_SETBYTEATTR",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sets the current (base) amount of the specified attribute.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/221/d2gs-setbyteattr",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Attribute\r\n(UINT8) Amount \r\n",
+    "remarks_html": "<p>Sets the current (base) amount of the specified attribute.</p>\n<p>Note: Since these are only base amounts, items that give increase/decrease the attribute should be added/subtracted to/from the base value sent in the message.</p>\n<p>Possible Attributes:</p>\n<p>0x00 - Strength<br />\n0x01 - Energy<br />\n0x02 - Dexterity<br />\n0x03 - Vitality<br />\n0x04 - Stat remaining<br />\n0x05 - Skill remaining<br />\n0x0C - Level<br />\n0x0D - Experience<br />\n0x0E - Gold on Person<br />\n0x0F - Gold in Stash<br />\n0x10 - Defense<br />\n0x11 - Max Attack Damage<br />\n0x12 - Min Attack Damage<br />\n0x13 - Attack Rating<br />\n0x15 - Min Attack Damage<br />\n0x16 - Max Attack Damage<br />\n0x19 - Damage<br />\n0x1f - Defense<br />\n0x27 - Fire Resistance<br />\n0x28 - +Max Fire Resistance<br />\n0x29 - Cold Resistance<br />\n0x2A - +Max Cold Resistance<br />\n0x2B - Lightning Resistance<br />\n0x2C - +Max Lightning Resistance<br />\n0x2D - Poison Resistance<br />\n0x2E - +Max poison Resistance<br />\n0x31 - Add Fire Damage<br />\n0x33 - Add Lightning damage<br />\n0x35 - Add Damage for Weapon/Items probably (one of these may be cold damage)<br />\n0x37 - Add Damage for Weapon/Items probably (one of these may be cold damage)<br />\n0x3A - Add Poison Damage<br />\n0x4C - Add Max Health for Weapon/Items probably<br />\n0x4D - Add Max Mana for Weapons/Items probably<br />\n0xA2 - Add Max Stamina for Weapons/Items probably<br />\n0xA3 - Add Max Stamina for Weapons/Items probably<br />\n0xAB - Add to Defense</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

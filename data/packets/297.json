@@ -1,0 +1,21 @@
+{
+    "id": 297,
+    "packet_id": 126,
+    "packet_name": "SID_CLANMEMBERREMOVED",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Notifies online members that a member has left or has been removed.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/297/sid-clanmemberremoved",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:38:03+00:00",
+    "format": "(STRING) Member username",
+    "remarks_html": "<p>Notifies online members that a member has left or has been removed.</p>",
+    "comments": []
+}

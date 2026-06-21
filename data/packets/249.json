@@ -1,0 +1,21 @@
+{
+    "id": 249,
+    "packet_id": 53,
+    "packet_name": "SID_PROFILE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Result of profile lookup for WarCraft III.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/249/sid-profile",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T02:04:03+00:00",
+    "format": "(UINT32) Cookie\r\n (UINT8) Status\r\n(STRING) Profile\\Description value  [present if status = 0]\r\n(STRING) Profile\\Location value     [present if status = 0]\r\n(UINT32) Clan tag                   [present if status = 0]",
+    "remarks_html": "<p>Result of profile lookup for WarCraft III.</p>\n<p><em>This message's official name is not known, and has been invented.</em></p>\n<p>If <strong>status</strong> is <code>0x00</code>, the request was successful. Otherwise, the profile fields will not be included.</p>\n<p>The client follows up this message with the following, as per <a href=\"/document/27/warcraft-iii-profile-requests\">WarCraft III Profile Requests</a>:</p>\n<ol start=\"3\">\n<li><a href=\"/packet/393/sid-warcraftgeneral\"><code>C&gt;S 0x44 SID_WARCRAFTGENERAL</code></a> subcommand <code>0x04</code>, user stats request</li>\n<li><a href=\"/packet/292/sid-warcraftgeneral\"><code>S&gt;C 0x44 SID_WARCRAFTGENERAL</code></a>\n<ul>\n<li>contains: detailed user game statistics</li>\n</ul></li>\n<li>If the clan tag of <code>SID_PROFILE</code> is not 0 (if the user is in a clan):\n<ol>\n<li><a href=\"/packet/160/sid-clanmemberinformation\"><code>C&gt;S 0x82 SID_CLANMEMBERINFORMATION</code></a></li>\n<li><a href=\"/packet/158/sid-clanmemberinformation\"><code>S&gt;C 0x82 SID_CLANMEMBERINFORMATION</code></a>\n<ul>\n<li>contains: clan full name, user clan rank, and user join date</li>\n</ul></li>\n<li><a href=\"/packet/393/sid-warcraftgeneral\"><code>C&gt;S 0x44 SID_WARCRAFTGENERAL</code></a> subcommand <code>0x08</code>, clan stats request</li>\n<li><a href=\"/packet/292/sid-warcraftgeneral\"><code>S&gt;C 0x44 SID_WARCRAFTGENERAL</code></a>\n<ul>\n<li>contains: detailed clan game statistics</li>\n</ul></li>\n</ol></li>\n</ol>",
+    "comments": []
+}

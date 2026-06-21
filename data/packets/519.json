@@ -1,0 +1,21 @@
+{
+    "id": 519,
+    "packet_id": 16,
+    "packet_name": "W3GS_START_LAG",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Players start lagging, waiting to drop window with countdown</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/519/w3gs-start-lag",
+    "created_datetime": "2019-12-29T15:11:35+00:00",
+    "edited_datetime": "2019-12-29T16:27:03+00:00",
+    "format": "(UINT8) array_count\r\nplayers[]\r\n  (UINT8) player_number\r\n  (UINT32) lagging_ticks",
+    "remarks_html": "<p>Players start lagging, waiting to drop window with countdown</p>\n<p><strong>Packet dump:</strong> (provided by kano)</p>\n<pre><code>F7 10 28 00 07 02 00 00 00 00 04 00 00 00 00 03 00 00 00 00 06 00 00 00 00 05 00 00 00 00 08 00 00 00 00 09 00 00 00 00 </code></pre>",
+    "comments": []
+}

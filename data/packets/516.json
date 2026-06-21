@@ -1,0 +1,18 @@
+{
+    "id": 516,
+    "packet_id": 14,
+    "packet_name": "BOTNET_DATABASE_CHMO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Send database change mode request (defunct).</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/516/botnet-database-chmo",
+    "created_datetime": "2018-03-12T01:30:34+00:00",
+    "edited_datetime": "2018-03-13T05:38:12+00:00",
+    "format": "[unknown]",
+    "remarks_html": "<p>Send database change mode request (defunct).</p>\n<p>This functionality was replaced with flag <code>0x01</code> (Await server confirmation of database changes) in <a href=\"/packet/511/botnet-client-version\"><code>C&gt;S 0x0A BOTNET_CLIENT_VERSION</code></a>/<a href=\"/packet/512/botnet-client-version\"><code>S&gt;C 0x09</code></a>'s <strong>Client capabilities</strong> field.</p>\n<p>Sending this message marks a client as using certain older versions of BotNetClient.DLL; it is due to be reclaimed in the future and should not be used.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 131,
+    "packet_id": 104,
+    "packet_name": "D2GS_GAMELOGON",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p><strong>Character Class Id:</strong></p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/131/d2gs-gamelogon",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-10-05T06:26:38+00:00",
+    "format": "(UINT32)     MCP Cookie\r\n(UINT16)     Game Id\r\n (UINT8)     Character Class Id\r\n(UINT32)     Game (major) version\r\n(UINT32)     Expansion\r\n(UINT32)     Constant1 (=0x91A519B6)\r\n (UINT8)     Locale Id\r\n (UINT8)[16] ????",
+    "remarks_html": "<p><strong>Character Class Id:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Id</th>\n<th>Name</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>Amazon</td>\n</tr>\n<tr>\n<td>1</td>\n<td>Sorceress</td>\n</tr>\n<tr>\n<td>2</td>\n<td>Necromancer</td>\n</tr>\n<tr>\n<td>3</td>\n<td>Paladin</td>\n</tr>\n<tr>\n<td>4</td>\n<td>Barbarian</td>\n</tr>\n<tr>\n<td>5</td>\n<td>Druid</td>\n</tr>\n<tr>\n<td>6</td>\n<td>Assassin</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Game (major) version:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Id</th>\n<th>Versions</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>14</td>\n<td>1.14a, 1.14b, 1.14c, 1.14d</td>\n</tr>\n<tr>\n<td>13</td>\n<td>1.13a, 1.13b, 1.13c, 1.13d</td>\n</tr>\n<tr>\n<td>12</td>\n<td>1.12</td>\n</tr>\n<tr>\n<td>11</td>\n<td>1.11, 1.11b</td>\n</tr>\n<tr>\n<td>xx</td>\n<td>1.xx, etc.</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Expansion:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Id</th>\n<th>Name</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x2185EDD6</code></td>\n<td>Classic</td>\n</tr>\n<tr>\n<td><code>0xED5DCC50</code></td>\n<td>Expansion</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Locale Id:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Id</th>\n<th>Locale</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>0</td>\n<td>enUS (English)</td>\n</tr>\n<tr>\n<td>1</td>\n<td>esES (Spanish)</td>\n</tr>\n<tr>\n<td>2</td>\n<td>deDE (German)</td>\n</tr>\n<tr>\n<td>3</td>\n<td>frFR (French)</td>\n</tr>\n<tr>\n<td>4</td>\n<td>ptPT (Portuguese)</td>\n</tr>\n<tr>\n<td>5</td>\n<td>itIT (Italian)</td>\n</tr>\n<tr>\n<td>6</td>\n<td>ja (Japanese)</td>\n</tr>\n<tr>\n<td>7</td>\n<td>ko (Korean)</td>\n</tr>\n<tr>\n<td>8</td>\n<td>si (Sinhalese)</td>\n</tr>\n<tr>\n<td>9</td>\n<td>zhCN (Chinese)</td>\n</tr>\n<tr>\n<td>10</td>\n<td>pl (Polish)</td>\n</tr>\n<tr>\n<td>11</td>\n<td>ru (Russian)</td>\n</tr>\n<tr>\n<td>12</td>\n<td>enGB (English)</td>\n</tr>\n</tbody>\n</table>\n<p>In Kolbot, sent between &quot;Heartbeat loaded&quot; &amp; &quot;Starting default.dbj&quot;</p>",
+    "comments": []
+}

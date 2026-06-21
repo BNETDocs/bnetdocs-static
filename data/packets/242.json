@@ -1,0 +1,30 @@
+{
+    "id": 242,
+    "packet_id": 19,
+    "packet_name": "SID_FLOODDETECTED",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sent prior to a disconnect along with SID_MESSAGEBOX to indicate that the client has flooded off. </p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/242/sid-flooddetected",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank] ",
+    "remarks_html": "<p>Sent prior to a disconnect along with SID_MESSAGEBOX to indicate that the client has flooded off. </p>",
+    "comments": []
+}

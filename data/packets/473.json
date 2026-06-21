@@ -1,0 +1,51 @@
+{
+    "id": 473,
+    "packet_id": 23,
+    "packet_name": "SID_READMEMORY",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Rudimentary hack detection system. Was never used probably due to terrible implementation with little security.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/473/sid-readmemory",
+    "created_datetime": "2011-07-19T01:51:27+00:00",
+    "edited_datetime": "2025-05-24T22:32:42+00:00",
+    "format": "(UINT32) Request ID\r\n(UINT32) Address\r\n(UINT32) Length",
+    "remarks_html": "<p>Rudimentary hack detection system. Was never used probably due to terrible implementation with little security.</p>\n<p>Yes, it is possible for a PvPGN server to read <strong>EVERYTHING</strong> that is in the process' memory, including sensitive information such as your CDKey.</p>\n<p>Found at:<br />\n<code>battle!1901D470h</code> (as of 1.16.1)</p>\n<p>NOTE: No longer used, as Warden is now used to monitor for hacks. The Battle.net clients still support this though so one can code in support for it if one so desires. Due to it being no longer actively used by Battle.net, this packet is being marked as defunct. </p>",
+    "comments": [
+        {
+            "id": 464,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-03T02:53:49+00:00",
+            "content_html": "<p>Change the status, it's not defunct. It still works.</p>"
+        },
+        {
+            "id": 467,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-05T14:33:53+00:00",
+            "content_html": "<p>Do you have proof that any Blizzard client still uses this packet, or in fact that Battle.net still sends this?</p>"
+        },
+        {
+            "id": 469,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-19T00:12:13+00:00",
+            "content_html": "<p>Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
+        },
+        {
+            "id": 471,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-07-19T06:52:15+00:00",
+            "content_html": "<p>Updated packet information to include this: </p>\n<p>NOTE: No longer used, as Warden is now used to monitor for hacks. The Battle.net clients still support this though so one can code in support for it if one so desires. Due to it being no longer actively used by Battle.net, this packet is being marked as defunct. </p>\n<p>Thanks for your contribution, xpeh. :)</p>"
+        }
+    ]
+}

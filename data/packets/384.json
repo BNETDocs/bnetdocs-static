@@ -1,0 +1,36 @@
+{
+    "id": 384,
+    "packet_id": 102,
+    "packet_name": "SID_FRIENDSUPDATE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sent to clients supporting this packet when the friend-listed account's <code>Status</code> or <code>Location id</code> changes. Also sent if the client requests it with [SID_FRIENDSUPDATE]. The first friend is <code>Entry number</code> 0.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/384/sid-friendsupdate",
+    "created_datetime": "2011-06-02T18:33:52+00:00",
+    "edited_datetime": "2017-03-28T20:27:29+00:00",
+    "format": "  (UINT8) Entry number\r\n  (UINT8) Status\r\n  (UINT8) Location id\r\n (UINT32) Product id\r\n(STRING) Location name",
+    "remarks_html": "<p>Sent to clients supporting this packet when the friend-listed account's <code>Status</code> or <code>Location id</code> changes. Also sent if the client requests it with [SID_FRIENDSUPDATE]. The first friend is <code>Entry number</code> 0.</p>\n<p>Note that there is a Battle.net server bug in which when you are automatically sent this packet for online mutual friends, the <code>Product id</code>, <code>Status</code>, <code>Location id</code>, and <code>Location</code> is your own values instead of your friend's. So if you were to be using <code>WAR3</code>, for example, and a friend signs on using <code>SEXP</code>, the <code>Product id</code> in this packet will be <code>WAR3</code>. To receive the <em>correct</em> <code>Product id</code> for the user, you may request another update for this user (by sending <code>0x66</code> back to the server with the same <code>Entry Number</code>), or request the full list again.</p>\n<p>In addition, this packet <em>is not</em> sent to you automatically if the friendship is not mutual.</p>",
+    "comments": [
+        {
+            "id": 102,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-05-19T00:36:27+00:00",
+            "content_html": "<p>The order of Friend Location and Friend Status should be flipped.</p>"
+        },
+        {
+            "id": 643,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-09-07T00:56:14+00:00",
+            "content_html": "<p>I'm not sure if/when this was updated but the correct order is status and then location.</p>\n<p>Also I do not appear to be getting sent this packet automatically from official servers anymore, even when a mutual friend changes location or status.</p>"
+        }
+    ]
+}

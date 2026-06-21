@@ -1,0 +1,21 @@
+{
+    "id": 326,
+    "packet_id": 6,
+    "packet_name": "BNLS_CHANGEPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will parse data from SID_AUTH_ACCOUNTCHANGE (0x55) and will reply with data to send in SID_AUTH_ACCOUNTCHANGEPROOF (0x56).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/326/bnls-changeproof",
+    "created_datetime": "2011-02-04T22:08:19+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [16] Data from SID_AUTH_ACCOUNTCHANGE (0x55)",
+    "remarks_html": "<p>This message will parse data from SID_AUTH_ACCOUNTCHANGE (0x55) and will reply with data to send in SID_AUTH_ACCOUNTCHANGEPROOF (0x56).</p>\n<p>You must send BNLS_CHANGECHALLENGE (0x05) before you can send this.</p>",
+    "comments": []
+}

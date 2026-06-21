@@ -1,0 +1,33 @@
+{
+    "id": 476,
+    "packet_id": 35,
+    "packet_name": "SID_WRITECOOKIE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Much like a website cookie, simply stores some arbitrary string to a 'cookie jar' to save preferences et al. which can be retrieved later by the server.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/476/sid-writecookie",
+    "created_datetime": "2011-06-18T13:54:25+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) unknown/unparsed -- Flags, Request ID?\r\n(UINT32) unknown/unparsed -- Timestamp?\r\n(STRING) Registry key name\r\n(STRING) Registry key value",
+    "remarks_html": "<p>Much like a website cookie, simply stores some arbitrary string to a 'cookie jar' to save preferences et al. which can be retrieved later by the server.</p>\n<p>Not used because it was quickly discovered that storing preferences produces less problems and were faster by storing them server-side, associating them with the account. It is somewhat curious that these packet IDs are close to SID_READUSERDATA/SID_WRITEUSERDATA (0x26 &amp; 0x27).</p>\n<p>Found at: battle!190216FBh and battle!1901D660h, respectively.</p>",
+    "comments": [
+        {
+            "id": 481,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-09-09T21:43:44+00:00",
+            "content_html": "<p>It's not defunct, Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
+        }
+    ]
+}

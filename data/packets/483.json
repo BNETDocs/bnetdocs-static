@@ -1,0 +1,23 @@
+{
+    "id": 483,
+    "packet_id": 5,
+    "packet_name": "SCGP_NOP",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/483/scgp-nop",
+    "created_datetime": "2012-03-24T14:19:48+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x05)",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent in the synchronous stream if nothing else is to be sent that turn. Often only sent in lobby.</p>\n<p>Packet name was invented.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 380,
+    "packet_id": 5,
+    "packet_name": "D2GS_LEFTSKILLONLOCATION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Uses Left skill on specified (X,Y) map coordinate.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/380/d2gs-leftskillonlocation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) X coordinate\r\n(UINT16) Y coordinate\r\n",
+    "remarks_html": "<p>Uses Left skill on specified (X,Y) map coordinate.</p>",
+    "comments": []
+}

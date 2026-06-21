@@ -1,0 +1,21 @@
+{
+    "id": 139,
+    "packet_id": 120,
+    "packet_name": "SID_CLANREMOVEMEMBER",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Removes a member from the clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/139/sid-clanremovemember",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T00:56:06+00:00",
+    "format": "(UINT32) Cookie\r\n(STRING) Target username",
+    "remarks_html": "<p>Removes a member from the clan.</p>\n<p>The <strong>target username</strong> is removed from the clan and receives <a href=\"/packet/304/sid-clanquitnotify\"><code>S&gt;C 0x76 SID_CLANQUITNOTIFY</code></a>. All online members then receive a <a href=\"/packet/297/sid-clanmemberremoved\"><code>S&gt;C 0x7E SID_CLANMEMBERREMOVED</code></a> to update their clan lists. You must be the leader or an officer of your clan and <strong>target username</strong> must be a member of lower rank.</p>\n<p>If the <strong>target username</strong> is your own, you leave the clan and your rank may be anything except &quot;Initiate&quot; <code>0x00</code> or &quot;Leader&quot;.</p>",
+    "comments": []
+}

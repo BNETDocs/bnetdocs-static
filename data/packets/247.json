@@ -1,0 +1,23 @@
+{
+    "id": 247,
+    "packet_id": 70,
+    "packet_name": "SID_NEWS_INFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests news and MOTD from battle.net.</p>",
+    "used_by": [
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/247/sid-news-info",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) News timestamp",
+    "remarks_html": "<p>Requests news and MOTD from battle.net.</p>\n<p>The news timestamp specifies the starting date for the news. To retrieve all available news entries, set this to zero. Timestamps are given in C/Unix format -- that is, the number of seconds since January 1, 1970 0:00:00.000 -- and should be biased to UTC.</p>\n<p>This message should be sent when you receive SID_ENTERCHAT. The official client stops processing messages after the user joins a game or enters a channel, and discards messages with more than 127 entries.</p>\n<p>News can be requested for older products, but Battle.net will only return the server's Message-of-the-Day. However, this behavior has not been observed in official clients, and for an accurate protocol emulation, its use is not recommended.</p>",
+    "comments": []
+}

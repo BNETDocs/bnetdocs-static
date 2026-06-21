@@ -1,0 +1,21 @@
+{
+    "id": 230,
+    "packet_id": 16,
+    "packet_name": "D2GS_CHARTOOBJ",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A character moves to an object within your view range.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/230/d2gs-chartoobj",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Unknown\r\n(UINT32) Player ID\r\n(UINT8) Movement Type\r\n(UINT8) Destination Type\r\n*(UINT32) Object ID \r\n*(UINT16) X Coordinate\r\n*(UINT16) Y Coordinate \r\n",
+    "remarks_html": "<p>A character moves to an object within your view range.</p>\n<ul>\n<li>\n<ul>\n<li>These are what the player is moving to.</li>\n</ul>\n</li>\n</ul>\n<p>Possible values for Destination Type:<br />\n0x00 - Another player<br />\n0x01 - NPC or Monster<br />\n0x02 - Object such as Stash, Waypoint, or a Town Portal<br />\n0x04 - Item<br />\n0x05 - Doorway</p>\n<p>Possible value for Movement Type:</p>\n<p>0x18 - Run<br />\n0x00 - Walk Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

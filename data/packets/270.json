@@ -1,0 +1,21 @@
+{
+    "id": 270,
+    "packet_id": 86,
+    "packet_name": "SID_AUTH_ACCOUNTCHANGEPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is sent after receiving a successful SID_AUTH_ACCOUNTCHANGE message, and contains the proof for the client's new password.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/270/sid-auth-accountchangeproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) [20] Old password proof\r\n(UINT8) [32] New password's salt (s)\r\n(UINT8) [32] New password's verifier (v) \r\n",
+    "remarks_html": "<p>This message is sent after receiving a successful SID_AUTH_ACCOUNTCHANGE message, and contains the proof for the client's new password.</p>\n<p>See [NLS/SRP Protocol] for more information.</p>",
+    "comments": []
+}

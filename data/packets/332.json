@@ -1,0 +1,25 @@
+{
+    "id": 332,
+    "packet_id": 89,
+    "packet_name": "SID_SETEMAIL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Binds an email address to your account.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/332/sid-setemail",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Email Address",
+    "remarks_html": "<p>Binds an email address to your account.</p>\n<p>Sending this message is optional. However, you should only send it when either you receive SID_SETEMAIL from the server or you receive status 0x0E from SID_AUTH_ACCOUNTLOGONPROOF.</p>\n<p>This packet used to be named SID_AUTH_RECONNECT, however Blizzard never had it implemented, and so reused the packet ID for their email system.</p>",
+    "comments": []
+}

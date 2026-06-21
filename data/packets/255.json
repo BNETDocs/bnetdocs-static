@@ -1,0 +1,53 @@
+{
+    "id": 255,
+    "packet_id": 61,
+    "packet_name": "SID_CREATEACCOUNT2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Account creation result.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/255/sid-createaccount2",
+    "created_datetime": "2011-05-01T00:30:26+00:00",
+    "edited_datetime": "2019-12-28T22:35:05+00:00",
+    "format": "(UINT32) Status\r\n(STRING) Account name suggestion",
+    "remarks_html": "<p>Account creation result.</p>\n<table>\n<thead>\n<tr>\n<th>Result</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Account created</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Name is too short</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Name contained invalid characters</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Name contained a banned word</td>\n</tr>\n<tr>\n<td><code>0x04</code></td>\n<td>Account already exists</td>\n</tr>\n<tr>\n<td><code>0x05</code></td>\n<td>Account is still being created</td>\n</tr>\n<tr>\n<td><code>0x06</code></td>\n<td>Name did not contain enough alphanumeric characters</td>\n</tr>\n<tr>\n<td><code>0x07</code></td>\n<td>Name contained adjacent punctuation characters</td>\n</tr>\n<tr>\n<td><code>0x08</code></td>\n<td>Name contained too many punctuation characters</td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 161,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-04-24T03:31:41+00:00",
+            "content_html": "<p>From pvpgn:</p>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_OK    0x00000000</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_SHORT 0x00000001 /<em> Username must be a minimum of 2 characters </em>/</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_INVALID 0x00000002</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_BANNED 0x00000003</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_EXIST 0x00000004</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_LAST_CREATE_IN_PROGRESS 0x00000005</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_ALPHANUM 0x00000006</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_PUNCTUATION 0x00000007</h1>\n<h1>define SERVER_CREATEACCTREPLY2_RESULT_PUNCTUATION2 0x00000008</h1>\n<p>It's funny that pvpgn itself (at least 1.8.x) only uses 3 codes: 0, 2, 4</p>"
+        },
+        {
+            "id": 369,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-03T18:22:42+00:00",
+            "content_html": "<p>Here's some random error names I found while looking at wc3 tft beta, which might contribute to creating better names:<br />\nNAMEUSED<br />\nNAMEBLANK<br />\nNAMEBADCHARS<br />\nNAMEBADWORD<br />\nNEEDALPHACHARS<br />\nADJACENTPUNCT<br />\nTOOMANYPUNCT</p>"
+        },
+        {
+            "id": 459,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-05-01T05:32:21+00:00",
+            "content_html": "<p>Added all of these codes to the list.</p>"
+        },
+        {
+            "id": 528,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-07-09T03:54:01+00:00",
+            "content_html": "<p>Received this while creating BAADF00D@Asia:</p>\n<p>0000   ff 3d 0b 00 00 00 00 00 00 00 20                 .=........</p>\n<p>ff 3d 0b 00 - Packet header<br />\n00 00 00 00 - Result success<br />\n00 - No name suggestion; string is empty<br />\n00 20 - What is this? Extra data similar to one of the other OLS packets (raw memory)?</p>"
+        }
+    ]
+}

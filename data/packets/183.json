@@ -1,0 +1,21 @@
+{
+    "id": 183,
+    "packet_id": 4,
+    "packet_name": "BNLS_CREATEACCOUNT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCREATE (0x52).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/183/bnls-createaccount",
+    "created_datetime": "2011-02-04T22:04:23+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [16] Data for Data for SID_AUTH_ACCOUNTCREATE (0x52)",
+    "remarks_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTCREATE (0x52).</p>",
+    "comments": []
+}

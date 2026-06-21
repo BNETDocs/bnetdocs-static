@@ -1,0 +1,37 @@
+{
+    "id": 360,
+    "packet_id": 14,
+    "packet_name": "SID_CHATCOMMAND",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Send text or a command to Battle.net using this packet.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/360/sid-chatcommand",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Text *",
+    "remarks_html": "<p>Send text or a command to Battle.net using this packet.</p>\n<p>For STAR/SEXP/SSHR/JSTR, Text is UTF-8 encoded (WIDESTRING).</p>\n<p>It is generally accepted as unwise to send any character below a space (0x20): this includes line feeds, carriage returns &amp; control characters. The maximum number of characters is 224 per message including the null-terminator (so really only 223 characters), any longer and it becomes trimmed by Battle.net.</p>\n<p>If you send a line feed and/or a carriage return, Battle.net disconnects you and IP bans you for 5 minutes.</p>",
+    "comments": [
+        {
+            "id": 576,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-05-21T06:02:02+00:00",
+            "content_html": "<p>It is possible to use <code>%f#</code> instead of usernames where <code>#</code> is the number from your friends list. This works with /w, /f, and basically any place you'd use a username. See the bottom of <a href=\"http://classic.battle.net/info/friends.shtml\">this page</a> (<a href=\"https://archive.is/JmsNe\">archived copy</a>) for more info.</p>"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "id": 482,
+    "packet_id": 0,
+    "packet_name": "PKT_STORM",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 2,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 11,
+    "brief_html": "<p><strong>Checksum:</strong></p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/482/pkt-storm",
+    "created_datetime": "2012-03-20T12:30:21+00:00",
+    "edited_datetime": "2019-12-28T22:41:47+00:00",
+    "format": "(UINT16) Checksum\r\n(UINT16) Length\r\n(UINT16) Seq1\r\n(UINT16) Seq2\r\n(UINT8) CLS\r\n(UINT8) Command\r\n(UINT8) PlayerID\r\n(UINT8) Resend\r\n(VOID) Payload",
+    "remarks_html": "<p><strong>Checksum:</strong></p>\n<p>Calculated from all of the data in this packet starting at Length. See <a href=\"http://darkblizz.org/Forum2/starcraft/sc-udp-game-research/msg96/#msg96\">here</a> for the function, and more details on this protocol.</p>\n<p><strong>Length:</strong></p>\n<p>Includes everything you see here (EX: 12 + length of Payload).</p>\n<p><strong>Seq1:</strong></p>\n<p>Number of packets sent.</p>\n<p><strong>Seq2:</strong></p>\n<p>Number of packets received.</p>\n<p><strong>CLS:</strong></p>\n<p>Can be 0, 1, or 2.</p>\n<table>\n<thead>\n<tr>\n<th>CLS</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td><strong>Internal packets:</strong> Handled by network provider and sent to the game as high level events. Command is used by network provider.</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td><strong>Asynchronous packets:</strong> Payload sent to StarCraft, Diablo, or WarCraft II game. Can be sent any time. Command is 0.</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td><strong>Synchronous packets:</strong> Payload sent to StarCraft, Diablo, or WarCraft II game. Can be buffered but must be sent once per game turn. Command is 0.</td>\n</tr>\n</tbody>\n</table>\n<p><strong>Command:</strong></p>\n<p>The packet ID of CLS 0 packets. 0 for other packets.</p>\n<p><strong>PlayerID:</strong></p>\n<p>The player ID. If unknown (first few packets from client) set to <code>0xFF</code>. Otherwise <code>0xFF</code> means &quot;everyone&quot;.</p>\n<p><strong>Resend:</strong></p>\n<table>\n<thead>\n<tr>\n<th>Resend</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td><strong>Normal:</strong> Handle this normally.</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td><strong>Verify:</strong> Used to verify Seq1 and Seq2.</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td><strong>Resend:</strong> Resend request.</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td><strong>Callback:</strong> Resend response.</td>\n</tr>\n</tbody>\n</table>\n<p>Packet name was invented.</p>\n<p>See Storm Messages for CLS 0 packets.</p>\n<p>See SCGP Messages for CLS 1 and 2 packets for StarCraft, BW, JP, and SHR.</p>\n<p>See W2GP Messages for CLS 1 and 2 packets for WarCraft II BNE.</p>\n<p>See D1GP Messages for CLS 1 and 2 packets for Diablo and SHR.</p>",
+    "comments": []
+}

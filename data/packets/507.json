@@ -1,0 +1,21 @@
+{
+    "id": 507,
+    "packet_id": 57,
+    "packet_name": "SID_UNKNOWN_39",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Not much is known about this packet, its structure and its documentation was taken from PvPGN.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/507/sid-unknown-39",
+    "created_datetime": "2014-05-18T18:47:18+00:00",
+    "edited_datetime": "2025-05-24T22:43:43+00:00",
+    "format": "(STRING) Character Name",
+    "remarks_html": "<p>Not much is known about this packet, its structure and its documentation was taken from PvPGN.</p>\n<p>The collected information can be found <a href=\"https://pastebin.com/eGgRBcLV\">here</a> and below:</p>\n<pre><code class=\"language-c\">/******************************************************/\n/* D2 packet... not sent very often and the client doesn't\n * seem to expect an answer */\n/* FIXME: what the hell does this one do? */\n/*\nFF 39 13 00 42 65 74 61   57 65 73 74 2C 62 75 73    .9..BetaWest,bus\n74 61 00                                             ta.\n\nthis one was sent after a closed character was deleted on the auth\nserver... maybe a notifier for the gateway server?\nFF 39 17 00 42 6F 62 73   57 6F 72 6C 64 2C 63 68    .9..BobsWorld,ch\n61 72 6E 61 6D 65 00                                 arname.\n*/\n#define CLIENT_UNKNOWN_39 0x39ff\ntypedef struct\n{\n    t_bnet_header h;\n    /* character name */ /* what about open chars? */\n} PACKED_ATTR() t_client_unknown_39;\n/******************************************************/</code></pre>",
+    "comments": []
+}

@@ -1,0 +1,32 @@
+{
+    "id": 146,
+    "packet_id": 80,
+    "packet_name": "SID_AUTH_INFO",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Returns server parameters and a versioning challenge.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/146/sid-auth-info",
+    "created_datetime": "2011-05-29T16:11:46+00:00",
+    "edited_datetime": "2020-12-09T06:19:00+00:00",
+    "format": "  (UINT32) Logon type\r\n  (UINT32) Server token\r\n  (UINT32) UDP value\r\n(FILETIME) CheckRevision MPQ filetime\r\n  (STRING) CheckRevision MPQ filename\r\n  (STRING) CheckRevision Formula\r\n\r\nWAR3/W3XP Only:\r\n    (VOID) 128-byte Server signature",
+    "remarks_html": "<p>Returns server parameters and a versioning challenge.</p>\n<p><strong>Logon type</strong>:</p>\n<ul>\n<li><code>0x00</code>: Broken SHA-1 (STAR/SEXP/D2DV/D2XP)</li>\n<li><code>0x01</code>: NLS Version 1 (WAR3Beta/STAR/SEXP/D2DV/D2XP)</li>\n<li><code>0x02</code>: NLS Version 2 (WAR3/W3XP)</li>\n</ul>\n<p>* - Support for <em>NLS Version 1</em> was added to <strong>STAR</strong> and <strong>SEXP</strong> in patch <code>1.15.2</code> and has been supported by <strong>D2DV</strong> and <strong>D2XP</strong> since at least patch <code>1.10</code>. Battle.net has never enabled <em>NLS Version 1</em> for these products.</p>\n<p><strong>Server Token</strong>: a randomly generated value that is unique to your session and is used to calculate the <code>Hashed Key Data</code> field in <a href=\"/packet/408/sid-auth-check\">C&gt;S SID_AUTH_CHECK</a> as well as the XSHA-1 double-hashed <code>Password Hash</code> field in <a href=\"/packet/225/sid-logonresponse2\">C&gt;S SID_LOGONRESPONSE2</a>.</p>\n<p><strong>UDP value</strong>: A randomly generated value used to associate this connection with its corresponding UDP and MCP connections. Used in <a href=\"/packet/199/pkt-conntest2\">PKT_CONNTEST2</a> and <a href=\"/packet/320/mcp-startup\">MCP_STARTUP</a>.</p>\n<p><strong>CheckRevision MPQ filetime</strong> and <strong>CheckRevision MPQ filename</strong> are used by products to send BNFTP requests to obtain <a href=\"/document/47/checkrevision\">CheckRevision</a>.</p>\n<p><strong>CheckRevision Formula</strong>: This value is the 4th parameter passed to <a href=\"/document/47/checkrevision\">CheckRevision()</a> calls. The formula is always null-terminated, but may contain non-printable and non-UTF8 characters.</p>\n<p><strong>128-byte Server signature</strong>: This field is an RSA signature that's exclusively sent to and verified by WarCraft III. Its purpose is to prevent WarCraft III clients from connecting to third-party servers. Verification implementation can be found in <a href=\"https://github.com/BNETDocs/bncsutil/blob/master/src/bncsutil/nls.c#L597-L650\">BNCSUtil's nls_check_signature() function</a>.</p>\n<p>After completing the version checking process, the client should proceed with an account logon using the mechanism specified here (<a href=\"/packet/225/sid-logonresponse2\">SID_LOGONRESPONSE2</a> for <code>0x00</code> and <a href=\"/packet/323/sid-auth-accountlogon\">SID_AUTH_ACCOUNTLOGON</a> for <code>0x01</code> and <code>0x02</code>).</p>\n<p>Using a different login type than the one given may result in an IP ban.</p>",
+    "comments": [
+        {
+            "id": 526,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-06-16T02:13:58+00:00",
+            "content_html": "<p>(This is an old comment which was later clarified, the following may no longer be valid.)</p>\n<p><code>JSTR</code> clients on the <code>IX86</code> platform receive an empty <code>CheckRevision Formula</code> from official Battle.net, with MPQ set to <code>ver-IX86-0.mpq</code>.</p>\n<p>Packet Dump from Wireshark:</p>\n<pre><code>00000000  01 ff 50 3a 00 00 00 00  00 36 38 58 49 52 54 53 ..P:.... .68XIRTS\n00000010  4a d3 00 00 00 00 00 00  00 c0 a8 00 17 2c 01 00 J....... .....,..\n00000020  00 09 04 00 00 09 04 00  00 55 53 41 00 55 6e 69 ........ .USA.Uni\n00000030  74 65 64 20 53 74 61 74  65 73 00                ted Stat es.</code></pre>\n<pre><code>00000000  ff 25 08 00 de 37 ef 58                          .%...7.X \n00000008  ff 50 28 00 00 00 00 00  a1 8b c6 b7 ee 15 08 00 .P(..... ........\n00000018  00 8b 51 03 70 5f c7 01  76 65 72 2d 49 58 38 36 ..Q.p_.. ver-IX86\n00000028  2d 30 2e 6d 70 71 00 00                          -0.mpq.. </code></pre>"
+        }
+    ]
+}

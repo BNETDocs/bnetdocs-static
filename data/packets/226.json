@@ -1,0 +1,28 @@
+{
+    "id": 226,
+    "packet_id": 61,
+    "packet_name": "SID_CREATEACCOUNT2",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Creates a Battle.net account. Usernames longer than 15 characters are truncated.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/226/sid-createaccount2",
+    "created_datetime": "2011-07-21T12:40:58+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [5] Password hash\r\n(STRING) Username",
+    "remarks_html": "<p>Creates a Battle.net account. Usernames longer than 15 characters are truncated.</p>\n<p>Passwords should be converted to lower case before hashing, and are only hashed once (unlike SID_LOGONRESPONSE).</p>",
+    "comments": []
+}

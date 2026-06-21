@@ -1,0 +1,21 @@
+{
+    "id": 168,
+    "packet_id": 48,
+    "packet_name": "D2GS_NPCCANCEL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Stops interacting with an NPC </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/168/d2gs-npccancel",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Entity Type\r\n(UINT32) NPC ID \r\n",
+    "remarks_html": "<p>Stops interacting with an NPC </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

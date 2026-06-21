@@ -1,0 +1,23 @@
+{
+    "id": 489,
+    "packet_id": 78,
+    "packet_name": "SCGP_REJECT",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/489/scgp-reject",
+    "created_datetime": "2012-03-24T14:21:08+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x4E)\r\n(UINT8) Event",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>Notifies you of an Event causing you to not be able to join:<br />\nPossible values:<br />\n0x01 = You have been banned.<br />\n0x02 = Game creater has closed all avalible slots.<br />\n0x03 = Game host has left the game.<br />\n0x04 = Unable to join the game.<br />\n0x05 = Save game file not found.<br />\n0x06 = Unable to write scenario file.<br />\n0x07 = Invalid game version.<br />\n0x08 = Invalid client version.<br />\n0x09 = Unable to authenticate map.<br />\nOther = You have been booted.</p>",
+    "comments": []
+}

@@ -1,0 +1,37 @@
+{
+    "id": 164,
+    "packet_id": 37,
+    "packet_name": "SID_PING",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Used to calculate Client's ping. The received UINT32 should be sent directly back to Battle.net.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/164/sid-ping",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Ping Value",
+    "remarks_html": "<p>Used to calculate Client's ping. The received UINT32 should be sent directly back to Battle.net.</p>\n<p>The ping displayed when in chat can be artificially inflated by delaying before sending this packet, or deflated by responding before requested.<br />\nPing can be set to -1 (Strictly speaking, 0xFFFFFFFF, since ping is unsigned) by not responding to this packet at all.</p>\n<p>The received UINT32 is not what determines your ping, but it is actually a cookie for the Battle.net server. You should never change the UINT32.</p>",
+    "comments": [
+        {
+            "id": 133,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-02-25T23:16:15+00:00",
+            "content_html": "<p>On Starcraft Broodwar, I theorize that this is sent by the server if you never send any data back to Battle.net when Battle.net expects you to. How I theorize this? I debugged Starcraft, and made it 'Pause'. I resumed it and Battle.net had sent SID_PING multiple times. It never sent SID_PING ever again until I paused for about 10-20 seconds then resumed.</p>\n<p>If you do not send any data back to Battle.net after a certain period of time, but Battle.net knows you WERE sending data, Battle.net will send this packet to you.</p>"
+        }
+    ]
+}

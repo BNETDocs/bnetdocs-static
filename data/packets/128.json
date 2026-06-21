@@ -1,0 +1,21 @@
+{
+    "id": 128,
+    "packet_id": 1,
+    "packet_name": "D2GS_WALKTOLOCATION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Walk to a specified (X,Y) map coordinate.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/128/d2gs-walktolocation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) X coordinate\r\n(UINT16) Y coordinate",
+    "remarks_html": "<p>Walk to a specified (X,Y) map coordinate.</p>",
+    "comments": []
+}

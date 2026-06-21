@@ -1,0 +1,18 @@
+{
+    "id": 201,
+    "packet_id": 8,
+    "packet_name": "BNLS_UPGRADEPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message contains the data to send in SID_AUTH_ACCOUNTUPGRADEPROOF (0x58).</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/201/bnls-upgradeproof",
+    "created_datetime": "2011-02-04T22:11:07+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [22] Data for SID_AUTH_ACCOUNTUPGRADEPROOF (0x58)",
+    "remarks_html": "<p>This message contains the data to send in SID_AUTH_ACCOUNTUPGRADEPROOF (0x58).</p>",
+    "comments": []
+}

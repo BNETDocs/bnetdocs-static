@@ -1,0 +1,24 @@
+{
+    "id": 262,
+    "packet_id": 41,
+    "packet_name": "SID_LOGONRESPONSE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains Client's username and hashed password.</p>",
+    "used_by": [
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/262/sid-logonresponse",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-27T04:16:33+00:00",
+    "format": "(UINT32)     Client Token\r\n(UINT32)     Server Token\r\n (UINT8)[20] Password Hash\r\n(STRING)     Username ",
+    "remarks_html": "<p>Contains Client's username and hashed password.</p>\n<p>Battle.net password hashes are hashed twice using XSHA-1. First, the password is hashed by itself, then the following data is hashed again and sent to Battle.net:</p>\n<ol>\n<li><code>(UINT32)</code> Client Token</li>\n<li><code>(UINT32)</code> Server Token</li>\n<li><code>(UINT8)[20]</code> First password hash</li>\n</ol>\n<p>Passwords should be converted to lowercase before hashing, for compatibility with Blizzard games.</p>",
+    "comments": []
+}

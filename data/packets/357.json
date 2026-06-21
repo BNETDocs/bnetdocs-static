@@ -1,0 +1,18 @@
+{
+    "id": 357,
+    "packet_id": 8,
+    "packet_name": "BOTNET_COMMAND_TO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Command to specific bot.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/357/botnet-command-to",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T02:48:55+00:00",
+    "format": "(UINT32) Target bot ID\r\n(STRING) Sender name    [max: 32]\r\n(STRING) Command        [max: 384]",
+    "remarks_html": "<p>Command to specific bot.</p>\n<p>Sends a command in <a href=\"/packet/140/botnet-command\"><code>S&gt;C 0x04 BOTNET_COMMAND</code></a> to a specific bot.</p>\n<p>The command is relayed if:</p>\n<ol>\n<li>The <strong>target bot ID</strong> user is online;</li>\n<li>The sender has permission to relay commands. Permission here refers to write access to the database, or restricted access and the command match a pre-defined list of acceptable restricted user commands; and</li>\n<li>The target is on the same database as the sending user.</li>\n</ol>\n<p>If the client does not meet the requirements, no command is relayed.</p>",
+    "comments": []
+}

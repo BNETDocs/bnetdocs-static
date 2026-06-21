@@ -1,0 +1,28 @@
+{
+    "id": 446,
+    "packet_id": 30,
+    "packet_name": "W3GS_REQJOIN",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A client sends this to the host to enter the game lobby.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/446/w3gs-reqjoin",
+    "created_datetime": "2012-06-11T21:06:14+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Host Counter (Game ID)\r\n(UINT32) Entry Key (used in LAN)\r\n(UINT8) Unknown\r\n(UINT16) Listen Port\r\n(UINT32) Peer Key\r\n(STRING) Player name\r\n(UINT32) Unknown\r\n(UINT16) Internal Port\r\n(UINT32) Internal IP",
+    "remarks_html": "<p>A client sends this to the host to enter the game lobby.</p>\n<p>The internal IP uses the Windows in_addr structure which is thus used by the sockaddr_in structure.</p>",
+    "comments": [
+        {
+            "id": 586,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-04-16T16:39:12+00:00",
+            "content_html": "<p>From <a href=\"/user/4985/cen\">cen</a>:</p>\n<pre><code>@BNETDocs Staff message by h3rmit, forwarding\n\nW3GS_REQJOIN has proved to be inaccurately documented in 1.29\nhttps://bnetdocs.org/packet/446/w3gs-reqjoin\nit is 1 byte more in 1.29\nand I found what it is: wrong documentation\nthe (UINT32) Unknown they describe is not fixed-length\nA client sends this to the host to enter the game lobby.\nso, (UINT32) Unknown is  2 bytes in 1.29 if he is to be believed, maybe that will give a hint to what this unknown is</code></pre>"
+        }
+    ]
+}

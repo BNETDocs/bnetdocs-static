@@ -1,0 +1,21 @@
+{
+    "id": 310,
+    "packet_id": 87,
+    "packet_name": "SID_AUTH_ACCOUNTUPGRADE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Upgrades the account from XSHA-1 logon system to NLS/SRP logon system. This message is no longer used.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/310/sid-auth-accountupgrade",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T22:56:02+00:00",
+    "format": "(UINT32) Status\r\n(UINT32) Server Token \r\n",
+    "remarks_html": "<p>Upgrades the account from XSHA-1 logon system to NLS/SRP logon system. This message is no longer used.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Upgrade request accepted</td>\n</tr>\n<tr>\n<td>Other</td>\n<td>Upgrade request denied</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

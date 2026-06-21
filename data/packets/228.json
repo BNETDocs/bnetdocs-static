@@ -1,0 +1,28 @@
+{
+    "id": 228,
+    "packet_id": 42,
+    "packet_name": "SID_CREATEACCOUNT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Reports success/failure on account creation, sent in response to <a href=\"/packet/305/sid-createaccount\">C&gt;S 0x2A SID_CREATEACCOUNT</a>.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/228/sid-createaccount",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-27T04:46:34+00:00",
+    "format": "(UINT32) Result",
+    "remarks_html": "<p>Reports success/failure on account creation, sent in response to <a href=\"/packet/305/sid-createaccount\">C&gt;S 0x2A SID_CREATEACCOUNT</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Result</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Failure</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Success</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

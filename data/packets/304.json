@@ -1,0 +1,21 @@
+{
+    "id": 304,
+    "packet_id": 118,
+    "packet_name": "SID_CLANQUITNOTIFY",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Notifies you when you have left or are removed from a clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/304/sid-clanquitnotify",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:40:20+00:00",
+    "format": "(UINT8) Status",
+    "remarks_html": "<p>Notifies you when you have left or are removed from a clan.</p>\n<p>The only known value for <strong>status</strong> is <code>0x01</code> (Removed from clan).</p>",
+    "comments": []
+}

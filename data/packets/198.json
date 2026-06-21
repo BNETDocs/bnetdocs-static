@@ -1,0 +1,18 @@
+{
+    "id": 198,
+    "packet_id": 6,
+    "packet_name": "BOTNET_USER",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>User information updated.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/198/botnet-user",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-12T04:43:22+00:00",
+    "format": "(UINT32) Bot ID\r\n(UINT32) Database access              [rev: 4; awl: 1]\r\n(UINT32) Administrative access        [rev: 4; awl: 1]\r\n(UINT32) IP address                   [rev: 4; awl: 1; admin]\r\n(STRING) Battle.net unique username\r\n(STRING) Battle.net current channel\r\n(UINT32) Battle.net server IP address\r\n(STRING) Unique account name          [rev: 2]\r\n(STRING) Current database name        [rev: 3]\r\n\r\nNull terminator [rev: 4; awl: 1]:\r\n[blank]",
+    "remarks_html": "<p>User information updated.</p>\n<p>When <a href=\"/packet/369/botnet-user-list\"><code>C&gt;S 0x06 BOTNET_USER_LIST</code></a> is sent, this message is sent in response for every user currently connected. The first message always describes the client, followed by the other users in order from oldest to newest connect.</p>\n<p>If the client has specified an <a href=\"/packet/511/botnet-client-version\">awareness level</a> of <code>0x01</code> for server revision 4, the user list will be followed with an additional blank <code>0x06</code> message, called the &quot;null terminator&quot;.</p>\n<p>When another user sends <a href=\"/packet/171/botnet-statsupdate\"><code>C&gt;S 0x02 BOTNET_STATSUPDATE</code></a>, conventionally including when they first connect, this message is received once by all other connected users.</p>\n<p><strong>Bot ID</strong>:</p>\n<p>This value should be unique and should be used as a key to a client's table of online users.</p>\n<p><strong>Database access</strong> [rev: 4; awl: 1]:</p>\n<p>With an <a href=\"/packet/511/botnet-client-version\">awareness level</a> of <code>0x01</code>, this is the access this user has to their database, based on the password they used.</p>\n<p>Combinable flags:</p>\n<ul>\n<li><code>0x01</code>: Read</li>\n<li><code>0x02</code>: Write</li>\n<li><code>0x04</code>: Restricted access</li>\n</ul>\n<p><strong>Administrative access</strong> [rev: 4; awl: 1]:</p>\n<p>With an <a href=\"/packet/511/botnet-client-version\">awareness level</a> of <code>0x01</code>, this is the administrative access flags this user has. See <a href=\"/document/42/botnet-protocol-overview\">BotNet Protocol Overview</a>.</p>\n<p><strong>IP address</strong> [rev: 4; awl: 1; only present with admin access]:</p>\n<p>With an <a href=\"/packet/511/botnet-client-version\">awareness level</a> of <code>0x01</code> and appropriate admin flags, this is the user's IP address.</p>\n<p><strong>Battle.net values</strong>:</p>\n<p>The <strong>unique username</strong>, <strong>current channel</strong>, and <strong>server IP address</strong> are unmodified values that the user sent in <a href=\"/packet/171/botnet-statsupdate\"><code>C&gt;S 0x02 BOTNET_STATSUPDATE</code></a>.</p>\n<p><strong>Unique account name</strong> [rev: 2]:</p>\n<p>This is the account name if the user logged on using <a href=\"/packet/366/botnet-account\"><code>C&gt;S 0x0D BOTNET_ACCOUNT</code></a>. The special string <code>\"No Account\"</code> is sent for users that have not logged on.</p>\n<p><strong>Current database name</strong> [rev: 3]:</p>\n<p>This is the name of the database the user is on. The database name can be an empty string, if they are not on a database.</p>",
+    "comments": []
+}

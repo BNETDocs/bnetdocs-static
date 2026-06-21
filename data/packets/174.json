@@ -1,0 +1,37 @@
+{
+    "id": 174,
+    "packet_id": 0,
+    "packet_name": "SID_NULL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Keeps the connection alive. This message should be sent to the server every 8 minutes (approximately).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/174/sid-null",
+    "created_datetime": "2010-08-06T01:55:17+00:00",
+    "edited_datetime": null,
+    "format": "[blank] ",
+    "remarks_html": "<p>Keeps the connection alive. This message should be sent to the server every 8 minutes (approximately).</p>\n<p>The server will send this to you automatically, you do not have to reply to it. You should send this on your own never-ending timer for at least as often as Battle.net does (give or take a few seconds).</p>\n<p>This packet is used to detect if your TCP connection has gone dead, to the point where you will never receive data from the server ever again until you reconnect your connection. A situation such as this can be created by unplugging your internet connection for a few minutes, or if your internet is dropped for whatever reason.</p>",
+    "comments": [
+        {
+            "id": 366,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-03T07:44:18+00:00",
+            "content_html": "<p>I'm guessing this is what Event_NULL (2000) is for the Telnet Protocol as well.</p>"
+        }
+    ]
+}

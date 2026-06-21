@@ -1,0 +1,18 @@
+{
+    "id": 140,
+    "packet_id": 4,
+    "packet_name": "BOTNET_COMMAND",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Receive command over BotNet.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/140/botnet-command",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T02:59:05+00:00",
+    "format": "(UINT32) Sender bot ID  [rev: 4; awl: 1]\r\n(UINT32) Distribution   [rev: 4; awl: 1]\r\n(STRING) Sender name\r\n(STRING) Command",
+    "remarks_html": "<p>Receive command over BotNet.</p>\n<p><strong>Distribution</strong>:</p>\n<ul>\n<li><code>0x00</code>: Broadcast (all connected users), from a <a href=\"/packet/110/botnet-command-to-all\"><code>C&gt;S 0x07 BOTNET_COMMAND_TO_ALL</code></a></li>\n<li><code>0x01</code>: Database (connected users on this database), from a <a href=\"/packet/263/botnet-command-to-database\"><code>C&gt;S 0x04 BOTNET_COMMAND_TO_DATABASE</code></a></li>\n<li><code>0x02</code>: Directed (only to one target), from a <a href=\"/packet/357/botnet-command-to\"><code>C&gt;S 0x08 BOTNET_COMMAND_TO</code></a></li>\n</ul>",
+    "comments": []
+}

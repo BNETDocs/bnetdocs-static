@@ -1,0 +1,23 @@
+{
+    "id": 256,
+    "packet_id": 104,
+    "packet_name": "SID_FRIENDSREMOVE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sent to clients supporting this packet when an entry is removed from the client's friendlist. The first friend is <code>Entry number</code> 0. Accounts positioned after the specified <code>Entry number</code> in the friendlist are moved up by one.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/256/sid-friendsremove",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-28T20:37:05+00:00",
+    "format": "(UINT8) Entry number",
+    "remarks_html": "<p>Sent to clients supporting this packet when an entry is removed from the client's friendlist. The first friend is <code>Entry number</code> 0. Accounts positioned after the specified <code>Entry number</code> in the friendlist are moved up by one.</p>\n<p>Usually requested with the chat command <code>/friend remove</code>.</p>\n<p>See [SID_FRIENDSLIST] for more information.</p>",
+    "comments": []
+}

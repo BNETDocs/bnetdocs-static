@@ -1,0 +1,21 @@
+{
+    "id": 364,
+    "packet_id": 33,
+    "packet_name": "D2GS_STACKITEM",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Stacks one item such as a key onto another item.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/364/d2gs-stackitem",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID - Stack item\r\n(UINT32) Item ID - Target item \r\n",
+    "remarks_html": "<p>Stacks one item such as a key onto another item.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

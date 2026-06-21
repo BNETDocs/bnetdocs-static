@@ -1,0 +1,21 @@
+{
+    "id": 167,
+    "packet_id": 123,
+    "packet_name": "SID_CLANSETMOTD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sets the message of the day.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/167/sid-clansetmotd",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T01:20:10+00:00",
+    "format": "(UINT32) Cookie\r\n(STRING) Message",
+    "remarks_html": "<p>Sets the message of the day.</p>\n<p>There is no response to this message. Messages are truncated to 220 characters and censored using the <a href=\"/document/38/chat-language-filter\">Chat Language Filter</a>. This message is received every time any member enters the clan channel as a <a href=\"packet/307/sid-chatevent\"><code>S&gt;C 0x0F SID_CHATEVENT</code></a> <code>0x12 EID_INFO</code>.</p>",
+    "comments": []
+}

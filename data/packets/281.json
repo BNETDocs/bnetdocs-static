@@ -1,0 +1,21 @@
+{
+    "id": 281,
+    "packet_id": 73,
+    "packet_name": "D2GS_WAYPOINT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Requests to go to a waypoint if it was already activated.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/281/d2gs-waypoint",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Waypoint ID\r\n(UINT8) Unknown - Appears to be random\r\n(UINT16) Unknown - 0x00\r\n(UINT8) Level number\r\n(UINT16) Unknown - 0x00 \r\n",
+    "remarks_html": "<p>Requests to go to a waypoint if it was already activated.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

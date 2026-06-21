@@ -1,0 +1,18 @@
+{
+    "id": 311,
+    "packet_id": 0,
+    "packet_name": "BOTNET_KEEPALIVE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Keep the connection alive.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/311/botnet-keepalive",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-12T04:08:38+00:00",
+    "format": "[blank] \r\n",
+    "remarks_html": "<p>Keep the connection alive.</p>\n<p>BotNet sends this to the client when the connection has been idle. No response is needed.</p>",
+    "comments": []
+}

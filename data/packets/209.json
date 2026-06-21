@@ -1,0 +1,21 @@
+{
+    "id": 209,
+    "packet_id": 13,
+    "packet_name": "BOTNET_ACCOUNT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Log on to, create, or modify account.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/209/botnet-account",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-13T02:29:39+00:00",
+    "format": "(UINT32) Subcommand\r\n(STRING) Account name             [max: 16]\r\n\r\nFor subcommand 0x00 (Log on):\r\n    (STRING) Account password     [max: 96]\r\n\r\nFor subcommand 0x01 (Change password):\r\n    (STRING) Account old password [max: 96]\r\n    (STRING) Account new password [max: 96]\r\n\r\nFor subcommand 0x02 (Create):\r\n    (STRING) Account password     [max: 96]",
+    "remarks_html": "<p>Log on to, create, or modify account.</p>\n<p><em>This message is supported as of server revision 2.</em></p>\n<p><strong>Subcommand</strong>:</p>\n<p>Possible values:</p>\n<ul>\n<li><code>0x00</code>: Log on</li>\n<li><code>0x01</code>: Change passowrd</li>\n<li><code>0x02</code>: Create</li>\n</ul>\n<p>Other values are reserved.</p>\n<hr />\n<p>Account names are restricted to alphanumeric characters, brackets, underscores, and dashes, <code>A-Za-z0-9[]_-</code>. Invalid characters result in failure to create and to log on to the account.</p>\n<p>This account name appears in <a href=\"/packet/198/botnet-user\"><code>S&gt;C 0x06 BOTNET_USER</code></a> when you successfully log on. Users who are not logged on appear with the string <code>\"No Account\"</code> which is not a valid account name.</p>\n<p>The server ensures that there is never more than one user online using a given account name. When a client logs on with a second connection using the same account, the other user is changed to no longer be on an account.</p>\n<p>Account passwords are plaintext and sent over an unencrypted protocol so it is advised that it is not shared with any other website or service for your own safety.</p>",
+    "comments": []
+}

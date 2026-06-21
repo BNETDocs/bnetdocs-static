@@ -1,0 +1,21 @@
+{
+    "id": 264,
+    "packet_id": 122,
+    "packet_name": "D2GS_LOGONRESPONSE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This message is originally received compressed, so the message ID will correspond with D2GS compressed format.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/264/d2gs-logonresponse",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Unknown - Possible acceptance/request ID \r\n",
+    "remarks_html": "<p>This message is originally received compressed, so the message ID will correspond with D2GS compressed format.</p>\n<p>This message is received if your logon is accepted by the D2GS.</p>\n<p>Please note: This message's official name is not known, and has been invented. </p>",
+    "comments": []
+}

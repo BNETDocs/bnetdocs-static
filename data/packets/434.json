@@ -1,0 +1,21 @@
+{
+    "id": 434,
+    "packet_id": 47,
+    "packet_name": "W3GS_SEARCHGAME",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent to the entire local area network to detect games.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/434/w3gs-searchgame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Product\r\n(UINT32) Version\r\n(UINT32) Unknown (0)",
+    "remarks_html": "<p>This is sent to the entire local area network to detect games.</p>\n<p>Product is either WAR3 or W3XP.</p>",
+    "comments": []
+}

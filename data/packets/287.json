@@ -1,0 +1,29 @@
+{
+    "id": 287,
+    "packet_id": 18,
+    "packet_name": "SID_LOCALEINFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Informs the server of the client's locale information. Much of this functionality has been incorporated into <a href=\"/packet/279/sid-auth-info\">C&gt;S 0x50 SID_AUTH_INFO</a>, and more in-depth remarks can be found there. </p>",
+    "used_by": [
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/287/sid-localeinfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2022-01-15T07:00:19+00:00",
+    "format": "(FILETIME) System time\r\n(FILETIME) Local time\r\n  (INT32) Timezone bias\r\n  (UINT32) System LCID\r\n  (UINT32) User LCID\r\n  (UINT32) User language ID\r\n  (STRING) Abbreviated language name\r\n  (STRING) Country code\r\n  (STRING) Abbreviated country name\r\n  (STRING) Country name",
+    "remarks_html": "<p>Informs the server of the client's locale information. Much of this functionality has been incorporated into <a href=\"/packet/279/sid-auth-info\">C&gt;S 0x50 SID_AUTH_INFO</a>, and more in-depth remarks can be found there. </p>\n<p>These fields can all be retrieved from system calls:</p>\n<ul>\n<li><strong>System time</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724390(v=vs.85).aspx\">GetSystemTime()</a></li>\n<li><strong>Local time</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724338(v=vs.85).aspx\">GetLocalTime()</a></li>\n<li><strong>Timezone bias</strong>: Retrieve using <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms725481(v=vs.85).aspx\">TIME_ZONE_INFORMATION</a> structure returned from <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724421(v=vs.85).aspx\">GetTimeZoneInformation()</a>\n<ul>\n<li>Depending on whether the return value is <code>TIME_ZONE_ID_STANDARD</code> or <code>TIME_ZONE_ID_DAYLINE</code>, add <code>TZI.Bias + TZI.StandardBias</code> or <code>TZI.Bias + TZI.DaylightBias</code> to get the bias in minutes, where <code>TZI</code> is the returned <code>TIME_ZONE_INFORMATION</code> structure.</li>\n<li>Alternatively, you may use <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724390(v=vs.85).aspx\">GetSystemTime()</a>, <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724338(v=vs.85).aspx\">GetLocalTime()</a>, and <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724948(v=vs.85).aspx\">SystemTimeToFileTime()</a>: convert both system and local time to FILETIMEs, subtract local time from system time, and divide by 600,000,000 to get the bias in minutes.</li>\n</ul></li>\n<li><strong>System LCID</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318121(v=vs.85).aspx\">GetSystemDefaultLCID()</a></li>\n<li><strong>User LCID</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318135(v=vs.85).aspx\">GetUserDefaultLCID()</a></li>\n<li><strong>User language ID</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318134(v=vs.85).aspx\">GetUserDefaultLangID()</a></li>\n<li><strong>Abbreviated language name</strong>, <strong>country code</strong>, <strong>abbreviated country name</strong>, and <strong>country name</strong>: <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318101(v=vs.85).aspx\">GetLocaleInfo()</a> with LCType set to <code>LOCALE_SABBREVLANGNAME</code> (three-letter code), <code>LOCALE_ICOUNTRY</code> (numeric code), <code>LOCALE_SABBREVCTRYNAME</code> (three-letter code), <code>LOCALE_SENGLISHCOUNTRYNAME</code> (English country name) respectively.</li>\n</ul>",
+    "comments": [
+        {
+            "id": 651,
+            "author_username": "BNETDocs",
+            "created_datetime": "2022-01-15T06:54:12+00:00",
+            "content_html": "<p>Official Battle.net servers seem to ignore the timezone bias value here in favor of the explicitly set local time value, at least for the /time command.</p>"
+        }
+    ]
+}

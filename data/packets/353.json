@@ -1,0 +1,21 @@
+{
+    "id": 353,
+    "packet_id": 24,
+    "packet_name": "D2GS_ITEMTOBUFFER",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Moves item from the player's cursor buffer to an inventory space.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/353/d2gs-itemtobuffer",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID\r\n(UINT32) X coordinate\r\n(UINT32) Y coordinate\r\n(UINT32) Buffer Type\r\n\r\nPossible Buffer Types:\r\n0x00 - Character's inventory (backpack)\r\n0x01 - NPC and other Trade Windows\r\n0x02 - Trade window\r\n0x03 - Horadric Cube\r\n0x04 - Stash ",
+    "remarks_html": "<p>Moves item from the player's cursor buffer to an inventory space.</p>\n<p>Please note: This message's official name is not known, and has been invented. </p>\n<p>Inventory coordinates:<br />\n(0,0) - Top left<br />\n(9,3) - Bottom right</p>",
+    "comments": []
+}

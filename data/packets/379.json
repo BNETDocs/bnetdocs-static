@@ -1,0 +1,21 @@
+{
+    "id": 379,
+    "packet_id": 86,
+    "packet_name": "SID_AUTH_ACCOUNTCHANGEPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message reports success or failure for a password change operation.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/379/sid-auth-accountchangeproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:03:29+00:00",
+    "format": "(UINT32) Status code\r\n(UINT8) [20] Server password proof for old password (M2) \r\n",
+    "remarks_html": "<p>This message reports success or failure for a password change operation.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Password changed</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Incorrect old password</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

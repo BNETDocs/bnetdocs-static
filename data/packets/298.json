@@ -1,0 +1,24 @@
+{
+    "id": 298,
+    "packet_id": 46,
+    "packet_name": "SID_GETLADDERDATA",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests ladder listing.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/298/sid-getladderdata",
+    "created_datetime": "2012-06-01T21:12:30+00:00",
+    "edited_datetime": "2019-12-28T23:09:34+00:00",
+    "format": "(UINT32) Product ID\r\n(UINT32) League\r\n(UINT32) Sort method\r\n(UINT32) Starting rank\r\n(UINT32) Number of ranks to list ",
+    "remarks_html": "<p>Requests ladder listing.</p>\n<p>League is 1 for Ladder, 3 for Iron Man.</p>\n<table>\n<thead>\n<tr>\n<th>Sort method</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Highest Rating</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Fastest Climbers (Unused)</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Most Wins</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Most Games Played</td>\n</tr>\n</tbody>\n</table>\n<p>Rank is 0-based.</p>\n<p>Maximum number of ranks to list is 20.</p>",
+    "comments": []
+}

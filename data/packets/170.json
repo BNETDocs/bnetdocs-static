@@ -1,0 +1,20 @@
+{
+    "id": 170,
+    "packet_id": 48,
+    "packet_name": "SID_CDKEY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains unhashed CD key information.</p>",
+    "used_by": [
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/170/sid-cdkey",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-17T10:13:40+00:00",
+    "format": " (UINT32) Spawn (0/1)\r\n(STRING) CDKey\r\n(STRING) Key Owner",
+    "remarks_html": "<p>Contains unhashed CD key information.</p>\n<p>This packet only works with 13 character CD keys and sending  it for anything else will get you IP banned.</p>",
+    "comments": []
+}

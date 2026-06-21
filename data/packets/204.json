@@ -1,0 +1,18 @@
+{
+    "id": 204,
+    "packet_id": 1,
+    "packet_name": "BOTNET_LOGON",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Acknowledge identifying yourself with BotNet.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/204/botnet-logon",
+    "created_datetime": "2011-08-21T19:25:06+00:00",
+    "edited_datetime": "2018-03-12T04:09:28+00:00",
+    "format": "(UINT32) Result\r\n(UINT32) Client IP [rev: 4]",
+    "remarks_html": "<p>Acknowledge identifying yourself with BotNet.</p>\n<p><strong>Result</strong>:</p>\n<ul>\n<li><code>0x00</code>: Failed</li>\n<li><code>0x01</code>: Succeeded</li>\n</ul>\n<p>For server revisions 4 and newer, the server closes the connection if the client is rejected instead of sending any data. Older revisions would respond with this message with <strong>Result</strong> set to <code>0x00</code>.</p>",
+    "comments": []
+}

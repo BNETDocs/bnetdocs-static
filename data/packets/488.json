@@ -1,0 +1,23 @@
+{
+    "id": 488,
+    "packet_id": 75,
+    "packet_name": "SCGP_FORCENAMES",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/488/scgp-forcenames",
+    "created_datetime": "2012-03-24T14:20:38+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x4B)\r\n(UINT8[30]) Force 1 Name\r\n(UINT8[30]) Force 2 Name\r\n(UINT8[30]) Force 3 Name\r\n(UINT8[30]) Force 4 Name",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>This is only sent by the host to joining players, in Use Map Settings games, so they can display the name of the teams before they have downloaded the map.<br />\nEach block of 30 bytes is infact a null-terminated string.</p>",
+    "comments": []
+}

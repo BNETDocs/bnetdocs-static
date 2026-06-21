@@ -1,0 +1,26 @@
+{
+    "id": 234,
+    "packet_id": 8,
+    "packet_name": "PKT_CONNTEST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 2,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 7,
+    "brief_html": "<p>This packet is sent to establish that the client supports UDP. In particular, when the client is using a non-standard port (e.g. not port 6112), this message is used to tell the server where it should send PKT_CONNTEST messages.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/234/pkt-conntest",
+    "created_datetime": "2012-03-20T12:55:09+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Server Token ",
+    "remarks_html": "<p>This packet is sent to establish that the client supports UDP. In particular, when the client is using a non-standard port (e.g. not port 6112), this message is used to tell the server where it should send PKT_CONNTEST messages.</p>\n<p>This message should be sent in response to SID_LOGONCHALLENGE.</p>\n<p>Not used by official clients in favor of PKT_CONNTEST2.</p>",
+    "comments": []
+}

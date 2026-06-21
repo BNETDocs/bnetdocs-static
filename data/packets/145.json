@@ -1,0 +1,61 @@
+{
+    "id": 145,
+    "packet_id": 10,
+    "packet_name": "SID_ENTERCHAT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Joins Chat. </p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/145/sid-enterchat",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-17T10:29:44+00:00",
+    "format": "(STRING) Username\r\n(STRING) Statstring",
+    "remarks_html": "<p>Joins Chat. </p>\n<p><strong>Username</strong> is the account username for all products except Diablo II.</p>\n<p>Diablo II uses the game's character name (open or closed Battle.net). This may be a bug, since Diablo II also passes the character name in the statstring.</p>\n<p>This value is ignored by the server.</p>\n<p><strong>Statstring</strong> is the client's statstring.</p>\n<p>For Diablo, the server sets the first four bytes to your product value (RHSD, LTRD) and uses the string as-is for <a href=\"/document/18/chat-statstrings\">statstrings in channels</a>. The client sends the character statstring of the form <code>XXXX # # # # # # # # #</code> with the values <code>Product Level Class Dots Strength Magic Dexterity Vitality Gold Spawned</code>, but any string value is accepted by the server.</p>\n<p>For Warcraft II, Starcraft, and Warcraft III, the field is empty.</p>\n<p>For Diablo II, the field is the string <code>Realm,CharacterName</code> where <code>Realm</code> is an empty string on Open Battle.net.</p>\n<p>This value is ignored by the server unless the client is on Diablo (DRTL/DSHR).</p>",
+    "comments": [
+        {
+            "id": 91,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-26T10:27:28+00:00",
+            "content_html": "<p>Appears this is not always null for cdkey products, just logged this while on D2XP:<br />\nff 0a 1b 00 46 61 72 43 72 61 70 00 55 53 45 61 73 74 2c 46 61 72 43 72 61 70 00<br />\n...FarCrap.USEast,FarCrap.</p>\n<p>(DWORD) Protocal Header: ff 0a 1b 00<br />\n(STRING)  CharacterName: 46 61 72 43 72 61 70 00<br />\n(STRING)  Realm, Character: 55 53 45 61 73 74 2c 46 61 72 43 72 61 70 00</p>\n<p>This would be logging into USEast on D2XP with the realm character &quot;FarCrap&quot; on my account, no account info is seen in the packet. The account in use is Boredom and it is logged into the realm character FarCrap.</p>"
+        },
+        {
+            "id": 97,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-05-01T11:40:19+00:00",
+            "content_html": "<p>Perhaps, but in WAR3 and W3XP its always a null five-character string with the last two bytes being &quot;W3&quot; (then a null char&quot;)</p>"
+        },
+        {
+            "id": 99,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-05-10T06:19:13+00:00",
+            "content_html": "<p>Yah the extra data relates to realm characters, for only D2DV and D2XP it seems.<br />\nCan you post a full log of 0x0A that contains bytes you are refering to?<br />\nFor both war3 and w3xp I am getting: ff 0a 06 00 00 00</p>"
+        },
+        {
+            "id": 631,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-11-17T09:38:21+00:00",
+            "content_html": "<p>For D2 open character the statstring is also set in the same way as for realm characters (as commented above) but the value for the realm name (in the above as 'USEast') is instead just an empty string, so the value would be ',FarCrap'.</p>\n<p>For both D2 open and D2 realm characters the 'username' field here is set to the character's name.</p>"
+        },
+        {
+            "id": 633,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-11-19T07:13:29+00:00",
+            "content_html": "<p>If you give an empty statstring value on DRTL/DSHR the server will assign you a default one <code>LTRD 1 0 0 30 10 20 25 0 0</code> (replace LTRD with RHSD for DSHR). This translates to a character that is (according to StealthBot) a <code>Level 1 Warrior with 0 dots, 30 strength, 10 magic, 20 dexterity, 25 vitality, and 0 gold</code>.</p>"
+        }
+    ]
+}

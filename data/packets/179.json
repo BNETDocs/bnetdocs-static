@@ -1,0 +1,30 @@
+{
+    "id": 179,
+    "packet_id": 1,
+    "packet_name": "BNLS_CDKEY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will encrypt your CD-key, and will reply with the properly encoded CD-key as it is supposed to be sent in the message <a href=\"/408/sid-auth-check\">C&gt;S [0x51] SID_AUTH_CHECK</a>. It now works with CD-keys of all products.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/179/bnls-cdkey",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-07T01:15:10+00:00",
+    "format": "(UINT32) Server Token\r\n(STRING) CD key",
+    "remarks_html": "<p>This message will encrypt your CD-key, and will reply with the properly encoded CD-key as it is supposed to be sent in the message <a href=\"/408/sid-auth-check\">C&gt;S [0x51] SID_AUTH_CHECK</a>. It now works with CD-keys of all products.</p>",
+    "comments": []
+}

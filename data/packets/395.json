@@ -1,0 +1,18 @@
+{
+    "id": 395,
+    "packet_id": 7,
+    "packet_name": "BNLS_UPGRADECHALLENGE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTUPGRADE (0x57).<br />\nThis message is used to upgrade an existing account from Old Logon System to New Logon System.<br />\nYou must send this before you can send BNLS_UPGRADEPROOF (0x08).</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/395/bnls-upgradechallenge",
+    "created_datetime": "2011-02-04T22:10:56+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Account name\r\n(STRING) Account old password\r\n(STRING) Account new password (May be identical to old password but still must be provided)",
+    "remarks_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTUPGRADE (0x57).<br />\nThis message is used to upgrade an existing account from Old Logon System to New Logon System.<br />\nYou must send this before you can send BNLS_UPGRADEPROOF (0x08).</p>\n<p>Important: You must send BNLS_LOGONCHALLENGE (0x02) or BNLS_CHANGECHALLENGE (0x05) before sending this. Otherwise, the results are meaningless.</p>\n<p>Note: Since Old Logon System and New Logon System are incompatible, you can change the password and upgrade the account at the same time.<br />\nThis is not required - the old password and the new password may be identical for this message.</p>",
+    "comments": []
+}

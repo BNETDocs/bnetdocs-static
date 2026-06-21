@@ -1,0 +1,38 @@
+{
+    "id": 279,
+    "packet_id": 80,
+    "packet_name": "SID_AUTH_INFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sends information about the client's product and locale to Battle.net.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/279/sid-auth-info",
+    "created_datetime": "2011-05-31T02:31:46+00:00",
+    "edited_datetime": "2022-01-15T07:00:54+00:00",
+    "format": "(UINT32) Protocol ID\r\n(UINT32) Platform code\r\n(UINT32) Product code\r\n(UINT32) Version byte\r\n(UINT32) Language code\r\n(UINT32) Local IP\r\n(INT32) Time zone bias\r\n(UINT32) MPQ locale ID\r\n(UINT32) User language ID\r\n(STRING) Country abbreviation\r\n(STRING) Country",
+    "remarks_html": "<p>Sends information about the client's product and locale to Battle.net.</p>\n<p>Field descriptions:</p>\n<ul>\n<li><strong>Protocol ID</strong>: Battle.net's current Protocol ID is <code>0x00</code>. This field has only been seen with a value of <code>0x00</code>.</li>\n<li><strong>Platform code</strong>: Identifies the client's <a href=\"/document/12/product-identification\">platform value</a>.</li>\n<li><strong>Product code</strong>: Identifies the client's <a href=\"/document/12/product-identification\">product value</a>.</li>\n<li><strong>Version byte</strong>: Identifies the client's <a href=\"/document/12/product-identification\">version number</a>.</li>\n<li><strong>Language code</strong>: Identifies the client's <a href=\"/document/12/product-identification\">language value</a>. If set to <code>0x00</code> the server will likely use its default, or English (enUS). This value is used to determine the client's home channel (eg: <code>Diablo II En-1</code>).</li>\n<li><strong>Local IP</strong>: This is the local network IP of the client, in network byte (big-endian) order, for NAT compatibility. Can safely be set to <code>0.0.0.0</code>, or <code>0x00</code>.</li>\n<li><strong>Timezone bias</strong>: The difference between UTC and local time, in minutes.\n<ul>\n<li>Retrieve using <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms725481(v=vs.85).aspx\">TIME_ZONE_INFORMATION</a> structure returned from <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724421(v=vs.85).aspx\">GetTimeZoneInformation()</a></li>\n<li>Depending on whether the return value is <code>TIME_ZONE_ID_STANDARD</code> or <code>TIME_ZONE_ID_DAYLINE</code>, add <code>TZI.Bias + TZI.StandardBias</code> or <code>TZI.Bias + TZI.DaylightBias</code> to get the bias in minutes, where <code>TZI</code> is the returned <code>TIME_ZONE_INFORMATION</code> structure.</li>\n<li>Alternatively, you may use <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724390(v=vs.85).aspx\">GetSystemTime()</a>, <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724338(v=vs.85).aspx\">GetLocalTime()</a>, and <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms724948(v=vs.85).aspx\">SystemTimeToFileTime()</a>: convert both system and local time to FILETIMEs, subtract local time from system time, and divide by 600,000,000 to get the bias in minutes.</li>\n</ul></li>\n<li><strong>MPQ locale ID</strong>: This field is part of Blizzard's multi-lingual MPQ system and is used to specify which version of an MPQ should be used when the MPQ is available in multiple languages. Can safely be set to <code>0x00</code>, but you may also use something like  <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318135(v=vs.85).aspx\">GetUserDefaultLCID()</a>.</li>\n<li><strong>User language ID</strong>: Can be retrieved with <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318134(v=vs.85).aspx\">GetUserDefaultLangID()</a>. Can safely be set to <code>0x00</code>.</li>\n<li><strong>Abbreviated country name</strong> and <strong>country name</strong>: Can be retrived with <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/dd318101(v=vs.85).aspx\">GetLocaleInfo()</a> with LCType set to <code>LOCALE_SABBREVCTRYNAME</code> (three-letter code) and <code>LOCALE_SENGLISHCOUNTRYNAME</code> (English country name) respectively.\n<ul>\n<li>If you're unable to retrieve these values you can use <code>USA</code> and <code>United States</code>.</li>\n</ul></li>\n</ul>",
+    "comments": [
+        {
+            "id": 38,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-12-01T02:04:00+00:00",
+            "content_html": "<p>Local IP address in network byte order can be determined using the inet_addr API (<a href=\"http://msdn2.microsoft.com/en-us/library/ms738563.aspx\">http://msdn2.microsoft.com/en-us/library/ms738563.aspx</a>)</p>\n<p>Region can be determined by joining LOCALE_SISO639LANGNAME and LOCALE_SISO3166CTRYNAME together after they have been determined by the GetLocaleInfo API e.g.:<br />\nRegion = GetLocaleInfo(LOCALE_SISO639LANGNAME) &amp; GetLocaleInfo(LOCALE_SISO3166CTRYNAME)</p>"
+        },
+        {
+            "id": 143,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-07-08T06:39:15+00:00",
+            "content_html": "<p>The product ID can use W2BN / WarCraft II BNE. I saw MirageBot by Chriso using it when I network-logged it, and it works just fine as of June 8th, 2009. All I am saying is, W2BN does not have to use the older version (CLIENTID packets), and that it can use this newer version (SID_AUTH_INFO, SID_AUTH_CHECK, SID_LOGONRESPONSE2, SID_ENTERCHAT).</p>\n<p>In an interesting topic, I wonder (have not tested) if it is possible to supply CHAT to the product ID, instead of an actual binary client like STAR or WAR3. If you could do this, then the ol' Chat-icon that was seen back before 2005 may still be able to be seen around the Battle.net.</p>"
+        }
+    ]
+}

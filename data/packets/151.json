@@ -1,0 +1,21 @@
+{
+    "id": 151,
+    "packet_id": 112,
+    "packet_name": "SID_CLANFINDCANDIDATES",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests a list of candidates to create a clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/151/sid-clanfindcandidates",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-28T21:06:28+00:00",
+    "format": "(UINT32) Cookie\r\n(UINT32) Clan tag",
+    "remarks_html": "<p>Requests a list of candidates to create a clan.</p>\n<p>The client sends this to check for viable candidates in the channel and friend list, and also to check the availability of the specified clan tag. If 10 or more candidates are found, the official client would prompt with a selection of users that he wants to invite to start a clan.</p>",
+    "comments": []
+}

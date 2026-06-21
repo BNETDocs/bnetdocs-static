@@ -1,0 +1,21 @@
+{
+    "id": 157,
+    "packet_id": 114,
+    "packet_name": "SID_CLANCREATIONINVITATION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Received when a user is inviting you to create a new clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/157/sid-clancreationinvitation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-28T21:24:04+00:00",
+    "format": "(UINT32)   Cookie\r\n(UINT32)   Clan tag\r\n(STRING)   Clan name\r\n(STRING)   Creator's username\r\n (UINT8)   Number of users being invited\r\n(STRING)[] Usernames",
+    "remarks_html": "<p>Received when a user is inviting you to create a new clan.</p>\n<p>To accept or decline, you must respond with <a href=\"/packet/319/sid-clancreationinvitation\"><code>C&gt;S 0x72 SID_CLANCREATIONINVITATION</code></a>.</p>",
+    "comments": []
+}

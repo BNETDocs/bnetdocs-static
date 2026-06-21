@@ -1,0 +1,21 @@
+{
+    "id": 336,
+    "packet_id": 32,
+    "packet_name": "D2GS_USEITEM",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Uses the specified item (such as a potion, town portal scroll, etc.).</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/336/d2gs-useitem",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID\r\n(UINT32) X coordinate\r\n(UINT32) Y coordinate \r\n",
+    "remarks_html": "<p>Uses the specified item (such as a potion, town portal scroll, etc.).</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

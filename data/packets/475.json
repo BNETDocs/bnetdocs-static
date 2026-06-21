@@ -1,0 +1,26 @@
+{
+    "id": 475,
+    "packet_id": 32,
+    "packet_name": "SID_ANNOUNCEMENT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Used to send announcements and arbitrary messages to the user, but this was soon superseded by <a href=\"/packet/307/sid-chatevent\">S&gt;C 0x0F SID_CHATEVENT</a> subcommands such as EID_INFO, EID_ERROR, and EID_BROADCAST. Printed out with the same color and style as an EID_BROADCAST.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/475/sid-announcement",
+    "created_datetime": "2010-09-25T23:17:23+00:00",
+    "edited_datetime": "2019-12-27T02:38:25+00:00",
+    "format": "(STRING) Text",
+    "remarks_html": "<p>Used to send announcements and arbitrary messages to the user, but this was soon superseded by <a href=\"/packet/307/sid-chatevent\">S&gt;C 0x0F SID_CHATEVENT</a> subcommands such as EID_INFO, EID_ERROR, and EID_BROADCAST. Printed out with the same color and style as an EID_BROADCAST.</p>\n<p>Very simply prints out text with the string at 1903B9FBh (the default string, used anyway if the username field is NULL in the chat event struct -- currently a single 0x7F char) as the username.</p>\n<p>Found at:<br />\nbattle!1901DDA0h (as of 1.16.1)</p>",
+    "comments": []
+}

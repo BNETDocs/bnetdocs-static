@@ -1,0 +1,21 @@
+{
+    "id": 222,
+    "packet_id": 30,
+    "packet_name": "D2GS_SETWORDATTR",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sets the current (base) amount of the specified attribute.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/222/d2gs-setwordattr",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Attribute\r\n(UINT16) Amount \r\n",
+    "remarks_html": "<p>Sets the current (base) amount of the specified attribute.</p>\n<p>Note: Since these are only base amounts, items that give increase/decrease the attribute should be added/subtracted to/from the base value sent in the message.</p>\n<p>For attributes, see D2GS_SETUINT8ATTR.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

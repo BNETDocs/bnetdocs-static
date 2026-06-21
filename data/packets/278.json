@@ -1,0 +1,28 @@
+{
+    "id": 278,
+    "packet_id": 112,
+    "packet_name": "SID_CLANFINDCANDIDATES",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the list of potential candidates.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/278/sid-clanfindcandidates",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T00:44:52+00:00",
+    "format": "(UINT32)   Cookie\r\n (UINT8)   Status\r\n (UINT8)   Number of candidates\r\n(STRING)[] Usernames",
+    "remarks_html": "<p>Contains the list of potential candidates.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Successfully found candidate(s)</li>\n<li><code>0x01</code>: Clan tag in use</li>\n<li><code>0x02</code>: Too soon because you recently created a clan (product key based)</li>\n<li><code>0x08</code>: Not allowed because you are already in clan</li>\n<li><code>0x0A</code>: Invalid clan tag specified</li>\n</ul>",
+    "comments": [
+        {
+            "id": 84,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-10T08:22:58+00:00",
+            "content_html": "<p>Im pretty sure 0x02 response means that your CD-key is currently clanned. I have been receiving it during clan creation on clanned CD-keys.</p>"
+        }
+    ]
+}

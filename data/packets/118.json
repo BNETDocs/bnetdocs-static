@@ -1,0 +1,42 @@
+{
+    "id": 118,
+    "packet_id": 103,
+    "packet_name": "SID_FRIENDSADD",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sent to clients supporting this packet when an account is added to the client's friendlist. New friends are appended to the list.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/118/sid-friendsadd",
+    "created_datetime": "2011-06-02T21:49:59+00:00",
+    "edited_datetime": "2017-03-28T20:36:12+00:00",
+    "format": "(STRING) Account\r\n  (UINT8) Status\r\n  (UINT8) Location id\r\n (UINT32) Product id\r\n(STRING) Location name\r\n",
+    "remarks_html": "<p>Sent to clients supporting this packet when an account is added to the client's friendlist. New friends are appended to the list.</p>\n<p>Bitwise-values and meanings for <code>Status</code>:</p>\n<pre><code>0x01: Mutual\n0x02: DND\n0x04: Away</code></pre>\n<p>Value and meanings for <code>Location id</code>:</p>\n<pre><code>0x00: Offline\n0x01: Not in chat\n0x02: In chat\n0x03: In public game\n0x04: In private game not on your friends list\n0x05: In private game is on your friends list</code></pre>\n<p>Usually requested with the chat command <code>/friend add</code>.</p>\n<p>See [SID_FRIENDSLIST] for more information.</p>",
+    "comments": [
+        {
+            "id": 103,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-05-19T01:38:57+00:00",
+            "content_html": "<p>The order of Friend Type and Friend Status should be switched.</p>"
+        },
+        {
+            "id": 116,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-08-13T04:56:18+00:00",
+            "content_html": "<p>Actually, it's in the right order.</p>"
+        },
+        {
+            "id": 460,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-06-03T02:51:22+00:00",
+            "content_html": "<p>Renamed Friend Type to Status and Friend Status to Location.</p>\n<p>Also made sure Status and Location were correct, as previously thought to be incorrect by idiat.</p>"
+        }
+    ]
+}

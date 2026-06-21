@@ -1,0 +1,21 @@
+{
+    "id": 430,
+    "packet_id": 137,
+    "packet_name": "D2GS_UNIQUEEVENTS",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>I'm sure there are many others by looking at the gaps here.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/430/d2gs-uniqueevents",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) EventId // see below,\r\n\r\nEvents known so far:\r\n00 = Killed all the monsters in the den.\r\n01 = Tristram portal opening for the first time.\r\n03 = Staff being put into the oriface in act2\r\n06 = Ammy being poped in clawviper temple.\r\n07 = Summoner area? death or when the tome is clicked unsure which.\r\n08 = Duriel just died\r\n0b = Meph just died.\r\n0c = The last seal in cs was hit diablo is now released.\r\n0d = Diablo was killed or is dead.\r\n",
+    "remarks_html": "<p>I'm sure there are many others by looking at the gaps here.</p>\n<p>Note1: Unsure what to name this any suggestions will be taken into account.<br />\nNote2: This seems to relate to various events that relate directly or indirectly to key quest states//events.</p>",
+    "comments": []
+}

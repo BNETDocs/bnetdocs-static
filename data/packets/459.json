@@ -1,0 +1,21 @@
+{
+    "id": 459,
+    "packet_id": 11,
+    "packet_name": "W3GS_COUNTDOWN_END",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The game has finished the countdown and has now started. Players should see a loading screen for the map once this is received.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/459/w3gs-countdown-end",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>The game has finished the countdown and has now started. Players should see a loading screen for the map once this is received.</p>\n<p><a href=\"/packet/458/w3gs-countdown-start\">S&gt;C [0x10] W3GS_COUNTDOWN_START</a> should be received before this packet, even if there is no countdown or if the countdown was 0 seconds.</p>",
+    "comments": []
+}

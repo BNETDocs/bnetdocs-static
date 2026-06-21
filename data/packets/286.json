@@ -1,0 +1,22 @@
+{
+    "id": 286,
+    "packet_id": 29,
+    "packet_name": "SID_LOGONCHALLENGEEX",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Informs the client of the UDP Token and the Server Token.</p>",
+    "used_by": [
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/286/sid-logonchallengeex",
+    "created_datetime": "2012-05-10T04:34:12+00:00",
+    "edited_datetime": "2020-10-17T07:42:50+00:00",
+    "format": "(UINT32) UDP Token\r\n(UINT32) Server Token ",
+    "remarks_html": "<p>Informs the client of the UDP Token and the Server Token.</p>\n<p>The server responds with this packet after receiving SID_CLIENTID or SID_CLIENTID2 from the client.</p>",
+    "comments": []
+}

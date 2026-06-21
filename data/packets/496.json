@@ -1,0 +1,23 @@
+{
+    "id": 496,
+    "packet_id": 63,
+    "packet_name": "SCGP_HUMAN",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 11,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/496/scgp-human",
+    "created_datetime": "2012-03-24T14:43:53+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x3F)\r\n(UINT8) Unknown (often 0x00; seen 0x01)\r\n(UINT8) 0x00\r\n(UINT8) 0x00\r\n(UINT16) A\r\n(UINT16) B",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent by the host sometimes with CLS 2, packet 0x3E.</p>\n<p>I'm not really sure what this message means.<br />\nThe values A and B (and probably the null values) are carbon copies of the values a player sends in CLS 2, packet 0x40.</p>",
+    "comments": []
+}

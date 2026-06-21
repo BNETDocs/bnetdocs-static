@@ -1,0 +1,21 @@
+{
+    "id": 453,
+    "packet_id": 33,
+    "packet_name": "W3GS_LEAVEREQ",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A client requests to leave.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/453/w3gs-leavereq",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T22:48:21+00:00",
+    "format": "(UINT32) Reason",
+    "remarks_html": "<p>A client requests to leave.</p>\n<table>\n<thead>\n<tr>\n<th>Reason</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x01</code></td>\n<td>PLAYERLEAVE_DISCONNECT</td>\n</tr>\n<tr>\n<td><code>0x07</code></td>\n<td>PLAYERLEAVE_LOST</td>\n</tr>\n<tr>\n<td><code>0x08</code></td>\n<td>PLAYERLEAVE_LOSTBUILDINGS</td>\n</tr>\n<tr>\n<td><code>0x09</code></td>\n<td>PLAYERLEAVE_WON</td>\n</tr>\n<tr>\n<td><code>0x0A</code></td>\n<td>PLAYERLEAVE_DRAW</td>\n</tr>\n<tr>\n<td><code>0x0B</code></td>\n<td>PLAYERLEAVE_OBSERVER</td>\n</tr>\n<tr>\n<td><code>0x0D</code></td>\n<td>PLAYERLEAVE_LOBBY</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

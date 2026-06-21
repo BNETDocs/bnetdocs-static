@@ -1,0 +1,21 @@
+{
+    "id": 251,
+    "packet_id": 17,
+    "packet_name": "BNLS_VERIFYSERVER",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message verifies a server's signature, which is based on the server's IP. The signature is optionally (currently sent only with Warcraft 3) sent in SID_AUTH_INFO (0x50).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/251/bnls-verifyserver",
+    "created_datetime": "2010-08-06T01:10:57+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Server IP\r\n(UINT8) [128] Signature",
+    "remarks_html": "<p>This message verifies a server's signature, which is based on the server's IP. The signature is optionally (currently sent only with Warcraft 3) sent in SID_AUTH_INFO (0x50).</p>",
+    "comments": []
+}

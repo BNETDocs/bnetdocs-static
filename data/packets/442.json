@@ -1,0 +1,21 @@
+{
+    "id": 442,
+    "packet_id": 63,
+    "packet_name": "W3GS_STARTDOWNLOAD",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This tells the client that it is now in the downloading state and should expect chunks of file data.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/442/w3gs-startdownload",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Unknown\r\n(UINT8) Player number",
+    "remarks_html": "<p>This tells the client that it is now in the downloading state and should expect chunks of file data.</p>",
+    "comments": []
+}

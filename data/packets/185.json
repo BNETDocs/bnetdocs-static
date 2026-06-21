@@ -1,0 +1,30 @@
+{
+    "id": 185,
+    "packet_id": 15,
+    "packet_name": "BNLS_AUTHORIZEPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>This is sent to the server when receiving the status code in BNLS_AUTHORIZE (0x0E).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/185/bnls-authorizeproof",
+    "created_datetime": "2011-02-04T22:36:52+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Checksum",
+    "remarks_html": "<p>This is sent to the server when receiving the status code in BNLS_AUTHORIZE (0x0E).</p>\n<p>For more info, see the [BNLS Checksum Algorithm] document.</p>\n<p>This message is no longer required. See BNLS_AUTHORIZE for more information.</p>",
+    "comments": []
+}

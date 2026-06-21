@@ -1,5 +1,17 @@
 [
-  {"id": 1, "label": "TCP"},
-  {"id": 2, "label": "UDP"},
-  {"id": 3, "label": "ICMP"}
+    {
+        "id": 1,
+        "label": "Transmission Control Protocol",
+        "tag": "TCP"
+    },
+    {
+        "id": 2,
+        "label": "User Datagram Protocol",
+        "tag": "UDP"
+    },
+    {
+        "id": 3,
+        "label": "Internet Control Message Protocol",
+        "tag": "ICMP"
+    }
 ]

@@ -1,0 +1,21 @@
+{
+    "id": 129,
+    "packet_id": 115,
+    "packet_name": "SID_CLANDISBAND",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Disbands the clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/129/sid-clandisband",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-28T21:36:05+00:00",
+    "format": "(UINT32) Cookie",
+    "remarks_html": "<p>Disbands the clan.</p>\n<p>You must be the leader of your clan.</p>",
+    "comments": []
+}

@@ -1,0 +1,23 @@
+{
+    "id": 117,
+    "packet_id": 105,
+    "packet_name": "SID_FRIENDSPOSITION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sent to clients supporting this packet when a friend is promoted up or demoted down the friend's list.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/117/sid-friendsposition",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-28T20:37:53+00:00",
+    "format": "(UINT8) Entry number\r\n(UINT8) New position",
+    "remarks_html": "<p>Sent to clients supporting this packet when a friend is promoted up or demoted down the friend's list.</p>\n<p>The first friend is <code>Entry number</code> 0. When received, all friend entries numbered between the two specified numbers are shifted, resulting in a new 0-based sequential list of friends.</p>\n<p>Usually requested with the chat commands <code>/friend promote</code> and <code>/friend demote</code>. These commands support an optional argument specifying a new position to promote (relative to the top) or demote (relative to the bottom) the friend to. This means <code>Entry number</code> and <code>New position</code> could be numbers that aren't sequential with each other.</p>\n<p>See [SID_FRIENDSLIST] for more information.</p>",
+    "comments": []
+}

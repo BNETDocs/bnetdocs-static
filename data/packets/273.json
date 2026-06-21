@@ -1,0 +1,21 @@
+{
+    "id": 273,
+    "packet_id": 92,
+    "packet_name": "D2GS_(COMP)STARTGAME",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet is part of the logon sequence, not to be confused with the other 0x5C.<br />\nThis packet is originally received compressed, so the message ID will correspond with [Protocol Headers] D2GS compressed format.<br />\nThis message is received with the 'OK' that you can go ahead and enter the gaming environment. </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/273/d2gs-comp-startgame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "Blank \r\n",
+    "remarks_html": "<p>This packet is part of the logon sequence, not to be confused with the other 0x5C.<br />\nThis packet is originally received compressed, so the message ID will correspond with [Protocol Headers] D2GS compressed format.<br />\nThis message is received with the 'OK' that you can go ahead and enter the gaming environment. </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

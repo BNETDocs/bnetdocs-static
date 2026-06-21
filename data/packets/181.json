@@ -1,0 +1,43 @@
+{
+    "id": 181,
+    "packet_id": 16,
+    "packet_name": "BNLS_REQUESTVERSIONBYTE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message requests the latest version byte for a given product.<br />\nThe version byte is sent to Battle.net in SID_AUTH_INFO (0x50).</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/181/bnls-requestversionbyte",
+    "created_datetime": "2010-09-26T23:50:44+00:00",
+    "edited_datetime": "2018-08-20T08:39:31+00:00",
+    "format": "(UINT32) Product ID \r\n",
+    "remarks_html": "<p>This message requests the latest version byte for a given product.<br />\nThe version byte is sent to Battle.net in SID_AUTH_INFO (0x50).</p>\n<p>See the <a href=\"/document/44/bnls-product-codes\">BNLS Product Codes</a> document for a list of valid product codes.</p>",
+    "comments": [
+        {
+            "id": 144,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-08-07T15:00:37+00:00",
+            "content_html": "<p>For those who do not use the old BNLS, and instead use JBLS/VBLS or something equalivant, you will probably want to know that there are more ID's than just those.</p>\n<p>0x09: Diablo Retail<br />\n0x0A: Diablo Shareware<br />\n0x0B: Starcraft Shareware</p>\n<p>When I do not have a product that matches any of those, I just use 0x00, but you probably will not get a matching VerByte if you do.</p>"
+        },
+        {
+            "id": 418,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-27T04:54:46+00:00",
+            "content_html": "<p>I convinced Ribose to add W3DM to his BNLS# server as 0x0C.</p>"
+        }
+    ]
+}

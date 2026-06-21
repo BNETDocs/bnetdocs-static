@@ -1,0 +1,21 @@
+{
+    "id": 119,
+    "packet_id": 23,
+    "packet_name": "MCP_CHARLIST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests a character list.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/119/mcp-charlist",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Number of characters to list",
+    "remarks_html": "<p>Requests a character list.</p>",
+    "comments": []
+}

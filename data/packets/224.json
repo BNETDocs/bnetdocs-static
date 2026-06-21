@@ -1,0 +1,21 @@
+{
+    "id": 224,
+    "packet_id": 4,
+    "packet_name": "MCP_JOINGAME",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent to begin joining a game from the game list.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/224/mcp-joingame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-13T02:10:58+00:00",
+    "format": "(UINT16) Request ID\r\n(STRING) Game name\r\n(STRING) Game Password",
+    "remarks_html": "<p>This is sent to begin joining a game from the game list.</p>\n<p>This must be sent after a successful game creation.</p>",
+    "comments": []
+}

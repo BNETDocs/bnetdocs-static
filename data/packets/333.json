@@ -1,0 +1,28 @@
+{
+    "id": 333,
+    "packet_id": 10,
+    "packet_name": "MCP_CHARDELETE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Deletes a character.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/333/mcp-chardelete",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T20:40:29+00:00",
+    "format": "  (UINT16) Unknown (0)\r\n(STRING) Character name",
+    "remarks_html": "<p>Deletes a character.</p>",
+    "comments": [
+        {
+            "id": 543,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-03T14:05:36+00:00",
+            "content_html": "<p><code>(Word) Unknown</code> is actually <code>(Word) Cookie</code>. The official client always seems to send 0 for this value but any value you send here is echoed back in the reply. Note as of writing this comment the reply does not have this field documented. See &lt; <a href=\"https://bnetdocs.org/packet/411/mcp-chardelete\">https://bnetdocs.org/packet/411/mcp-chardelete</a> &gt; for more information.</p>"
+        }
+    ]
+}

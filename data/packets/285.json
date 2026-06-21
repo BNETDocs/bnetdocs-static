@@ -1,0 +1,21 @@
+{
+    "id": 285,
+    "packet_id": 113,
+    "packet_name": "SID_CLANINVITEMULTIPLE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Result of inviting users to create a clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/285/sid-claninvitemultiple",
+    "created_datetime": "2011-02-13T18:10:02+00:00",
+    "edited_datetime": "2018-03-29T00:22:40+00:00",
+    "format": "(UINT32)   Cookie\r\n (UINT8)   Status\r\n(STRING)[] Failed usernames",
+    "remarks_html": "<p>Result of inviting users to create a clan.</p>\n<p>This is received once all invited users have responded or an error occured preventing the creation of a clan.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Success (every accepted; clan created)</li>\n<li><code>0x01</code>: Clan tag in use</li>\n<li><code>0x02</code>: Too soon because you recently created a clan (product key based)</li>\n<li><code>0x03</code>: Not enough members listed</li>\n<li><code>0x04</code>: Declined or timed out</li>\n<li><code>0x05</code>: Not available (not in channel or mutual friend or already in a clan)</li>\n<li><code>0x08</code>: Not allowed because you are already in clan</li>\n<li><code>0x0A</code>: Invalid clan tag specified</li>\n<li><code>0x0B</code>: Clan name contains bad word</li>\n</ul>\n<p><strong>Failed account names</strong> is a list of account names which failed to accept the invitation successfully. On complete success, this is null.</p>",
+    "comments": []
+}

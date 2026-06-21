@@ -1,0 +1,28 @@
+{
+    "id": 107,
+    "packet_id": 4,
+    "packet_name": "MCP_JOINGAME",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Received when attempting to join a closed Battle.net game using MCP_JOINGAME.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/107/mcp-joingame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-13T02:11:13+00:00",
+    "format": "(UINT16) Request ID\r\n(UINT16) Game token\r\n(UINT16) Unknown (0)\r\n(UINT32) IP of D2GS Server\r\n(UINT32) Game hash\r\n(UINT32) Result",
+    "remarks_html": "<p>Received when attempting to join a closed Battle.net game using MCP_JOINGAME.</p>\n<p>Possible values for result:</p>\n<ul>\n<li><code>0x00</code>: Game joining succeeded. In this case, Diablo 2 terminates the connection with the MCP and initiates the connection with the D2GS.</li>\n<li><code>0x29</code>: Password incorrect.</li>\n<li><code>0x2A</code>: Game does not exist.</li>\n<li><code>0x2B</code>: Game is full.</li>\n<li><code>0x2C</code>: You do not meet the level requirements for this game.</li>\n<li><code>0x6E</code>: A dead hardcore character cannot join a game.</li>\n<li><code>0x71</code>: A non-hardcore character cannot join a game created by a Hardcore character.</li>\n<li><code>0x73</code>: Unable to join a Nightmare game.</li>\n<li><code>0x74</code>: Unable to join a Hell game.</li>\n<li><code>0x78</code>: A non-expansion character cannot join a game created by an Expansion character.</li>\n<li><code>0x79</code>: A Expansion character cannot join a game created by a non-expansion character.</li>\n<li><code>0x7D</code>: A non-ladder character cannot join a game created by a Ladder character.</li>\n</ul>",
+    "comments": [
+        {
+            "id": 635,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-07-03T10:36:33+00:00",
+            "content_html": "<p>0x7D is also send if a ladder char tries to join a non ladder game.</p>\n<p>The shown error is decided in the client (either for ladder or non ladder)</p>\n<pre><code>      case 0x7d:\n        if (D2IniData_multiplayer-&gt;isLadder == '\\0') {\n                // Unable to enter game. A Ladder character cannot join a game created by a\n                // Non-Ladder character.\n          uVar12 = 0x2ab2;\n        }\n        else {\n                // Unable to enter game. A Non-Ladder character cannot join a game created by a\n                // Ladder character.\n          uVar12 = 0x2ab1;\n        }</code></pre>"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "id": 250,
+    "packet_id": 21,
+    "packet_name": "SID_CHECKAD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests ad banner information from Battle.net.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/250/sid-checkad",
+    "created_datetime": "2011-06-02T18:42:14+00:00",
+    "edited_datetime": "2023-02-25T06:05:25+00:00",
+    "format": "(UINT32) Platform ID\r\n(UINT32) Product ID\r\n(UINT32) ID of last displayed banner\r\n(UINT32) Current time",
+    "remarks_html": "<p>Requests ad banner information from Battle.net.</p>\n<p>Official clients such as Starcraft Broodwar send this packet every 15 seconds. You do not have to send this at all.</p>\n<p>In addition, Battle.net will not reply unless any of the fields above are updated from the last time you checked. If you have never checked before, Battle.net will always reply back.</p>",
+    "comments": [
+        {
+            "id": 641,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-09-06T16:53:42+00:00",
+            "content_html": "<p>Official clients send the Unix timestamp (seconds from epoch) for the current time. The value is probably not too important though as some bots just send an unrelated value like the ad ID+1.</p>"
+        }
+    ]
+}

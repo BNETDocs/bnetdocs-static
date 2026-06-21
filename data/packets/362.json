@@ -1,0 +1,27 @@
+{
+    "id": 362,
+    "packet_id": 12,
+    "packet_name": "BNLS_CDKEY_EX",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>When the flags do not contain CDKEY_OLD_STYLE_RESPONSES (0x08), the response is this message.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1246975058,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/362/bnls-cdkey-ex",
+    "created_datetime": "2011-09-27T02:58:20+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Cookie\r\n(UINT8) Number of CD-keys requested\r\n(UINT8) Number of successfully encrypted CD-keys\r\n(UINT32) Bit mask\r\n\r\nFor each successful CD Key:\r\n(UINT32) Client session key\r\n(UINT32) [9] CD-key data",
+    "remarks_html": "<p>When the flags do not contain CDKEY_OLD_STYLE_RESPONSES (0x08), the response is this message.</p>\n<p>Cookie is the same as the value sent to the server in the request.</p>\n<p>The bit mask field contains the success code for each CD-key. Each bit of the 32 bits in this UINT32 is 1 for success or 0 for failure. The least significant bit specifies the success code of the first CD-key provided. Bits that exceed the amount of CD-keys provided are set to 0</p>",
+    "comments": []
+}

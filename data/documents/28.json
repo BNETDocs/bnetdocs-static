@@ -1,0 +1,12 @@
+{
+    "id": 28,
+    "title": "Diablo II Game Server Accept Sequence",
+    "options_bitmask": 3,
+    "brief_html": "<p>This document describes the steps needed to be accepted by the Diablo II Game Server after <a href=\"/packet/107/mcp-joingame\">[0x04] MCP_JOINGAME</a> is received from the Realm Server. If the result of that message is <code>0x00</code>, then the connection is dropped from the Realm Server and initiated with the Game Server.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/28/diablo-ii-game-server-accept-sequence",
+    "created_datetime": "2014-03-25T22:50:21+00:00",
+    "edited_datetime": "2017-07-03T15:12:03+00:00",
+    "content_html": "<p>This document describes the steps needed to be accepted by the Diablo II Game Server after <a href=\"/packet/107/mcp-joingame\">[0x04] MCP_JOINGAME</a> is received from the Realm Server. If the result of that message is <code>0x00</code>, then the connection is dropped from the Realm Server and initiated with the Game Server.</p>\n<ol>\n<li>\n<p><a href=\"/packet/245/d2gs-negotiatecompression\">S &gt; C [0xAF] D2GS_NEGOTIATECOMPRESSION</a></p>\n<ul>\n<li>After initiating connection with the Game Server, you will receive message <code>0xAF</code> informing you of the server's compression mode. </li>\n</ul>\n</li>\n<li>\n<p><a href=\"/packet/131/d2gs-gamelogon\">C &gt; S [0x68] D2GS_GAMELOGON</a></p>\n<ul>\n<li>You must then send the login message <code>0x68</code>.</li>\n</ul>\n</li>\n<li>\n<p><a href=\"/packet/273/d2gs-compstartgame\">S &gt; C [0x5C] D2GS_(COMP)STARTGAME</a></p>\n<ul>\n<li>In response to sending <code>0x68</code>, you will receive message <code>0x5C</code>.</li>\n<li>Receiving this message confirms that the game server has accepted your login.\n<pre><code>(UINT8) 0x02\n(UINT8) 0x5C</code></pre></li>\n</ul>\n</li>\n<li>\n<p><a href=\"/packet/300/d2gs-entergameenvironment\">C &gt; S [0x6A] D2GS_ENTERGAMEENVIRONMENT</a></p>\n<ul>\n<li>You must then request to enter the game environment with message <code>0x6A</code>.\n<pre><code>(UINT8) 0x6A</code></pre></li>\n<li>Upon sending this byte, you have successfully entered the gaming environment. At this point, the D2GS will send you many messages regarding player information about you and other players. All packets sent from the server should now be decompressed. </li>\n</ul>\n</li>\n</ol>",
+    "comments": []
+}

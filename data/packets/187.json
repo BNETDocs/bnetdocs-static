@@ -1,0 +1,37 @@
+{
+    "id": 187,
+    "packet_id": 44,
+    "packet_name": "SID_GAMERESULT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains end-of-game statistics, sent to the server by all clients that participated in the game.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/187/sid-gameresult",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2021-08-20T04:35:13+00:00",
+    "format": "(UINT32) Game type\r\n(UINT32) Number of results - always 8\r\n(UINT32) [8] Results\r\n(STRING) [8] Game players - always 8\r\n(STRING) Map name\r\n(STRING) Player score",
+    "remarks_html": "<p>Contains end-of-game statistics, sent to the server by all clients that participated in the game.</p>\n<p>Player Score is a string containing right-aligned lines separated by 0x0A. The positions in the 'Results' array and the 'Players' array are equivalent.</p>\n<h3>Game type</h3>\n<table>\n<thead>\n<tr>\n<th>Game type</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Normal</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Ladder</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Ironman (W2BN only)</td>\n</tr>\n</tbody>\n</table>\n<h3>Result</h3>\n<table>\n<thead>\n<tr>\n<th>Result</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>No player or still playing</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Win</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Loss</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Draw</td>\n</tr>\n<tr>\n<td><code>0x04</code></td>\n<td>Disconnect</td>\n</tr>\n<tr>\n<td><code>0x05</code></td>\n<td>Observer *</td>\n</tr>\n</tbody>\n</table>\n<p>* from PvPGN</p>",
+    "comments": [
+        {
+            "id": 609,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-08-11T05:28:08+00:00",
+            "content_html": "<p>From the PVPgn sources, it seems the value &quot;0x00&quot; in results can mean &quot;still playing or no player&quot;. So a client that disconnects e.g. because they lost the game already should report all remaining players as 0x00 (which will mean still playing). The distinction if it means &quot;still playing&quot; or &quot;no player&quot; is done using the username, a &quot;no player&quot; must have an empty username</p>"
+        },
+        {
+            "id": 630,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-11-05T03:28:24+00:00",
+            "content_html": "<p>Updated</p>"
+        }
+    ]
+}

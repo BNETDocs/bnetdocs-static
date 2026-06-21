@@ -1,0 +1,21 @@
+{
+    "id": 111,
+    "packet_id": 15,
+    "packet_name": "D2GS_RIGHTSKILLONLOCATIONEX",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Uses the currently selected skill at the specified location. </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/111/d2gs-rightskillonlocationex",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) X coordinate\r\n(UINT16) Y coordinate \r\n",
+    "remarks_html": "<p>Uses the currently selected skill at the specified location. </p>\n<p>This packet is sent repeatedly when the mouse button is held down after the initial packet has been sent. </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

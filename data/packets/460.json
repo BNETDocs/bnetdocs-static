@@ -1,0 +1,28 @@
+{
+    "id": 460,
+    "packet_id": 4,
+    "packet_name": "W3GS_SLOTINFOJOIN",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent to tell the client about the game slots, upon entry of the lobby.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/460/w3gs-slotinfojoin",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-03-08T11:05:22+00:00",
+    "format": " (UINT16)    Length of Slot data\r\n (UINT8)    Number of slots\r\n (UINT8) [] Slot data\r\n(UINT32)    Random seed\r\n (UINT8)    Game type\r\n (UINT8)    Number of player slots without observers\r\n (UINT8)    Player number\r\n(UINT16)    AF_INET (2)\r\n(UINT16)    Port\r\n(UINT32)    External IP\r\n(UINT32)    Unknown (0)\r\n(UINT32)    Unknown (0)\r\n\r\nFor each slot:\r\n   (UINT8) Player number\r\n   (UINT8) Download status\r\n   (UINT8) Slot status\r\n   (UINT8) Computer status\r\n   (UINT8) Team\r\n   (UINT8) Color\r\n   (UINT8) Race\r\n   (UINT8) Computer type\r\n   (UINT8) Handicap",
+    "remarks_html": "<p>This is sent to tell the client about the game slots, upon entry of the lobby.</p>\n<p><strong>Download status:</strong></p>\n<ul>\n<li>This is a percentage of their download progress. As such, this value can only be between 0 and 100.</li>\n</ul>\n<p><strong>Slot status:</strong></p>\n<pre><code>0x00 Open\n0x01 Closed\n0x02 Occupied</code></pre>\n<p><strong>Computer status:</strong></p>\n<pre><code>0x00 Human\n0x01 Computer</code></pre>\n<p><strong>Race:</strong></p>\n<pre><code>0x01 Human\n0x02 Orc\n0x04 Night Elf\n0x08 Undead\n0x20 Random\n0x40 Fixed</code></pre>\n<p><strong>Computer type:</strong></p>\n<pre><code>0x00 Easy\n0x01 Normal / Human\n0x02 Hard</code></pre>",
+    "comments": [
+        {
+            "id": 606,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-03-08T11:06:45+00:00",
+            "content_html": "<p>Update on 8.3.2020: Port is uint16, the other 2 bytes before that are AF_INET</p>"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": 375,
+    "packet_id": 1,
+    "packet_name": "MCP_STARTUP",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the return value from MCP Startup.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/375/mcp-startup",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T18:42:49+00:00",
+    "format": "(UINT32) Result \r\n",
+    "remarks_html": "<p>Contains the return value from MCP Startup.</p>\n<p>Known return values:</p>\n<ul>\n<li><code>0x02</code>, <code>0x0A</code>-<code>0x0D</code>: Realm Unavailable: No Battle.net connection detected.</li>\n<li><code>0x7E</code>: CDKey banned from realm play.</li>\n<li><code>0x7F</code>: Temporary IP ban &quot;Your connection has been temporarily restricted from this realm. Please try to log in at another time.&quot;</li>\n<li>Else: Success.</li>\n</ul>",
+    "comments": []
+}

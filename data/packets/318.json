@@ -1,0 +1,24 @@
+{
+    "id": 318,
+    "packet_id": 60,
+    "packet_name": "SID_CHECKDATAFILE2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Result of file integrity query.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/318/sid-checkdatafile2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T22:46:02+00:00",
+    "format": "(UINT32) Result",
+    "remarks_html": "<p>Result of file integrity query.</p>\n<table>\n<thead>\n<tr>\n<th>Result</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Not approved</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Blizzard approved</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Approved for ladder</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

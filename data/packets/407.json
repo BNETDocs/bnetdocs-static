@@ -1,0 +1,21 @@
+{
+    "id": 407,
+    "packet_id": 85,
+    "packet_name": "SID_AUTH_ACCOUNTCHANGE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Reports success or failure on a password change operation.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/407/sid-auth-accountchange",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:01:03+00:00",
+    "format": "(UINT32) Status\r\n(UINT8) [32] Salt (s)\r\n(UINT8) [32] Server key (B)",
+    "remarks_html": "<p>Reports success or failure on a password change operation.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Change accepted, requires proof</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Account doesn't exist</td>\n</tr>\n<tr>\n<td><code>0x05</code></td>\n<td>Account requires upgrade; see <a href=\"/packet/200/sid-auth-accountupgrade\">C&gt;S 0x57 SID_AUTH_ACCOUNTUPGRADE</a></td>\n</tr>\n<tr>\n<td>Other</td>\n<td>Unknown (failure)</td>\n</tr>\n</tbody>\n</table>\n<p>If an error occurs, the salt and server key values are set to zero.</p>",
+    "comments": []
+}

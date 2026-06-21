@@ -1,0 +1,18 @@
+{
+    "id": 197,
+    "packet_id": 16,
+    "packet_name": "BOTNET_CHAT_OPTIONS",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Acknowledge chat options.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/197/botnet-chat-options",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-13T01:52:23+00:00",
+    "format": "(UINT8) Subcommand\r\n\r\nFor subcommand 0x00 (Chat drop options):\r\n    (UINT8) Broadcast setting\r\n    (UINT8) Database setting\r\n    (UINT8) Whisper setting\r\n    (UINT8) Other database whisper setting",
+    "remarks_html": "<p>Acknowledge chat options.</p>\n<p>This message notifies you of your current chat options or of your change to them and their new values.</p>\n<p><strong>Subcommand</strong>:</p>\n<p>Possible values are:</p>\n<ul>\n<li><code>0x00</code>: Chat drop options.</li>\n</ul>\n<hr />\n<p><strong>Chat drop options</strong> allow you to specify whether the server should drop messages in <a href=\"/packet/207/botnet-chat\"><code>S&gt;C 0x0B BOTNET_CHAT</code></a> before they reach you.</p>\n<p>To request the values of this setting, send <a href=\"/packet/335/botnet-chat-options\"><code>C&gt;S 0x10 BOTNET_CHAT_OPTIONS</code></a> with just the <strong>Subcommand</strong> field set to <code>0x00</code>.</p>\n<p>To change the values of this setting, send <a href=\"/packet/335/botnet-chat-options\"><code>C&gt;S 0x10 BOTNET_CHAT_OPTIONS</code></a> with the <strong>Subcommand</strong> field set to <code>0x00</code> and your preference.</p>\n<p>The <strong>Broadcast setting</strong>, <strong>Database setting</strong>, and <strong>Whisper setting</strong> fields can be one of:</p>\n<ul>\n<li><code>0x00</code>: Allow all chat (default),</li>\n<li><code>0x01</code>: Drop all chat from users not on an account,</li>\n<li><code>0x02</code>: Drop all chat.</li>\n</ul>\n<p>The <strong>Other database whisper setting</strong> can be one of:</p>\n<ul>\n<li><code>0x00</code>: Allow whispers from users on other databases (default),</li>\n<li><code>0x01</code>: Drop whispers from users on other database.</li>\n</ul>",
+    "comments": []
+}

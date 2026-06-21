@@ -1,0 +1,23 @@
+{
+    "id": 493,
+    "packet_id": 60,
+    "packet_name": "SCGP_GAMESTART",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/493/scgp-gamestart",
+    "created_datetime": "2012-03-24T14:30:08+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x3C)",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent by the host to start game.</p>",
+    "comments": []
+}

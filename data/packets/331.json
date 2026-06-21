@@ -1,0 +1,18 @@
+{
+    "id": 331,
+    "packet_id": 63,
+    "packet_name": "SID_STARTVERSIONING2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Contains CheckRevision values.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/331/sid-startversioning2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(FILETIME) MPQ Filetime\r\n(STRING) MPQ Filename\r\n(STRING) ValueString",
+    "remarks_html": "<p>Contains CheckRevision values.</p>\n<p>Has anyone seen this packet in use? It's currently being marked as defunct, as I don't know of any clients that receive it.</p>",
+    "comments": []
+}

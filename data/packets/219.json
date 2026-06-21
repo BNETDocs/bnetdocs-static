@@ -1,0 +1,34 @@
+{
+    "id": 219,
+    "packet_id": 88,
+    "packet_name": "SID_AUTH_ACCOUNTUPGRADEPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Provides password proof when upgrading the account from XSHA-1 logon system to NLS/SRP logon system. This message is no longer used.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/219/sid-auth-accountupgradeproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-10-15T07:46:11+00:00",
+    "format": "(UINT32) Status\r\n(UINT32) [5] Server password proof (M2)",
+    "remarks_html": "<p>Provides password proof when upgrading the account from XSHA-1 logon system to NLS/SRP logon system. This message is no longer used.</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Password changed</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Incorrect old password</td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 88,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-21T01:47:50+00:00",
+            "content_html": "<p>Not real high priority, but wheres 0x58 C&gt;S?</p>\n<p>Reference:<br />\n<a href=\"http://forum.valhallalegends.com/index.php?topic=14113\">http://forum.valhallalegends.com/index.php?topic=14113</a></p>"
+        },
+        {
+            "id": 90,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-21T02:38:48+00:00",
+            "content_html": "<p>Coming right up!</p>"
+        }
+    ]
+}

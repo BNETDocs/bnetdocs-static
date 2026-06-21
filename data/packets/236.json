@@ -1,0 +1,21 @@
+{
+    "id": 236,
+    "packet_id": 23,
+    "packet_name": "MCP_CHARLIST",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Lists characters.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/236/mcp-charlist",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-05T12:09:48+00:00",
+    "format": "(UINT16) Number of characters requested\r\n(UINT32) Number of characters that exist on this account\r\n(UINT16) Number of characters returned\r\nFor each character returned:\r\n    (STRING) Character name\r\n    (STRING) Character statstring",
+    "remarks_html": "<p>Lists characters.</p>\n<p>The statstrings in this packet do not contain the product or character name. Everything else is the same as a character statstring you would receive from a character entering the channel.</p>",
+    "comments": []
+}

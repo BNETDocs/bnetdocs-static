@@ -1,0 +1,21 @@
+{
+    "id": 173,
+    "packet_id": 94,
+    "packet_name": "D2GS_PARTY",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Possible Action IDs:</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/173/d2gs-party",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16)  Action ID\r\n(UINT32) Player ID \r\n",
+    "remarks_html": "<p>Possible Action IDs:</p>\n<p>0x06 - Invite player to party with you<br />\n0x07 - Cancel invite to player<br />\n0x08 - Accept invite from player<br />\n0x09 - Leave party</p>",
+    "comments": []
+}

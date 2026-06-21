@@ -1,0 +1,79 @@
+{
+    "id": 358,
+    "packet_id": 38,
+    "packet_name": "SID_READUSERDATA",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Requests an extended profile.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/358/sid-readuserdata",
+    "created_datetime": "2010-12-26T19:51:11+00:00",
+    "edited_datetime": "2021-09-19T07:13:37+00:00",
+    "format": "(UINT32) Number of Accounts\r\n(UINT32) Number of Keys\r\n(UINT32) Request ID\r\n(STRING)[] Requested Accounts\r\n(STRING)[] Requested Keys",
+    "remarks_html": "<p>Requests an extended profile.</p>\n<p>This message may only be sent after a successful version check from either <a href=\"/packet/106/sid-auth-check\">S&gt;C 0x51 SID_AUTH_CHECK</a> or <a href=\"/packet/412/sid-reportversion\">S&gt;C 0x07 SID_REPORTVERSION</a>. Official clients send this at the logon screen to query game statistics such as wins and losses for the account before logging on. (See <a href=\"https://i.imgur.com/S2Digq1.png\">screenshot</a> of packet dump.)</p>\n<p>Please note that if you provide more than one account, Battle.net will return your request as if you sent it with 0 accounts and 0 keys, indicating that no data is present other than the 3 <code>UINT32</code>. This means you cannot use this message for multiple users all at once; you must submit this message once for each user you wish to know about. This only applies to official Battle.net servers, it might not apply to PvPGN servers or equivalent software.</p>\n<p>In addition, requesting 32 or more keys at one time makes Battle.net kick you (it does not ban you however).</p>\n<p>If you send this message on a voided account or game key, Battle.net will disconnect and IP ban you for 5 minutes.</p>\n<h2>Profile Keys</h2>\n<p>Note: This list may not represent all of the available keys that can be queried. If you find more, please consider adding them here.</p>\n<h3>User Profiles</h3>\n<p>Note: Any key in the table below can contain an 0x09 (tab) character in its value.</p>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>profile\\sex</td>\n<td>This field is defunct in STAR/SEXP/WAR3/W3XP.</td>\n</tr>\n<tr>\n<td>profile\\age</td>\n<td>This field is defunct.</td>\n</tr>\n<tr>\n<td>profile\\location</td>\n<td></td>\n</tr>\n<tr>\n<td>profile\\description</td>\n<td>The maximum length for this field is 512 bytes, including the <code>NULL</code> terminator.</td>\n</tr>\n<tr>\n<td>profile\\homepage</td>\n<td>This field is defunct. Seen in StarCraft Beta.</td>\n</tr>\n<tr>\n<td>profile\\Star\\clan</td>\n<td>This field is defunct. Seen in StarCraft Beta.</td>\n</tr>\n<tr>\n<td>profile\\Star\\gametype</td>\n<td>This field is defunct. Seen in StarCraft Beta.</td>\n</tr>\n</tbody>\n</table>\n<h3>Account Info</h3>\n<p>Note: Battle.net returns blank values for anyone but yourself.</p>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>System\\Account Created</td>\n<td>FILETIME value ('{high} {low}'), ex: '30842135 3648884085' == 2020-10-08 02:08:01</td>\n</tr>\n<tr>\n<td>System\\AuthLevel</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Flags</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Friends</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Icon</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\IP</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Last Logoff</td>\n<td>FILETIME value, see: 'System\\Account Created'</td>\n</tr>\n<tr>\n<td>System\\Last Logon</td>\n<td>FILETIME value, see: 'System\\Account Created'</td>\n</tr>\n<tr>\n<td>System\\League</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\MFT Bytes</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\MFT Last Write</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\MFT Time Logged</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Port</td>\n<td></td>\n</tr>\n<tr>\n<td>System\\Time Logged</td>\n<td>total number of seconds account was online</td>\n</tr>\n<tr>\n<td>System\\Username</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Game General</h3>\n<p>Most game values are numeric.</p>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>record\\SEXP\\league</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Normal Games</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>record\\GAME\\0\\wins</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\0\\losses</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\0\\disconnects</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\0\\last game</td>\n<td>FILETIME value, see: 'System\\Account Created'</td>\n</tr>\n<tr>\n<td>record\\GAME\\0\\last game result</td>\n<td>ex: &quot;WIN&quot;, &quot;LOSS&quot;, &quot;DRAW&quot;</td>\n</tr>\n</tbody>\n</table>\n<h3>Ladder Games</h3>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>record\\GAME\\1\\wins</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\losses</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\disconnects</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\rating</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\high rating</td>\n<td>highest all-time rating</td>\n</tr>\n<tr>\n<td>DynKey\\GAME\\1\\rank</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\high rank</td>\n<td>highest all-time rank</td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\last game</td>\n<td>FILETIME value, see: 'System\\Account Created'</td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\last game result</td>\n<td>ex: &quot;WIN&quot;, &quot;LOSS&quot;, &quot;DRAW&quot;</td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\season</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\day</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\1\\day games</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>IronMan Ladder Games</h3>\n<p>Note: These are for W2BN exclusively.</p>\n<table>\n<thead>\n<tr>\n<th>Key</th>\n<th>Notes</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>record\\GAME\\3\\wins</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\losses</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\disconnects</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\last game</td>\n<td>FILETIME value, see: 'System\\Account Created'</td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\last game result</td>\n<td>ex: &quot;WIN&quot;, &quot;LOSS&quot;, &quot;DRAW&quot;</td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\rating</td>\n<td></td>\n</tr>\n<tr>\n<td>record\\GAME\\3\\high rating</td>\n<td>highest all-time rating</td>\n</tr>\n<tr>\n<td>DynKey\\GAME\\3\\rank</td>\n<td></td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 81,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-03-28T21:23:29+00:00",
+            "content_html": "<p>The System keys under &quot;Account Info&quot; can only be accessed if you are requesting your own information. Otherwise, Battle.net will send back a blank key value.</p>"
+        },
+        {
+            "id": 125,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-12-13T23:55:56+00:00",
+            "content_html": "<p>More under &quot;Account Info&quot;:<br />\n<em>SystemUsername<br />\n</em>SystemAuthLevel<br />\n<em>SystemLeague<br />\n</em>SystemIcon<br />\n<em>SystemMFT Bytes<br />\n</em>SystemMFT Last Write<br />\n<em>SystemMFT Time Logged<br />\n</em>SystemIP<br />\n<em>SystemPort<br />\n</em>SystemFriends<br />\n*SystemFlags</p>"
+        },
+        {
+            "id": 151,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-04-06T00:05:20+00:00",
+            "content_html": "<p>@idiat: Added the note.<br />\n@Sixen: Added the keys.</p>"
+        },
+        {
+            "id": 160,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-04-15T22:43:58+00:00",
+            "content_html": "<p>Just to further comment on this packet, I just used Starcraft Broodwar and saw that only 5 of the System keys actually return data when I use my name.</p>\n<p>System\\Account Created<br />\nSystem\\Last Logoff<br />\nSystem\\Last Logon<br />\nSystem\\Time Logged<br />\nSystem\\Username</p>\n<p>If anyone knows of any other System keys that return something, please comment.</p>"
+        },
+        {
+            "id": 434,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-12-26T01:33:15+00:00",
+            "content_html": "<p>Requesting 0x20 (32) or more keys at one time makes Battle.net kick you. No ban, just kick.</p>"
+        },
+        {
+            "id": 435,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-12-27T01:49:01+00:00",
+            "content_html": "<p>Added the note.</p>"
+        },
+        {
+            "id": 571,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-04-27T01:00:26+00:00",
+            "content_html": "<p>Updated document formatting to Markdown syntax.</p>"
+        },
+        {
+            "id": 574,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-05-01T07:29:24+00:00",
+            "content_html": "<p>Updated <code>profile\\description</code> to include its maximum length.</p>"
+        }
+    ]
+}

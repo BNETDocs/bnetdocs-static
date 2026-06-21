@@ -1,0 +1,21 @@
+{
+    "id": 284,
+    "packet_id": 35,
+    "packet_name": "D2GS_ITEMTOBELT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Moves an item into the player's belt.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/284/d2gs-itemtobelt",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID\r\n(UINT32) Belt Location \r\n",
+    "remarks_html": "<p>Moves an item into the player's belt.</p>\n<p>Extra Info: The status of this information is: Public Belt locations start at 0x00 and go from right to left, starting at the lowest row and moving across, then going up one row. For example, location 0x03 would be at the bottom right hand corner and location 0x0C would be at the top left corner in a 4-slot belt. This can be calculated as (row*4+column).</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 159,
+    "packet_id": 25,
+    "packet_name": "D2GS_PICKUPBUFFERITEM",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Pickup an item from the possible buffers below, moving it to the cursor buffer.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/159/d2gs-pickupbufferitem",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Item ID \r\n",
+    "remarks_html": "<p>Pickup an item from the possible buffers below, moving it to the cursor buffer.</p>\n<p>Possible Buffers:<br />\n0 - Inventory<br />\n1 - NPC Trade &amp; Other player's Trade Window?<br />\n2 - Trade Screen<br />\n3 - Horadric Cube<br />\n4 - Stash</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

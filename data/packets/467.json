@@ -1,0 +1,21 @@
+{
+    "id": 467,
+    "packet_id": 66,
+    "packet_name": "W3GS_MAPSIZE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent from the client to tell the host about the map file on the client's local system.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/467/w3gs-mapsize",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Unknown\r\n(UINT8) Size Flag\r\n(UINT32) Map Size",
+    "remarks_html": "<p>This is sent from the client to tell the host about the map file on the client's local system.</p>",
+    "comments": []
+}

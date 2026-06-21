@@ -1,0 +1,28 @@
+{
+    "id": 248,
+    "packet_id": 122,
+    "packet_name": "SID_CLANRANKCHANGE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Response to a member rank change request.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/248/sid-clanrankchange",
+    "created_datetime": "2011-05-22T22:07:04+00:00",
+    "edited_datetime": "2018-03-29T01:13:16+00:00",
+    "format": "(UINT32) Cookie\r\n (UINT8) Status",
+    "remarks_html": "<p>Response to a member rank change request.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Successfully changed member rank</li>\n<li><code>0x01</code>: Failed to change member rank</li>\n<li><code>0x02</code>: Too soon because the target user has not been a member long enough (must be one week old)</li>\n<li><code>0x07</code>: Not authorized because you are not the leader or an officer</li>\n<li><code>0x08</code>: Not allowed because the target's current or new rank is not lower than yours</li>\n</ul>",
+    "comments": [
+        {
+            "id": 98,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-05-03T03:20:12+00:00",
+            "content_html": "<p>0x08 is also received when the specified user is not in the clan.</p>"
+        }
+    ]
+}

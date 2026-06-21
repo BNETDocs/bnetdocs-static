@@ -1,0 +1,28 @@
+{
+    "id": 452,
+    "packet_id": 55,
+    "packet_name": "W3GS_CLIENTINFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>A client sends this to another client to gain information about self when connected.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/452/w3gs-clientinfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T22:47:14+00:00",
+    "format": "(UINT32) Player Counter\r\n(UINT32) Unknown (0)\r\n(UINT8) Player number\r\n(UINT8)[5] Unknown",
+    "remarks_html": "<p>A client sends this to another client to gain information about self when connected.</p>\n<p>The first byte in the second unknown is possibly the status of the player.</p>\n<p><strong>Packet Log:</strong></p>\n<pre><code>F7 37 12 00\n02 00 00 00\n00 00 00 00\n06\nFF 5E 00 00 00</code></pre>",
+    "comments": [
+        {
+            "id": 594,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-08-26T21:28:36+00:00",
+            "content_html": "<p>Is there anything known about the Player Counter field? How is it generated? Simply it somehow does not justify its name</p>"
+        }
+    ]
+}

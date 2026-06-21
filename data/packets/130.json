@@ -1,0 +1,21 @@
+{
+    "id": 130,
+    "packet_id": 2,
+    "packet_name": "MCP_CHARCREATE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Creates a character on the Realm.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/130/mcp-charcreate",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T19:46:36+00:00",
+    "format": " (UINT32) Character class\r\n  (UINT16) Character flags\r\n(STRING) Character name",
+    "remarks_html": "<p>Creates a character on the Realm.</p>\n<p>Character Classes are the same as in D2 users' Statstrings:</p>\n<ul>\n<li><code>0x00</code>: Amazon</li>\n<li><code>0x01</code>: Sorceress</li>\n<li><code>0x02</code>: Necromancer</li>\n<li><code>0x03</code>: Paladin</li>\n<li><code>0x04</code>: Barbarian</li>\n<li><code>0x05</code>: Druid</li>\n<li><code>0x06</code>: Assassin</li>\n</ul>\n<p>Flag values should be OR'd together. The only flags that can be set for character creation are classic, hardcore, expansion, and ladder, but the other flags are included here for completeness:</p>\n<ul>\n<li><code>0x00</code>: Classic</li>\n<li><code>0x04</code>: Hardcore</li>\n<li><code>0x08</code>: Dead</li>\n<li><code>0x20</code>: Expansion</li>\n<li><code>0x40</code>: Ladder</li>\n</ul>\n<p>Sending 0x05 or 0x06 in character class or 0x20 in character flags while on D2DV will disconnect and temporarily ban you from the realm. Likewise, sending 0x05 or 0x06 in character class without setting 0x20 in character flags will result in a disconnect and ban.</p>",
+    "comments": []
+}

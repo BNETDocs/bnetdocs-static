@@ -1,0 +1,26 @@
+{
+    "id": 165,
+    "packet_id": 5,
+    "packet_name": "PKT_SERVERPING",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 2,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet contains the UDP code to be sent to Battle.net in SID_UDPPINGRESPONSE (0x14). </p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/165/pkt-serverping",
+    "created_datetime": "2012-02-26T04:25:06+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) UDP Code ",
+    "remarks_html": "<p>This packet contains the UDP code to be sent to Battle.net in SID_UDPPINGRESPONSE (0x14). </p>",
+    "comments": []
+}

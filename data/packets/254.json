@@ -1,0 +1,31 @@
+{
+    "id": 254,
+    "packet_id": 46,
+    "packet_name": "SID_GETLADDERDATA",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the requested ladder data. </p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/254/sid-getladderdata",
+    "created_datetime": "2012-06-01T21:11:02+00:00",
+    "edited_datetime": "2019-12-28T23:12:22+00:00",
+    "format": "(UINT32) Product ID\r\n(UINT32) League\r\n(UINT32) Sort method\r\n(UINT32) Starting rank\r\n(UINT32) Number of ranks listed (Count of items in list)\r\n\r\nFor each list item:\r\n  (UINT32) Wins\r\n  (UINT32) Losses\r\n  (UINT32) Disconnects\r\n  (UINT32) Rating\r\n  (UINT32) Rank\r\n  (UINT32) Official wins\r\n  (UINT32) Official losses\r\n  (UINT32) Official disconnects\r\n  (UINT32) Official rating\r\n  (UINT32) Unknown\r\n  (UINT32) Official rank\r\n  (UINT32) Unknown\r\n  (UINT32) Unknown\r\n  (UINT32) Highest rating\r\n  (UINT32) Unknown\r\n  (UINT32) Season\r\n  (FILETIME) Last game time\r\n  (FILETIME) Official last game time\r\n  (STRING) Name",
+    "remarks_html": "<p>Contains the requested ladder data. </p>\n<p>League is 1 for Ladder, 3 for Iron Man.</p>\n<table>\n<thead>\n<tr>\n<th>Sort method</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Highest Rating</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Fastest Climbers (Unused)</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Most Wins</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Most Games Played</td>\n</tr>\n</tbody>\n</table>\n<p>All unknowns are 0.</p>\n<p>Rank is 0-based. A rank of <code>0xFFFFFFFF</code> is no rank.</p>",
+    "comments": [
+        {
+            "id": 612,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-02T07:55:14+00:00",
+            "content_html": "<p>When <em>Number of ranks listed</em> is 0, I observed four null bytes following the field.</p>"
+        }
+    ]
+}

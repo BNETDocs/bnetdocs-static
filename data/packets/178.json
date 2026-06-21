@@ -1,0 +1,41 @@
+{
+    "id": 178,
+    "packet_id": 28,
+    "packet_name": "SID_STARTADVEX3",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the result of a game list status update.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/178/sid-startadvex3",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-12-06T05:36:51+00:00",
+    "format": "(UINT32) Status",
+    "remarks_html": "<p>Contains the result of a game list status update.</p>\n<p>Possible values for Status:</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Ok</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td><em>A game by that name already exists!</em></td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td><em>Unable to create game because the selected game type is currently unavailable.</em></td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td><em>An error occurred while trying to create the game.</em></td>\n</tr>\n</tbody>\n</table>",
+    "comments": [
+        {
+            "id": 553,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-17T16:30:26+00:00",
+            "content_html": "<p>The server doesn't appear to respond with this packet when using the D2XP client.</p>"
+        },
+        {
+            "id": 615,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-02T23:05:08+00:00",
+            "content_html": "<p>Status <code>0x04</code> and <code>0x05</code> shows the same message that <code>0x03</code> shows.</p>"
+        }
+    ]
+}

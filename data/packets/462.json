@@ -1,0 +1,21 @@
+{
+    "id": 462,
+    "packet_id": 15,
+    "packet_name": "W3GS_CHAT_FROM_HOST",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This is sent from the host to each Client to print a message on the screen from a player.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/462/w3gs-chat-from-host",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-30T15:01:53+00:00",
+    "format": " (UINT8)   Recipient player count\r\n (UINT8)[] Recipient player numbers\r\n (UINT8)   Sender player number\r\n (UINT8)   Flags\r\n (UINT8)   Team, Color, Race, or Handicap (optional, see remarks)\r\n(UINT32)   Scope (optional, see remarks)\r\n(STRING)   Message",
+    "remarks_html": "<p>This is sent from the host to each Client to print a message on the screen from a player.</p>\n<p>The recipient player numbers will receive the message from the sender player number.</p>\n<p>Flags can be one of the following:</p>\n<table>\n<thead>\n<tr>\n<th>Flag</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x10</code></td>\n<td>No extra fields, message follows</td>\n</tr>\n<tr>\n<td><code>0x11</code></td>\n<td>Next byte is Team, then message</td>\n</tr>\n<tr>\n<td><code>0x12</code></td>\n<td>Next byte is Color, then message</td>\n</tr>\n<tr>\n<td><code>0x13</code></td>\n<td>Next byte is Race, then message</td>\n</tr>\n<tr>\n<td><code>0x14</code></td>\n<td>Next byte is Handicap, then message</td>\n</tr>\n<tr>\n<td><code>0x20</code></td>\n<td>Next 4 bytes are Scope, then message</td>\n</tr>\n</tbody>\n</table>\n<p>Scope can be one of the following:</p>\n<table>\n<thead>\n<tr>\n<th>Extra Flag</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Scope All</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Scope Allies</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Scope Observers</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Scope Directed</td>\n</tr>\n</tbody>\n</table>\n<p>An excerpt from the <a href=\"https://github.com/uakfdotb/ghostpp/blob/5ebdbf6b7f5297d04db6c8c7f0fe08cd0f23f2e2/ghost/gameprotocol.cpp#L144-L168\">ghostpp</a> bot:</p>\n<pre><code>    // DEBUG_Print( \"RECEIVED W3GS_CHAT_TO_HOST\" );\n    // DEBUG_Print( data );\n\n    // 2 bytes                  -&gt; Header\n    // 2 bytes                  -&gt; Length\n    // 1 byte                   -&gt; Total\n    // for( 1 .. Total )\n    //      1 byte              -&gt; ToPID\n    // 1 byte                   -&gt; FromPID\n    // 1 byte                   -&gt; Flag\n    // if( Flag == 16 )\n    //      null term string    -&gt; Message\n    // elseif( Flag == 17 )\n    //      1 byte              -&gt; Team\n    // elseif( Flag == 18 )\n    //      1 byte              -&gt; Colour\n    // elseif( Flag == 19 )\n    //      1 byte              -&gt; Race\n    // elseif( Flag == 20 )\n    //      1 byte              -&gt; Handicap\n    // elseif( Flag == 32 )\n    //      4 bytes             -&gt; ExtraFlags\n    //      null term string    -&gt; Message</code></pre>",
+    "comments": []
+}

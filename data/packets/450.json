@@ -1,0 +1,21 @@
+{
+    "id": 450,
+    "packet_id": 54,
+    "packet_name": "W3GS_PONG_TO_OTHERS",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent in response to an echo from another client.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/450/w3gs-pong-to-others",
+    "created_datetime": "2011-06-02T20:08:27+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>This is sent in response to an echo from another client.</p>",
+    "comments": []
+}

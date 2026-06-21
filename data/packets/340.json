@@ -1,0 +1,28 @@
+{
+    "id": 340,
+    "packet_id": 31,
+    "packet_name": "SID_LEAVEGAME",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Notifies Battle.net that you have left a Diablo II game.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/340/sid-leavegame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank] ",
+    "remarks_html": "<p>Notifies Battle.net that you have left a Diablo II game.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": [
+        {
+            "id": 656,
+            "author_username": "BNETDocs",
+            "created_datetime": "2023-03-12T19:17:45+00:00",
+            "content_html": "<p>I've clarified that this is only used for Diablo II, other products send <a href=\"https://bnetdocs.org/packet/271/sid-stopadv\">SID_STOPADV</a> (if last remaining player) and <a href=\"https://bnetdocs.org/packet/145/sid-enterchat\">SID_ENTERCHAT</a> after leaving a game.</p>"
+        }
+    ]
+}

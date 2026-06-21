@@ -1,0 +1,21 @@
+{
+    "id": 149,
+    "packet_id": 117,
+    "packet_name": "SID_CLANINFO",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Received to declare that the client is a member of a clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/149/sid-claninfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-28T21:56:46+00:00",
+    "format": " (UINT8) Unknown (0)\r\n(UINT32) Clan tag\r\n (UINT8) Rank",
+    "remarks_html": "<p>Received to declare that the client is a member of a clan.</p>\n<p>It is received when you first join a clan or immediately after logging on to tell you what clan you are in.</p>\n<p><strong>Rank</strong> is one of the <a href=\"/document/4/clan-message-codes\">Rank Values</a>:</p>\n<ul>\n<li><code>0x00</code>: Initiate (Peon icon), in clan less than one week</li>\n<li><code>0x01</code>: Initiate (Peon icon)</li>\n<li><code>0x02</code>: Member (Grunt icon)</li>\n<li><code>0x03</code>: Officer (Shaman icon)</li>\n<li><code>0x04</code>: Leader (Chieftain icon)</li>\n</ul>",
+    "comments": []
+}

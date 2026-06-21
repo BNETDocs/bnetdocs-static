@@ -1,0 +1,21 @@
+{
+    "id": 203,
+    "packet_id": 6,
+    "packet_name": "BNLS_CHANGEPROOF",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message contains the data to send in SID_AUTH_ACCOUNTCHANGEPROOF (0x56).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/203/bnls-changeproof",
+    "created_datetime": "2010-08-06T01:40:48+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [21] Data for SID_AUTH_ACCOUNTCHANGEPROOF (0x56)",
+    "remarks_html": "<p>This message contains the data to send in SID_AUTH_ACCOUNTCHANGEPROOF (0x56).</p>",
+    "comments": []
+}

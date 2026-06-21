@@ -1,0 +1,23 @@
+{
+    "id": 484,
+    "packet_id": 0,
+    "packet_name": "SCGP_GAMECHATPUBLIC",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/484/scgp-gamechatpublic",
+    "created_datetime": "2012-03-24T15:32:33+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x00)\r\n(UINT8) Type\r\n(STRING) Chat message",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>Sent to talk to other ingame players.<br />\nNote: This packet is used in-game game only.<br />\nIf you want to talk to players in the game room, you must use CLS 1 packet 0x4C.</p>\n<p>Type:<br />\n0x00 = Normal</p>",
+    "comments": []
+}

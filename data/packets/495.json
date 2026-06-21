@@ -1,0 +1,23 @@
+{
+    "id": 495,
+    "packet_id": 62,
+    "packet_name": "SCGP_SLOTUPDATE",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/495/scgp-slotupdate",
+    "created_datetime": "2012-03-24T14:37:38+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x3E)\r\n(UINT8) Slot Index\r\n(UINT8) Player Index\r\n(UINT8) Slot State\r\n(UINT8) Race\r\n(UINT8) Team Index",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent by the host to notify players of a given game room slot's status.</p>\n<p>Possible values for State:<br />\n0x00 = Slot doesnt exist<br />\n0x02 = Slot is Taken/Human<br />\n0x03 = Slot is Rescuable<br />\n0x05 = Slot is Computer<br />\n0x06 = Slot is Open<br />\n0x07 = Slot is Neutral<br />\n0x08 = Slot is Closed<br />\nNote: States of Rescuable and Neutral are not shown.</p>\n<p>Possible values for Race:<br />\n0x00 = Zerg<br />\n0x01 = Terran<br />\n0x02 = Protoss<br />\n0x03 = Independent<br />\n0x04 = Neutral<br />\n0x06 = Random</p>",
+    "comments": []
+}

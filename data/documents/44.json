@@ -1,0 +1,12 @@
+{
+    "id": 44,
+    "title": "BNLS Product Codes",
+    "options_bitmask": 3,
+    "brief_html": "<p>This document is the complete list of BNLS product codes supported by the protocol, however not all implementations have been patched to reflect this complete list and may only support a few of these.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/44/bnls-product-codes",
+    "created_datetime": "2018-08-20T08:27:50+00:00",
+    "edited_datetime": "2018-08-20T08:46:52+00:00",
+    "content_html": "<p>This document is the complete list of BNLS product codes supported by the protocol, however not all implementations have been patched to reflect this complete list and may only support a few of these.</p>\n<p>The original implementation of BNLS supported up to the first 8 product codes, JBLS extended upon that with 3 additional products, and BNLS# added one more.</p>\n<p>Today, these are the 12 different product codes supported:</p>\n<pre><code>0x01: Starcraft\n0x02: Starcraft Brood War\n0x03: Warcraft II Battle.net Edition\n0x04: Diablo II\n0x05: Diablo II: Lord of Destruction\n0x06: Starcraft Japanese\n0x07: Warcraft III\n0x08: Warcraft III: The Frozen Throne\n0x09: Diablo Retail\n0x0A: Diablo Shareware\n0x0B: Starcraft Shareware\n0x0C: Warcraft III: Demo</code></pre>\n<p>Some BNLS messages may use product code <code>0x00</code> as an error or unsupported result.</p>",
+    "comments": []
+}

@@ -1,0 +1,34 @@
+{
+    "id": 393,
+    "packet_id": 68,
+    "packet_name": "SID_WARCRAFTGENERAL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This packet is used for multiple purposes on Warcraft III. Known and validated purposes are listed here.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/393/sid-warcraftgeneral",
+    "created_datetime": "2010-12-14T14:16:57+00:00",
+    "edited_datetime": "2017-03-28T21:03:41+00:00",
+    "format": "(UINT8) Subcommand ID\r\n\r\nSubcommand 0x00 (WID_GAMESEARCH):\r\n     (UINT32) Cookie\r\n     (UINT32) Unknown\r\n      (UINT8) Unknown\r\n      (UINT8) Game type\r\n      (UINT16) Enabled maps (every bit is one map, from 0x0000 to 0x0FFF)\r\n      (UINT16) Unknown\r\n      (UINT8) Unknown\r\n     (UINT32) Tick count\r\n     (UINT32) Race\r\n\r\nSubcommand 0x02 (WID_MAPLIST):\r\n     (UINT32) Cookie\r\n      (UINT8) Number of types requested\r\n    For each type requested:\r\n         (UINT32) ID*\r\n         (UINT32) Checksum*\r\n\r\nSubcommand 0x03 (WID_CANCELSEARCH):\r\n    [blank]\r\n\r\nSubcommand 0x04 (WID_USERRECORD):\r\n     (UINT32) Cookie\r\n    (STRING) Account name\r\n     (UINT32) Product ID ('WAR3' or 'W3XP')\r\n\r\nSubcommand 0x07 (WID_TOURNAMENT):\r\n     (UINT32) Cookie\r\n\r\nSubcommand 0x08 (WID_CLANRECORD):\r\n     (UINT32) Cookie\r\n     (UINT32) Clan Tag\r\n     (UINT32) Product ID ('WAR3' or 'W3XP')\r\n\r\nSubcommand 0x09 (WID_ICONLIST):\r\n     (UINT32) Cookie\r\n\r\nSubcommand 0x0A (WID_SETICON):\r\n     (UINT32) Icon",
+    "remarks_html": "<p>This packet is used for multiple purposes on Warcraft III. Known and validated purposes are listed here.</p>\n<p>*Not fully known yet.</p>\n<p><code>Game type</code> values:</p>\n<pre><code>0x00: 1vs1\n0x01: 2vs2\n0x02: 3vs3\n0x03: 4vs4\n0x04: Free For All</code></pre>\n<p><code>Race</code> values:</p>\n<pre><code>0x00000001: Human\n0x00000002: Orc\n0x00000004: Night Elf\n0x00000008: Undead\n0x00000020: Random</code></pre>",
+    "comments": [
+        {
+            "id": 154,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-01-14T05:39:07+00:00",
+            "content_html": "<p>I am not sure of all the values but I got this message when pressing quickplay in war3.</p>\n<p>ff 44 1c 00 00 06 00 00 00 00 00 00 00 00 00 3f 0a 00 00 08 20 03 ff 00 08 00 00 00</p>\n<p>Seems the 0x1c is the subcommand since it is always the same and the other codes change.</p>"
+        },
+        {
+            "id": 155,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-01-21T01:38:33+00:00",
+            "content_html": "<p>no thats the packets length.  Take a look at <a href=\"http://www.bnetdocs.org/?op=doc&amp;did=16\">http://www.bnetdocs.org/?op=doc&amp;did=16</a> for the basic structure of BNCS packets</p>"
+        }
+    ]
+}

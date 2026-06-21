@@ -1,0 +1,21 @@
+{
+    "id": 300,
+    "packet_id": 106,
+    "packet_name": "D2GS_ENTERGAMEENVIRONMENT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This byte should be sent in order to start receiving in-game messages and to interact with the world itself. </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/300/d2gs-entergameenvironment",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-07-04T20:36:04+00:00",
+    "format": "blank   \r\n",
+    "remarks_html": "<p>This byte should be sent in order to start receiving in-game messages and to interact with the world itself. </p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

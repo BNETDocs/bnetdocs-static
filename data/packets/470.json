@@ -1,0 +1,30 @@
+{
+    "id": 470,
+    "packet_id": 255,
+    "packet_name": "BNLS_IPBAN",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Warns and disconnects the Client with a custom message from BNLS.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/470/bnls-ipban",
+    "created_datetime": "2013-06-23T21:28:19+00:00",
+    "edited_datetime": "2019-12-28T11:58:40+00:00",
+    "format": "(STRING) Message from the server (without null-terminator)",
+    "remarks_html": "<p>Warns and disconnects the Client with a custom message from BNLS.</p>\n<p>This message was not part of the original BNLS specification, however it was necessary to document it due to its use on BNLSWarden and other BNLS software. The message was created to warn users that their IP address has been restricted temporarily, and to reconnect later. However, some servers have been seen using this message for other purposes.</p>\n<p>The string is a normal character array except that it lacks a null-terminator. To read the full length of the string, use the message's length-descriptor in the header and then subtract 3 (the length of the BNLS message header) from that.</p>\n<p>When BNLSWarden sends you this, you will also be disconnected from the server. On all BNLS software implementing this message, the server usually will send this to you immediately after you connect. There are no ways to trigger this message from the Client.</p>\n<p>In all cases, this message can be discarded (or left unimplemented), since this message is an information message only and the server will still function as standard BNLS without it.</p>",
+    "comments": []
+}

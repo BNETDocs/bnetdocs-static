@@ -1,0 +1,21 @@
+{
+    "id": 445,
+    "packet_id": 68,
+    "packet_name": "W3GS_MAPPARTOK",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The client sends this when it has successfully received a chunk of the map file from the host client.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/445/w3gs-mappartok",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) To player number\r\n(UINT8) From player number\r\n(UINT32) Unknown\r\n(UINT32) Chunk position in file",
+    "remarks_html": "<p>The client sends this when it has successfully received a chunk of the map file from the host client.</p>",
+    "comments": []
+}

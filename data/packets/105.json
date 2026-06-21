@@ -1,0 +1,25 @@
+{
+    "id": 105,
+    "packet_id": 91,
+    "packet_name": "SID_CHANGEEMAIL",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests Battle.net to change the email address bound to an account. This packet must be sent before logon.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/105/sid-changeemail",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(STRING) Account Name\r\n(STRING) Old Email Address\r\n(STRING) New Email Address",
+    "remarks_html": "<p>Requests Battle.net to change the email address bound to an account. This packet must be sent before logon.</p>\n<p>This packet used to be named SID_AUTH_DISCONNECT, however Blizzard never had it implemented, and so reused the packet ID for their email system.</p>",
+    "comments": []
+}

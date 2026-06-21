@@ -1,0 +1,58 @@
+{
+    "id": 237,
+    "packet_id": 62,
+    "packet_name": "SID_LOGONREALMEX",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This packet supplies the data necessary to connect to an MCP server. The cookie value is defined in the first UINT32 of SID_LOGONREALMEX and is simply returned by Battle.net. If the length of the message (not including header) is greater than 8, the client should continue to logon to the MCP. Otherwise, the Status field is interpreted as an error code:</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/237/sid-logonrealmex",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2021-11-14T06:50:18+00:00",
+    "format": "OLD:\r\n (UINT32)     MCP Cookie\r\n (UINT32)     MCP Status\r\n (UINT32)[2]  MCP Chunk 1\r\n (UINT32)     IP\r\n (UINT32)     Port\r\n (UINT32)[12] MCP Chunk 2\r\n (STRING)     Battle.net unique name\r\n\r\nNEW (as of D2 1.14d):\r\nUINT8[16]       Unknown 1 (MD5?)\r\nUINT32          IP (Big Endian)\r\nUINT32          Port (Big endian)\r\nUINT8[40]       Unknown 2 (SHA-1?)\r\nUINT8[9]        Null padding",
+    "remarks_html": "<p>This packet supplies the data necessary to connect to an MCP server. The cookie value is defined in the first UINT32 of SID_LOGONREALMEX and is simply returned by Battle.net. If the length of the message (not including header) is greater than 8, the client should continue to logon to the MCP. Otherwise, the Status field is interpreted as an error code:</p>\n<ul>\n<li><code>0x80000001</code>: Realm is unavailable</li>\n<li><code>0x80000002</code>: Realm logon failed</li>\n</ul>\n<p>Any other value indicates failure.</p>\n<p>The first part of the MCP Chunk that must be sent to the MCP server includes the Status and Cookie UINT32S, making MCP Chunk 1 the first 4 UINT32S of the packet.</p>\n<p>There used to be a UINT16 at the end of this packet, which was apparently random.</p>\n<p>As of D2 1.14d, the packet structure is different, but is backwards-compatible with the previous structure.</p>",
+    "comments": [
+        {
+            "id": 14,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-09-15T18:16:17+00:00",
+            "content_html": "<p>Credit goes to <a href=\"/user/16/l2k-shadow\">l2k-Shadow</a> for the following information:</p>\n<p>To get the port # from the port DWORD, use the <a href=\"https://msdn.microsoft.com/en-us/library/ms740075.aspx\">ntohs</a> function. </p>\n<p>Example code in C++:</p>\n<pre><code>#include &lt;windows.h&gt;\n#include &lt;winsock2.h&gt;\n#include &lt;iostream.h&gt;\n\n#pragma comment(lib, \"ws2_32\")\n\nvoid main()\n{\n    char s[] = \"\\x17\\xe0\\x00\\x00\";\n    DWORD d = 0;\n    memcpy(&amp;d, s, 4);\n    cout &lt;&lt; ntohs(d) &lt;&lt; endl;\n}</code></pre>\n<p>Credits goes to Chriso.de for VB conversion:</p>\n<pre><code>Public Declare Function ntohs Lib \"ws2_32\" (ByVal netshort As Long) As Long\n\n' Get the port\nPort = ntohs(r.GetInt32())</code></pre>"
+        },
+        {
+            "id": 118,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-09-10T04:09:21+00:00",
+            "content_html": "<p>Diablo 2 realms went down the morning of 9/7/08, and when they came back up, this packet had changed, breaking a few clientless bots.</p>\n<p>The (WORD) Unknown from this packet HAS been removed entirely.</p>"
+        },
+        {
+            "id": 119,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-09-11T23:09:25+00:00",
+            "content_html": "<p>Hmm, strange. Guess we'll never know what it was.</p>"
+        },
+        {
+            "id": 120,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-09-14T02:41:06+00:00",
+            "content_html": "<p>How to get the port # from DWORD with Python:<br />\n<code>socket.ntohs(struct.unpack(\"&lt; i\", \"\\x17\\xe0\\x00\\x00\")[0])</code></p>\n<p>How to convert port to DWORD with Python:<br />\n<code>struct.pack(\"&lt; i\", socket.htons(6112))</code></p>\n<p>Remove the space between &lt; and i, these docs dont parse code comments well.</p>\n<p>How to get the IP from DWORD with Python:<br />\n<code>socket.inet_ntoa(\"\\x3f\\xf1\\x53\\x12\")</code></p>\n<p>How to convert IP to DWORD with Python:<br />\n<code>socket.inet_aton(\"63.241.83.18\")</code></p>\n<p>Remove the extra quotation marks, these docs dont parse code comments well.</p>"
+        },
+        {
+            "id": 582,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-03-24T19:54:47+00:00",
+            "content_html": "<p>It's important to note that bot the IP and the Port are both in big endian byte order. It also appears that the port is a 2 byte value followed by and unknown of 2 bytes.</p>"
+        },
+        {
+            "id": 608,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-05-27T07:21:21+00:00",
+            "content_html": "<p>As of 1.14d, the packet structure is significantly different.</p>\n<pre><code>UINT8[16]       Unknown 1 (MD5?)\nUINT32          IP (Big Endian)\nUINT32          Port (Big endian)\nUINT8[40]       Unknown 2 (SHA-1?)\nUINT8[9]        Unknown 3 (Padding?)</code></pre>"
+        }
+    ]
+}

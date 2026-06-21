@@ -1,0 +1,21 @@
+{
+    "id": 152,
+    "packet_id": 3,
+    "packet_name": "BNLS_LOGONPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message will parse data from SID_AUTH_ACCOUNTLOGON (0x53) and will reply with data to send in SID_AUTH_ACCOUNTLOGONPROOF (0x54). You must send BNLS_LOGONCHALLENGE (0x02) before you can send this.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/152/bnls-logonproof",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [16] Data from SID_AUTH_ACCOUNTLOGON",
+    "remarks_html": "<p>This message will parse data from SID_AUTH_ACCOUNTLOGON (0x53) and will reply with data to send in SID_AUTH_ACCOUNTLOGONPROOF (0x54). You must send BNLS_LOGONCHALLENGE (0x02) before you can send this.</p>",
+    "comments": []
+}

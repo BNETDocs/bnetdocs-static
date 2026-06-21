@@ -1,0 +1,23 @@
+{
+    "id": 500,
+    "packet_id": 68,
+    "packet_name": "SCGP_CHANGESLOTSTATE",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/500/scgp-changeslotstate",
+    "created_datetime": "2012-03-24T15:02:27+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x44)\r\n(UINT8) Slot Index\r\n(UINT8) State",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent by the host to change a given slot index to a new state:<br />\n0x00 = Computer<br />\n0x01 = Open<br />\n0x02 = Closed</p>",
+    "comments": []
+}

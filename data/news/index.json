@@ -1,16 +1,104 @@
 {
-  "generated_at": "2026-06-21T00:00:00+00:00",
-  "news_posts": [
-    {
-      "id": 1,
-      "title": "Welcome to BNETDocs",
-      "category_id": 1,
-      "options_bitmask": 2,
-      "brief_html": "<p>BNETDocs is now available as a static site on GitHub Pages, preserving years of Battle.net protocol documentation for the community.</p>",
-      "author_username": "carlbennett",
-      "uri": "/news/1/welcome-to-bnetdocs",
-      "created_datetime": "2026-06-21T00:00:00+00:00",
-      "edited_datetime": null
-    }
-  ]
+    "generated_at": "2026-06-21T13:23:12+00:00",
+    "news_posts": [
+        {
+            "id": 1,
+            "title": "Welcome to BNETDocs Dev!",
+            "category_id": 5,
+            "options_bitmask": 3,
+            "brief_html": "<p>This is the first news post in the BNETDocs Development environment. This environment allows BNETDocs Staff to test things out before publishing them to the production environment.</p>",
+            "author_username": "Caaaaarrrrlll",
+            "uri": "/news/1/welcome-to-bnetdocs-dev",
+            "created_datetime": "2018-02-13T04:27:51+00:00",
+            "edited_datetime": "2021-07-10T09:23:48+00:00"
+        },
+        {
+            "id": 153,
+            "title": "Warcraft Test Post",
+            "category_id": 2,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/153/warcraft-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 154,
+            "title": "Blizzard Test Post",
+            "category_id": 0,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/154/blizzard-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 155,
+            "title": "Battle.net Test Post",
+            "category_id": 1,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/155/battle-net-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 156,
+            "title": "Diablo Test Post",
+            "category_id": 3,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/156/diablo-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 157,
+            "title": "Starcraft Test Post",
+            "category_id": 4,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/157/starcraft-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 158,
+            "title": "BNETDocs Test Post",
+            "category_id": 5,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/158/bnetdocs-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 159,
+            "title": "BNLS Test Post",
+            "category_id": 6,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/159/bnls-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        },
+        {
+            "id": 160,
+            "title": "Starcraft II Test Post",
+            "category_id": 7,
+            "options_bitmask": 3,
+            "brief_html": "<p>Please ignore</p>",
+            "author_username": "BNETDocs",
+            "uri": "/news/160/starcraft-ii-test-post",
+            "created_datetime": "2021-08-07T00:38:18+00:00",
+            "edited_datetime": null
+        }
+    ]
 }

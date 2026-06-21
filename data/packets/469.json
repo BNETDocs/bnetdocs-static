@@ -1,0 +1,21 @@
+{
+    "id": 469,
+    "packet_id": 69,
+    "packet_name": "W3GS_MAPPARTNOTOK",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>More research is required.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/469/w3gs-mappartnotok",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[unknown]",
+    "remarks_html": "<p>More research is required.</p>\n<p>This is sent when downloading a map in reply to 0x43 W3GS_MAPPART and a chunk of the map file does not match its CRC encryption.</p>",
+    "comments": []
+}

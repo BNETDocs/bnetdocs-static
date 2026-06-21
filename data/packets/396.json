@@ -1,0 +1,30 @@
+{
+    "id": 396,
+    "packet_id": 14,
+    "packet_name": "BNLS_AUTHORIZE",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>If the bot ID is not recognized by the server, then this message is still sent as backwards compatibility with the previous version of BNLS, which required authorization.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/396/bnls-authorize",
+    "created_datetime": "2011-02-04T22:36:25+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Server code",
+    "remarks_html": "<p>If the bot ID is not recognized by the server, then this message is still sent as backwards compatibility with the previous version of BNLS, which required authorization.</p>\n<p>The client should calculate the checksum of the auth password and the server code using the [BNLS Checksum Algorithm]. The result is sent in BNLS_AUTHORIZEPROOF (0x0F).</p>",
+    "comments": []
+}

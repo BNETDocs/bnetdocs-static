@@ -1,0 +1,23 @@
+{
+    "id": 472,
+    "packet_id": 125,
+    "packet_name": "BNLS_WARDEN",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Provides the Client with the proper response to a <a href=\"/packet/420/sid-warden\">S&gt;C 0x5E SID_WARDEN</a> message. If the Client receives result <code>0x00</code>, then the Client should respond to Battle.net with the <code>Data</code> in <a href=\"/packet/431/sid-warden\">C&gt;S 0x5E SID_WARDEN</a>, otherwise the Client should not respond to the message.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/472/bnls-warden",
+    "created_datetime": "2010-08-07T00:41:07+00:00",
+    "edited_datetime": "2019-12-28T22:32:02+00:00",
+    "format": "(UINT8) Command\r\n(UINT32) Cookie\r\n(UINT8) Result code\r\n(UINT16) Length of Data\r\n(VOID) Data",
+    "remarks_html": "<p>Provides the Client with the proper response to a <a href=\"/packet/420/sid-warden\">S&gt;C 0x5E SID_WARDEN</a> message. If the Client receives result <code>0x00</code>, then the Client should respond to Battle.net with the <code>Data</code> in <a href=\"/packet/431/sid-warden\">C&gt;S 0x5E SID_WARDEN</a>, otherwise the Client should not respond to the message.</p>\n<table>\n<thead>\n<tr>\n<th>Result</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00</code></td>\n<td>Success</td>\n</tr>\n<tr>\n<td><code>0x01</code></td>\n<td>Unable to find your allocated packet handler</td>\n</tr>\n<tr>\n<td><code>0x02</code></td>\n<td>Incoming data is corrupted</td>\n</tr>\n<tr>\n<td><code>0x03</code></td>\n<td>Warden module is not loaded yet</td>\n</tr>\n<tr>\n<td><code>0x04</code></td>\n<td>Error executing warden module</td>\n</tr>\n<tr>\n<td><code>0x05</code></td>\n<td>Unsupported Battle.net client/game</td>\n</tr>\n<tr>\n<td><code>0x06</code></td>\n<td>Warden hack check error</td>\n</tr>\n<tr>\n<td><code>0x07</code></td>\n<td>Warden check invalid</td>\n</tr>\n<tr>\n<td><code>0x08</code></td>\n<td>Incoming warden packet unsupported</td>\n</tr>\n<tr>\n<td><code>0x09</code></td>\n<td>Unsupported warden info type</td>\n</tr>\n<tr>\n<td><code>0xFD</code></td>\n<td>Invalid password</td>\n</tr>\n<tr>\n<td><code>0xFE</code></td>\n<td>Invalid username</td>\n</tr>\n<tr>\n<td><code>0xFF</code></td>\n<td>Your request was corrupted</td>\n</tr>\n</tbody>\n</table>",
+    "comments": []
+}

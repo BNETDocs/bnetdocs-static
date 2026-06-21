@@ -1,0 +1,21 @@
+{
+    "id": 349,
+    "packet_id": 69,
+    "packet_name": "SID_NETGAMEPORT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Sets the port used by the client for hosting WAR3/W3XP games. This value is retrieved from <code>HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Gameplay\\netgameport</code>, and is sent after the user logs on.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/349/sid-netgameport",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:22:25+00:00",
+    "format": "(UINT16) Port",
+    "remarks_html": "<p>Sets the port used by the client for hosting WAR3/W3XP games. This value is retrieved from <code>HKCU\\Software\\Blizzard Entertainment\\Warcraft III\\Gameplay\\netgameport</code>, and is sent after the user logs on.</p>",
+    "comments": []
+}

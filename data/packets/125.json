@@ -1,0 +1,30 @@
+{
+    "id": 125,
+    "packet_id": 26,
+    "packet_name": "BNLS_VERSIONCHECKEX2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p><ul></p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/125/bnls-versioncheckex2",
+    "created_datetime": "2011-09-30T08:15:04+00:00",
+    "edited_datetime": null,
+    "format": "(BOOLEAN) Success *\r\n(UINT32) Version\r\n(UINT32) Checksum\r\n(STRING) Version check stat string\r\n(UINT32) Cookie\r\n(UINT32) The latest version code for this product\r\n",
+    "remarks_html": "<ul>\n<li>Success is TRUE if successful, FALSE otherwise. If this is FALSE, the next UINT32 is the provided cookie, following which the message ends. Do not mistake this value for a UINT8, it is actually a UINT32.</li>\n</ul>",
+    "comments": []
+}

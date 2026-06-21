@@ -1,0 +1,21 @@
+{
+    "id": 303,
+    "packet_id": 20,
+    "packet_name": "D2GS_OVERHEADMESSAGE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is used when you'd like to put a message above a character's head as used in the client as &quot;![message]&quot;.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/303/d2gs-overheadmessage",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Unknown - 0x00, 0x00\r\n(STRING) Message\r\n(UINT8) Unused - 0x00\r\n(UINT16) Unknown - 0x00, 0x00\r\n",
+    "remarks_html": "<p>This message is used when you'd like to put a message above a character's head as used in the client as &quot;![message]&quot;.</p>\n<p>Restrictions: Total size of packet cannot be greater than 275 bytes. Message cannot be greater than 255 bytes. </p>\n<p>Please note: This message's official name is not known, and has been invented. </p>\n<p>Extra Info: The status of this information is: Public Colors can be created by adding hex FF 63 and a character 30 to 3C. </p>\n<p>Example:<br />\nTo make red, use FF 63 31.</p>",
+    "comments": []
+}

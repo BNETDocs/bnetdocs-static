@@ -1,0 +1,18 @@
+{
+    "id": 369,
+    "packet_id": 6,
+    "packet_name": "BOTNET_USER_LIST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Request the user list from BotNet.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/369/botnet-user-list",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-12T04:45:54+00:00",
+    "format": "[blank] \r\n",
+    "remarks_html": "<p>Request the user list from BotNet.</p>\n<p>BotNet will respond with a series of <a href=\"/packet/198/botnet-user\"><code>S&gt;C 0x06 BOTNET_USER</code></a> messages, one per connected user. The first message always describes the client, followed by the other users in order from oldest to newest connect.</p>\n<p>If the client has specified an <a href=\"/packet/511/botnet-client-version\">awareness level</a> of <code>0x01</code> for server revision 4, the user list response will be followed with an additional blank <code>0x06</code> message, called the &quot;null terminator&quot;.</p>",
+    "comments": []
+}

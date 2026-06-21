@@ -1,0 +1,22 @@
+{
+    "id": 381,
+    "packet_id": 30,
+    "packet_name": "SID_CLIENTID2",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Updated <a href=\"/packet/244/sid-clientid\">C&gt;S 0x05 SID_CLIENTID</a>, sends client identification numbers.</p>",
+    "used_by": [
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/381/sid-clientid2",
+    "created_datetime": "2012-04-01T18:41:40+00:00",
+    "edited_datetime": "2020-10-17T07:43:39+00:00",
+    "format": "(UINT32) Server Version\r\n\r\nFor server version 1:\r\n    (UINT32) Registration Version\r\n    (UINT32) Registration Authority\r\n\r\nFor server version 0:\r\n    (UINT32) Registration Authority\r\n    (UINT32) Registration Version\r\n\r\n(UINT32) Account Number\r\n(UINT32) Registration Token\r\n(STRING) LAN computer name\r\n(STRING) LAN username ",
+    "remarks_html": "<p>Updated <a href=\"/packet/244/sid-clientid\">C&gt;S 0x05 SID_CLIENTID</a>, sends client identification numbers.</p>\n<p>See that page for more information.</p>\n<p>The server will reply with SID_CLIENTID.</p>",
+    "comments": []
+}

@@ -1,0 +1,28 @@
+{
+    "id": 325,
+    "packet_id": 18,
+    "packet_name": "MCP_MOTD",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains the realm's MOTD. The Byte at the beginning is apparently ignored.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/325/mcp-motd",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T22:22:00+00:00",
+    "format": "  (UINT8) Unknown\r\n(STRING) MOTD",
+    "remarks_html": "<p>Contains the realm's MOTD. The Byte at the beginning is apparently ignored.</p>",
+    "comments": [
+        {
+            "id": 627,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-18T08:27:53+00:00",
+            "content_html": "<p>Max MOTD length is 512 bytes, including the null terminator.</p>"
+        }
+    ]
+}

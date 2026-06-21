@@ -1,0 +1,28 @@
+{
+    "id": 305,
+    "packet_id": 42,
+    "packet_name": "SID_CREATEACCOUNT",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Creates an account.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/305/sid-createaccount",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) [5] Hashed password\r\n(STRING) Username",
+    "remarks_html": "<p>Creates an account.</p>\n<p>Usernames longer than 15 characters are truncated, and the password is only hashed once (unlike SID_LOGONRESPONSE).</p>\n<p>This packet is identical to SID_CREATEACCOUNT2, but the response is limited to success/fail. Developers who wish to provide a reason for account creation failure should use SID_CREATEACCOUNT2.</p>\n<p>Currently, SID_CREATEACCOUNT2 may be used with any product, but the protocol-correct packet to use depends on the product you are emulating.</p>",
+    "comments": []
+}

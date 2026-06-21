@@ -1,0 +1,43 @@
+{
+    "id": 15,
+    "title": "Chat Flags",
+    "options_bitmask": 3,
+    "brief_html": "<p>This document describes the user and channel flags seen in the <code>FLAGS</code> field of <a href=\"/packet/307/sid-chatevent\">SID_CHATEVENT</a>.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/15/chat-flags",
+    "created_datetime": "2011-11-17T01:46:55+00:00",
+    "edited_datetime": "2020-10-31T20:53:02+00:00",
+    "content_html": "<p>This document describes the user and channel flags seen in the <code>FLAGS</code> field of <a href=\"/packet/307/sid-chatevent\">SID_CHATEVENT</a>.</p>\n<h2>User Flags</h2>\n<p>Since the game retrieves these flags automatically from the corresponding game icon file, they are liable to change.</p>\n<pre><code>0x00000001: Blizzard Representative\n0x00000002: Channel Operator\n0x00000004: Channel Speaker\n0x00000008: Battle.net Administrator\n0x00000010: No UDP Support\n0x00000020: Squelched\n0x00000040: Special Guest\n0x00000080: Reserved*\n0x00000100: Beep Enabled**\n0x00000200: PGL Player**\n0x00000400: PGL Official**\n0x00000800: KBK Player**\n0x00001000: WCG Official / Diablo II Referee\n0x00002000: KBK Singles**\n0x00002000: KBK Player**\n0x00010000: KBK Beginner**\n0x00020000: White KBK (1 bar)**\n0x00100000: GF Official / Diablo II Referee\n0x00200000: GF Player\n0x02000000: PGL Player</code></pre>\n<p>* This flag has not been seen, however, it is logical to assume that it was once used since it is in the middle of a sequence.</p>\n<p>** This flag is defunct.</p>\n<h2>Channel Flags</h2>\n<pre><code>0x00001: Public Channel\n0x00002: Moderated\n0x00004: Restricted\n0x00008: Silent\n0x00010: System\n0x00020: Product-Specific\n0x01000: Globally Accessible\n0x04000: Redirected\n0x08000: Chat\n0x10000: Tech Support</code></pre>\n<h2>Known Channel Flags</h2>\n<p>These flags were observed at some time in the past (before major changes to the servers were done), but may not be current.</p>\n<pre><code>The Void: 0x09\nwarez: 0x0d\nBackstage: 0x10\nBlizzard Tech Support: 0x1003\nOpen Tech Support: 0x1001\nBlizzard Chat: 0x1001\nClan Recruitment: 0x01\nPublic Chat: 0x21 (CHAT)</code></pre>",
+    "comments": [
+        {
+            "id": 83,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-03-31T07:51:23+00:00",
+            "content_html": "<p>Am having problems formatting the document, will do it tomorrow. Bedtime for me. :)</p>"
+        },
+        {
+            "id": 87,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-04-12T06:02:43+00:00",
+            "content_html": "<p>If there is anyway I can help, let me know.</p>"
+        },
+        {
+            "id": 135,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-03-06T19:20:24+00:00",
+            "content_html": "<p>1 year later and the formatting is still screwed, guess Kyro never woke up again :P</p>"
+        },
+        {
+            "id": 139,
+            "author_username": "BNETDocs",
+            "created_datetime": "2009-04-10T23:36:15+00:00",
+            "content_html": "<p>I have fixed the issue. :)</p>"
+        },
+        {
+            "id": 628,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-19T21:22:08+00:00",
+            "content_html": "<p>0x00000001: Blizzard Representative<br />\n0x00000002: Channel Operator<br />\n0x00000004: Channel Speaker<br />\n0x00000008: Battle.net Administrator<br />\n0x00000010: No UDP Support<br />\n0x00000020: Squelched</p>\n<p>are looked for directly in the game clients them selves and are not likely to change ever with out hardcoded updates.</p>"
+        }
+    ]
+}

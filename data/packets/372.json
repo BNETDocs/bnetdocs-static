@@ -1,0 +1,24 @@
+{
+    "id": 372,
+    "packet_id": 6,
+    "packet_name": "SID_STARTVERSIONING",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is sent to the server to start the process of checking the game files. This message is part of the old check revision process. Functionality is now incorporated into <a href=\"/packet/279/sid-auth-info\">C&gt;S 0x50 SID_AUTH_INFO</a>.</p>",
+    "used_by": [
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/372/sid-startversioning",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-10-17T07:45:34+00:00",
+    "format": "(UINT32) Platform code\r\n(UINT32) Product code\r\n(UINT32) Version byte\r\n(UINT32) Unknown (0) ",
+    "remarks_html": "<p>This message is sent to the server to start the process of checking the game files. This message is part of the old check revision process. Functionality is now incorporated into <a href=\"/packet/279/sid-auth-info\">C&gt;S 0x50 SID_AUTH_INFO</a>.</p>\n<p>Field descriptions:</p>\n<ul>\n<li><strong>Platform code</strong>: Identifies the client's <a href=\"/document/12/product-identification\">platform value</a>.</li>\n<li><strong>Product code</strong>: Identifies the client's <a href=\"/document/12/product-identification\">product value</a>.</li>\n<li><strong>Version byte</strong>: Identifies the client's <a href=\"/document/12/product-identification\">version number</a>.</li>\n</ul>\n<p>This message triggers the initial SID_PING from the server prior to its own reply.</p>",
+    "comments": []
+}

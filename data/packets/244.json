@@ -1,0 +1,21 @@
+{
+    "id": 244,
+    "packet_id": 5,
+    "packet_name": "SID_CLIENTID",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet was used to ensure that the client's account number was valid. All but the last two fields in this message are now ignored, and may be set to zero.</p>",
+    "used_by": [
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/244/sid-clientid",
+    "created_datetime": "2012-04-01T18:42:34+00:00",
+    "edited_datetime": "2025-05-24T22:30:59+00:00",
+    "format": "(UINT32) Registration Version\r\n(UINT32) Registration Authority\r\n(UINT32) Account Number\r\n(UINT32) Registration Token\r\n(STRING) LAN Computer Name\r\n(STRING) LAN Username",
+    "remarks_html": "<p>This packet was used to ensure that the client's account number was valid. All but the last two fields in this message are now ignored, and may be set to zero.</p>\n<p>The 'LAN Computer Name' field is the NetBIOS name of the computer. It can be retrieved using the <a href=\"https://msdn2.microsoft.com/en-us/library/ms724295.aspx\">GetComputerName</a> API.</p>\n<p>The 'Lan Username' field is the name of the currently logged on user, and may be retrieved using the <a href=\"https://msdn2.microsoft.com/en-us/library/ms724432.aspx\">GetUserName</a> API.</p>\n<p>The following information is historical:</p>\n<p>The client would supply this data as issued by a Battle.net server. If the Registration Version, Registration Authority, and Client Token values equated to the account number supplied (Client ID), as determined by an unknown formula, the server would respond with the same values. If they were invalid, the server would assign new values. Registration Version was always 1, Authority was the IP address of the server that issued the account number. Thus, the Client Token was the secret value, used to prove that the client really owned the account in question.</p>",
+    "comments": []
+}

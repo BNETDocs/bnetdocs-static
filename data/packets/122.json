@@ -1,0 +1,37 @@
+{
+    "id": 122,
+    "packet_id": 39,
+    "packet_name": "SID_WRITEUSERDATA",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Updates the Client's profile.<br />\nCurrently, the allowed keys for this are Profile\\Sex, Profile\\Location, and Profile\\Description. The maximum length for the values is 512, including the null terminator.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/122/sid-writeuserdata",
+    "created_datetime": "2011-06-02T18:47:11+00:00",
+    "edited_datetime": "2020-10-15T20:10:33+00:00",
+    "format": "(UINT32) Number of accounts\r\n(UINT32) Number of keys\r\n(STRING) [] Accounts to update\r\n(STRING) [] Keys to update\r\n(STRING) [] New values",
+    "remarks_html": "<p>Updates the Client's profile.<br />\nCurrently, the allowed keys for this are Profile\\Sex, Profile\\Location, and Profile\\Description. The maximum length for the values is 512, including the null terminator.</p>\n<p>See SID_READUSERDATA for more information.</p>",
+    "comments": [
+        {
+            "id": 625,
+            "author_username": "BNETDocs",
+            "created_datetime": "2020-10-15T19:49:23+00:00",
+            "content_html": "<p>As of Starcraft version 1.15 (many many years prior to me making this comment), Blizzard removed the Sex field from user profiles and attempting to write this key will result in an IP ban.</p>\n<p>Edit: this is based off a code comment found in StealthBot, but has not been confirmed.</p>"
+        }
+    ]
+}

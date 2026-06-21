@@ -1,0 +1,43 @@
+{
+    "id": 23,
+    "title": "BNLS Checksum Algorithm",
+    "options_bitmask": 3,
+    "brief_html": "<p>The BNLS checksum algorithm calculates the checksum of a password using the 32-bit server code received in <a href=\"/packet/396/bnls-authorize\"><code>0x0E BNLS_AUTHORIZE</code></a>.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/23/bnls-checksum-algorithm",
+    "created_datetime": "2011-07-31T04:37:24+00:00",
+    "edited_datetime": "2019-12-29T15:34:55+00:00",
+    "content_html": "<p>The BNLS checksum algorithm calculates the checksum of a password using the 32-bit server code received in <a href=\"/packet/396/bnls-authorize\"><code>0x0E BNLS_AUTHORIZE</code></a>.</p>\n<p>You should create the BNLS checksum as follows:</p>\n<ol>\n<li>Create an ANSI string whose length is the length of the password + 8 characters.</li>\n<li>Copy the password to the beginning. (Note that the password is case sensitive.)</li>\n<li>In the last 8 characters, store the hexadecimal representation of the server code, in uppercase, padded with zeroes on the left.</li>\n<li>Calculate the standard CRC-32 checksum (using the standard polynomial 0xEDB88320) of the string.</li>\n</ol>\n<p>The result is the BNLS checksum, to be sent in BNLS_AUTHORIZEPROOF (0x0f).</p>\n<p>Source code for this procedure is available in <a href=\"//files.bnetdocs.org/Attachments/0/23/BNLSChecksum.bas\">VB6</a>, <a href=\"//files.bnetdocs.org/Attachments/0/23/BNLSChecksum.cpp\">C++</a>, <a href=\"//files.bnetdocs.org/Attachments/0/23/BNLSChecksumCls.cs\">C#</a>, and <a href=\"//files.bnetdocs.org/Attachments/0/23/BNLSChecksum.rbbas\">RB</a>, provided by <a href=\"/user/123/sixen\">Sixen</a> and <a href=\"/user/63/caaaaarrrrlll\">Caaaaarrrrlll</a>.</p>\n<p>In the sample code, the checksum for BNLS_AUTHORIZEPROOF (0x0f) is the return value of BNLSChecksum(AuthPassword, ServerCode), where ServerCode is the value from BNLS_AUTHORIZE (0x0e).</p>\n<p>These sample checksums can be used to check the correctness of your code:</p>\n<pre><code>BNLSChecksum(\"Sample\", 0x0123ABCD)    == 0x12FDED88\nBNLSChecksum(\"Checksums\", 0xBAADF00D) == 0x0098F911</code></pre>",
+    "comments": [
+        {
+            "id": 472,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-08-02T03:24:17+00:00",
+            "content_html": "<p>Suggestion: in the future, move any referenced data to BNETDocs. This way we don't have to worry about broken links. Make sure to place the referenced data in a text file and pop it in the archives directory. For example, look at this:</p>\n<p><a href=\"http://www.bnetdocs.org/?op=doc&amp;did=12\">http://www.bnetdocs.org/?op=doc&amp;did=12</a></p>\n<p>You can see DevCode and HDX's code was stored on BNETDocs and archived for reference purposes-- no worrying about broken links. =)</p>\n<p>So-- yea, move the realbasic code from pastebin to a locally stored file in archives and update links.</p>"
+        },
+        {
+            "id": 473,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-08-05T23:53:23+00:00",
+            "content_html": "<p>I have the pastebin links I post set to never expire, and they're tied to my pastebin account.</p>\n<p>I can, at my own will, edit or delete them, without having to make a new pastebin link.</p>\n<p>Plus pastebin provides a neat syntax highlighting for 100s of languages :)</p>"
+        },
+        {
+            "id": 474,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-08-06T04:20:10+00:00",
+            "content_html": "<p>Make backups of the files then and pop the backup in bnetdocs archives. Would suck if pastebin went down and your precious code went buh-bye, now wouldn't it? ;)</p>"
+        },
+        {
+            "id": 475,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-08-12T05:46:04+00:00",
+            "content_html": "<p>I have my precious code on my hard drive in REALbasic project files. If pastebin goes down, I can just re-upload it. I never delete good code.</p>"
+        },
+        {
+            "id": 532,
+            "author_username": "BNETDocs",
+            "created_datetime": "2016-07-11T01:59:31+00:00",
+            "content_html": "<p>I have added the sample code as attachments to this document.</p>"
+        }
+    ]
+}

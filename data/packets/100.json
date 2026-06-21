@@ -1,0 +1,28 @@
+{
+    "id": 100,
+    "packet_id": 4,
+    "packet_name": "SID_SERVERLIST",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Client should set the internal Battle.net server list from the contents of this message.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/100/sid-serverlist",
+    "created_datetime": "2012-05-30T19:25:03+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Server version\r\n(STRING) [] Server list",
+    "remarks_html": "<p>Client should set the internal Battle.net server list from the contents of this message.</p>\n<p>This packet is supported by all Battle.snp games and Diablo II and its expansion.</p>\n<p>Note that this packet is defunct. The clients (including Warcraft III) all ask Battle.net for the FILETIME structure of the gateway list file and then compares that structure to its own cached copy. If the FILETIMEs do not match, then it goes to BNFTP and downloads a new one and stores it to the Windows Registry (or on file, if using Mac) while also caching the new FILETIME for later. They do not ever under any circumstance store the actual file data, and therefore as long as the cache is not changed and Battle.net always reports the same FILETIME, you can modify your gateway list without it knowing it changed.</p>",
+    "comments": []
+}

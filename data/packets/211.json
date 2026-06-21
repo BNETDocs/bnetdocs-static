@@ -1,0 +1,28 @@
+{
+    "id": 211,
+    "packet_id": 119,
+    "packet_name": "SID_CLANINVITATION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Result of inviting a user to join your clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/211/sid-claninvitation",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T00:22:07+00:00",
+    "format": "(UINT32) Cookie\r\n (UINT8) Status",
+    "remarks_html": "<p>Result of inviting a user to join your clan.</p>\n<p>This is received once an invited user has responded or an error occured preventing an invitation from completing.</p>\n<p><strong>Status</strong> is one of the <a href=\"/document/4/clan-system-overview\">Clan Message Codes</a>:</p>\n<ul>\n<li><code>0x00</code>: Success (every accepted; clan created)</li>\n<li><code>0x04</code>: Declined or timed out</li>\n<li><code>0x05</code>: Not available (not in channel or mutual friend or already in a clan)</li>\n<li><code>0x08</code>: Not allowed because the user has a pending invite</li>\n<li><code>0x09</code>: Clan is full</li>\n</ul>",
+    "comments": [
+        {
+            "id": 529,
+            "author_username": "BNETDocs",
+            "created_datetime": "2012-08-01T01:06:23+00:00",
+            "content_html": "<p>Helpful hint - Clan invitations will fail (0x05) if you invite a user in a public channel if that user is not in your friend list. There may be other reasons as well.</p>"
+        }
+    ]
+}

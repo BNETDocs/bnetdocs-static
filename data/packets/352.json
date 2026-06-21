@@ -1,0 +1,21 @@
+{
+    "id": 352,
+    "packet_id": 109,
+    "packet_name": "D2GS_PING",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet should be sent every five to seven seconds to avoid timeout.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/352/d2gs-ping",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Tick Count\r\n(UINT32) Null\r\n(UINT32) Null \r\n",
+    "remarks_html": "<p>This packet should be sent every five to seven seconds to avoid timeout.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

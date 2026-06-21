@@ -1,0 +1,25 @@
+{
+    "id": 166,
+    "packet_id": 43,
+    "packet_name": "SID_SYSTEMINFO",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains system information.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/166/sid-systeminfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2025-05-24T22:40:51+00:00",
+    "format": "(UINT32) Number of processors\r\n(UINT32) Processor architecture\r\n(UINT32) Processor level\r\n(UINT32) Processor timing\r\n(UINT32) Total physical memory\r\n(UINT32) Total page file\r\n(UINT32) Free disk space ",
+    "remarks_html": "<p>Contains system information.</p>\n<p>This packet was sent during the connection process for <code>STAR</code>, <code>SEXP</code>, <code>DRTL</code>, and <code>DSHR</code> clients prior to version 1.07. It is now only used by <code>JSTR</code> and <code>SSHR</code>.</p>\n<p>For information on how to emulate this system, please see <a href=\"https://vl.bnetdocs.org/index.php?topic=16255.0\">this topic</a> from Valhalla Legends.</p>",
+    "comments": []
+}

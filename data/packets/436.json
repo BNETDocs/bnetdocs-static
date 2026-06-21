@@ -1,0 +1,21 @@
+{
+    "id": 436,
+    "packet_id": 49,
+    "packet_name": "W3GS_CREATEGAME",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Notifies the local area network that a game was created.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/436/w3gs-creategame",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Product\r\n(UINT32) Host Counter\r\n(UINT32) Players In Game",
+    "remarks_html": "<p>Notifies the local area network that a game was created.</p>",
+    "comments": []
+}

@@ -1,0 +1,28 @@
+{
+    "id": 121,
+    "packet_id": 45,
+    "packet_name": "SID_GETICONDATA",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests the filename &amp; time of the default icons file for the current game. This message must be sent after <a href=\"/document/47/checkrevision\">client authentication</a> and before receiving <a href=\"/packet/186/sid-enterchat\">SID_ENTERCHAT</a> or Battle.net will terminate the connection.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/121/sid-geticondata",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2021-09-17T20:19:13+00:00",
+    "format": "[blank] \r\n",
+    "remarks_html": "<p>Requests the filename &amp; time of the default icons file for the current game. This message must be sent after <a href=\"/document/47/checkrevision\">client authentication</a> and before receiving <a href=\"/packet/186/sid-enterchat\">SID_ENTERCHAT</a> or Battle.net will terminate the connection.</p>\n<p>The response to this packet is <a href=\"/packet/120/sid-geticondata\">S-&gt;C SID_GETICONDATA</a>.</p>",
+    "comments": []
+}

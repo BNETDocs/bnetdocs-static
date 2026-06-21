@@ -1,0 +1,25 @@
+{
+    "id": 31,
+    "title": "Telnet Protocol Message Formatting",
+    "options_bitmask": 3,
+    "brief_html": "<p>The following information is only valid when using protocol <code>0x03</code> (Telnet) on a Classic Battle.net server and only after a successful login handshake. See also <a href=\"/document/17/telnet-protocol\">Telnet Protocol</a> and <a href=\"/document/16/protocol-headers\">Protocol Headers</a>.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/31/telnet-protocol-message-formatting",
+    "created_datetime": "2011-03-13T21:56:53+00:00",
+    "edited_datetime": "2016-08-03T11:00:20+00:00",
+    "content_html": "<p>The following information is only valid when using protocol <code>0x03</code> (Telnet) on a Classic Battle.net server and only after a successful login handshake. See also <a href=\"/document/17/telnet-protocol\">Telnet Protocol</a> and <a href=\"/document/16/protocol-headers\">Protocol Headers</a>.</p>\n<p><strong><span class=\"red\">NOTICE: Telnet is a legacy protocol that is not used on Battle.net anymore as of 2005. All of the below information should be taken with a grain of salt.</span></strong></p>\n<h2>Message Format</h2>\n<p>When receiving data from Battle.net's flavor of Telnet, a message will come in the following format:</p>\n<pre><code>####&lt;SPACE&gt;MSGNAME&lt;SPACE&gt;&lt;DATA&gt;&lt;EOL&gt;</code></pre>\n<p>Where</p>\n<ul>\n<li><code>####</code> is the message id number,</li>\n<li><code>MSGNAME</code> is the name of the message,</li>\n<li><code>DATA</code> is the contents of the message,</li>\n<li><code>SPACE</code> is a space character (ASCII Code 32),</li>\n<li>and <code>EOL</code> is an End-Of-Line character (ASCII Code 13 and/or 10).</li>\n</ul>\n<p>The following PHP code reads a message and breaks it down into its components:</p>\n<pre><code>$message = \"1018 INFO \\\"Something spectacular.\\\"\" . PHP_EOL;\n$msgid   = substr($message, 0, 4);\n$msgname = substr($message, 5, strpos($message, \" \", 5) - 5);\n$msgdata = substr($message, 6 + strlen($msgname), 0 - strlen(PHP_EOL));\n\necho \"msgid   = '$msgid'\" . PHP_EOL\n   . \"msgname = '$msgname'\" . PHP_EOL\n   . \"msgdata = '$msgdata'\" . PHP_EOL;\n\n// msgid   = '1018'\n// msgname = 'INFO'\n// msgdata = '\"Something spectacular.\"'</code></pre>\n<h2>Message ID Constants</h2>\n<p>Interestingly, observations suggest that the ID is serialized in a unique way:</p>\n<ul>\n<li><code>1xxx</code> are EID messages, which can be interpreted as <a href=\"/packet/307/sid-chatevent\">SID_CHATEVENT</a>.</li>\n<li><code>2xxx</code> are SID messages, which can be interpreted as standard Battle.net messages.</li>\n</ul>\n<p>The hypothesis is supported by the following example:</p>\n<pre><code>2010 NAME JoeUser\n1007 CHANNEL \"The Void\"\n1018 INFO \"This channel does not have chat privileges.\"\n2000 NULL</code></pre>\n<p>There are matching messages for these on the binary (non-Telnet) protocol:</p>\n<ul>\n<li><a href=\"/packet/186/sid-enterchat\">S&gt;C 0x10 SID_ENTERCHAT</a></li>\n<li><a href=\"/packet/307/sid-chatevent\">S&gt;C 0x0F SID_CHATEVENT</a> / 0x07 EID_CHANNEL</li>\n<li><a href=\"/packet/307/sid-chatevent\">S&gt;C 0x0F SID_CHATEVENT</a> / 0x12 EID_INFO</li>\n<li><a href=\"/packet/370/sid-null\">S&gt;C 0x00 SID_NULL</a></li>\n</ul>\n<p>Note how hexadecimal <code>0x12</code> is <code>18</code> decimal, just like in our message received over Telnet. The messages match up quite nicely.</p>\n<h2>Overloading Official Battle.net Telnet</h2>\n<p>For those interested in building their own private Battle.net, such as like what the PvPGN team has accomplished, it's worthwhile to &quot;break&quot; from Blizzard's implementation <em>and send more</em> SID messages to the client than official Battle.net does.</p>\n<p>One could easily translate a <a href=\"/packet/346/sid-messagebox\">SID_MESSAGEBOX</a> message into the following, a message that is not sent by official Battle.net to Telnet clients:</p>\n<pre><code>2025 DIALOG \"An error occurred which caused this dialog to appear.\"</code></pre>\n<p>The above strips off the <code>Caption</code> and <code>Style</code> flags from the SID-style message and leaves only the <code>Text</code> field.</p>",
+    "comments": [
+        {
+            "id": 445,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-07T08:10:33+00:00",
+            "content_html": "<p>Pretty cool findings there... There's lot to test with Telnet now on the W3DM server then, haha.</p>"
+        },
+        {
+            "id": 452,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-03-14T02:25:24+00:00",
+            "content_html": "<p>Yeah I found it out a while back ago when I was making my RBNETD software and was implementing the ol' Telnet protocol but couldn't find a way for SID_MESSAGEBOX through Telnet; this led me to find the format Blizzard was using for the packet ID's in Telnet.</p>\n<p>Not sure if someone else actually knew about this or not, but I didn't find it anywhere so I felt compelled to document it.</p>"
+        }
+    ]
+}

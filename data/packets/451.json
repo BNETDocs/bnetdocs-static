@@ -1,0 +1,21 @@
+{
+    "id": 451,
+    "packet_id": 6,
+    "packet_name": "W3GS_PLAYERINFO",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Tells a client about a player's information.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/451/w3gs-playerinfo",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-29T16:36:55+00:00",
+    "format": "(UINT32) Player Counter\r\n (UINT8) Player number\r\n(STRING) Player name\r\n\r\n(UINT16) Unknown (1)\r\n\r\n(UINT16) AF_INET (2)\r\n(UINT16) Port\r\n(UINT32) External IP\r\n(UINT32) Unknown (0)\r\n(UINT32) Unknown (0)\r\n\r\n(UINT16) AF_INET (2)\r\n(UINT16) Port\r\n(UINT32) Internal IP\r\n(UINT32) Unknown (0)\r\n(UINT32) Unknown (0)",
+    "remarks_html": "<p>Tells a client about a player's information.</p>\n<p>The external and internal IP are always zero for the host.</p>\n<p>NOTE: This packet needs a better structure in the Format. Until then, you will have to deal with the unorganized fields.</p>",
+    "comments": []
+}

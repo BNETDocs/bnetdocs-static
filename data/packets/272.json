@@ -1,0 +1,30 @@
+{
+    "id": 272,
+    "packet_id": 21,
+    "packet_name": "SID_CHECKAD",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Contains information needed to download and display an ad banner. </p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/272/sid-checkad",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Ad ID\r\n(UINT32) File extension\r\n(FILETIME) Local file time\r\n(STRING) Filename\r\n(STRING) Link URL",
+    "remarks_html": "<p>Contains information needed to download and display an ad banner. </p>",
+    "comments": []
+}

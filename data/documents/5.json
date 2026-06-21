@@ -1,0 +1,25 @@
+{
+    "id": 5,
+    "title": "File Transfer Protocol Version 1",
+    "options_bitmask": 3,
+    "brief_html": "<p>Battle.net's file transfer protocol (often abbreviated BNFTP or BNFTPv1) consists of two packets: the request and the response.</p>",
+    "author_username": "BNETDocs",
+    "uri": "/document/5/file-transfer-protocol-version-1",
+    "created_datetime": "2012-02-26T04:14:21+00:00",
+    "edited_datetime": "2021-09-24T23:47:11+00:00",
+    "content_html": "<p>Battle.net's file transfer protocol (often abbreviated BNFTP or BNFTPv1) consists of two packets: the request and the response.</p>\n<p>To initiate a BNFTPv1 connection, BNFTP's protocol ID, <code>0x02</code>, must be sent to the server before sending a request packet. The response packet is likely to be split up among multiple TCP packets.</p>\n<h2>Request Packet Structure</h2>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Field</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>UINT16</td>\n<td>Request Length</td>\n<td></td>\n</tr>\n<tr>\n<td>UINT16</td>\n<td>Protocol Version</td>\n<td><code>0x100</code> (256)</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Platform ID</td>\n<td>See [Product Identification]</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Product ID</td>\n<td>See [Product Identification]</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Ad Banner ID</td>\n<td><code>0</code> unless downloading an ad banner</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Ad Banner File Extension</td>\n<td><code>0</code> unless downloading an ad banner</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>File start position</td>\n<td>For resuming an incomplete download</td>\n</tr>\n<tr>\n<td>FILETIME</td>\n<td>Filetime</td>\n<td>if set to <code>0</code>, will return the latest version of the file</td>\n</tr>\n<tr>\n<td>STRING</td>\n<td>Filename</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h2>Response Packet Structure</h2>\n<table>\n<thead>\n<tr>\n<th>Type</th>\n<th>Field</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>UINT16</td>\n<td>Header Length</td>\n<td>Does not include the file length</td>\n</tr>\n<tr>\n<td>UINT16</td>\n<td>Type</td>\n<td></td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>File size</td>\n<td></td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Ad Banner ID</td>\n<td><code>0</code> unless downloading an ad banner</td>\n</tr>\n<tr>\n<td>UINT32</td>\n<td>Ad Banner File Extension</td>\n<td><code>0</code> unless downloading an ad banner</td>\n</tr>\n<tr>\n<td>FILETIME</td>\n<td>Filetime</td>\n<td>last modified time of the returned file</td>\n</tr>\n<tr>\n<td>STRING</td>\n<td>Filename</td>\n<td></td>\n</tr>\n<tr>\n<td>VOID</td>\n<td>File data</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>The client terminates the connection after completely receiving the requested file. If the file does not exist on the server, the connection is closed immediately.</p>\n<p>See also, <a href=\"https://bnetdocs.org/document/6/file-transfer-protocol-version-2\">BNFTPv2</a>.</p>",
+    "comments": [
+        {
+            "id": 168,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-07-08T03:03:20+00:00",
+            "content_html": "<p>Why would the unknown be padding and not part of the header length making it a DWORD? It makes no sense for it to be padding if this is a header.</p>"
+        },
+        {
+            "id": 503,
+            "author_username": "BNETDocs",
+            "created_datetime": "2011-10-02T19:26:52+00:00",
+            "content_html": "<p>Why would the protocol version be 0x100 (256)? They probably are using big endian instead of little endian, and the version is probably 0x01 (1).</p>"
+        }
+    ]
+}

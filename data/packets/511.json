@@ -1,0 +1,18 @@
+{
+    "id": 511,
+    "packet_id": 10,
+    "packet_name": "BOTNET_CLIENT_VERSION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Set client awareness level and capabilities.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/511/botnet-client-version",
+    "created_datetime": "2018-03-12T01:19:04+00:00",
+    "edited_datetime": "2018-03-13T05:36:38+00:00",
+    "format": "(UINT32) Client awareness level\r\n(UINT32) Client capabilities",
+    "remarks_html": "<p>Set client awareness level and capabilities.</p>\n<p><em>This message is supported as of server revision 4.</em></p>\n<p><strong>Client awareness level</strong>:</p>\n<p>This is a value used by revision 4 servers to add functionality but keep backwards compatibility. Fields marked with <strong>awl: 1</strong> in this documentation require the client to send this message with <strong>Client awareness level</strong> set to <code>0x01</code> for them to be received in <strong>server to client</strong> messages.</p>\n<ul>\n<li><code>0x00</code>: <strong>awl</strong> of 0 (default).</li>\n<li><code>0x01</code>: <strong>awl</strong> of 1.</li>\n</ul>\n<p>Clients should continue to parse assuming an old <strong>awl</strong> until they receive <a href=\"/packet/512/botnet-client-version\"><code>S&gt;C 0x09 BOTNET_CLIENT_VERSION</code></a> as confirmation of their requested change.</p>\n<p><strong>Client capabilities</strong>:</p>\n<p>Combination of bitwise flags specifying other settings the client would like.</p>\n<ul>\n<li><code>0x00</code>: No flags set.</li>\n<li><code>0x01</code>: Await server confirmation of database changes (if clear [the default], the client is expected to update the local database immediately and expects the server to countermand prohibited changes).</li>\n</ul>",
+    "comments": []
+}

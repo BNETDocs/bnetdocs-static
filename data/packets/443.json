@@ -1,0 +1,21 @@
+{
+    "id": 443,
+    "packet_id": 63,
+    "packet_name": "W3GS_STARTDOWNLOAD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A client sends this to the host to initiate a map download.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/443/w3gs-startdownload",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>A client sends this to the host to initiate a map download.</p>",
+    "comments": []
+}

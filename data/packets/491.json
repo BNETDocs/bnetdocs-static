@@ -1,0 +1,23 @@
+{
+    "id": 491,
+    "packet_id": 80,
+    "packet_name": "SCGP_UNKNOWNREQUEST",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 11,
+    "brief_html": "<p>Packet CLS 1.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/491/scgp-unknownrequest",
+    "created_datetime": "2012-03-24T14:28:41+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x50)",
+    "remarks_html": "<p>Packet CLS 1.</p>\n<p>Sent by the host during the join sequence.</p>\n<p>Players should respond to this, by sending CLS 2, 0x40.<br />\nIt is sent to joiners as part of the join process, a lot with/after CLS 1, 0x4A.</p>",
+    "comments": []
+}

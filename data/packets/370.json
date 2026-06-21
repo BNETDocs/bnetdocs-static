@@ -1,0 +1,30 @@
+{
+    "id": 370,
+    "packet_id": 0,
+    "packet_name": "SID_NULL",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Keeps the connection alive. Clients do not need to respond to this message.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/370/sid-null",
+    "created_datetime": "2010-07-14T17:18:43+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>Keeps the connection alive. Clients do not need to respond to this message.</p>",
+    "comments": []
+}

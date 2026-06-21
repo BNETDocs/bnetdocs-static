@@ -1,0 +1,18 @@
+{
+    "id": 171,
+    "packet_id": 2,
+    "packet_name": "BOTNET_STATSUPDATE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Update client information.</p>",
+    "used_by": [],
+    "author_username": "BNETDocs",
+    "uri": "/packet/171/botnet-statsupdate",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-13T04:51:47+00:00",
+    "format": "(STRING) Battle.net unique username    [max: 20]\r\n(STRING) Battle.net current channel    [max: 36]\r\n(UINT32) Battle.net server IP address\r\n(STRING) Database name and password    [max: 96]\r\n(UINT32) Cycle status",
+    "remarks_html": "<p>Update client information.</p>\n<p>This should be sent when any of the values in the structure change.</p>\n<p>The <strong>Unique username</strong> and <strong>Current channel</strong> fields cannot be blank. Conventionally, when not logged on to Battle.net, you should set the <strong>Server IP address</strong> and <strong>Unique username</strong> to the last non-empty values they had (or the ones in the bot configuration) and set the <strong>Current channel</strong> to the string <code>\"&lt;Not logged on&gt;\"</code>.</p>\n<p>The <strong>Database name and password</strong> field should be of the format <code>\"name pass\"</code> where a space (ASCII <code>0x20</code>) separates the values. This value may be blank, in which case BotNet places you in the &quot;public&quot; database.</p>\n<p>With the changes Battle.net made to operators in private channels, <strong>Cycle status</strong> is now defunct. Clients should specify <code>0x00</code>. The values were:</p>\n<ul>\n<li><code>0x00</code>: Not cycling</li>\n<li><code>0x01</code>: Cycling</li>\n</ul>",
+    "comments": []
+}

@@ -1,0 +1,23 @@
+{
+    "id": 494,
+    "packet_id": 61,
+    "packet_name": "SCGP_MAPPERCENT",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/494/scgp-mappercent",
+    "created_datetime": "2012-03-24T14:33:59+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x3D)\r\n(UINT8) Download percent",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent to all other players to tell them your current download percent.<br />\nThis should be sent in 1 second intervals when your download percent has changed.</p>",
+    "comments": []
+}

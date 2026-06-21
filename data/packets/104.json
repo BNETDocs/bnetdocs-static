@@ -1,0 +1,21 @@
+{
+    "id": 104,
+    "packet_id": 10,
+    "packet_name": "BNLS_CONFIRMLOGON",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Success is TRUE if the server knows your password, FALSE otherwise. If this is FALSE, the Battle.net connection should be closed by the client.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/104/bnls-confirmlogon",
+    "created_datetime": "2012-02-26T04:20:13+00:00",
+    "edited_datetime": null,
+    "format": "(BOOLEAN) Success",
+    "remarks_html": "<p>Success is TRUE if the server knows your password, FALSE otherwise. If this is FALSE, the Battle.net connection should be closed by the client.</p>",
+    "comments": []
+}

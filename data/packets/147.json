@@ -1,0 +1,21 @@
+{
+    "id": 147,
+    "packet_id": 81,
+    "packet_name": "D2GS_WORLDOBJECT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Server-assigned coordinate, object ID, and state/interaction properties.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/147/d2gs-worldobject",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8)  Object Type - Any information appreciated\r\n(UINT32) Object ID\r\n(UINT16)  Object unique code\r\n(UINT16)  X Coordinate\r\n(UINT16)  Y Coordinate\r\n(UINT8)  State *\r\n(UINT8)  Interaction Condition \r\n",
+    "remarks_html": "<p>Server-assigned coordinate, object ID, and state/interaction properties.</p>\n<p>States:<br />\n0x00 - Object's state can be changed. (Confirm?)<br />\n0x02 - Object's state cannot be changed with (0x13) interaction. (Confirm?)</p>\n<p>Interaction Conditions:<br />\n0x00 - General object. E.G.: Stash, chests, etc.<br />\n0x01 - Refresh shrine<br />\n0x02 - Health shrine<br />\n0x05 - Chest will catch fire (upon interaction)<br />\n0x08 - Monster contained within chest (sarcophagus)<br />\n0x0D - Mana recharge shrine<br />\n0x0E - Stamina shrine<br />\n0x0F - Experience shrine<br />\n0x13 - Fire shrine<br />\n0x80 - Chest is locked (State will be 0)</p>\n<p>*If this value is 0, expect no packet 0x0E (status) to follow, if 2, then there will be.</p>\n<p>Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

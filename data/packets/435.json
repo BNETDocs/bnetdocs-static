@@ -1,0 +1,21 @@
+{
+    "id": 435,
+    "packet_id": 48,
+    "packet_name": "W3GS_GAMEINFO",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent every 5 seconds over a UDP broadcast to update the local area network about the game.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/435/w3gs-gameinfo",
+    "created_datetime": "2010-07-23T23:28:12+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Product\r\n(UINT32) Host Counter\r\n(UINT32) Players In Game\r\n(STRING) Game name\r\n(UINT8) Unknown (0)\r\n(STRING) Statstring\r\n(UINT32) Slots total\r\n(UINT8)[] Game Type Info\r\n(UINT32) Slots available\r\n(UINT32) Time since creation\r\n(UINT16) Game Port",
+    "remarks_html": "<p>This is sent every 5 seconds over a UDP broadcast to update the local area network about the game.</p>\n<p>This is also sent when a client clicks on the game in a list.</p>",
+    "comments": []
+}

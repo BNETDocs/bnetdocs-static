@@ -1,7 +1,50 @@
 [
-  {"id": 1, "label": "Battle.net", "filename": "battlenet.png", "sort_id": 1},
-  {"id": 2, "label": "Blizzard",   "filename": "blizzard.png",  "sort_id": 2},
-  {"id": 3, "label": "Warcraft",   "filename": "warcraft.png",  "sort_id": 3},
-  {"id": 4, "label": "StarCraft",  "filename": "starcraft.png", "sort_id": 4},
-  {"id": 5, "label": "Diablo",     "filename": "diablo.png",    "sort_id": 5}
+    {
+        "id": 0,
+        "label": "Blizzard",
+        "filename": "blizzard.png",
+        "sort_id": 3
+    },
+    {
+        "id": 1,
+        "label": "Battle.net",
+        "filename": "battlenet.png",
+        "sort_id": 4
+    },
+    {
+        "id": 2,
+        "label": "Warcraft",
+        "filename": "warcraft.png",
+        "sort_id": 6
+    },
+    {
+        "id": 3,
+        "label": "Diablo",
+        "filename": "diablo.png",
+        "sort_id": 5
+    },
+    {
+        "id": 4,
+        "label": "Starcraft",
+        "filename": "starcraft.png",
+        "sort_id": 7
+    },
+    {
+        "id": 5,
+        "label": "BNETDocs",
+        "filename": "bnetdocs.png",
+        "sort_id": 1
+    },
+    {
+        "id": 6,
+        "label": "BNLS",
+        "filename": "bnls.png",
+        "sort_id": 2
+    },
+    {
+        "id": 7,
+        "label": "Starcraft II",
+        "filename": "sc2.png",
+        "sort_id": 8
+    }
 ]

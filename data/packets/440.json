@@ -1,0 +1,21 @@
+{
+    "id": 440,
+    "packet_id": 12,
+    "packet_name": "W3GS_INCOMING_ACTION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Informs the client about an action in-game.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/440/w3gs-incoming-action",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Send interval\r\n(UINT16) CRC-16 encryption\r\n\r\nFor each action:\r\n(UINT8) Player number\r\n(UINT16) Length of action data\r\n(VOID) Action data",
+    "remarks_html": "<p>Informs the client about an action in-game.</p>",
+    "comments": []
+}

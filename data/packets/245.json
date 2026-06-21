@@ -1,0 +1,34 @@
+{
+    "id": 245,
+    "packet_id": 175,
+    "packet_name": "D2GS_NEGOTIATECOMPRESSION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The compression mode is one of:<br />\n0x81 : custom compression mode, data follows (unused)<br />\n0x01 : compression enabled, use default compression<br />\n0x00 : no compression (unused)  </p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/245/d2gs-negotiatecompression",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-10-26T00:17:23+00:00",
+    "format": "(UINT8) Compression Mode\r\n(UINT8)[128] Custom Compression Data (see note)\r\n",
+    "remarks_html": "<p>The compression mode is one of:<br />\n0x81 : custom compression mode, data follows (unused)<br />\n0x01 : compression enabled, use default compression<br />\n0x00 : no compression (unused)  </p>\n<p>In practice the server ALWAYS uses compression. The length of the message is calculated as follows:</p>\n<pre><code>if (compresionMode == 0x00)\n{\n  messageLength = 2;\n}\nelse\n{\n  messageLength = compressionMode + 1;\n}</code></pre>\n<p>Note:<br />\nThe custom compression data only exists if using custom compression. This message is variable length.</p>",
+    "comments": [
+        {
+            "id": 595,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-10-24T18:07:04+00:00",
+            "content_html": "<p>As per last changes d2gs protocol is now always uncompressed (compression mode = 0x00)</p>"
+        },
+        {
+            "id": 601,
+            "author_username": "BNETDocs",
+            "created_datetime": "2019-11-12T20:13:25+00:00",
+            "content_html": "<p>Some specific servers are modified and have 0x01 compression mode. (that work with an unmodified client [as of 1.14d, untested on other versions])</p>"
+        }
+    ]
+}

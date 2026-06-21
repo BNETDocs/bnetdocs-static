@@ -1,0 +1,28 @@
+{
+    "id": 518,
+    "packet_id": 222,
+    "packet_name": "SID_UNKNOWN_DE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This message is sent by Diablo II in response to ExtraWork and is thought to be part of cheat detection. This message is largely undocumented and more research is needed.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/518/sid-unknown-de",
+    "created_datetime": "2019-12-27T00:43:27+00:00",
+    "edited_datetime": "2019-12-29T16:02:57+00:00",
+    "format": " (UINT8)   Constant 0x0A\r\n (UINT8)   Data Size\r\n (UINT8)   Optional Unknown 1; observed values: absent, 0x01 or 0x02\r\n (UINT8)   Unknown 2\r\n(UINT16)   Unknown 3\r\n (UINT8)   Unknown 4\r\n (UINT8)   Unknown 5\r\n(UINT16)   Unknown 6\r\n (UINT8)   Unknown 7\r\n (UINT8)   Unknown 8\r\n (UINT8)[] Data\r\n (UINT8)[] Optional Data if Unknown 1 is 0x02",
+    "remarks_html": "<p>This message is sent by Diablo II in response to ExtraWork and is thought to be part of cheat detection. This message is largely undocumented and more research is needed.</p>\n<p>ExtraWork is sent during the first login since the client has been opened and periodically every few minutes thereafter.</p>\n<p>When ExtraWork is downloaded, stageb.dll is executed and runs stagec.dll's ExtraWork which produces the result data to send in this message. The ExtraWork function appears to read volatile memory from Diablo II. The message format is an educated guess but could be completely inaccurate.</p>\n<p>Packet dump provided by <a href=\"/user/4987/dzik\">Dzik</a>: <a href=\"https://pastebin.com/RHqqujBJ\">https://pastebin.com/RHqqujBJ</a></p>\n<p>Nishimura_Katsuo created a basic visualizer for this message in research, available <a href=\"https://www.nishicode.com/DEpackets/\">here</a> and can take any pastebin link: <a href=\"https://www.nishicode.com/DEpackets/?pb=RHqqujBJ\">https://www.nishicode.com/DEpackets/?pb=RHqqujBJ</a></p>\n<p>Unknowns 4, 7, and 8 appear to be sequence numbers, since they only ever increase over time.</p>",
+    "comments": [
+        {
+            "id": 648,
+            "author_username": "BNETDocs",
+            "created_datetime": "2021-11-14T06:36:05+00:00",
+            "content_html": "<p>D2 sends 67 of these packets in a row before sending SID_EXTRAWORK. The length of the data, excluding the BNCS header, is approximately between 100 - 200 bytes.</p>"
+        }
+    ]
+}

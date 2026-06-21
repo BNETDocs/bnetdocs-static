@@ -1,0 +1,21 @@
+{
+    "id": 274,
+    "packet_id": 82,
+    "packet_name": "SID_AUTH_ACCOUNTCREATE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is sent to create an NLS-style account. It contains the client's salt and verifier values, which are saved by the server for use with future logons.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/274/sid-auth-accountcreate",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-28T23:07:37+00:00",
+    "format": "(UINT8) [32] Salt (s)\r\n(UINT8) [32] Verifier (v)\r\n(STRING) Username",
+    "remarks_html": "<p>This message is sent to create an NLS-style account. It contains the client's salt and verifier values, which are saved by the server for use with future logons.</p>\n<p>See the <a href=\"/document/24/nls-srp-protocol\">NLS/SRP Protocol</a> page for more information.</p>",
+    "comments": []
+}

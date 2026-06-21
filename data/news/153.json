@@ -1,0 +1,26 @@
+{
+    "id": 153,
+    "title": "Warcraft Test Post",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Please ignore</p>",
+    "author_username": "BNETDocs",
+    "uri": "/news/153/warcraft-test-post",
+    "created_datetime": "2021-08-07T00:38:18+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Please ignore</p>",
+    "comments": [
+        {
+            "id": 653,
+            "author_username": "BNETDocs",
+            "created_datetime": "2022-08-27T13:10:35+00:00",
+            "content_html": "<p>When Season 11? 11 month with Season 10 amp pool. Who decide this? Where can we vote or make a forum?</p>"
+        },
+        {
+            "id": 654,
+            "author_username": "BNETDocs",
+            "created_datetime": "2022-08-28T00:17:51+00:00",
+            "content_html": "<p><a href=\"https://bnetdocs.org/user/5364/manu18s\">@manu18s</a>, I suggest directing your inquiry to Blizzard's forums: <a href=\"https://us.forums.blizzard.com/en/starcraft/\">https://us.forums.blizzard.com/en/starcraft/</a></p>"
+        }
+    ]
+}

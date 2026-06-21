@@ -1,0 +1,23 @@
+{
+    "id": 497,
+    "packet_id": 65,
+    "packet_name": "SCGP_CHANGERACE",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/497/scgp-changerace",
+    "created_datetime": "2012-03-24T14:47:20+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x41)\r\n(UINT8) Slot Index\r\n(UINT8) Race",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent to other players requesting the race of a given slot be changed.<br />\nIf changing your own race, the slot index must be 0x08.<br />\nPossible Races:<br />\n0x00 = Zerg<br />\n0x01 = Terran<br />\n0x02 = Protoss<br />\n0x03 = Independent<br />\n0x04 = Neutral<br />\n0x06 = Random</p>",
+    "comments": []
+}

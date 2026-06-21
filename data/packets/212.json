@@ -1,0 +1,21 @@
+{
+    "id": 212,
+    "packet_id": 63,
+    "packet_name": "D2GS_CHARACTERPHRASE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>All phrases sent to the server will be heard by all players in your vicinity.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/212/d2gs-characterphrase",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT16) Phrase ID \r\n",
+    "remarks_html": "<p>All phrases sent to the server will be heard by all players in your vicinity.</p>\n<p>Phrase IDs: (Note: The deciding of which of the two phrases are used is random)<br />\n[0x19] &quot;Help!&quot; / &quot;Help me!&quot;<br />\n[0x1A] &quot;Follow me!&quot; / &quot;Come on!&quot;<br />\n[0x1B] &quot;This is yours.&quot; / &quot;This is for you.&quot;<br />\n[0x1C] &quot;Thanks!&quot; / &quot;Thank you.&quot;<br />\n[0x1D] &quot;Uh, oops.&quot; / &quot;Forgive me.&quot;<br />\n[0x1E] &quot;Bye!&quot; / &quot;Good Bye!&quot;<br />\n[0x1F] &quot;Die!&quot; / &quot;Time to die!&quot;<br />\n[0x20] &quot;Run!&quot; / &quot;Run away!&quot; Please note: This message's official name is not known, and has been invented.</p>",
+    "comments": []
+}

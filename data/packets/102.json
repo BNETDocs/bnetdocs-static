@@ -1,0 +1,25 @@
+{
+    "id": 102,
+    "packet_id": 74,
+    "packet_name": "SID_OPTIONALWORK",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Battle.net requests optional work from the Client using this message. See <a href=\"/document/43/extrawork\">ExtraWork</a> document for more details.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/102/sid-optionalwork",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-27T04:27:12+00:00",
+    "format": "(STRING) ExtraWork MPQ Filename",
+    "remarks_html": "<p>Battle.net requests optional work from the Client using this message. See <a href=\"/document/43/extrawork\">ExtraWork</a> document for more details.</p>\n<p>Using <a href=\"/packet/382/sid-getfiletime\">C&gt;S 0x33 SID_GETFILETIME</a> with request ID <code>0x80000005</code>, the client should download this file and call the ExtraWork function inside of it. Generally, this message is used for the optional ExtraWork DLL.</p>\n<p>The client will only execute this entirely if the registry key <code>HKCU\\Software\\Battle.net\\Optimize\\SysDesc</code> [REG_UINT32] is set to 1.</p>",
+    "comments": []
+}

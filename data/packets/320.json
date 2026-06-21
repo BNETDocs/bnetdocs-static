@@ -1,0 +1,28 @@
+{
+    "id": 320,
+    "packet_id": 1,
+    "packet_name": "MCP_STARTUP",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>This packet authenticates the client with the MCP and allows character querying and logon to proceed.<br />\nAll 16 UINT32s (Cookie, Status, Chunk 1, and Chunk 2) are received from the server via SID_LOGONREALMEX.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/320/mcp-startup",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T18:41:23+00:00",
+    "format": " (UINT32)     MCP Cookie\r\n (UINT32)     MCP Status\r\n (UINT32)[2]  MCP Chunk 1\r\n (UINT32)[12] MCP Chunk 2\r\n(STRING)     Battle.net Unique Name",
+    "remarks_html": "<p>This packet authenticates the client with the MCP and allows character querying and logon to proceed.<br />\nAll 16 UINT32s (Cookie, Status, Chunk 1, and Chunk 2) are received from the server via SID_LOGONREALMEX.</p>\n<p>Not much information is known about the UINT32 values, other than that they're received from the server. The following information needs work:</p>\n<ul>\n<li>MCP Cookie: Client Token</li>\n<li>MCP Status: Unknown</li>\n<li>MCP Chunk 1 [01]: Server IP (BNCS)</li>\n<li>MCP Chunk 1 [02]: UDP Value*</li>\n<li>MCP Chunk 2 [01]: Unknown</li>\n<li>MCP Chunk 2 [02]: Unknown</li>\n<li>MCP Chunk 2 [03]: Something to do with the gateway</li>\n<li>MCP Chunk 2 [04]: Product (D2DV/D2XP)</li>\n<li>MCP Chunk 2 [05]: Platform (IX86/PMAC/XMAC)</li>\n<li>MCP Chunk 2 [06]: Unknown</li>\n<li>MCP Chunk 2 [07]: Language ID (1033 [0x409] for enUS)</li>\n<li>MCP Chunk 2 [08]: Unknown</li>\n<li>MCP Chunk 2 [09]: Unknown</li>\n<li>MCP Chunk 2 [10]: Unknown</li>\n<li>MCP Chunk 2 [11]: Unknown</li>\n<li>MCP Chunk 2 [12]: Unknown</li>\n</ul>\n<p>This is purely speculation, but as there are 5 unknown UINT32s at the end of this chunk, it is possible that it is actually a hash of something.</p>\n<p>* UDP Value: No one really knows what this is, however, it is used in 2nd UINT32 of the UDP packet PKT_CONNTEST2. The client receives it in SID_AUTH_INFO.</p>",
+    "comments": [
+        {
+            "id": 590,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-07-30T02:05:24+00:00",
+            "content_html": "<p>It seems that the contents of the MCP Chunks has changed. I only noticed because I was doing some pretty sloppy data storage/manip in my current project that ultimately broke things when Blizzard made this change (a few months back from what I can tell). I wasn't motivated enough at the time to figure out what Blizzard changed to break my stuff...but as soon as I started looking at the packet logs, I noticed that SID_LOGONREALMEX and MCP_STARTUP looked totally different. Still the same length but the chunks look like maybe plaintext hashes of some sort?</p>"
+        }
+    ]
+}

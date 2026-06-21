@@ -1,0 +1,21 @@
+{
+    "id": 267,
+    "packet_id": 45,
+    "packet_name": "D2GS_UNSELECTOBJ",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 4,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Unselects the selected object. Please note: This message's official name is not known, and has been invented. The contents of this packet may be incomplete or incorrect, and your comments and contributions are requested.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/267/d2gs-unselectobj",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "blank \r\n",
+    "remarks_html": "<p>Unselects the selected object. Please note: This message's official name is not known, and has been invented. The contents of this packet may be incomplete or incorrect, and your comments and contributions are requested.</p>",
+    "comments": []
+}

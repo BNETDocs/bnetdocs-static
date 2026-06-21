@@ -1,0 +1,21 @@
+{
+    "id": 439,
+    "packet_id": 38,
+    "packet_name": "W3GS_OUTGOING_ACTION",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>A client sends this to the game host to execute an action in-game.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/439/w3gs-outgoing-action",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) CRC-32 encryption\r\n(VOID) Action data",
+    "remarks_html": "<p>A client sends this to the game host to execute an action in-game.</p>",
+    "comments": []
+}

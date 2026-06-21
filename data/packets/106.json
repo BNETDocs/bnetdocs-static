@@ -1,0 +1,62 @@
+{
+    "id": 106,
+    "packet_id": 81,
+    "packet_name": "SID_AUTH_CHECK",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Reports success or failure on the game key and version check.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/106/sid-auth-check",
+    "created_datetime": "2011-06-15T01:44:58+00:00",
+    "edited_datetime": "2020-12-05T20:13:16+00:00",
+    "format": "(UINT32) Result\r\n(STRING) Additional Information",
+    "remarks_html": "<p>Reports success or failure on the game key and version check.</p>\n<p>Result:</p>\n<pre><code>0x000: Passed challenge\n0x0NN: (where NN is the version code supplied in SID_AUTH_INFO): Invalid version code (note that 0x100 is not set in this case).\n0x100: Old game version (Additional info field supplies patch MPQ filename)\n0x101: Invalid version\n0x102: Game version must be downgraded (Additional info field supplies patch MPQ filename)\n0x200: Invalid CD key *\n0x201: CD key in use (Additional info field supplies name of user)\n0x202: Banned key\n0x203: Wrong product</code></pre>\n<p>Unknown result codes are treated as a success by client (i.e. equivalent to <code>0x000</code>).</p>\n<p>The last 4 codes also apply to the second CDKey, as indicated by a bitwise combination with <code>0x010</code>.</p>\n<p>If a patch file cannot be found, additional info may be set to 'non-existent' or a filename of a nonexistent file (eg <code>W2BN_IX86_.mpq</code>).</p>\n<p>If the spawn flag was set to true in the client's request, and there is already a spawned key online, the result will be <code>0x201</code> with additional info set to <code>TOO MANY SPAWNS</code>.</p>\n<p>* If you receive this status, official Battle.net servers will IP ban you for 1 to 14 days. Before June 15, 2011, this used to exclusively be 14 days.</p>\n<p>More:</p>\n<p>While doing a little research on how Battle.net autoupdates its clients, I found that it (STAR, anyway) does not use the provisions of the SID_AUTH login system to tell clients which update file to download. Instead, it sends a SID_REPORTVERSION (from the previous logon system) containing the equivalent error code and the name of the patch file to download. This seems strange, and makes me think that the part of Battle.net responsible for updating clients is isolated from the part responsible for processing logon requests. If this is the case, it makes sense that that system was never updated, since it must still support legacy clients. In addition, this would explain why most Blizzard clients retain obsolete packet processing code.</p>",
+    "comments": [
+        {
+            "id": 162,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-04-28T10:13:41+00:00",
+            "content_html": "<p>0x211 - LoD CD key is used by: string<br />\n0x101 is now being sent after a CD key has been registered on battle.net website.</p>"
+        },
+        {
+            "id": 164,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-06-30T06:04:12+00:00",
+            "content_html": "<p>I registered my Starcraft on the Battle.net website and the server doesn't send me 0x101 when I try to use my key. Do you have any proof?</p>"
+        },
+        {
+            "id": 384,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-10T17:49:20+00:00",
+            "content_html": "<p>I can still use my old key after registering it. Just both keys cannot be logged in at the same time.</p>"
+        },
+        {
+            "id": 385,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-10T18:13:41+00:00",
+            "content_html": "<p>Interesting; so if two separate CD keys are registered to a Battle.net 2.0 account, the result is that only one CD key can be logged on at a time-- meaning the Battle.net account can only be logged in one at a time?</p>"
+        },
+        {
+            "id": 391,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-09-19T02:49:58+00:00",
+            "content_html": "<p>No, Kryo I think you misunderstood that. If I register STAR on my Battle.net 2.0 account, I cannot login with my 13-digit STAR CDKey and my 26-digit STAR key at the same time. They're the same CDKey, they're just in two different formats.</p>\n<p>This also means that any restrictions (mute, banned, jailed, etc) will be on the new Game Key.</p>\n<p>I like to refer to the physical keys as CDKeys and the new digital keys as Game Keys.</p>"
+        },
+        {
+            "id": 593,
+            "author_username": "BNETDocs",
+            "created_datetime": "2018-08-21T03:31:04+00:00",
+            "content_html": "<p>No comment on prior behavior but as of 2018-08-14 this is official for D2. Registered 16-character keys will be reported as in use, regardless of if the 26-character counterpart is online.</p>\n<p><a href=\"https://bnetdocs.org/news/147/battle-net-server-upgrade-14-august-2018\">https://bnetdocs.org/news/147/battle-net-server-upgrade-14-august-2018</a></p>"
+        }
+    ]
+}

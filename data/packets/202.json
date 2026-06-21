@@ -1,0 +1,20 @@
+{
+    "id": 202,
+    "packet_id": 27,
+    "packet_name": "SID_GAMEDATAADDRESS",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Specifies host &amp; port that a game creator is using for a game.</p>",
+    "used_by": [
+        1146246220
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/202/sid-gamedataaddress",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2025-05-24T20:58:03+00:00",
+    "format": "(UINT16) Address Family\r\n\r\nIf Address Family == AF_INET (2):\r\n(UINT16) Port\r\n(UINT32) Address\r\n(UINT32) Reserved (0)\r\n(UINT32) Reserved (0)\r\n",
+    "remarks_html": "<p>Specifies host &amp; port that a game creator is using for a game.</p>\n<p>This format seems to mirror that of the <a href=\"https://docs.microsoft.com/en-us/windows/win32/api/ws2def/ns-ws2def-sockaddr_in\">Win32 SOCKADDR_IN structure</a>. The address family has only been observed to be <code>2</code>, which corresponds to IPv4. The two reserved values should always be <code>0</code>.</p>",
+    "comments": []
+}

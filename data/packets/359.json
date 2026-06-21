@@ -1,0 +1,20 @@
+{
+    "id": 359,
+    "packet_id": 54,
+    "packet_name": "SID_CDKEY2",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This packet is an updated version of SID_CDKEY (0x30), designed to prevent CDKeys from being stolen, by sending them hashed instead of plain-text.</p>",
+    "used_by": [
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/359/sid-cdkey2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T19:30:49+00:00",
+    "format": " (UINT32)     Spawn Key (1 is TRUE, 0 is FALSE)\r\n (UINT32)     Key length\r\n (UINT32)     Key Product value \r\n (UINT32)     Key Public value\r\n (UINT32)     Server Token\r\n (UINT32)     Client Token\r\n  (UINT8)[20] Hashed Key Data\r\n(STRING)     Key owner name *",
+    "remarks_html": "<p>This packet is an updated version of SID_CDKEY (0x30), designed to prevent CDKeys from being stolen, by sending them hashed instead of plain-text.</p>\n<p>The data that should be hashed is for 16 character keys (hashed using BSHA1):</p>\n<ol>\n<li><code>(UINT32)</code> Client Token</li>\n<li><code>(UINT32)</code> Server Token</li>\n<li><code>(UINT32)</code> Key Product value (from decoded CD key)</li>\n<li><code>(UINT32)</code> Key Public value (from decoded CD key)</li>\n<li><code>(UINT32)</code> Key Private value (from decoded CD key)</li>\n</ol>\n<p>This differs from the hash in [SID_AUTH_CHECK].</p>\n<p>* The CD Key owner name must be no greater than 15 characters, otherwise it becomes trimmed by Battle.net.</p>",
+    "comments": []
+}

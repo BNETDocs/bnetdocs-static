@@ -1,0 +1,30 @@
+{
+    "id": 346,
+    "packet_id": 25,
+    "packet_name": "SID_MESSAGEBOX",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Displays a message to the user. This message's fields are used as parameters for the Win32 API <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms645505(v=vs.85).aspx\">MessageBox</a>, and can be passed directly to it. For more information about these parameters, see the documentation for <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms645505(v=vs.85).aspx\">MessageBox</a> at MSDN.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/346/sid-messagebox",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2025-05-24T22:34:55+00:00",
+    "format": "(UINT32) Style\r\n(STRING) Text\r\n(STRING) Caption",
+    "remarks_html": "<p>Displays a message to the user. This message's fields are used as parameters for the Win32 API <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms645505(v=vs.85).aspx\">MessageBox</a>, and can be passed directly to it. For more information about these parameters, see the documentation for <a href=\"https://msdn.microsoft.com/en-us/library/windows/desktop/ms645505(v=vs.85).aspx\">MessageBox</a> at MSDN.</p>\n<p>Some more research on the behavior of this packet in Starcraft Broodwar has been done by HarpyWar and xboi209. Their documentation can be found on <a href=\"https://github.com/HarpyWar/pvpgn/issues/15#issuecomment-44092744\">GitHub</a>. Specifically, their research shows how to display a small and large MessageBox inside the client. A large MessageBox also shows the Caption parameter, whereas a small MessageBox does not.</p>",
+    "comments": []
+}

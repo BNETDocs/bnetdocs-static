@@ -1,0 +1,46 @@
+{
+    "id": 295,
+    "packet_id": 5,
+    "packet_name": "MCP_GAMELIST",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests a game listing.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/295/mcp-gamelist",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T19:52:58+00:00",
+    "format": "  (UINT16) Request ID\r\n (UINT32) Unknown (0)\r\n(STRING) Search String *",
+    "remarks_html": "<p>Requests a game listing.</p>\n<p>* Normally blank. If a non-empty string is sent, games will be returned that include this string in their names. This is not used by the client, but still exists.</p>",
+    "comments": [
+        {
+            "id": 555,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-17T17:38:42+00:00",
+            "content_html": "<p>D2XP client sends 0x0800 for the second dword, not 0x00.</p>"
+        },
+        {
+            "id": 556,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-17T17:49:22+00:00",
+            "content_html": "<p>The D2XP client sends this packet approximately every 15 seconds while the &quot;Join Game&quot; tab is focused. The request id is incremented by 0x01 for each subsequent MCP_GAMELIST (this is the same request id that is used by MCP_CREATEGAME and MCP_JOINGAME).</p>\n<ul>\n<li>Possibly a bug with the D2XP client, but this packet appears to be sent twice on the initial focus.</li>\n</ul>"
+        },
+        {
+            "id": 560,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-02-13T09:08:20+00:00",
+            "content_html": "<p>The 0x800 value sent for the dword unknown seems to be the same hardcore flag used in <a href=\"https://bnetdocs.org/packet/162/mcp-gameinfo\">https://bnetdocs.org/packet/162/mcp-gameinfo</a>. Softcore characters seem to request with 0, hardcore with 0x800 (checked SCNL, SCL, HCL all LoD). Further testing should probably be done to see if the server cares at all, if other flags work, or if it's possible to request game listings from modes you're not playing.</p>"
+        },
+        {
+            "id": 600,
+            "author_username": "BNETDocs",
+            "created_datetime": "2019-08-14T11:25:43+00:00",
+            "content_html": "<p>It now always send a zero'd dword, no matter if your hardcore, ladder or on which difficulty you at.</p>"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": 502,
+    "packet_id": 72,
+    "packet_name": "SCGP_SEED",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 8,
+    "packet_transport_layer_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Packet CLS 2.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/502/scgp-seed",
+    "created_datetime": "2012-03-24T15:10:20+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) ID (0x48)\r\n(UINT32) Seconds since 1/1/1970\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08\r\n(UINT8) 0x08",
+    "remarks_html": "<p>Packet CLS 2.</p>\n<p>Sent by the host in the cross over between game room and game play.</p>\n<p>Seeds game randomization, for example: who gets what start location/color/race etc.</p>",
+    "comments": []
+}

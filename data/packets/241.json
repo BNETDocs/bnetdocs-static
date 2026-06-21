@@ -1,0 +1,21 @@
+{
+    "id": 241,
+    "packet_id": 96,
+    "packet_name": "SID_GAMEPLAYERSEARCH",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Returns a list of available players for an arranged team ladder game. Players who are considered available: have no away message on, are mutual friends in the chat environment, or non-friend listed users in the same channel as you.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/241/sid-gameplayersearch",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT8) Number of players\r\n(STRING) [] Player names \r\n",
+    "remarks_html": "<p>Returns a list of available players for an arranged team ladder game. Players who are considered available: have no away message on, are mutual friends in the chat environment, or non-friend listed users in the same channel as you.</p>",
+    "comments": []
+}

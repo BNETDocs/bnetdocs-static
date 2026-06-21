@@ -1,0 +1,21 @@
+{
+    "id": 252,
+    "packet_id": 20,
+    "packet_name": "BNLS_SERVERLOGONPROOF",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message performs two operations. First, it checks if the client's logon was successful. Second, it calculates the data for the server's reply to SID_AUTH_ACCOUNTLOGONPROOF (0x54). If this data is not correct, then the client will not accept the logon attempt as valid.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/252/bnls-serverlogonproof",
+    "created_datetime": "2011-02-04T22:38:46+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Slot index\r\n(UINT32) [5] Data from client's SID_AUTH_ACCOUNTLOGONPROOF (0x54)\r\n(STRING) Client's account name",
+    "remarks_html": "<p>This message performs two operations. First, it checks if the client's logon was successful. Second, it calculates the data for the server's reply to SID_AUTH_ACCOUNTLOGONPROOF (0x54). If this data is not correct, then the client will not accept the logon attempt as valid.</p>",
+    "comments": []
+}

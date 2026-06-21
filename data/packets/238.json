@@ -1,0 +1,21 @@
+{
+    "id": 238,
+    "packet_id": 17,
+    "packet_name": "BNLS_VERIFYSERVER",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>If Success is TRUE, the signature matches the server's IP. If Success is FALSE, the signature does not match.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/238/bnls-verifyserver",
+    "created_datetime": "2010-08-06T01:12:25+00:00",
+    "edited_datetime": null,
+    "format": "(BOOLEAN) Success (32-bit)",
+    "remarks_html": "<p>If Success is TRUE, the signature matches the server's IP. If Success is FALSE, the signature does not match.</p>",
+    "comments": []
+}

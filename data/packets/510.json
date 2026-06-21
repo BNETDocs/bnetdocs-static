@@ -1,0 +1,23 @@
+{
+    "id": 510,
+    "packet_id": 26,
+    "packet_name": "SID_STARTADVEX2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message is used by Diablo to create a game. It was also used by Starcraft 1.03.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1146246220,
+        1146308690
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/510/sid-startadvex2",
+    "created_datetime": "2014-06-01T18:56:29+00:00",
+    "edited_datetime": "2025-05-21T06:01:10+00:00",
+    "format": "(UINT32) Status",
+    "remarks_html": "<p>This message is used by Diablo to create a game. It was also used by Starcraft 1.03.</p>\n<p>Possible values for Status:</p>\n<table>\n<thead>\n<tr>\n<th>Status</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>0x00000000</code></td>\n<td>Failed</td>\n</tr>\n<tr>\n<td><code>0x00000001</code></td>\n<td>Ok</td>\n</tr>\n</tbody>\n</table>\n<p>Note that Status <code>0x00000000</code> and <code>0x00000001</code> are in reverse of <a href=\"/packet/178/sid-startadvex3\">S&gt;C 0x1C SID_STARTADVEX3</a>'s Status <code>0x00000000</code> and <code>0x00000001</code>.</p>\n<p>More info: <a href=\"https://pastebin.com/WhKsmdnD\">https://pastebin.com/WhKsmdnD</a></p>\n<pre><code class=\"language-c\">/******************************************************/\n#define SERVER_STARTGAME3_ACK 0x1aff\ntypedef struct\n{\n    t_bnet_header h;\n    bn_int        reply;\n} PACKED_ATTR() t_server_startgame3_ack;\n#define SERVER_STARTGAME3_ACK_NO 0x00000000\n#define SERVER_STARTGAME3_ACK_OK 0x00000001\n/******************************************************/</code></pre>",
+    "comments": []
+}

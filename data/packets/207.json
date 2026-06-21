@@ -1,0 +1,21 @@
+{
+    "id": 207,
+    "packet_id": 11,
+    "packet_name": "BOTNET_CHAT",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Receive chat.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/207/botnet-chat",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-04-16T05:31:50+00:00",
+    "format": "(UINT32) Distribution\r\n(UINT32) Action\r\n(UINT32) Bot ID\r\n(STRING) Message ",
+    "remarks_html": "<p>Receive chat.</p>\n<p>There is no confirmation of sent chat. Whispers to nonexistent users, empty <strong>Message</strong> values, and chat to users who have blocking specified in <a href=\"/packet/335/botnet-chat-options\"><code>C&gt;S 0x10 BOTNET_CHAT_OPTIONS</code></a> are silently dropped. If the <strong>distribution</strong> is <code>0x00</code> (broadcast) but the user does not have broadcast permission, only connected users on this database receive the chat but the <strong>distribution</strong> value stays <code>0x00</code>.</p>\n<p><strong>Distribution</strong>:</p>\n<ul>\n<li><code>0x00</code>: Broadcast (all connected users)</li>\n<li><code>0x01</code>: Database (connected users on this database)</li>\n<li><code>0x02</code>: Whisper (from user specified by <strong>Bot ID</strong>)</li>\n</ul>\n<p><strong>Action</strong>:</p>\n<ul>\n<li><code>0x00</code>: Talk</li>\n<li><code>0x01</code>: Emote</li>\n</ul>\n<p><strong>Bot ID</strong>:<br />\nThis is the Bot ID of the user who sent the <a href=\"/packet/312/botnet-chat\"><code>C&gt;S 0x0B BOTNET_CHAT</code></a>.</p>\n<p><strong>Message</strong>:<br />\nThe string is copied from the source in the message <a href=\"/packet/312/botnet-chat\"><code>C&gt;S 0x0B BOTNET_CHAT</code></a>.</p>",
+    "comments": []
+}

@@ -1,0 +1,21 @@
+{
+    "id": 458,
+    "packet_id": 10,
+    "packet_name": "W3GS_COUNTDOWN_START",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The game has begun the countdown to start.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/458/w3gs-countdown-start",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>The game has begun the countdown to start.</p>\n<p>The official clients countdown from 5 seconds, however it is possible to use any time you wish. For example, the GHost++ bot uses 10 seconds when auto-hosted, but 5 seconds when started using an administrative command.</p>",
+    "comments": []
+}

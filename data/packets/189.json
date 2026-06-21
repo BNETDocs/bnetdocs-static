@@ -1,0 +1,28 @@
+{
+    "id": 189,
+    "packet_id": 25,
+    "packet_name": "MCP_CHARLIST2",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Lists characters.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/189/mcp-charlist2",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2020-11-05T12:10:08+00:00",
+    "format": "(UINT16) Number of characters requested\r\n(UINT32) Number of characters that exist on this account\r\n(UINT16) Number of characters returned\r\nFor each character returned:\r\n    (UINT32) Expiration date\r\n    (STRING) Character name\r\n    (STRING) Character statstring",
+    "remarks_html": "<p>Lists characters.</p>\n<p>The expiration date is a second count. To determine when the character will expire, add this time to  January 1 00:00:00 UTC 1970 and determine the difference between that value and now (all in seconds).</p>\n<p>The statstrings in this packet  do not contain the product or character name. Everything else is the same as a character statstring you would receive from a character entering the channel.</p>",
+    "comments": [
+        {
+            "id": 19,
+            "author_username": "BNETDocs",
+            "created_datetime": "2007-11-04T04:29:40+00:00",
+            "content_html": "<p>The character data chunks seem to follow this structure for &quot;each&quot; character:<br />\n[code]<br />\n(DWORD) Expiration date<br />\n(STRING) Character name -- length of this always seems to be 11 bytes<br />\n(STRING) Statstring -- length of this always seems to be 34 bytes<br />\n[/code]</p>"
+        }
+    ]
+}

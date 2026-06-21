@@ -1,0 +1,21 @@
+{
+    "id": 324,
+    "packet_id": 52,
+    "packet_name": "SID_QUERYREALMS",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 7,
+    "brief_html": "<p>Realm list.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/324/sid-queryrealms",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2025-05-24T21:09:57+00:00",
+    "format": "(UINT32) Unknown\r\n(UINT32) Count\r\n\r\nFor Each Realm:\r\n(UINT32) Unknown\r\n(STRING) Realm title\r\n(STRING) Realm description",
+    "remarks_html": "<p>Realm list.</p>\n<p>The first <strong>Unknown</strong> is usually <code>0</code>. The second and subsequent <strong>Unknown</strong> is usually <code>1</code>.</p>\n<p>This packet is no longer used. <a href=\"https://bnetdocs.org/packet/277/sid-queryrealms2\">S&gt;C 0x40 SID_QUERYREALMS2</a> is used instead.</p>",
+    "comments": []
+}

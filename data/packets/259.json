@@ -1,0 +1,21 @@
+{
+    "id": 259,
+    "packet_id": 113,
+    "packet_name": "SID_CLANINVITEMULTIPLE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Invites the specified users to create a new clan.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/259/sid-claninvitemultiple",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-29T00:10:57+00:00",
+    "format": "(UINT32)   Cookie\r\n(STRING)   Clan name\r\n(UINT32)   Clan tag\r\n (UINT8)   Number of users\r\n(STRING)[] Usernames",
+    "remarks_html": "<p>Invites the specified users to create a new clan.</p>\n<p>The users specified with <strong>Usernames</strong> are invited to join your clan. The server sends each user <a href=\"/packet/157/sid-clancreationinvitation\"><code>S&gt;C 0x72 SID_CLANCREATIONINVITATION</code></a> and replies to you only after all users accept, decline, or after any error occurs.<br />\nNormally, <strong>9</strong> users should be specified to create a clan of 10 members (including yourself, who becomes the Leader).</p>",
+    "comments": []
+}

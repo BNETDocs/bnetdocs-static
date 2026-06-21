@@ -1,0 +1,34 @@
+{
+    "id": 367,
+    "packet_id": 5,
+    "packet_name": "MCP_GAMELIST",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 3,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Instead of receiving a single response that has a list of all the games, the client will receive this packet once for every game listed by the server. The list ends when the game name is an empty string.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/367/mcp-gamelist",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2017-03-29T20:34:06+00:00",
+    "format": "  (UINT16) Request ID\r\n (UINT32) Index\r\n  (UINT8) Number of players in game\r\n (UINT32) Status\r\n(STRING) Game name\r\n(STRING) Game description",
+    "remarks_html": "<p>Instead of receiving a single response that has a list of all the games, the client will receive this packet once for every game listed by the server. The list ends when the game name is an empty string.</p>\n<p><code>Request ID</code> is like a cookie. This value will be whatever you sent the server in MCP_GAMELIST.</p>\n<p><code>Index</code> is the game's index on the server.</p>\n<p><code>Status</code> is usually a set of flags about the game. If it is <code>0xFFFFFFFF</code>, the server may be down.</p>\n<p>Flag values (OR them together), if valid:</p>\n<ul>\n<li>Difficulty:\n<ul>\n<li><code>0x0000</code>: Normal</li>\n<li><code>0x1000</code>: Nightmare</li>\n<li><code>0x2000</code>: Hell</li>\n</ul></li>\n<li>Type:\n<ul>\n<li><code>0x200000</code>: Ladder</li>\n<li><code>0x100000</code>: Expansion</li>\n<li><code>0x800</code>: Hardcore</li>\n</ul></li>\n</ul>",
+    "comments": [
+        {
+            "id": 545,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-03T14:14:59+00:00",
+            "content_html": "<p><code>(Dword) status</code> is one of a few special values indicating various failure replies or a set of flags indicating the game type and difficulty. Documentation on the reply codes can be found here since MCP_GAMEINFO uses the same codes: &lt; <a href=\"https://bnetdocs.org/packet/162/mcp-gameinfo\">https://bnetdocs.org/packet/162/mcp-gameinfo</a> &gt;</p>"
+        },
+        {
+            "id": 557,
+            "author_username": "BNETDocs",
+            "created_datetime": "2017-01-17T17:54:49+00:00",
+            "content_html": "<p>A MCP_GAMELIST packet with a 0x00 Game name indicates the end of the list.</p>"
+        }
+    ]
+}

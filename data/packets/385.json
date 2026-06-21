@@ -1,0 +1,23 @@
+{
+    "id": 385,
+    "packet_id": 10,
+    "packet_name": "BOTNET_REVISION",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 6,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Alert specifying server revision.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/385/botnet-revision",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2018-03-13T00:49:29+00:00",
+    "format": "(UINT32) Server revision",
+    "remarks_html": "<p>Alert specifying server revision.</p>\n<p><em>This message is supported as of server revision 2.</em></p>\n<p>This is received as the first message from the server when you successfully identify, before receiving <a href=\"/packet/204/botnet-logon\"><code>S&gt;C 0x01 BOTNET_LOGON</code></a>. You can then know what features the server software supports.</p>\n<p>See <a href=\"/document/42/botnet-protocol-overview\">BotNet Protocol Overview</a> for general information about the additions added by each revision.</p>",
+    "comments": []
+}

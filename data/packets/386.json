@@ -1,0 +1,59 @@
+{
+    "id": 386,
+    "packet_id": 9,
+    "packet_name": "SID_GETADVLISTEX",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Retrieves a list of games.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1397966930,
+        1246975058,
+        1146246220,
+        1146308690,
+        1144144982,
+        1144150096,
+        1462911566
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/386/sid-getadvlistex",
+    "created_datetime": "2010-10-03T18:04:18+00:00",
+    "edited_datetime": "2025-05-24T21:07:04+00:00",
+    "format": "(UINT16) Game Type\r\n(UINT16) Sub Game Type\r\n(UINT32) Viewing Filter\r\n(UINT32) Reserved (0)\r\n(UINT32) Number of Games\r\n(STRING) Game Name\r\n(STRING) Game Password\r\n(STRING) Game Statstring",
+    "remarks_html": "<p>Retrieves a list of games.</p>\n<hr />\n<p><strong>Game Type:</strong></p>\n<p>For <code>STAR</code>, <code>SEXP</code>, <code>SSHR</code>, <code>JSTR</code>, and <code>W2BN</code>, a value of <code>0</code> indicates that any type is acceptable.</p>\n<p><strong>Possible game types:</strong></p>\n<ul>\n<li><code>0x00</code>: All</li>\n<li><code>0x02</code>: Melee</li>\n<li><code>0x03</code>: Free for all</li>\n<li><code>0x04</code>: One vs one</li>\n<li><code>0x05</code>: CTF</li>\n<li><code>0x06</code>: Greed</li>\n<li><code>0x07</code>: Slaughter</li>\n<li><code>0x08</code>: Sudden Death</li>\n<li><code>0x09</code>: Ladder</li>\n<li><code>0x10</code>: Iron Man Ladder</li>\n<li><code>0x0A</code>: Use Map Settings</li>\n<li><code>0x0B</code>: Team Melee</li>\n<li><code>0x0C</code>: Team FFA</li>\n<li><code>0x0D</code>: Team CTF</li>\n<li><code>0x0F</code>: Top vs. Bottom</li>\n</ul>\n<p>For <code>DRTL</code> and <code>DSHR</code>, <strong>Game Type</strong> is used to specify a <strong>level range</strong>, ensuring clients receive a list of games with similarly experienced players.</p>\n<p><strong>Possible level ranges:</strong></p>\n<ul>\n<li><code>0x00</code>: Level 1</li>\n<li><code>0x01</code>: 2 – 3</li>\n<li><code>0x02</code>: 4 – 5</li>\n<li><code>0x03</code>: 6 – 7</li>\n<li><code>0x04</code>: 8 – 9</li>\n<li><code>0x05</code>: 10 – 12</li>\n<li><code>0x06</code>: 13 – 16</li>\n<li><code>0x07</code>: 17 – 19</li>\n<li><code>0x08</code>: 20 – 24</li>\n<li><code>0x09</code>: 25 – 29</li>\n<li><code>0x0A</code>: 30 – 34</li>\n<li><code>0x0B</code>: 35 – 39</li>\n<li><code>0x0C</code>: 40 – 47</li>\n<li><code>0x0D</code>: 48 – 50</li>\n</ul>\n<p>For all other games, <strong>Game Type</strong> can be set to <code>0x00</code>.</p>\n<hr />\n<p><strong>Sub Game Type:</strong></p>\n<ul>\n<li>For <strong>Greed</strong>: resources in multiples of 2500 (<code>0x01</code> = 2500, <code>0x02</code> = 5000, etc.)</li>\n<li>For <strong>Slaughter</strong>: minutes in multiples of 15 (<code>0x01</code> = 15, <code>0x02</code> = 30, etc.)</li>\n<li>For <strong>Ladder</strong>: indicates if disconnects count as a loss (<code>0x01</code> = Yes, <code>0x00</code> = No)</li>\n<li>For <strong>Team Melee</strong>: number of teams (<code>0x01</code> = 2, <code>0x02</code> = 3, etc.)</li>\n<li>For <strong>Team Free For All</strong>: number of teams (<code>0x01</code> = 2, <code>0x02</code> = 3, etc.)</li>\n<li>For <strong>Team Capture The Flag</strong>: number of teams (<code>0x01</code> = 2, <code>0x02</code> = 3, etc.)</li>\n<li>For <strong>Top vs. Bottom</strong>: players-to-team ratio (1–7)</li>\n<li>For all other game types: <code>0x01</code> indicates no sub game type</li>\n</ul>\n<hr />\n<p><strong>Viewing Filter:</strong></p>\n<ul>\n<li><code>0xFFFF</code>: Use the combination of values in this packet</li>\n<li><code>0xFF80</code>: Show all games</li>\n<li>For <code>STAR</code>, <code>SEXP</code>, <code>SSHR</code>, and <code>JSTR</code>: set to <code>0x30</code></li>\n<li>For <code>DRTL</code> and <code>DSHR</code>: game sets to <code>0xFFFF</code>, but setting to <code>0x00</code> disables viewing restrictions and shows all games</li>\n</ul>\n<hr />\n<p><strong>Reserved (0):</strong></p>\n<p>This value is hardcoded to <code>0x00</code> by all games.</p>\n<hr />\n<p><strong>Number of Games:</strong></p>\n<p>Specifies how many games to list.</p>\n<ul>\n<li>For a full listing: use <code>0xFF</code></li>\n<li>Default for <code>DRTL</code> and <code>DSHR</code>: <code>0x19</code></li>\n</ul>",
+    "comments": [
+        {
+            "id": 126,
+            "author_username": "BNETDocs",
+            "created_datetime": "2008-12-16T01:08:48+00:00",
+            "content_html": "<p>Any chance you could revise this, and include the values for WAR3 and W3XP in?</p>"
+        },
+        {
+            "id": 352,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-08-24T01:34:02+00:00",
+            "content_html": "<p>Condition 3 is 0xFFFF for SEXP as well.</p>"
+        },
+        {
+            "id": 353,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-08-24T01:40:22+00:00",
+            "content_html": "<p>or 0xFF80 for All Games</p>"
+        },
+        {
+            "id": 422,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-10-03T22:35:26+00:00",
+            "content_html": "<p>Updated according to <a href=\"http://pastebin.com/nmzLJMAH\">Frost's documentation</a> as well as the information here.</p>\n<p>Thank you for your contributions.</p>"
+        },
+        {
+            "id": 428,
+            "author_username": "BNETDocs",
+            "created_datetime": "2010-10-06T22:48:07+00:00",
+            "content_html": "<p>I don't know if the second DWORD value is zero in ALL games and ALL versions. I do know that it is hard-coded in the current version of Starcraft: Broodwar, though.</p>"
+        }
+    ]
+}

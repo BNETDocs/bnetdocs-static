@@ -1,0 +1,21 @@
+{
+    "id": 449,
+    "packet_id": 53,
+    "packet_name": "W3GS_PING_FROM_OTHERS",
+    "packet_direction_id": 3,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Client requests an echo from another client (occurs every 10 seconds).</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/449/w3gs-ping-from-others",
+    "created_datetime": "2011-06-02T20:08:40+00:00",
+    "edited_datetime": null,
+    "format": "[blank]",
+    "remarks_html": "<p>Client requests an echo from another client (occurs every 10 seconds).</p>",
+    "comments": []
+}

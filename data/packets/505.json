@@ -1,0 +1,21 @@
+{
+    "id": 505,
+    "packet_id": 66,
+    "packet_name": "SID_CDKEY3",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>Not much is known about this packet, its structure and its documentation was taken from PvPGN.</p>",
+    "used_by": [
+        1144144982,
+        1144150096
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/505/sid-cdkey3",
+    "created_datetime": "2014-05-17T18:50:47+00:00",
+    "edited_datetime": "2025-05-24T22:38:45+00:00",
+    "format": "(UINT32)     Unknown 1\r\n(UINT32)     Unknown 2\r\n(UINT32)     Unknown 3\r\n(UINT32)     Unknown 4\r\n(UINT32)     Unknown 5\r\n(UINT32)     Unknown 6\r\n(UINT32)     Unknown 7\r\n (UINT8)[20] Hashed Key Data\r\n(STRING)     Key owner name",
+    "remarks_html": "<p>Not much is known about this packet, its structure and its documentation was taken from PvPGN.</p>\n<p>The collected information can be found <a href=\"https://pastebin.com/CyDV2pC2\">here</a> and below:</p>\n<pre><code class=\"language-c\">/******************************************************/\n/*\nFrom Diablo II 1.08?\nFF 42 43 00 AB 4C A4 3B            .BC..L.;\n01 00 00 00 00 00 00 00   10 00 00 00 06 00 00 00    ................\nXX 60 12 00 00 00 00 00   5D 82 82 C4 F4 8F D0 91    X`......].......\nE1 5B AB 95 D9 EE EF 18   44 3E F1 C9 XX XX XX XX    .[......D&gt;..XXXX\nXX XX XX XX XX XX XX XX   XX XX 00                   XXXXXXXXXX.\n\nFF 42 44 00 17 78 42 77   01 00 00 00 00 00 00 00    .BD..xBw........\n10 00 00 00 06 00 00 00   XX F3 10 00 00 00 00 00    ........X.......\nA8 29 8B C4 41 BD 33 AB   74 4C 1F 1E 5C XX CA 83    .)..A.3.tL..\\X..\n7F E5 36 14 XX XX XX XX   XX XX XX XX XX XX XX XX    ..6.XXXXXXXXXXXX\nXX XX XX 00                                          XXX.\n\nFF 42 44 00 C6 25 A1 3B   01 00 00 00 00 00 00 00    .BD..%.;........\n10 00 00 00 06 00 00 00   XX F3 10 00 00 00 00 00    ........X.......\nC4 3F FB 05 94 0C AC D4   3B 63 B1 90 E4 XX 53 B9    .?......;c...XS.\n70 C3 6F 2E XX XX XX XX   XX XX XX XX XX XX XX XX    p.o.XXXXXXXXXXXX\nXX XX XX 00                                          XXX.\n*/\n#define CLIENT_CDKEY3 0x42ff\ntypedef struct\n{\n    t_bnet_header h;\n    bn_int        unknown1; /* FIXME: some kind of salt? */\n    bn_int        unknown2; /* 01 00 00 00 */\n    bn_int        unknown3; /* 00 00 00 00 */\n    bn_int        unknown4; /* 10 00 00 00 */\n    bn_int        unknown5; /* 06 00 00 00 */\n    bn_int        unknown6; /* FIXME: value1? */\n    bn_int        unknown7; /* 00 00 00 00 */\n    bn_int        key_hash[5];\n    /* owner name */\n} PACKED_ATTR() t_client_cdkey3;\n#define CLIENT_CDKEY3_UNKNOWN1  0xffffffff\n#define CLIENT_CDKEY3_UNKNOWN2  0x00000001\n#define CLIENT_CDKEY3_UNKNOWN3  0x00000000\n#define CLIENT_CDKEY3_UNKNOWN4  0x00000010\n#define CLIENT_CDKEY3_UNKNOWN5  0x00000006\n#define CLIENT_CDKEY3_UNKNOWN6  0x00123456\n#define CLIENT_CDKEY3_UNKNOWN7  0x00000000\n/******************************************************/\n\n/******************************************************/\n/*\n                          FF 42 09 00 00 00 00 00            .B......\n                          00\n\n                          FF 42 09 00 00 00 00 00   00                         .B.......\n                          */\n#define SERVER_CDKEYREPLY3 0x42ff\ntypedef struct\n{\n    t_bnet_header h;\n    bn_int        message;\n    /* owner name */ /* FIXME: or error message, or ... */\n} PACKED_ATTR() t_server_cdkeyreply3;\n#define SERVER_CDKEYREPLY3_MESSAGE_OK       0x00000000</code></pre>",
+    "comments": []
+}

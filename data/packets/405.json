@@ -1,0 +1,25 @@
+{
+    "id": 405,
+    "packet_id": 90,
+    "packet_name": "SID_RESETPASSWORD",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Requests for Battle.net to reset an account's password. This message must be sent before logging in.</p>",
+    "used_by": [
+        1398030674,
+        1397053520,
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/405/sid-resetpassword",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": "2019-12-27T04:27:12+00:00",
+    "format": "(STRING) Account Name\r\n(STRING) Email Address",
+    "remarks_html": "<p>Requests for Battle.net to reset an account's password. This message must be sent before logging in.</p>\n<p>This message requires an email address because Battle.net has to prove it's your account. Since this message must be sent before <a href=\"https://bnetdocs.org/packet/262/sid-logonresponse\">C&gt;S 0x29 SID_LOGONRESPONSE</a>, <a href=\"https://bnetdocs.org/packet/225/sid-logonresponse2\">C&gt;S 0x3A SID_LOGONRESPONSE2</a>, or <a href=\"https://bnetdocs.org/packet/323/sid-auth-accountlogon\">C&gt;S 0x53 SID_AUTH_ACCOUNTLOGON</a>, you must supply an e-mail address so Battle.net knows that you may have ownership to it.</p>\n<p>This message used to be named <code>SID_AUTH_RECONNECTPROOF</code>, however Blizzard never had it implemented, and so reused the message ID for their email system.</p>",
+    "comments": []
+}

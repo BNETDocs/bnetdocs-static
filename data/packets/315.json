@@ -1,0 +1,21 @@
+{
+    "id": 315,
+    "packet_id": 19,
+    "packet_name": "BNLS_SERVERLOGONCHALLENGE",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 7,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This message initializes a new logon checking session and calculates the values needed for the server's reply to SID_AUTH_ACCOUNTLOGON (0x53).<br />\nBNLS_RESERVESERVERSLOTS(0x12) must be sent before this message to reserve slots for logon checking sessions.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/315/bnls-serverlogonchallenge",
+    "created_datetime": "2011-02-04T22:38:16+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Slot index\r\n(UINT32) NLS revision number\r\n(UINT32) [16] Data from account database\r\n(UINT32) [8] Data client's SID_AUTH_ACCOUNTLOGON (0x53) request",
+    "remarks_html": "<p>This message initializes a new logon checking session and calculates the values needed for the server's reply to SID_AUTH_ACCOUNTLOGON (0x53).<br />\nBNLS_RESERVESERVERSLOTS(0x12) must be sent before this message to reserve slots for logon checking sessions.</p>\n<p>Both the slot indicies and the NLS revision number follow their respective conventions covered in this documentation. The account database data is first received from the client's SID_AUTH_ACCOUNTCREATE (0x04) message. This information must be stored by the server's account database for logon checking. If the account database data is invalid, then the logon checking session will not succeed.<br />\nThis message initializes a slot with all the information required for it to operate, including the NLS revision. Although BNLS supports switching the NLS revision of a given slot, it can respond to requests slightly faster if the same NLS revision is used for the same slots in a given connection.</p>",
+    "comments": []
+}

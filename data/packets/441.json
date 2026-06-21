@@ -1,0 +1,21 @@
+{
+    "id": 441,
+    "packet_id": 61,
+    "packet_name": "W3GS_MAPCHECK",
+    "packet_direction_id": 2,
+    "packet_application_layer_id": 5,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>This is sent from the game host to a client that just joined to check if the client has the map.</p>",
+    "used_by": [
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/441/w3gs-mapcheck",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Unknown\r\n(STRING) File Path\r\n(UINT32) File size\r\n(UINT32) Map info\r\n(UINT32) File CRC encryption\r\n(UINT32) File SHA-1 hash",
+    "remarks_html": "<p>This is sent from the game host to a client that just joined to check if the client has the map.</p>\n<p>The map info is the actual CRC and the other CRC is actually an &quot;xoro&quot; value.</p>",
+    "comments": []
+}

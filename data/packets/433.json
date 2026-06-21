@@ -1,0 +1,23 @@
+{
+    "id": 433,
+    "packet_id": 93,
+    "packet_name": "SID_REPORTCRASH",
+    "packet_direction_id": 1,
+    "packet_application_layer_id": 1,
+    "packet_transport_layer_id": 1,
+    "options_bitmask": 11,
+    "brief_html": "<p>When the game crashes, (usually) a file named Crashdump is created. If this file exists at the next logon, the contents of it are sent to Battle.net in this message.</p>",
+    "used_by": [
+        1144144982,
+        1144150096,
+        1463898675,
+        1462982736
+    ],
+    "author_username": "BNETDocs",
+    "uri": "/packet/433/sid-reportcrash",
+    "created_datetime": "2010-07-15T02:47:39+00:00",
+    "edited_datetime": null,
+    "format": "(UINT32) Version? (0x010A0027)\r\n(UINT32) Exception code\r\n(UINT32) Unknown\r\n(UINT32) Unknown",
+    "remarks_html": "<p>When the game crashes, (usually) a file named Crashdump is created. If this file exists at the next logon, the contents of it are sent to Battle.net in this message.</p>\n<p>The first UINT32 for Diablo II is a constant value (version?), as seen in Fog.dll.</p>\n<p>All calls to Fog_10052 result in the output of Crashdump.</p>\n<p>More research is required.</p>",
+    "comments": []
+}
