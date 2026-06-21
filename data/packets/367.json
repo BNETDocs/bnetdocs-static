@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/367/mcp-gamelist",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-29T20:34:06+00:00",
@@ -20,13 +20,13 @@
     "comments": [
         {
             "id": 545,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2017-01-03T14:14:59+00:00",
             "content_html": "<p><code>(Dword) status</code> is one of a few special values indicating various failure replies or a set of flags indicating the game type and difficulty. Documentation on the reply codes can be found here since MCP_GAMEINFO uses the same codes: &lt; <a href=\"https://bnetdocs.org/packet/162/mcp-gameinfo\">https://bnetdocs.org/packet/162/mcp-gameinfo</a> &gt;</p>"
         },
         {
             "id": 557,
-            "author_username": "BNETDocs",
+            "author_username": "jtrumbull",
             "created_datetime": "2017-01-17T17:54:49+00:00",
             "content_html": "<p>A MCP_GAMELIST packet with a 0x00 Game name indicates the end of the list.</p>"
         }

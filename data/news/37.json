@@ -1,0 +1,13 @@
+{
+    "id": 37,
+    "title": "StarCraft Patched to 1.15.1",
+    "category_id": 4,
+    "options_bitmask": 3,
+    "brief_html": "<p>StarCraft was patched to 1.15.1, information on known changes to StarCraft below. No verbyte change. The new offset for the byte to change for No-CDs to work on battle.net is <code>0x1502F6FB</code> as reported by <a href=\"http://forum.valhallalegends.com/index.php?action=profile;u=4429\">Andy</a>.</p>",
+    "author_username": "Kyro",
+    "uri": "/news/37/starcraft-patched-to-1-15-1",
+    "created_datetime": "2007-08-21T03:31:39+00:00",
+    "edited_datetime": "2007-08-21T03:31:39+00:00",
+    "content_html": "<p>StarCraft was patched to 1.15.1, information on known changes to StarCraft below. No verbyte change. The new offset for the byte to change for No-CDs to work on battle.net is <code>0x1502F6FB</code> as reported by <a href=\"http://forum.valhallalegends.com/index.php?action=profile;u=4429\">Andy</a>.</p>\n<pre><code>-------------------------------\nPatch 1.15.1\n-------------------------------\n\n   Bug Fixes\n\n - Fixed a replay saving bug that occasionally crashed games.\n - Fixed a bug where the map download progress was not shown.\n - Pressing alt-f4 while in Starcraft and logged into a league now \nlogs you out of the league.\n - Updated some of the localization for the league page.\n - Fixed an exploit that allowed nukes to fall anywhere on the map.</code></pre>",
+    "comments": []
+}

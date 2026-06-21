@@ -3,7 +3,7 @@
     "title": "Battle.net History Timeline",
     "options_bitmask": 3,
     "brief_html": "<p>Future placeholder document for the page at:<br />\n<a href=\"https://davnit.net/islanti/timeline.html\">https://davnit.net/islanti/timeline.html</a></p>",
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/document/39/battle-net-history-timeline",
     "created_datetime": "2018-02-19T23:44:34+00:00",
     "edited_datetime": "2019-07-31T21:50:21+00:00",
@@ -11,19 +11,19 @@
     "comments": [
         {
             "id": 579,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2018-02-20T00:45:02+00:00",
             "content_html": "<p>Just adding events with dates, more details can be added. </p>\n<p>?/?/????: Shareware users can no longer join channels that are not public or client-specific.<br />\nSometime in 2005: Telnet usage is restricted.<br />\n2/25/2010: Battle.net 2.0 unofficially goes public, prior to the SC2 release.<br />\n2/5/2017: Accounts with previously illegal characters can now be created.<br />\nSometime around November 2017: Gateway denotation changed from &quot;@&quot; to &quot;#&quot;</p>"
         },
         {
             "id": 580,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2018-02-20T17:46:53+00:00",
             "content_html": "<p>init6 probably deserves a mention. <a href=\"https://github.com/fjaros/init6\">https://github.com/fjaros/init6</a></p>"
         },
         {
             "id": 583,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2018-04-01T22:07:27+00:00",
             "content_html": "<p>Chat gateway protocol was disabled in 2005.</p>"
         }

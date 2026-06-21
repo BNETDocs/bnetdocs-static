@@ -1,0 +1,13 @@
+{
+    "id": 109,
+    "title": "Diablo II 1.14b Maintenance Release",
+    "category_id": 3,
+    "options_bitmask": 3,
+    "brief_html": "<p>On Thursday, April 7, 2016, Blizzard <a href=\"http://us.battle.net/en/forum/topic/20742967110\">announced</a> a patch to Diablo II. The new version upgrades Diablo II from 1.14a to 1.14b. There are no known version byte or hash file updates so far, but we will revise this news post if there is.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/109/diablo-ii-1-14b-maintenance-release",
+    "created_datetime": "2016-04-08T07:17:55+00:00",
+    "edited_datetime": "2016-04-08T07:23:00+00:00",
+    "content_html": "<p>On Thursday, April 7, 2016, Blizzard <a href=\"http://us.battle.net/en/forum/topic/20742967110\">announced</a> a patch to Diablo II. The new version upgrades Diablo II from 1.14a to 1.14b. There are no known version byte or hash file updates so far, but we will revise this news post if there is.</p>\n<p>The announcement from Blizzard is as follows:</p>\n<blockquote>\n<p>Howdy All,</p>\n<p>We are releasing 1.14b for Diablo II today. We will take the servers down at 1000 Pacific and expect the maintenance to last 4 hours. Patch notes:</p>\n<p>Specific Changes &amp; Improvements</p>\n<ul>\n<li>Glide Wrapper will now load properly on PC by adding -3dfx to the end of the game shortcut</li>\n<li>Mercenaries will no longer become “An Evil Force”</li>\n<li>Fixed Mac client crash on “Save &amp; Exit”</li>\n<li>Capped the frame rate to 200 to save batteries, spare system load, and prevent hot lap syndrome</li>\n<li>Created new German installers to fix localization issues in Act V (Will require a fresh install to fix the missing dialogue data)</li>\n</ul>\n</blockquote>\n<p>Blizzard completed their maintenance an hour after the announcement and all servers should be back online operating at full capacity.</p>",
+    "comments": []
+}

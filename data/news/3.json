@@ -1,0 +1,13 @@
+{
+    "id": 3,
+    "title": "We're still alive!",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Yes, we're still here for those of you who still wander across the documents. Just last night and this morning I had updated many of our already existing packets with more information/better descriptions/correctness, etc. It sure has been quiet around here, but trust me, BNETDocs still lives :)</p>",
+    "author_username": "UserLoser",
+    "uri": "/news/3/we-re-still-alive",
+    "created_datetime": "2007-03-21T20:02:51+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Yes, we're still here for those of you who still wander across the documents. Just last night and this morning I had updated many of our already existing packets with more information/better descriptions/correctness, etc. It sure has been quiet around here, but trust me, BNETDocs still lives :)</p>",
+    "comments": []
+}

@@ -1,0 +1,13 @@
+{
+    "id": 87,
+    "title": "Legacy Battle.net Upgrade",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard has installed new server hardware and they wish to run some benchmark tests on it. They have chosen the Azeroth/USEast realm for this purpose (probably due to its popularity) and will be taking down all servers that host that realm so they can clone the database it uses. When they are finished testing, they plan to roll out the new hardware across all four realms.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/87/legacy-battle-net-upgrade",
+    "created_datetime": "2012-05-29T18:39:24+00:00",
+    "edited_datetime": "2012-05-29T18:39:24+00:00",
+    "content_html": "<p>Blizzard has installed new server hardware and they wish to run some benchmark tests on it. They have chosen the Azeroth/USEast realm for this purpose (probably due to its popularity) and will be taking down all servers that host that realm so they can clone the database it uses. When they are finished testing, they plan to roll out the new hardware across all four realms.</p>\n<p>Once cloning of Azeroth/USEast is complete, the realm will return and a new realm using the cloned data will be available in all clients seen as Stratholme/USTest in the gateway list.</p>\n<p>The scheduled downtime is as follows:</p>\n<ul>\n<li>~9:30 a.m. PDT, May 29 – Azeroth/USEast unavailable for four hours to copy data to PTR</li>\n<li>~1:00 p.m. PDT, May 29 – Azeroth/USEast returns, and Stratholme/US Test becomes available for testing with copied data</li>\n</ul>\n<p><em>Update from Bashiok:</em></p>\n<blockquote>\n<p>Azeroth/USEast is once again available, but we've delayed the test environment until tomorrow morning, May 29 at 10:00 a.m. PDT.</p>\n</blockquote>\n<p>You can see the original post by Bashiok on the Blizzard forums by clicking <a href=\"http://forums.battle.net/thread.html?topicId=27844684540&amp;sid=3000\">this link</a>. There is also a new feedback forum specifically for the tests they will be running, located at <a href=\"http://forums.battle.net/board.html?forumId=30628048&amp;sid=3000\">this link</a>.</p>\n<p>I would also like to add that while these tests are going on, I will be running my server checker. This means that the servers on the right of BnetDocs' pages will be updated as to their online/offline status on a periodic interval.</p>\n<p>The PTR domain name address (ustest.battle.net) and relevant IPs have been added to the <a href=\"http://bnetdocs.org/?op=doc&amp;did=21\">Battle.net Server List</a> document, credit to Sixen.</p>",
+    "comments": []
+}

@@ -1,0 +1,13 @@
+{
+    "id": 139,
+    "title": "Server Moved",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>I performed some infrastructure changes to BNETDocs over the weekend.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/139/server-moved",
+    "created_datetime": "2018-01-21T10:38:14+00:00",
+    "edited_datetime": "2018-01-21T10:50:03+00:00",
+    "content_html": "<p>I performed some infrastructure changes to BNETDocs over the weekend.</p>\n<ul>\n<li>spun up a new server at <a href=\"https://www.vultr.com/?ref=7101332\">Vultr</a>: vultr-chi.bnetdocs.org.</li>\n<li>server.bnetdocs.org is now lsn.bnetdocs.org.</li>\n<li>all content and settings were transferred to the new server, with minor adjustments.\n<ul>\n<li>the bnls database was transferred from an even older server to the new server.</li>\n<li>used a different filesystem path on the new server for data.</li>\n</ul></li>\n<li>bnetdocs.org and redux/labs/www.bnetdocs.org now point at vultr-chi.bnetdocs.org.</li>\n<li>lsn.bnetdocs.org is shutdown, to be deleted later.</li>\n</ul>\n<p>The cause for this is due to the instability of the previous provider. I have been shopping around other providers and <a href=\"https://www.vultr.com/?ref=7101332\">Vultr</a> has been great. This new server should have a longer lifespan as well as it is now on CentOS 7 instead of Fedora. ;)</p>\n<p>Oh, and happy new year late!</p>",
+    "comments": []
+}

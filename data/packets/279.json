@@ -15,7 +15,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/279/sid-auth-info",
     "created_datetime": "2011-05-31T02:31:46+00:00",
     "edited_datetime": "2022-01-15T07:00:54+00:00",
@@ -24,13 +24,13 @@
     "comments": [
         {
             "id": 38,
-            "author_username": "BNETDocs",
+            "author_username": "Chriso",
             "created_datetime": "2007-12-01T02:04:00+00:00",
             "content_html": "<p>Local IP address in network byte order can be determined using the inet_addr API (<a href=\"http://msdn2.microsoft.com/en-us/library/ms738563.aspx\">http://msdn2.microsoft.com/en-us/library/ms738563.aspx</a>)</p>\n<p>Region can be determined by joining LOCALE_SISO639LANGNAME and LOCALE_SISO3166CTRYNAME together after they have been determined by the GetLocaleInfo API e.g.:<br />\nRegion = GetLocaleInfo(LOCALE_SISO639LANGNAME) &amp; GetLocaleInfo(LOCALE_SISO3166CTRYNAME)</p>"
         },
         {
             "id": 143,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-07-08T06:39:15+00:00",
             "content_html": "<p>The product ID can use W2BN / WarCraft II BNE. I saw MirageBot by Chriso using it when I network-logged it, and it works just fine as of June 8th, 2009. All I am saying is, W2BN does not have to use the older version (CLIENTID packets), and that it can use this newer version (SID_AUTH_INFO, SID_AUTH_CHECK, SID_LOGONRESPONSE2, SID_ENTERCHAT).</p>\n<p>In an interesting topic, I wonder (have not tested) if it is possible to supply CHAT to the product ID, instead of an actual binary client like STAR or WAR3. If you could do this, then the ol' Chat-icon that was seen back before 2005 may still be able to be seen around the Battle.net.</p>"
         }

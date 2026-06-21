@@ -1,0 +1,13 @@
+{
+    "id": 79,
+    "title": "Regular news...",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Here's some regular news that some may have been waiting for...</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/79/regular-news",
+    "created_datetime": "2011-07-05T10:09:10+00:00",
+    "edited_datetime": "2011-07-05T10:09:10+00:00",
+    "content_html": "<p>Here's some regular news that some may have been waiting for...</p>\n<p><strong>Concerns:</strong><br />\nThis site is still active; we just don't update as much as we used to. A lot of the admins have become busy with their lives so they haven't been able to do much real updating here. However, when one finds time, they put a little effort in.</p>\n<p><strong>Core Updates</strong></p>\n<ul>\n<li>A small update has been made to the Logs RSS in regard to what it spits out to the public.</li>\n<li>Logs are no longer made for users who do not respond to their registration e-mail.</li>\n<li>Cleaned up some code in the overall functionality of the site.</li>\n<li>Re-enabled authorization for the server checker code.</li>\n<li>Fixed news submissions (new or edited) containing apostrophes in them so that they will work properly.</li>\n</ul>\n<p>As for anything else, stay tuned. :)</p>\n<p><strong>Edit</strong>: Somehow, some site files got pushed back to their older version. As such, user submission bugs containing apostrophes (') were present. I have re-fixed that error now. I have also fixed the news submitter since it was sanitizing twice after the re-fix. [07/05/2011]</p>",
+    "comments": []
+}

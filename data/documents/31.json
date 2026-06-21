@@ -3,7 +3,7 @@
     "title": "Telnet Protocol Message Formatting",
     "options_bitmask": 3,
     "brief_html": "<p>The following information is only valid when using protocol <code>0x03</code> (Telnet) on a Classic Battle.net server and only after a successful login handshake. See also <a href=\"/document/17/telnet-protocol\">Telnet Protocol</a> and <a href=\"/document/16/protocol-headers\">Protocol Headers</a>.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/document/31/telnet-protocol-message-formatting",
     "created_datetime": "2011-03-13T21:56:53+00:00",
     "edited_datetime": "2016-08-03T11:00:20+00:00",
@@ -11,13 +11,13 @@
     "comments": [
         {
             "id": 445,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2011-03-07T08:10:33+00:00",
             "content_html": "<p>Pretty cool findings there... There's lot to test with Telnet now on the W3DM server then, haha.</p>"
         },
         {
             "id": 452,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-03-14T02:25:24+00:00",
             "content_html": "<p>Yeah I found it out a while back ago when I was making my RBNETD software and was implementing the ol' Telnet protocol but couldn't find a way for SID_MESSAGEBOX through Telnet; this led me to find the format Blizzard was using for the packet ID's in Telnet.</p>\n<p>Not sure if someone else actually knew about this or not, but I didn't find it anywhere so I felt compelled to document it.</p>"
         }

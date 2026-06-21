@@ -18,7 +18,7 @@
         1144150096,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/220/sid-changepassword",
     "created_datetime": "2011-06-06T01:39:18+00:00",
     "edited_datetime": "2019-12-28T20:00:25+00:00",
@@ -27,19 +27,19 @@
     "comments": [
         {
             "id": 604,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2020-02-15T05:32:28+00:00",
             "content_html": "<p>The result values here are reversed.<br />\nBOOL Result, TRUE (Success), FALSE (Failure)</p>\n<p>Clients, D2XP 1.14D, WAR2 (Latest) (have not tested anything else to lazy)</p>"
         },
         {
             "id": 642,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2021-09-06T21:17:18+00:00",
             "content_html": "<p>I'm assuming you mean 0 == failure and 1 == success?</p>"
         },
         {
             "id": 655,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2023-03-12T19:14:32+00:00",
             "content_html": "<p>I've fixed the flipped result field.</p>"
         }

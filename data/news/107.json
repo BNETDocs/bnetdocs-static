@@ -1,0 +1,13 @@
+{
+    "id": 107,
+    "title": "Warcraft III 1.27a MSVCR120.dll Error",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>When Blizzard released Warcraft III patch 1.27a earlier this month, it turns out that they had forgotten to include the Microsoft Visual C++ Redistributable package when patching from earlier versions. This is the cause of why some may be receiving the error about <code>MSVCR120.dll</code> when launching the game.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/107/warcraft-iii-1-27a-msvcr120-dll-error",
+    "created_datetime": "2016-03-27T22:33:51+00:00",
+    "edited_datetime": "2016-03-27T22:36:57+00:00",
+    "content_html": "<p>When Blizzard released Warcraft III patch 1.27a earlier this month, it turns out that they had forgotten to include the Microsoft Visual C++ Redistributable package when patching from earlier versions. This is the cause of why some may be receiving the error about <code>MSVCR120.dll</code> when launching the game.</p>\n<p>Fortunately, Blizzard posted to their forums detailing how to fix the issue.</p>\n<blockquote>\n<p>If you get this error after patching to 1.27a then you have a few options:</p>\n<ol>\n<li>Reinstall using the new installer</li>\n<li>Install Visual C++ Redist Package\n<ul>\n<li>Go here: <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=40784\">https://www.microsoft.com/en-us/download/details.aspx?id=40784</a></li>\n<li>Choose your language</li>\n<li>Choose vcredist_x86.exe</li>\n<li>Click next</li>\n<li>Run vcredist_x86.exe</li>\n</ul></li>\n<li>Wait for the 1.27b patch. We do not have a definitive date to share at the moment.</li>\n</ol>\n</blockquote>\n<p><a href=\"http://us.battle.net/en/forum/topic/20742944843\">Original Thread</a></p>\n<p>Hopefully this helps anyone looking around for a solution to this problem!</p>",
+    "comments": []
+}

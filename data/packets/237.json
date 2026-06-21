@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/237/sid-logonrealmex",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2021-11-14T06:50:18+00:00",
@@ -20,37 +20,37 @@
     "comments": [
         {
             "id": 14,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-09-15T18:16:17+00:00",
             "content_html": "<p>Credit goes to <a href=\"/user/16/l2k-shadow\">l2k-Shadow</a> for the following information:</p>\n<p>To get the port # from the port DWORD, use the <a href=\"https://msdn.microsoft.com/en-us/library/ms740075.aspx\">ntohs</a> function. </p>\n<p>Example code in C++:</p>\n<pre><code>#include &lt;windows.h&gt;\n#include &lt;winsock2.h&gt;\n#include &lt;iostream.h&gt;\n\n#pragma comment(lib, \"ws2_32\")\n\nvoid main()\n{\n    char s[] = \"\\x17\\xe0\\x00\\x00\";\n    DWORD d = 0;\n    memcpy(&amp;d, s, 4);\n    cout &lt;&lt; ntohs(d) &lt;&lt; endl;\n}</code></pre>\n<p>Credits goes to Chriso.de for VB conversion:</p>\n<pre><code>Public Declare Function ntohs Lib \"ws2_32\" (ByVal netshort As Long) As Long\n\n' Get the port\nPort = ntohs(r.GetInt32())</code></pre>"
         },
         {
             "id": 118,
-            "author_username": "BNETDocs",
+            "author_username": "Gary13579",
             "created_datetime": "2008-09-10T04:09:21+00:00",
             "content_html": "<p>Diablo 2 realms went down the morning of 9/7/08, and when they came back up, this packet had changed, breaking a few clientless bots.</p>\n<p>The (WORD) Unknown from this packet HAS been removed entirely.</p>"
         },
         {
             "id": 119,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2008-09-11T23:09:25+00:00",
             "content_html": "<p>Hmm, strange. Guess we'll never know what it was.</p>"
         },
         {
             "id": 120,
-            "author_username": "BNETDocs",
+            "author_username": "Daedro",
             "created_datetime": "2008-09-14T02:41:06+00:00",
             "content_html": "<p>How to get the port # from DWORD with Python:<br />\n<code>socket.ntohs(struct.unpack(\"&lt; i\", \"\\x17\\xe0\\x00\\x00\")[0])</code></p>\n<p>How to convert port to DWORD with Python:<br />\n<code>struct.pack(\"&lt; i\", socket.htons(6112))</code></p>\n<p>Remove the space between &lt; and i, these docs dont parse code comments well.</p>\n<p>How to get the IP from DWORD with Python:<br />\n<code>socket.inet_ntoa(\"\\x3f\\xf1\\x53\\x12\")</code></p>\n<p>How to convert IP to DWORD with Python:<br />\n<code>socket.inet_aton(\"63.241.83.18\")</code></p>\n<p>Remove the extra quotation marks, these docs dont parse code comments well.</p>"
         },
         {
             "id": 582,
-            "author_username": "BNETDocs",
+            "author_username": "silver0bullets",
             "created_datetime": "2018-03-24T19:54:47+00:00",
             "content_html": "<p>It's important to note that bot the IP and the Port are both in big endian byte order. It also appears that the port is a 2 byte value followed by and unknown of 2 bytes.</p>"
         },
         {
             "id": 608,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-05-27T07:21:21+00:00",
             "content_html": "<p>As of 1.14d, the packet structure is significantly different.</p>\n<pre><code>UINT8[16]       Unknown 1 (MD5?)\nUINT32          IP (Big Endian)\nUINT32          Port (Big endian)\nUINT8[40]       Unknown 2 (SHA-1?)\nUINT8[9]        Unknown 3 (Padding?)</code></pre>"
         }

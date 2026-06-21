@@ -3,7 +3,7 @@
     "title": "ExtraWork",
     "options_bitmask": 3,
     "brief_html": "<p><strong>ExtraWork</strong> is a library sent by the server after successfully passing CheckRevision during the connection process. ExtraWork has been used by Battle.net to collect statistics on system hardware and to prevent hacking/botting.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "xboi209",
     "uri": "/document/43/extrawork",
     "created_datetime": "2018-03-17T23:32:10+00:00",
     "edited_datetime": "2021-11-14T06:08:26+00:00",
@@ -11,7 +11,7 @@
     "comments": [
         {
             "id": 647,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-11-14T06:11:05+00:00",
             "content_html": "<p>Diablo 2 1.14d has been observed to set the game type to <code>4</code> in <a href=\"/packet/240/sid-extrawork\">C&gt;S 0x4B SID_EXTRAWORK</a>. The length has been observed to be as high as 2578.</p>"
         }

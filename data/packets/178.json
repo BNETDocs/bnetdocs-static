@@ -18,7 +18,7 @@
         1144150096,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/178/sid-startadvex3",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-12-06T05:36:51+00:00",
@@ -27,13 +27,13 @@
     "comments": [
         {
             "id": 553,
-            "author_username": "BNETDocs",
+            "author_username": "jtrumbull",
             "created_datetime": "2017-01-17T16:30:26+00:00",
             "content_html": "<p>The server doesn't appear to respond with this packet when using the D2XP client.</p>"
         },
         {
             "id": 615,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-02T23:05:08+00:00",
             "content_html": "<p>Status <code>0x04</code> and <code>0x05</code> shows the same message that <code>0x03</code> shows.</p>"
         }

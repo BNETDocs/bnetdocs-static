@@ -8,7 +8,7 @@
     "options_bitmask": 3,
     "brief_html": "<p>Sent when an ad is displayed. Perhaps for statistics?</p>",
     "used_by": [],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/143/sid-displayad",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": null,

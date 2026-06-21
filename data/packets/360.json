@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/360/sid-chatcommand",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": null,
@@ -29,7 +29,7 @@
     "comments": [
         {
             "id": 576,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-05-21T06:02:02+00:00",
             "content_html": "<p>It is possible to use <code>%f#</code> instead of usernames where <code>#</code> is the number from your friends list. This works with /w, /f, and basically any place you'd use a username. See the bottom of <a href=\"http://classic.battle.net/info/friends.shtml\">this page</a> (<a href=\"https://archive.is/JmsNe\">archived copy</a>) for more info.</p>"
         }

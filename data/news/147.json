@@ -1,0 +1,13 @@
+{
+    "id": 147,
+    "title": "Battle.net Server Upgrade - 14 August 2018",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard has patched Classic Battle.net again.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/147/battle-net-server-upgrade-14-august-2018",
+    "created_datetime": "2018-08-16T15:58:12+00:00",
+    "edited_datetime": "2018-08-16T16:00:55+00:00",
+    "content_html": "<p>Blizzard has patched Classic Battle.net again.</p>\n<p>The biggest change this patch is the restriction of legacy Diablo II 16-character CD-keys. Now in order to log in with Diablo II and/or its expansion pack, you will be required to register your CD-key on Battle.net with your Battle.net account, and then use the new 26-character game key instead.</p>\n<blockquote>\n<p>Hi All,</p>\n<p>Servers will be upgraded on Tuesday at 10am PST. Expected downtime is less than 1 hour. </p>\n<p>Notable changes:</p>\n<ul>\n<li>[D2] Network migration for inbound server traffic to increase performance and reliability</li>\n<li>[D2] Disable the use of claimed 16 digit keys to prevent abuse</li>\n<li>Improved service monitoring and alerting</li>\n</ul>\n<p>Thanks, Classic Games</p>\n<p>Edit:</p>\n<p>Claim old 16 digits on your battle.net account here:</p>\n<ul>\n<li><a href=\"https://us.battle.net/account/management/claim-code.html\">https://us.battle.net/account/management/claim-code.html</a></li>\n</ul>\n<p>Look up your current cd keys:</p>\n<ul>\n<li><a href=\"https://us.battle.net/account/management/classic-games.html?license=20\">https://us.battle.net/account/management/classic-games.html?license=20</a></li>\n<li><a href=\"https://us.battle.net/account/management/classic-games.html?license=23\">https://us.battle.net/account/management/classic-games.html?license=23</a></li>\n</ul>\n<p>Download Installers: </p>\n<ul>\n<li><a href=\"https://us.battle.net/account/management/download/\">https://us.battle.net/account/management/download/</a></li>\n</ul>\n</blockquote>",
+    "comments": []
+}

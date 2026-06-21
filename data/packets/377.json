@@ -13,7 +13,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/packet/377/sid-logonresponse2",
     "created_datetime": "2012-02-26T02:13:13+00:00",
     "edited_datetime": "2020-12-03T07:48:59+00:00",
@@ -22,55 +22,55 @@
     "comments": [
         {
             "id": 41,
-            "author_username": "BNETDocs",
+            "author_username": "Accused",
             "created_datetime": "2007-12-05T00:19:30+00:00",
             "content_html": "<p><code>0x06: Account has been closed</code></p>\n<p>It was in use about a year ago although I cannot confirm it today since I don't have access to a banned account. But I'm sure it's still there.</p>\n<p>EDIT:</p>\n<p>Confirmed.</p>\n<pre><code>0000:  FF 3A 2A 00 06 00 00 00 59 6F 75 72 20 61 63 63   ÿ:*.\u0006...Your acc\n0010:  6F 75 6E 74 20 68 61 73 20 62 65 65 6E 20 63 6C   ount has been cl\n0020:  6F 73 65 64 2E 20 28 38 29 00                     osed. (8).......</code></pre>"
         },
         {
             "id": 48,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-12-05T09:19:30+00:00",
             "content_html": "<p>Updated. Thanks for the contribution.</p>"
         },
         {
             "id": 49,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-05T17:10:17+00:00",
             "content_html": "<p>0x06 has been account closed forever...</p>"
         },
         {
             "id": 50,
-            "author_username": "BNETDocs",
+            "author_username": "Accused",
             "created_datetime": "2007-12-05T18:19:11+00:00",
             "content_html": "<p>I'm not so sure about forever. I've had an account that received this in the past and it expired after the 93 day usual.</p>"
         },
         {
             "id": 51,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-05T18:56:59+00:00",
             "content_html": "<p>yea... it's been account closed since they enacted the closed account system....</p>\n<p>soo.. i guess not forever but atleast since as long as i can remember getting that message on bnet...</p>"
         },
         {
             "id": 52,
-            "author_username": "BNETDocs",
+            "author_username": "Accused",
             "created_datetime": "2007-12-05T19:27:45+00:00",
             "content_html": "<p>Oh...I thought you meant the account itself gets closed forever. Yeah I knew the message code 0x06 was there 'forever' it just wasn't documented here which is why I brought it up. I confused what you were saying ;p</p>"
         },
         {
             "id": 53,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-05T21:32:25+00:00",
             "content_html": "<p>:P thx for telling us we forgot it tho</p>"
         },
         {
             "id": 602,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2019-12-27T02:21:45+00:00",
             "content_html": "<p>Updated format and remarks for clarification and readability.</p>"
         },
         {
             "id": 610,
-            "author_username": "BNETDocs",
+            "author_username": "timfelgentreff",
             "created_datetime": "2020-08-11T05:29:45+00:00",
             "content_html": "<p>pvpgn actually sends the status as a short and adds a 0x0 short for &quot;padding&quot;. If you read the status as uint32, these are the status code you get when using this against pvpgn</p>\n<pre><code>0x000000    Success\n0x010000    Account does not exist\n0x020000    Incorrect password\n0x060000    Account closed, see additional information</code></pre>"
         }

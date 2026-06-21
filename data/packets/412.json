@@ -14,7 +14,7 @@
         1146308690,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/412/sid-reportversion",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-10-02T07:45:26+00:00",
@@ -23,37 +23,37 @@
     "comments": [
         {
             "id": 345,
-            "author_username": "BNETDocs",
+            "author_username": "Hdx",
             "created_datetime": "2010-07-25T04:13:24+00:00",
             "content_html": "<p>Just a note, the buffer for <code>Patch Path</code> is not properly cleared and trimmed by the server, resulting in this packet responding with a lot of random extra data. This is just random data and should be ignored. Extracting a NT string from the packet will work fine as it is ALWAYS properly terminated before the extra data.</p>\n<p>Example:</p>\n<pre><code>0000:  FF 07 08 01 02 00 00 00 00 00 45 1A 00 00 00 00   ÿ\u0007\b\u0001\u0002.....E\u001a....\n0010:  E0 C9 95 15 A0 D7 E0 01 26 BA 54 00 50 83 4D AB   àÉ•\u0015 ×à\u0001&amp;ºT.PƒM«\n0020:  44 BE 33 03 88 A4 7A 6B 12 35 CE D3 76 BB 90 C1   D¾3\u0003ˆ¤zk\u00125ÎÓv»?Á\n0030:  FC 2D 6C 48 7E F4 A7 1F 25 06 1B A0 E3 B8 3D 6E   ü-lH~ô§\u001f%\u0006\u001b ã¸=n\n0040:  A3 30 9D 3B E6 B3 62 B4 4C E5 E1 C7 B0 0B 0D 23   £0?;æ³b´LåáÇ°\u000b.#\n0050:  5B 2B D2 02 CD 8E F6 D7 68 2F 51 9E 8B 42 52 3A   [+Ò\u0002ÍŽö×h/Qž‹BR:\n0060:  B9 FE 19 DA 94 11 92 05 0A 7D 43 D9 6D 72 58 31   ¹þ\u0019Ú”\u0011’\u0005.}CÙmrX1\n0070:  96 DF 85 79 13 F8 BF 54 0C 2C 57 17 10 18 DD A6   –ß…y\u0013ø¿T\f,W\u0017\u0010\u0018Ý¦\n0080:  1E D0 00 ED 40 53 F3 EA C0 08 99 71 37 D8 C4 BA   \u001eÐ.í@SóêÀ\b™q7ØÄº\n0090:  81 E2 34 65 CF 1A 36 6F AC 56 14 75 82 2E 04 B5   ?â4eÏ\u001a6o¬V\u0014u‚.\u0004µ\n00A0:  4F 8D 3F 87 B7 EB 1D AD E9 5E EE 0E D6 86 EF FF   O??‡·ë\u001d é^î\u000eÖ†ïÿ\n00B0:  E8 63 DB 1C 47 84 C6 F1 4A C5 3E 22 E4 32 2A A9   ècÛ\u001cG„ÆñJÅ&gt;\"ä2*©\n00C0:  FD 3C 26 98 7C B6 78 5A 6A 8A 66 D5 64 9F 27 CA   ý&lt;&amp;˜|¶xZjŠfÕdŸ'Ê\n00D0:  46 F2 69 D4 F7 F5 16 FB B1 AA 8C 38 DC 29 89 01   FòiÔ÷õ\u0016û±ªŒ8Ü)‰\u0001\n00E0:  39 45 BC AF FA 41 0F 80 28 C3 9C 97 95 60 9B A2   9E¼¯úA\u000f€(Ãœ—•`›¢\n00F0:  20 24 E0 67 CC B2 61 E7 59 A5 4E 09 BD C2 8F F0    $àgÌ²açY¥N.½Â?ð\n0100:  F9 7B 9A 07 74 CB EC 91                           ù{š\u0007tËì‘........</code></pre>\n<p>If you'll notice, the packet length is <code>0x0108</code>, minus the header and result dword = <code>0x0100</code>, looks logical size of a buffer to me!</p>\n<p>Also note, that when you FAIL checkrevison, and there is actually something in this buffer, there is no random data.<br />\nExa:</p>\n<pre><code>0000:  FF 07 1E 00 01 00 00 00 57 32 42 4E 5F 49 58 38    ÿ\u0007\b\u0001\u0002.....W2BN_IX8\n0010:  36 5F 32 30 30 5F 32 30 32 2E 6D 70 71 00          6_200_202.mpq.</code></pre>"
         },
         {
             "id": 346,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-30T03:45:50+00:00",
             "content_html": "<p>If anyone's curious as to why this happens, it is most likely because the programmer who was responsible for programming the packet forgot to initialize the buffer correctly.</p>\n<p>So if they do not use the buffer (i.e. set the buffer to X value), then you'll receive whatever is in that buffer (at that spot in memory); however, had they initialized it properly, you would of received normal data (a null-terminator and nothing after it).</p>\n<p>On a side-note, I believe PvPGN does this properly, someone correct me if I'm wrong. In other words, if you connect to an unofficial server, there is a good chance that the programmer who made that server (the most popular server software being PvPGN) initialized their buffer correctly and therefore you will not receive the extra data.</p>\n<p>To further add to Hdx's comment: it would be nearly impossible for you to gain anything by reading the extra data; any data you may receive from it is always random (since it's from memory already being used). And is it also impossible to construct anything useful from it because of the data being random. So while it may look interesting or you may recognize some data that appears, there's no point to actually use the extra data you receive.</p>"
         },
         {
             "id": 564,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2017-03-21T14:15:34+00:00",
             "content_html": "<p>It appears the public Battle.net servers no longer send the uninitialized buffers. There's an extra <code>00</code> byte compared to what I expect though, so perhaps the format is DWORD, STRING, String, for some reason?</p>"
         },
         {
             "id": 565,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-03-21T18:07:28+00:00",
             "content_html": "<p>Yes, I requested a Blizzard developer to fix the buffer overflow last month and they did.</p>\n<p><a href=\"/user/412/ribose\">Ribose</a>, do you have a packet dump you can share to confirm that there's still an extra null byte? I'm seeing the proper syntax: <code>FF 07 09 00 02 00 00 00 00</code></p>\n<p>Perhaps the documentation here could be clarified such that the <code>STRING</code> is always present irrespective of the result code.</p>"
         },
         {
             "id": 567,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2017-03-21T18:28:58+00:00",
             "content_html": "<pre><code>00000000  01 ff 1e 27 00 01 00 00  00 00 00 00 00 00 00 00   ...'.... ........\n00000010  00 00 00 00 00 00 00 00  00 45 50 53 49 4c 4f 4e   ........ .EPSILON\n00000020  2d 35 00 4e 61 74 65 00  ff 12 3c 00 b0 ff 01 be   -5.Nate. ..&lt;.....\n00000030  6e a2 d2 01 b0 5f f0 36  4d a2 d2 01 f0 00 00 00   n...._.6 M.......\n00000040  11 04 00 00 09 04 00 00  09 04 00 00 45 4e 55 00   ........ ....ENU.\n00000050  31 00 55 53 41 00 55 6e  69 74 65 64 20 53 74 61   1.USA.Un ited Sta\n00000060  74 65 73 00 ff 06 14 00  36 38 58 49 4c 54 52 44   tes..... 68XILTRD\n00000070  2a 00 00 00 00 00 00 00                            *....... \n    00000000  ff 05 14 00 00 00 00 00  00 00 00 00 00 00 00 00   ........ ........\n    00000010  00 00 00 00                                        ....\n    00000014  ff 1d 0c 00 f9 93 03 00  9d ea 54 56 ff 25 08 00   ........ ..TV.%..\n    00000024  bd 5d 24 09 ff 06 32 00  00 5e 20 02 70 5f c7 01   .]$...2. .^ .p_..\n    00000034  6c 6f 63 6b 64 6f 77 6e  2d 49 58 38 36 2d 30 33   lockdown -IX86-03\n    00000044  2e 6d 70 71 00 6d b2 0d  08 3c 1a dc a9 11 39 bc   .mpq.m.. .&lt;....9.\n    00000054  72 ba aa 77 55 00                                  r..wU.\n    0000005A  ff 00 04 00                                        ....\n    0000005E  ff 00 04 00                                        ....\n    00000062  ff 00 04 00                                        ....\n00000078  ff 25 08 00 bd 5d 24 09  ff 07 29 00 36 38 58 49   .%...]$. ..).68XI\n00000088  4c 54 52 44 2a 00 00 00  01 09 00 01 f3 c3 de ce   LTRD*... ........\n00000098  8a 8a ff 79 f4 4b df 41  89 73 0b 5a 45 d9 a3 73   ...y.K.A .s.ZE..s\n000000A8  00                                                 .\n    00000066  ff 07 0a 00 02 00 00 00  00 00                     ........ ..</code></pre>\n<p>Mysterious possible second empty string?</p>"
         },
         {
             "id": 611,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-02T07:44:48+00:00",
             "content_html": "<p>I can confirm there's an extra null byte at the end of the packet.</p>\n<p>ff 07 0a 00 02 00 00 00 00 00</p>"
         }

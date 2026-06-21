@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/packet/174/sid-null",
     "created_datetime": "2010-08-06T01:55:17+00:00",
     "edited_datetime": null,
@@ -29,7 +29,7 @@
     "comments": [
         {
             "id": 366,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-03T07:44:18+00:00",
             "content_html": "<p>I'm guessing this is what Event_NULL (2000) is for the Telnet Protocol as well.</p>"
         }

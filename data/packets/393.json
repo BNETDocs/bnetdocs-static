@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/393/sid-warcraftgeneral",
     "created_datetime": "2010-12-14T14:16:57+00:00",
     "edited_datetime": "2017-03-28T21:03:41+00:00",
@@ -20,13 +20,13 @@
     "comments": [
         {
             "id": 154,
-            "author_username": "BNETDocs",
+            "author_username": "PeoN",
             "created_datetime": "2010-01-14T05:39:07+00:00",
             "content_html": "<p>I am not sure of all the values but I got this message when pressing quickplay in war3.</p>\n<p>ff 44 1c 00 00 06 00 00 00 00 00 00 00 00 00 3f 0a 00 00 08 20 03 ff 00 08 00 00 00</p>\n<p>Seems the 0x1c is the subcommand since it is always the same and the other codes change.</p>"
         },
         {
             "id": 155,
-            "author_username": "BNETDocs",
+            "author_username": "MysT_DooM",
             "created_datetime": "2010-01-21T01:38:33+00:00",
             "content_html": "<p>no thats the packets length.  Take a look at <a href=\"http://www.bnetdocs.org/?op=doc&amp;did=16\">http://www.bnetdocs.org/?op=doc&amp;did=16</a> for the basic structure of BNCS packets</p>"
         }

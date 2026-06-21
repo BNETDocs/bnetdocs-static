@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/packet/460/w3gs-slotinfojoin",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-03-08T11:05:22+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 606,
-            "author_username": "BNETDocs",
+            "author_username": "cen",
             "created_datetime": "2020-03-08T11:06:45+00:00",
             "content_html": "<p>Update on 8.3.2020: Port is uint16, the other 2 bytes before that are AF_INET</p>"
         }

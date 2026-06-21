@@ -1,0 +1,13 @@
+{
+    "id": 135,
+    "title": "I've disabled Cloudflare and started using Let's Encrypt",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>BNETDocs is no longer using Cloudflare for any purpose other than DNS right now, and SSL/TLS has been switched from expired Comodo certificates to Let's Encrypt with automatic renewal.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/135/i-ve-disabled-cloudflare-and-started-using-let-s-encrypt",
+    "created_datetime": "2017-03-04T01:10:40+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>BNETDocs is no longer using Cloudflare for any purpose other than DNS right now, and SSL/TLS has been switched from expired Comodo certificates to Let's Encrypt with automatic renewal.</p>\n<p>I felt that this was a better solution due to <a href=\"/news/133/bnetdocs-and-cloudflare-s-memory-leak-cloudbleed\">Cloudflare's security issue</a> last week. With Cloudflare no longer sitting as a middleman, Cloudflare was no longer the edge SSL/TLS, so Let's Encrypt has taken its place.</p>\n<p>With Cloudflare DNS only and Let's Encrypt in place, so far things have been steady. This change happened earlier this week and I forgot to announce it. There haven't been any monitoring alerts that have come in since the change, and no one's noticed the difference as far as I've seen, which is a good thing.</p>\n<p>Cheers.</p>",
+    "comments": []
+}

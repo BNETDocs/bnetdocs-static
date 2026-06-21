@@ -3,7 +3,7 @@
     "title": "Classic Chat API (CAPI)",
     "options_bitmask": 3,
     "brief_html": "<p>On April 28, 2017, <a href=\"https://us.battle.net/forums/en/bnet/topic/20754336617\">Blizzard announced</a> an official API for the classic BNETv1 platform. This is intended to allow bots to easily connect to the platform using secure web sockets instead of needing to emulate the game protocols.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Davnit",
     "uri": "/document/45/classic-chat-api-capi",
     "created_datetime": "2018-10-13T19:13:41+00:00",
     "edited_datetime": "2018-10-31T16:34:48+00:00",

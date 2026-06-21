@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-06-21T13:23:12+00:00",
+    "generated_at": "2026-06-21T14:16:34+00:00",
     "packets": [
         {
             "id": 98,
@@ -14,7 +14,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "joe[x86]",
             "uri": "/packet/98/d2gs-trade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -32,7 +32,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "uri": "/packet/99/mcp-requestladderdata",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:46:15+00:00"
@@ -57,7 +57,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/100/sid-serverlist",
             "created_datetime": "2012-05-30T19:25:03+00:00",
             "edited_datetime": null
@@ -77,7 +77,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "uri": "/packet/101/sid-news-info",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T05:15:55+00:00"
@@ -99,7 +99,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "uri": "/packet/102/sid-optionalwork",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:27:12+00:00"
@@ -117,7 +117,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/103/mcp-charupgrade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -135,7 +135,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/104/bnls-confirmlogon",
             "created_datetime": "2012-02-26T04:20:13+00:00",
             "edited_datetime": null
@@ -157,7 +157,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/105/sid-changeemail",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -179,7 +179,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/106/sid-auth-check",
             "created_datetime": "2011-06-15T01:44:58+00:00",
             "edited_datetime": "2020-12-05T20:13:16+00:00"
@@ -197,7 +197,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/107/mcp-joingame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-13T02:11:13+00:00"
@@ -215,7 +215,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/108/sid-auth-accountchange",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -232,7 +232,7 @@
             "used_by": [
                 1398030674
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/109/sid-registry",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-11-05T01:44:06+00:00"
@@ -247,7 +247,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Command to all bots.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/110/botnet-command-to-all",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T02:49:14+00:00"
@@ -265,7 +265,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/111/d2gs-rightskillonlocationex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -290,7 +290,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/112/sid-readuserdata",
             "created_datetime": "2011-06-02T18:51:40+00:00",
             "edited_datetime": "2021-08-19T22:40:56+00:00"
@@ -308,7 +308,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/113/bnls-confirmlogon",
             "created_datetime": "2011-02-04T22:33:58+00:00",
             "edited_datetime": null
@@ -326,7 +326,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/114/d2gs-switchbeltitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -344,7 +344,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/115/bnls-changechallenge",
             "created_datetime": "2011-02-04T22:07:52+00:00",
             "edited_datetime": null
@@ -362,7 +362,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/116/sid-clanmemberstatuschange",
             "created_datetime": "2011-07-20T01:44:10+00:00",
             "edited_datetime": "2018-03-29T01:37:49+00:00"
@@ -382,7 +382,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/117/sid-friendsposition",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T20:37:53+00:00"
@@ -402,7 +402,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/118/sid-friendsadd",
             "created_datetime": "2011-06-02T21:49:59+00:00",
             "edited_datetime": "2017-03-28T20:36:12+00:00"
@@ -420,7 +420,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/119/mcp-charlist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -445,7 +445,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/120/sid-geticondata",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-09-17T20:20:47+00:00"
@@ -470,7 +470,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/121/sid-geticondata",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-09-17T20:19:13+00:00"
@@ -497,7 +497,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/122/sid-writeuserdata",
             "created_datetime": "2011-06-02T18:47:11+00:00",
             "edited_datetime": "2020-10-15T20:10:33+00:00"
@@ -523,7 +523,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/123/bnls-cdkey",
             "created_datetime": "2011-02-04T22:00:22+00:00",
             "edited_datetime": "2016-04-02T23:03:44+00:00"
@@ -538,7 +538,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Receive cycle request (defunct).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/124/botnet-cycle",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T04:50:22+00:00"
@@ -565,7 +565,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/125/bnls-versioncheckex2",
             "created_datetime": "2011-09-30T08:15:04+00:00",
             "edited_datetime": null
@@ -583,7 +583,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/126/d2gs-switchbodyitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -604,7 +604,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/127/sid-startversioning",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-12-06T05:34:48+00:00"
@@ -622,7 +622,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/128/d2gs-walktolocation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -640,7 +640,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/129/sid-clandisband",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-28T21:36:05+00:00"
@@ -658,7 +658,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/130/mcp-charcreate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:46:36+00:00"
@@ -676,7 +676,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Ricola3D",
             "uri": "/packet/131/d2gs-gamelogon",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-05T06:26:38+00:00"
@@ -694,7 +694,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/132/bnls-changechallenge",
             "created_datetime": "2011-02-04T22:07:35+00:00",
             "edited_datetime": null
@@ -712,7 +712,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/133/d2gs-switchinventoryitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -739,7 +739,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/134/bnls-requestversionbyte",
             "created_datetime": "2010-09-26T23:55:16+00:00",
             "edited_datetime": "2018-08-20T08:39:42+00:00"
@@ -766,7 +766,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/135/sid-clickad",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -784,7 +784,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/136/d2gs-pickupitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -802,7 +802,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/137/d2gs-dropgold",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -820,7 +820,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/138/sid-auth-accountcreate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:59:12+00:00"
@@ -838,7 +838,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/139/sid-clanremovemember",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T00:56:06+00:00"
@@ -853,7 +853,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Receive command over BotNet.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/140/botnet-command",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T02:59:05+00:00"
@@ -871,7 +871,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/141/sid-queryadurl",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -889,7 +889,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/142/d2gs-tradeaction",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -904,7 +904,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Sent when an ad is displayed. Perhaps for statistics?</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/143/sid-displayad",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -922,7 +922,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/144/sid-logonrealmex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:39:57+00:00"
@@ -949,7 +949,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/145/sid-enterchat",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-17T10:29:44+00:00"
@@ -971,7 +971,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/146/sid-auth-info",
             "created_datetime": "2011-05-29T16:11:46+00:00",
             "edited_datetime": "2020-12-09T06:19:00+00:00"
@@ -989,7 +989,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/147/d2gs-worldobject",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1006,7 +1006,7 @@
             "used_by": [
                 1397966930
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/148/sid-startadvex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T05:01:40+00:00"
@@ -1024,7 +1024,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/149/sid-claninfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-28T21:56:46+00:00"
@@ -1042,7 +1042,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/150/d2gs-rightskillonentityex2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1060,7 +1060,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/151/sid-clanfindcandidates",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-28T21:06:28+00:00"
@@ -1078,7 +1078,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/152/bnls-logonproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1098,7 +1098,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/153/sid-friendslist",
             "created_datetime": "2011-06-02T21:39:30+00:00",
             "edited_datetime": "2020-10-10T13:07:18+00:00"
@@ -1116,7 +1116,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/154/mcp-charlogon",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1143,7 +1143,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/155/bnls-versioncheckex",
             "created_datetime": "2011-09-30T08:11:16+00:00",
             "edited_datetime": "2018-08-20T08:39:49+00:00"
@@ -1161,7 +1161,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/156/d2gs-leftskillonentityex2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1179,7 +1179,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/157/sid-clancreationinvitation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-28T21:24:04+00:00"
@@ -1197,7 +1197,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/158/sid-clanmemberinformation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:50:22+00:00"
@@ -1215,7 +1215,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/159/d2gs-pickupbufferitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1233,7 +1233,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/160/sid-clanmemberinformation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:43:59+00:00"
@@ -1254,7 +1254,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/161/sid-logonchallenge",
             "created_datetime": "2011-06-02T18:35:28+00:00",
             "edited_datetime": null
@@ -1272,7 +1272,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/162/mcp-gameinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:35:44+00:00"
@@ -1292,7 +1292,7 @@
                 1146246220,
                 1146308690
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/163/sid-startadvex2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-05-18T04:52:52+00:00"
@@ -1319,7 +1319,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/164/sid-ping",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1342,7 +1342,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/165/pkt-serverping",
             "created_datetime": "2012-02-26T04:25:06+00:00",
             "edited_datetime": null
@@ -1364,7 +1364,7 @@
                 1146246220,
                 1146308690
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/166/sid-systeminfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2025-05-24T22:40:51+00:00"
@@ -1382,7 +1382,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/167/sid-clansetmotd",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:20:10+00:00"
@@ -1400,7 +1400,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/168/d2gs-npccancel",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1418,7 +1418,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/169/d2gs-scrolltotome",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1435,7 +1435,7 @@
             "used_by": [
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/170/sid-cdkey",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-17T10:13:40+00:00"
@@ -1450,7 +1450,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Update client information.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/171/botnet-statsupdate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T04:51:47+00:00"
@@ -1468,7 +1468,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/172/mcp-motd",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1486,7 +1486,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/173/d2gs-party",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1513,7 +1513,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "uri": "/packet/174/sid-null",
             "created_datetime": "2010-08-06T01:55:17+00:00",
             "edited_datetime": null
@@ -1531,7 +1531,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/175/mcp-gameinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:16:31+00:00"
@@ -1549,7 +1549,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/176/bnls-serverlogonproof",
             "created_datetime": "2011-02-04T22:39:14+00:00",
             "edited_datetime": null
@@ -1567,7 +1567,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/177/mcp-creategame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:27:26+00:00"
@@ -1592,7 +1592,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/178/sid-startadvex3",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-12-06T05:36:51+00:00"
@@ -1619,7 +1619,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/179/bnls-cdkey",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-07T01:15:10+00:00"
@@ -1646,7 +1646,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/181/bnls-requestversionbyte",
             "created_datetime": "2010-09-26T23:50:44+00:00",
             "edited_datetime": "2018-08-20T08:39:31+00:00"
@@ -1668,7 +1668,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/182/sid-requiredwork",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:27:12+00:00"
@@ -1686,7 +1686,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/183/bnls-createaccount",
             "created_datetime": "2011-02-04T22:04:23+00:00",
             "edited_datetime": null
@@ -1703,7 +1703,7 @@
             "used_by": [
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/184/sid-cdkey2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:16:59+00:00"
@@ -1730,7 +1730,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/185/bnls-authorizeproof",
             "created_datetime": "2011-02-04T22:36:52+00:00",
             "edited_datetime": null
@@ -1756,7 +1756,7 @@
                 1462911566,
                 1463898675
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/186/sid-enterchat",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1777,7 +1777,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/187/sid-gameresult",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-08-20T04:35:13+00:00"
@@ -1794,7 +1794,7 @@
             "used_by": [
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/188/sid-cdkey",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:16:27+00:00"
@@ -1812,7 +1812,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/189/mcp-charlist2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-05T12:10:08+00:00"
@@ -1830,7 +1830,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/190/d2gs-rightskillonentity",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1857,7 +1857,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/191/sid-friendslist",
             "created_datetime": "2011-06-02T18:28:52+00:00",
             "edited_datetime": null
@@ -1875,7 +1875,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/192/d2gs-leftskillonentity",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1893,7 +1893,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/193/sid-clanrankchange",
             "created_datetime": "2011-09-12T04:01:05+00:00",
             "edited_datetime": "2018-03-29T01:07:32+00:00"
@@ -1918,7 +1918,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/194/sid-notifyjoin",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1945,7 +1945,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/195/sid-getfiletime",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -1972,7 +1972,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/196/bnls-authorizeproof",
             "created_datetime": "2012-02-26T04:22:27+00:00",
             "edited_datetime": "2017-10-01T18:35:46+00:00"
@@ -1987,7 +1987,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Acknowledge chat options.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/197/botnet-chat-options",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T01:52:23+00:00"
@@ -2002,7 +2002,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>User information updated.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/198/botnet-user",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-12T04:43:22+00:00"
@@ -2025,7 +2025,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/199/pkt-conntest2",
             "created_datetime": "2012-03-20T12:53:58+00:00",
             "edited_datetime": null
@@ -2043,7 +2043,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/200/sid-auth-accountupgrade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:02:11+00:00"
@@ -2058,7 +2058,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>This message contains the data to send in SID_AUTH_ACCOUNTUPGRADEPROOF (0x58).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/201/bnls-upgradeproof",
             "created_datetime": "2011-02-04T22:11:07+00:00",
             "edited_datetime": null
@@ -2075,7 +2075,7 @@
             "used_by": [
                 1146246220
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/202/sid-gamedataaddress",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2025-05-24T20:58:03+00:00"
@@ -2093,7 +2093,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/203/bnls-changeproof",
             "created_datetime": "2010-08-06T01:40:48+00:00",
             "edited_datetime": null
@@ -2108,7 +2108,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Acknowledge identifying yourself with BotNet.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/204/botnet-logon",
             "created_datetime": "2011-08-21T19:25:06+00:00",
             "edited_datetime": "2018-03-12T04:09:28+00:00"
@@ -2126,7 +2126,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/205/bnls-upgradeproof",
             "created_datetime": "2010-08-06T01:34:49+00:00",
             "edited_datetime": null
@@ -2144,7 +2144,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/206/d2gs-npcinit",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2162,7 +2162,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/207/botnet-chat",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-04-16T05:31:50+00:00"
@@ -2189,7 +2189,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/208/bnls-choosenlsrevision",
             "created_datetime": "2011-07-28T16:52:14+00:00",
             "edited_datetime": null
@@ -2207,7 +2207,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/209/botnet-account",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T02:29:39+00:00"
@@ -2225,7 +2225,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/210/sid-auth-accountlogon",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:02:29+00:00"
@@ -2243,7 +2243,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/211/sid-claninvitation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T00:22:07+00:00"
@@ -2261,7 +2261,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/212/d2gs-characterphrase",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2288,7 +2288,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/213/bnls-versioncheck",
             "created_datetime": "2011-02-04T22:31:32+00:00",
             "edited_datetime": null
@@ -2306,7 +2306,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/214/bnls-createaccount",
             "created_datetime": "2011-02-04T22:04:06+00:00",
             "edited_datetime": null
@@ -2324,7 +2324,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/215/d2gs-npcbuy",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2342,7 +2342,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/216/sid-clanmemberlist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:37:24+00:00"
@@ -2360,7 +2360,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/218/sid-claninvitationresponse",
             "created_datetime": "2011-06-25T04:36:04+00:00",
             "edited_datetime": "2018-03-29T00:47:04+00:00"
@@ -2378,7 +2378,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/219/sid-auth-accountupgradeproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-15T07:46:11+00:00"
@@ -2403,7 +2403,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/220/sid-changepassword",
             "created_datetime": "2011-06-06T01:39:18+00:00",
             "edited_datetime": "2019-12-28T20:00:25+00:00"
@@ -2421,7 +2421,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/221/d2gs-setbyteattr",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2439,7 +2439,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/222/d2gs-setwordattr",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2461,7 +2461,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/223/sid-setemail",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2479,7 +2479,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/224/mcp-joingame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-13T02:10:58+00:00"
@@ -2499,7 +2499,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/225/sid-logonresponse2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:14:04+00:00"
@@ -2524,7 +2524,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/226/sid-createaccount2",
             "created_datetime": "2011-07-21T12:40:58+00:00",
             "edited_datetime": null
@@ -2551,7 +2551,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/227/sid-joinchannel",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-15T07:30:34+00:00"
@@ -2576,7 +2576,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/228/sid-createaccount",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:46:34+00:00"
@@ -2591,7 +2591,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>User disconnected.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/229/botnet-user-disc",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-12T04:48:23+00:00"
@@ -2609,7 +2609,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/230/d2gs-chartoobj",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2624,7 +2624,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Identify yourself with BotNet.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/231/botnet-logon",
             "created_datetime": "2011-08-21T19:55:49+00:00",
             "edited_datetime": "2018-03-11T22:03:49+00:00"
@@ -2642,7 +2642,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/232/d2gs-runtolocation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2663,7 +2663,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/233/sid-findladderuser",
             "created_datetime": "2012-06-01T21:11:16+00:00",
             "edited_datetime": "2019-12-28T23:08:33+00:00"
@@ -2686,7 +2686,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/234/pkt-conntest",
             "created_datetime": "2012-03-20T12:55:09+00:00",
             "edited_datetime": null
@@ -2704,7 +2704,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/235/sid-claninvitationresponse",
             "created_datetime": "2011-06-25T04:29:40+00:00",
             "edited_datetime": "2018-03-29T00:07:23+00:00"
@@ -2722,7 +2722,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/236/mcp-charlist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-05T12:09:48+00:00"
@@ -2740,7 +2740,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/237/sid-logonrealmex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-11-14T06:50:18+00:00"
@@ -2758,7 +2758,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/238/bnls-verifyserver",
             "created_datetime": "2010-08-06T01:12:25+00:00",
             "edited_datetime": null
@@ -2776,7 +2776,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/239/bnls-reserveserverslots",
             "created_datetime": "2011-02-04T22:37:44+00:00",
             "edited_datetime": null
@@ -2798,7 +2798,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/240/sid-extrawork",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:30:51+00:00"
@@ -2816,7 +2816,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/241/sid-gameplayersearch",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2843,7 +2843,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/242/sid-flooddetected",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2858,7 +2858,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Database data updated.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/243/botnet-database",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T06:43:18+00:00"
@@ -2876,7 +2876,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/244/sid-clientid",
             "created_datetime": "2012-04-01T18:42:34+00:00",
             "edited_datetime": "2025-05-24T22:30:59+00:00"
@@ -2894,7 +2894,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/245/d2gs-negotiatecompression",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-10-26T00:17:23+00:00"
@@ -2912,7 +2912,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/246/mcp-charcreate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:44:46+00:00"
@@ -2932,7 +2932,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/247/sid-news-info",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -2950,7 +2950,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/248/sid-clanrankchange",
             "created_datetime": "2011-05-22T22:07:04+00:00",
             "edited_datetime": "2018-03-29T01:13:16+00:00"
@@ -2968,7 +2968,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/249/sid-profile",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T02:04:03+00:00"
@@ -2995,7 +2995,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/250/sid-checkad",
             "created_datetime": "2011-06-02T18:42:14+00:00",
             "edited_datetime": "2023-02-25T06:05:25+00:00"
@@ -3013,7 +3013,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/251/bnls-verifyserver",
             "created_datetime": "2010-08-06T01:10:57+00:00",
             "edited_datetime": null
@@ -3031,7 +3031,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/252/bnls-serverlogonproof",
             "created_datetime": "2011-02-04T22:38:46+00:00",
             "edited_datetime": null
@@ -3051,7 +3051,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/253/sid-friendsupdate",
             "created_datetime": "2011-06-02T18:32:22+00:00",
             "edited_datetime": "2017-03-28T20:28:17+00:00"
@@ -3072,7 +3072,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/254/sid-getladderdata",
             "created_datetime": "2012-06-01T21:11:02+00:00",
             "edited_datetime": "2019-12-28T23:12:22+00:00"
@@ -3097,7 +3097,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/255/sid-createaccount2",
             "created_datetime": "2011-05-01T00:30:26+00:00",
             "edited_datetime": "2019-12-28T22:35:05+00:00"
@@ -3117,7 +3117,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/256/sid-friendsremove",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T20:37:05+00:00"
@@ -3135,7 +3135,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/257/sid-clanmakechieftain",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-28T21:36:47+00:00"
@@ -3153,7 +3153,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/258/d2gs-swap2handeditem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3171,7 +3171,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/259/sid-claninvitemultiple",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T00:10:57+00:00"
@@ -3198,7 +3198,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/260/bnls-versioncheckex2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-08-20T08:39:57+00:00"
@@ -3216,7 +3216,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/261/mcp-charlist2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3237,7 +3237,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/262/sid-logonresponse",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:16:33+00:00"
@@ -3252,7 +3252,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Command to bots on your database.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/263/botnet-command-to-database",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T02:49:30+00:00"
@@ -3270,7 +3270,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/264/d2gs-logonresponse",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3297,7 +3297,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/265/sid-startadvex3",
             "created_datetime": "2010-10-07T17:37:56+00:00",
             "edited_datetime": "2020-10-02T08:39:56+00:00"
@@ -3324,7 +3324,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/266/sid-getadvlistex",
             "created_datetime": "2011-02-19T04:13:29+00:00",
             "edited_datetime": "2017-10-26T06:08:26+00:00"
@@ -3342,7 +3342,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/267/d2gs-unselectobj",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3369,7 +3369,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/268/sid-ping",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3387,7 +3387,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/269/d2gs-smallgoldpickup",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3405,7 +3405,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/270/sid-auth-accountchangeproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3432,7 +3432,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/271/sid-stopadv",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3459,7 +3459,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/272/sid-checkad",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3477,7 +3477,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/273/d2gs-comp-startgame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3495,7 +3495,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/274/sid-auth-accountcreate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:07:37+00:00"
@@ -3513,7 +3513,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/275/d2gs-dropitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3531,7 +3531,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/276/d2gs-removebeltitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3549,7 +3549,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/277/sid-queryrealms2",
             "created_datetime": "2012-03-31T13:55:39+00:00",
             "edited_datetime": "2017-03-29T18:33:05+00:00"
@@ -3567,7 +3567,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/278/sid-clanfindcandidates",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T00:44:52+00:00"
@@ -3589,7 +3589,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/279/sid-auth-info",
             "created_datetime": "2011-05-31T02:31:46+00:00",
             "edited_datetime": "2022-01-15T07:00:54+00:00"
@@ -3610,7 +3610,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/280/sid-checkdatafile2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3628,7 +3628,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/281/d2gs-waypoint",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3646,7 +3646,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/282/d2gs-rightskillonlocation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3673,7 +3673,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/283/bnls-choosenlsrevision",
             "created_datetime": "2011-02-04T21:57:07+00:00",
             "edited_datetime": null
@@ -3691,7 +3691,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/284/d2gs-itemtobelt",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3709,7 +3709,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/285/sid-claninvitemultiple",
             "created_datetime": "2011-02-13T18:10:02+00:00",
             "edited_datetime": "2018-03-29T00:22:40+00:00"
@@ -3728,7 +3728,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/286/sid-logonchallengeex",
             "created_datetime": "2012-05-10T04:34:12+00:00",
             "edited_datetime": "2020-10-17T07:42:50+00:00"
@@ -3747,7 +3747,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/287/sid-localeinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2022-01-15T07:00:19+00:00"
@@ -3765,7 +3765,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/288/sid-claninvitation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T00:08:19+00:00"
@@ -3783,7 +3783,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/289/sid-clanmemberlist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:28:09+00:00"
@@ -3801,7 +3801,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/290/sid-queryadurl",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3818,7 +3818,7 @@
             "used_by": [
                 1397966930
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/291/sid-startadvex",
             "created_datetime": "2010-10-07T17:36:25+00:00",
             "edited_datetime": "2020-09-25T01:55:56+00:00"
@@ -3836,7 +3836,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/292/sid-warcraftgeneral",
             "created_datetime": "2011-01-06T15:54:20+00:00",
             "edited_datetime": "2017-03-28T21:25:25+00:00"
@@ -3861,7 +3861,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/293/bnls-hashdata",
             "created_datetime": "2011-02-04T21:55:48+00:00",
             "edited_datetime": "2017-04-22T23:48:19+00:00"
@@ -3876,7 +3876,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Keep the connection alive.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/294/botnet-keepalive",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-12T04:08:09+00:00"
@@ -3894,7 +3894,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/295/mcp-gamelist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:52:58+00:00"
@@ -3912,7 +3912,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/296/d2gs-leftskillonlocationex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3930,7 +3930,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/297/sid-clanmemberremoved",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:38:03+00:00"
@@ -3951,7 +3951,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/298/sid-getladderdata",
             "created_datetime": "2012-06-01T21:12:30+00:00",
             "edited_datetime": "2019-12-28T23:09:34+00:00"
@@ -3969,7 +3969,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/299/d2gs-setdwordattr",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -3987,7 +3987,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/300/d2gs-entergameenvironment",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-07-04T20:36:04+00:00"
@@ -4005,7 +4005,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/301/sid-clanmakechieftain",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:15:41+00:00"
@@ -4023,7 +4023,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/303/d2gs-overheadmessage",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4041,7 +4041,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/304/sid-clanquitnotify",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:40:20+00:00"
@@ -4066,7 +4066,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/305/sid-createaccount",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4084,7 +4084,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/306/bnls-logonchallenge",
             "created_datetime": "2011-02-04T22:02:54+00:00",
             "edited_datetime": null
@@ -4111,7 +4111,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "joe[x86]",
             "uri": "/packet/307/sid-chatevent",
             "created_datetime": "2010-09-02T16:27:58+00:00",
             "edited_datetime": "2020-10-31T21:10:45+00:00"
@@ -4129,7 +4129,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/308/mcp-createqueue",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4144,7 +4144,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Acknowledge identifying yourself with BotNet.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/309/botnet-statsupdate",
             "created_datetime": "2011-08-22T19:29:39+00:00",
             "edited_datetime": "2018-03-12T04:12:00+00:00"
@@ -4162,7 +4162,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/310/sid-auth-accountupgrade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:56:02+00:00"
@@ -4177,7 +4177,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Keep the connection alive.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/311/botnet-keepalive",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-12T04:08:38+00:00"
@@ -4195,7 +4195,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/312/botnet-chat",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-04-16T05:31:20+00:00"
@@ -4213,7 +4213,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/313/sid-gameplayersearch",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4234,7 +4234,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/314/sid-logonresponse",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:16:33+00:00"
@@ -4252,7 +4252,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/315/bnls-serverlogonchallenge",
             "created_datetime": "2011-02-04T22:38:16+00:00",
             "edited_datetime": null
@@ -4270,7 +4270,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/316/mcp-cancelgamecreate",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4288,7 +4288,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/317/d2gs-itemtobody",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4309,7 +4309,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/318/sid-checkdatafile2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:46:02+00:00"
@@ -4327,7 +4327,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/319/sid-clancreationinvitation",
             "created_datetime": "2011-06-25T04:25:36+00:00",
             "edited_datetime": "2018-03-29T00:45:29+00:00"
@@ -4345,7 +4345,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "uri": "/packet/320/mcp-startup",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T18:41:23+00:00"
@@ -4363,7 +4363,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/321/sid-clanmotd",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:27:40+00:00"
@@ -4381,7 +4381,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/322/sid-queryrealms2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4399,7 +4399,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/323/sid-auth-accountlogon",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4417,7 +4417,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/324/sid-queryrealms",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2025-05-24T21:09:57+00:00"
@@ -4435,7 +4435,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/325/mcp-motd",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T22:22:00+00:00"
@@ -4453,7 +4453,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/326/bnls-changeproof",
             "created_datetime": "2011-02-04T22:08:19+00:00",
             "edited_datetime": null
@@ -4471,7 +4471,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/327/d2gs-interactwithentity",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4494,7 +4494,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/328/pkt-clientreq",
             "created_datetime": "2012-02-26T04:26:54+00:00",
             "edited_datetime": null
@@ -4512,7 +4512,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/329/bnls-logonchallenge",
             "created_datetime": "2011-02-04T22:03:36+00:00",
             "edited_datetime": null
@@ -4530,7 +4530,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/330/sid-auth-accountlogonproof",
             "created_datetime": "2012-02-26T02:11:20+00:00",
             "edited_datetime": "2019-12-28T22:54:27+00:00"
@@ -4545,7 +4545,7 @@
             "options_bitmask": 7,
             "brief_html": "<p>Contains CheckRevision values.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/331/sid-startversioning2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4567,7 +4567,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/332/sid-setemail",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4585,7 +4585,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/333/mcp-chardelete",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:40:29+00:00"
@@ -4603,7 +4603,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/334/sid-queryrealms",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4621,7 +4621,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/335/botnet-chat-options",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T01:52:11+00:00"
@@ -4639,7 +4639,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/336/d2gs-useitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4657,7 +4657,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/337/mcp-charlogon",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:37:47+00:00"
@@ -4682,7 +4682,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/338/sid-changepassword",
             "created_datetime": "2011-06-06T01:49:02+00:00",
             "edited_datetime": "2019-12-28T19:59:30+00:00"
@@ -4709,7 +4709,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/339/sid-leavechat",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4727,7 +4727,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/340/sid-leavegame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4748,7 +4748,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/341/sid-checkdatafile",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4766,7 +4766,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/342/mcp-charupgrade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T22:25:01+00:00"
@@ -4790,7 +4790,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/343/bnls-cdkey-ex",
             "created_datetime": "2011-09-27T02:58:07+00:00",
             "edited_datetime": null
@@ -4811,7 +4811,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/344/sid-clientid",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T09:38:29+00:00"
@@ -4829,7 +4829,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/345/d2gs-insertsocketitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4856,7 +4856,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/346/sid-messagebox",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2025-05-24T22:34:55+00:00"
@@ -4877,7 +4877,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/347/sid-reportversion",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-10-25T19:41:11+00:00"
@@ -4898,7 +4898,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/348/bnls-upgradechallenge",
             "created_datetime": "2010-08-06T01:38:27+00:00",
             "edited_datetime": null
@@ -4916,7 +4916,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/349/sid-netgameport",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:22:25+00:00"
@@ -4934,7 +4934,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/350/bnls-logonproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4952,7 +4952,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/351/mcp-creategame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:27:56+00:00"
@@ -4970,7 +4970,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/352/d2gs-ping",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -4988,7 +4988,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/353/d2gs-itemtobuffer",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5006,7 +5006,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/354/mcp-requestladderdata",
             "created_datetime": "2013-06-22T19:03:53+00:00",
             "edited_datetime": "2017-03-29T21:03:30+00:00"
@@ -5024,7 +5024,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/355/bnls-reserveserverslots",
             "created_datetime": "2011-06-19T19:11:56+00:00",
             "edited_datetime": null
@@ -5051,7 +5051,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/356/bnls-null",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5066,7 +5066,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Command to specific bot.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/357/botnet-command-to",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T02:48:55+00:00"
@@ -5093,7 +5093,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/358/sid-readuserdata",
             "created_datetime": "2010-12-26T19:51:11+00:00",
             "edited_datetime": "2021-09-19T07:13:37+00:00"
@@ -5110,7 +5110,7 @@
             "used_by": [
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/359/sid-cdkey2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T19:30:49+00:00"
@@ -5137,7 +5137,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/360/sid-chatcommand",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5164,7 +5164,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/361/bnls-versioncheck",
             "created_datetime": "2011-09-30T08:04:20+00:00",
             "edited_datetime": "2018-08-20T08:39:24+00:00"
@@ -5188,7 +5188,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/362/bnls-cdkey-ex",
             "created_datetime": "2011-09-27T02:58:20+00:00",
             "edited_datetime": null
@@ -5215,7 +5215,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/363/sid-getchannellist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-15T07:26:24+00:00"
@@ -5233,7 +5233,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/364/d2gs-stackitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5251,7 +5251,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/365/d2gs-walktoentity",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5269,7 +5269,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/366/botnet-account",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T02:25:25+00:00"
@@ -5287,7 +5287,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/367/mcp-gamelist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:34:06+00:00"
@@ -5314,7 +5314,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/368/bnls-versioncheckex",
             "created_datetime": "2011-09-30T08:15:28+00:00",
             "edited_datetime": null
@@ -5329,7 +5329,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Request the user list from BotNet.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/369/botnet-user-list",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-12T04:45:54+00:00"
@@ -5356,7 +5356,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "uri": "/packet/370/sid-null",
             "created_datetime": "2010-07-14T17:18:43+00:00",
             "edited_datetime": null
@@ -5374,7 +5374,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/371/d2gs-potiontomercenary",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5395,7 +5395,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/372/sid-startversioning",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-17T07:45:34+00:00"
@@ -5413,7 +5413,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/373/d2gs-npcsell",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5440,7 +5440,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/374/sid-getchannellist",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5458,7 +5458,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/375/mcp-startup",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T18:42:49+00:00"
@@ -5476,7 +5476,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/376/sid-clanremovemember",
             "created_datetime": "2011-07-20T01:42:36+00:00",
             "edited_datetime": "2018-03-29T01:13:10+00:00"
@@ -5496,7 +5496,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "uri": "/packet/377/sid-logonresponse2",
             "created_datetime": "2012-02-26T02:13:13+00:00",
             "edited_datetime": "2020-12-03T07:48:59+00:00"
@@ -5514,7 +5514,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/378/sid-auth-accountlogonproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5532,7 +5532,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/379/sid-auth-accountchangeproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:03:29+00:00"
@@ -5550,7 +5550,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/380/d2gs-leftskillonlocation",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5569,7 +5569,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/381/sid-clientid2",
             "created_datetime": "2012-04-01T18:41:40+00:00",
             "edited_datetime": "2020-10-17T07:43:39+00:00"
@@ -5596,7 +5596,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/382/sid-getfiletime",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-05-21T22:07:04+00:00"
@@ -5621,7 +5621,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/383/bnls-hashdata",
             "created_datetime": "2011-02-04T21:56:28+00:00",
             "edited_datetime": null
@@ -5641,7 +5641,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/384/sid-friendsupdate",
             "created_datetime": "2011-06-02T18:33:52+00:00",
             "edited_datetime": "2017-03-28T20:27:29+00:00"
@@ -5661,7 +5661,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/385/botnet-revision",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T00:49:29+00:00"
@@ -5686,7 +5686,7 @@
                 1144150096,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "uri": "/packet/386/sid-getadvlistex",
             "created_datetime": "2010-10-03T18:04:18+00:00",
             "edited_datetime": "2025-05-24T21:07:04+00:00"
@@ -5709,7 +5709,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/387/pkt-keepalive",
             "created_datetime": "2012-02-26T04:25:36+00:00",
             "edited_datetime": null
@@ -5726,7 +5726,7 @@
             "used_by": [
                 1398030674
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/388/sid-registry",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-11-05T01:44:01+00:00"
@@ -5744,7 +5744,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/389/d2gs-usebeltitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5763,7 +5763,7 @@
                 1397053520,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/390/sid-findladderuser",
             "created_datetime": "2012-06-01T21:13:12+00:00",
             "edited_datetime": null
@@ -5781,7 +5781,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/391/d2gs-removestackitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5799,7 +5799,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/392/sid-clanmemberrankchange",
             "created_datetime": "2011-05-21T04:56:32+00:00",
             "edited_datetime": "2018-03-29T01:40:56+00:00"
@@ -5817,7 +5817,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/393/sid-warcraftgeneral",
             "created_datetime": "2010-12-14T14:16:57+00:00",
             "edited_datetime": "2017-03-28T21:03:41+00:00"
@@ -5835,7 +5835,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/394/d2gs-npctrade",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5850,7 +5850,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTUPGRADE (0x57).<br />\nThis message is used to upgrade an existing account from Old Logon System to New Logon System.<br />\nYou must send this before you can send BNLS_UPGRADEPROOF (0x08).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/395/bnls-upgradechallenge",
             "created_datetime": "2011-02-04T22:10:56+00:00",
             "edited_datetime": null
@@ -5877,7 +5877,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/396/bnls-authorize",
             "created_datetime": "2011-02-04T22:36:25+00:00",
             "edited_datetime": null
@@ -5898,7 +5898,7 @@
                 1246975058,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/397/sid-checkdatafile",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:45:25+00:00"
@@ -5916,7 +5916,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/398/sid-clanmotd",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:27:06+00:00"
@@ -5934,7 +5934,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/399/d2gs-runtoentity",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -5949,7 +5949,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Request and manipulate database data.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/400/botnet-database",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T06:43:02+00:00"
@@ -5964,7 +5964,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Send cycle request (defunct).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/401/botnet-cycle",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T04:49:03+00:00"
@@ -5982,7 +5982,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/402/sid-clandisband",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-29T01:15:53+00:00"
@@ -6000,7 +6000,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/403/botnet-database-chpw",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2018-03-13T04:12:19+00:00"
@@ -6018,7 +6018,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/404/bnls-serverlogonchallenge",
             "created_datetime": "2011-06-19T19:36:41+00:00",
             "edited_datetime": null
@@ -6040,7 +6040,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/405/sid-resetpassword",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-27T04:27:12+00:00"
@@ -6063,7 +6063,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/406/sid-udppingresponse",
             "created_datetime": "2011-05-29T16:18:07+00:00",
             "edited_datetime": null
@@ -6081,7 +6081,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/407/sid-auth-accountchange",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:01:03+00:00"
@@ -6103,7 +6103,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/408/sid-auth-check",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-11-10T21:56:33+00:00"
@@ -6121,7 +6121,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/409/sid-profile",
             "created_datetime": "2012-06-12T09:32:04+00:00",
             "edited_datetime": "2018-03-29T02:05:25+00:00"
@@ -6139,7 +6139,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/410/d2gs-itemtocube",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6157,7 +6157,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/411/mcp-chardelete",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-29T20:41:32+00:00"
@@ -6178,7 +6178,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/412/sid-reportversion",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-10-02T07:45:26+00:00"
@@ -6205,7 +6205,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/413/bnls-authorize",
             "created_datetime": "2011-02-04T22:35:25+00:00",
             "edited_datetime": null
@@ -6222,7 +6222,7 @@
             "used_by": [
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/415/sid-switchproduct",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2017-03-28T05:31:12+00:00"
@@ -6242,10 +6242,10 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/420/sid-warden",
             "created_datetime": "2010-07-15T02:47:39+00:00",
-            "edited_datetime": "2018-04-12T07:51:25+00:00"
+            "edited_datetime": "2026-01-18T17:59:42+00:00"
         },
         {
             "id": 423,
@@ -6260,7 +6260,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/423/d2gs-leftskillonentityex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6278,7 +6278,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/424/d2gs-leftskillonentityex3",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6296,7 +6296,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/425/d2gs-rightskillonentityex3",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6314,7 +6314,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/426/d2gs-rightskillonentityex",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6332,7 +6332,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/428/d2gs-pickupbodyitem",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6350,7 +6350,7 @@
                 1398030674,
                 1397053520
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "uri": "/packet/429/sid-tournament",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:18:19+00:00"
@@ -6368,7 +6368,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "uri": "/packet/430/d2gs-uniqueevents",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6388,10 +6388,10 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/431/sid-warden",
             "created_datetime": "2010-07-15T02:47:39+00:00",
-            "edited_datetime": "2018-03-19T06:34:45+00:00"
+            "edited_datetime": "2026-01-18T17:58:37+00:00"
         },
         {
             "id": 432,
@@ -6406,7 +6406,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/432/sid-auth-accountupgradeproof",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T23:07:15+00:00"
@@ -6426,7 +6426,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/433/sid-reportcrash",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6444,7 +6444,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/434/w3gs-searchgame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6462,7 +6462,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/435/w3gs-gameinfo",
             "created_datetime": "2010-07-23T23:28:12+00:00",
             "edited_datetime": null
@@ -6480,7 +6480,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/436/w3gs-creategame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6498,7 +6498,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/437/w3gs-refreshgame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6516,7 +6516,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/438/w3gs-decreategame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6534,7 +6534,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/439/w3gs-outgoing-action",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6552,7 +6552,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/440/w3gs-incoming-action",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6570,7 +6570,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/441/w3gs-mapcheck",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6588,7 +6588,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/442/w3gs-startdownload",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6606,7 +6606,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/443/w3gs-startdownload",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6624,7 +6624,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/444/w3gs-mappart",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6642,7 +6642,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/445/w3gs-mappartok",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6660,7 +6660,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/446/w3gs-reqjoin",
             "created_datetime": "2012-06-11T21:06:14+00:00",
             "edited_datetime": null
@@ -6678,7 +6678,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/447/w3gs-ping-from-host",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-29T16:43:04+00:00"
@@ -6696,7 +6696,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/448/w3gs-pong-to-host",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-29T16:41:49+00:00"
@@ -6714,7 +6714,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/449/w3gs-ping-from-others",
             "created_datetime": "2011-06-02T20:08:40+00:00",
             "edited_datetime": null
@@ -6732,7 +6732,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/450/w3gs-pong-to-others",
             "created_datetime": "2011-06-02T20:08:27+00:00",
             "edited_datetime": null
@@ -6750,7 +6750,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/451/w3gs-playerinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-29T16:36:55+00:00"
@@ -6768,7 +6768,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/452/w3gs-clientinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:47:14+00:00"
@@ -6786,7 +6786,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/453/w3gs-leavereq",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-28T22:48:21+00:00"
@@ -6804,7 +6804,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/454/w3gs-leavers",
             "created_datetime": "2011-06-02T20:06:11+00:00",
             "edited_datetime": "2019-12-29T16:29:11+00:00"
@@ -6822,7 +6822,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/455/w3gs-playerleft",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6840,7 +6840,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/456/w3gs-rejectjoin",
             "created_datetime": "2011-03-13T21:30:17+00:00",
             "edited_datetime": "2018-03-30T19:41:51+00:00"
@@ -6858,7 +6858,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/457/w3gs-playerloaded",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6876,7 +6876,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/458/w3gs-countdown-start",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6894,7 +6894,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/459/w3gs-countdown-end",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6912,7 +6912,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/460/w3gs-slotinfojoin",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2020-03-08T11:05:22+00:00"
@@ -6930,7 +6930,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/461/w3gs-slotinfo",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6948,7 +6948,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/462/w3gs-chat-from-host",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2019-12-30T15:01:53+00:00"
@@ -6966,7 +6966,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/463/w3gs-gameloaded-self",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -6984,7 +6984,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/464/w3gs-outgoing-keepalive",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2021-05-25T22:29:13+00:00"
@@ -7002,7 +7002,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/465/w3gs-chat-to-host",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": "2025-05-24T22:29:01+00:00"
@@ -7020,7 +7020,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/466/w3gs-searchgame",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -7038,7 +7038,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/467/w3gs-mapsize",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -7056,7 +7056,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/468/w3gs-incoming-action2",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -7074,7 +7074,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/469/w3gs-mappartnotok",
             "created_datetime": "2010-07-15T02:47:39+00:00",
             "edited_datetime": null
@@ -7101,7 +7101,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/470/bnls-ipban",
             "created_datetime": "2013-06-23T21:28:19+00:00",
             "edited_datetime": "2019-12-28T11:58:40+00:00"
@@ -7121,7 +7121,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/471/bnls-warden",
             "created_datetime": "2010-08-07T00:41:29+00:00",
             "edited_datetime": "2025-05-24T22:27:20+00:00"
@@ -7141,7 +7141,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/472/bnls-warden",
             "created_datetime": "2010-08-07T00:41:07+00:00",
             "edited_datetime": "2019-12-28T22:32:02+00:00"
@@ -7164,7 +7164,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/473/sid-readmemory",
             "created_datetime": "2011-07-19T01:51:27+00:00",
             "edited_datetime": "2025-05-24T22:32:42+00:00"
@@ -7187,7 +7187,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/474/sid-readmemory",
             "created_datetime": "2010-09-25T23:15:05+00:00",
             "edited_datetime": "2025-05-24T22:32:00+00:00"
@@ -7210,7 +7210,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/475/sid-announcement",
             "created_datetime": "2010-09-25T23:17:23+00:00",
             "edited_datetime": "2019-12-27T02:38:25+00:00"
@@ -7233,7 +7233,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/476/sid-writecookie",
             "created_datetime": "2011-06-18T13:54:25+00:00",
             "edited_datetime": null
@@ -7255,7 +7255,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/477/sid-readcookie",
             "created_datetime": "2010-09-25T23:25:57+00:00",
             "edited_datetime": null
@@ -7278,7 +7278,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/478/sid-readcookie",
             "created_datetime": "2010-09-25T23:26:30+00:00",
             "edited_datetime": null
@@ -7296,7 +7296,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/479/sid-warcraftunknown",
             "created_datetime": "2010-09-25T23:30:59+00:00",
             "edited_datetime": "2016-03-15T05:22:15+00:00"
@@ -7314,7 +7314,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/481/mcp-charrank",
             "created_datetime": "2011-05-03T16:52:45+00:00",
             "edited_datetime": "2017-03-29T22:23:05+00:00"
@@ -7337,7 +7337,7 @@
                 1146308690,
                 1462911566
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/482/pkt-storm",
             "created_datetime": "2012-03-20T12:30:21+00:00",
             "edited_datetime": "2019-12-28T22:41:47+00:00"
@@ -7357,7 +7357,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/483/scgp-nop",
             "created_datetime": "2012-03-24T14:19:48+00:00",
             "edited_datetime": null
@@ -7377,7 +7377,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/484/scgp-gamechatpublic",
             "created_datetime": "2012-03-24T15:32:33+00:00",
             "edited_datetime": null
@@ -7397,7 +7397,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/485/scgp-lobbychat",
             "created_datetime": "2012-03-24T14:20:49+00:00",
             "edited_datetime": null
@@ -7417,7 +7417,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/486/scgp-playerjoin",
             "created_datetime": "2012-03-24T14:19:58+00:00",
             "edited_datetime": null
@@ -7437,7 +7437,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/487/scgp-roomdata",
             "created_datetime": "2012-03-24T14:20:26+00:00",
             "edited_datetime": null
@@ -7457,7 +7457,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/488/scgp-forcenames",
             "created_datetime": "2012-03-24T14:20:38+00:00",
             "edited_datetime": null
@@ -7477,7 +7477,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/489/scgp-reject",
             "created_datetime": "2012-03-24T14:21:08+00:00",
             "edited_datetime": null
@@ -7497,7 +7497,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/490/scgp-map",
             "created_datetime": "2012-03-24T14:34:14+00:00",
             "edited_datetime": "2025-05-24T21:30:41+00:00"
@@ -7517,7 +7517,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/491/scgp-unknownrequest",
             "created_datetime": "2012-03-24T14:28:41+00:00",
             "edited_datetime": null
@@ -7537,7 +7537,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/492/scgp-unknownresponse",
             "created_datetime": "2012-03-24T14:27:42+00:00",
             "edited_datetime": null
@@ -7557,7 +7557,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/493/scgp-gamestart",
             "created_datetime": "2012-03-24T14:30:08+00:00",
             "edited_datetime": null
@@ -7577,7 +7577,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/494/scgp-mappercent",
             "created_datetime": "2012-03-24T14:33:59+00:00",
             "edited_datetime": null
@@ -7597,7 +7597,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/495/scgp-slotupdate",
             "created_datetime": "2012-03-24T14:37:38+00:00",
             "edited_datetime": null
@@ -7617,7 +7617,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/496/scgp-human",
             "created_datetime": "2012-03-24T14:43:53+00:00",
             "edited_datetime": null
@@ -7637,7 +7637,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/497/scgp-changerace",
             "created_datetime": "2012-03-24T14:47:20+00:00",
             "edited_datetime": null
@@ -7657,7 +7657,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/498/scgp-changeteam",
             "created_datetime": "2012-03-24T14:59:52+00:00",
             "edited_datetime": null
@@ -7677,7 +7677,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/499/scgp-changeteamums",
             "created_datetime": "2012-03-24T14:59:40+00:00",
             "edited_datetime": null
@@ -7697,7 +7697,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/500/scgp-changeslotstate",
             "created_datetime": "2012-03-24T15:02:27+00:00",
             "edited_datetime": null
@@ -7717,7 +7717,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/501/scgp-slotswitch",
             "created_datetime": "2012-03-24T15:04:48+00:00",
             "edited_datetime": null
@@ -7737,7 +7737,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/502/scgp-seed",
             "created_datetime": "2012-03-24T15:10:20+00:00",
             "edited_datetime": null
@@ -7757,7 +7757,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/503/scgp-gamechatprivate",
             "created_datetime": "2012-03-24T15:31:32+00:00",
             "edited_datetime": null
@@ -7777,7 +7777,7 @@
                 1397966930,
                 1246975058
             ],
-            "author_username": "BNETDocs",
+            "author_username": "unknown",
             "uri": "/packet/504/scgp-gamechatnull",
             "created_datetime": "2012-03-24T15:31:38+00:00",
             "edited_datetime": null
@@ -7795,7 +7795,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/505/sid-cdkey3",
             "created_datetime": "2014-05-17T18:50:47+00:00",
             "edited_datetime": "2025-05-24T22:38:45+00:00"
@@ -7813,7 +7813,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/506/sid-cdkey3",
             "created_datetime": "2014-05-17T18:50:47+00:00",
             "edited_datetime": "2025-05-24T22:36:53+00:00"
@@ -7831,7 +7831,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/507/sid-unknown-39",
             "created_datetime": "2014-05-18T18:47:18+00:00",
             "edited_datetime": "2025-05-24T22:43:43+00:00"
@@ -7849,7 +7849,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/508/sid-unknown-37",
             "created_datetime": "2014-05-18T20:17:22+00:00",
             "edited_datetime": "2025-05-24T22:41:51+00:00"
@@ -7867,7 +7867,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/509/sid-unknown-37",
             "created_datetime": "2014-05-18T20:19:10+00:00",
             "edited_datetime": "2025-05-24T22:42:49+00:00"
@@ -7887,7 +7887,7 @@
                 1146246220,
                 1146308690
             ],
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "uri": "/packet/510/sid-startadvex2",
             "created_datetime": "2014-06-01T18:56:29+00:00",
             "edited_datetime": "2025-05-21T06:01:10+00:00"
@@ -7902,7 +7902,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Set client awareness level and capabilities.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/511/botnet-client-version",
             "created_datetime": "2018-03-12T01:19:04+00:00",
             "edited_datetime": "2018-03-13T05:36:38+00:00"
@@ -7917,7 +7917,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Acknowledge client awareness level.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/512/botnet-client-version",
             "created_datetime": "2018-03-12T01:29:20+00:00",
             "edited_datetime": "2018-03-12T23:05:27+00:00"
@@ -7932,7 +7932,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Client violated protocol.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/513/botnet-protocol-violation",
             "created_datetime": "2018-03-12T01:30:04+00:00",
             "edited_datetime": "2018-03-29T02:35:11+00:00"
@@ -7947,7 +7947,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Use admin features.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/514/botnet-admin",
             "created_datetime": "2018-03-12T01:30:16+00:00",
             "edited_datetime": "2018-03-13T05:00:40+00:00"
@@ -7962,7 +7962,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Use admin features.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/515/botnet-admin",
             "created_datetime": "2018-03-12T01:30:20+00:00",
             "edited_datetime": "2018-03-13T05:00:57+00:00"
@@ -7977,7 +7977,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Send database change mode request (defunct).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/516/botnet-database-chmo",
             "created_datetime": "2018-03-12T01:30:34+00:00",
             "edited_datetime": "2018-03-13T05:38:12+00:00"
@@ -7992,7 +7992,7 @@
             "options_bitmask": 3,
             "brief_html": "<p>Acknowledge database change mode request (defunct).</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "uri": "/packet/517/botnet-database-chmo",
             "created_datetime": "2018-03-12T01:30:42+00:00",
             "edited_datetime": "2018-03-13T05:38:27+00:00"
@@ -8010,7 +8010,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/518/sid-unknown-de",
             "created_datetime": "2019-12-27T00:43:27+00:00",
             "edited_datetime": "2019-12-29T16:02:57+00:00"
@@ -8028,7 +8028,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/519/w3gs-start-lag",
             "created_datetime": "2019-12-29T15:11:35+00:00",
             "edited_datetime": "2019-12-29T16:27:03+00:00"
@@ -8046,7 +8046,7 @@
                 1463898675,
                 1462982736
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/520/w3gs-stop-lag",
             "created_datetime": "2019-12-29T15:11:35+00:00",
             "edited_datetime": "2019-12-29T16:27:10+00:00"
@@ -8061,7 +8061,7 @@
             "options_bitmask": 11,
             "brief_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/521/w3gs-dropreq",
             "created_datetime": "2019-12-29T16:20:18+00:00",
             "edited_datetime": "2019-12-29T16:30:21+00:00"
@@ -8076,7 +8076,7 @@
             "options_bitmask": 11,
             "brief_html": "<p>This message is used by <a href=\"https://github.com/uakfdotb/ghostpp\">ghostpp</a> but otherwise any information about it is unknown and needs research.</p>",
             "used_by": [],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/522/w3gs-host-kick-player",
             "created_datetime": "2019-12-29T16:33:23+00:00",
             "edited_datetime": null
@@ -8094,7 +8094,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/532/mcp-null",
             "created_datetime": "2021-07-06T00:07:02+00:00",
             "edited_datetime": "2021-07-06T07:15:33+00:00"
@@ -8112,7 +8112,7 @@
                 1144144982,
                 1144150096
             ],
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "uri": "/packet/533/mcp-null",
             "created_datetime": "2021-07-06T00:07:02+00:00",
             "edited_datetime": null

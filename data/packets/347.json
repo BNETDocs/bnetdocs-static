@@ -14,7 +14,7 @@
         1146308690,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/347/sid-reportversion",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-10-25T19:41:11+00:00",
@@ -23,7 +23,7 @@
     "comments": [
         {
             "id": 632,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2020-11-19T07:10:38+00:00",
             "content_html": "<p>The platform, product, and version byte values in this message (which were already sent once before this in SID_STARTVERSIONING) seem to be ignored by the server.</p>"
         }

@@ -1,0 +1,13 @@
+{
+    "id": 66,
+    "title": "StarCraft II: Wings of Liberty - Patch 1.0.2",
+    "category_id": 7,
+    "options_bitmask": 3,
+    "brief_html": "<p>Bug Fixes: </p>",
+    "author_username": "Kyro",
+    "uri": "/news/66/starcraft-ii-wings-of-liberty-patch-1-0-2",
+    "created_datetime": "2010-08-06T03:10:38+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Bug Fixes: </p>\n<ul>\n<li>Fixed an issue where campaign mission victories would not always trigger properly. </li>\n<li>Fixed an issue where some players were unable to access single-player features. </li>\n</ul>",
+    "comments": []
+}

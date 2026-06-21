@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "joe[x86]",
     "uri": "/packet/307/sid-chatevent",
     "created_datetime": "2010-09-02T16:27:58+00:00",
     "edited_datetime": "2020-10-31T21:10:45+00:00",
@@ -29,37 +29,37 @@
     "comments": [
         {
             "id": 166,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-07-01T19:22:19+00:00",
             "content_html": "<p>Event IDs:</p>\n<p>[0x15] EID_IGNORE: (Starcraft) notifies that a user has been ignored<br />\n[0x16] EID_ACCEPT: (Starcraft) notifies that a user has been unignored</p>"
         },
         {
             "id": 167,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-01T23:47:57+00:00",
             "content_html": "<p>Where's your packet logs for these Event ID's?</p>"
         },
         {
             "id": 347,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-08-08T02:19:21+00:00",
             "content_html": "<p>They are defunct and were tested through packet interception and modification.</p>\n<p>I was testing each event for a universal text display (recv hook) in Starcraft and discovered it there.</p>"
         },
         {
             "id": 362,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-02T21:28:55+00:00",
             "content_html": "<p>Added EID_IGNORE and EID_ACCEPT.</p>"
         },
         {
             "id": 367,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-04T04:09:39+00:00",
             "content_html": "<p>Enum in wc3tft beta:</p>\n<p>0x04    CHATEVENT_ID_WHISPER<br />\n0x05    CHATEVENT_ID_TALK<br />\n0x06    CHATEVENT_ID_BROADCAST<br />\n0x0A    CHATEVENT_ID_WHISPERSENT<br />\n0x12    CHATEVENT_ID_INFORMATION<br />\n0x17    CHATEVENT_ID_EMOTE<br />\ndefault  CHATEVENT_ID_ERROR</p>\n<p>There's an event 0x0B in Diablo Beta, unable to test it out or find out what it does</p>"
         },
         {
             "id": 389,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-18T10:13:15+00:00",
             "content_html": "<p>Random stuff... Color codes for each game:</p>\n<p>WC3: |c<br />\n|c00ff0000red |c0000ff00green |c000000ffblue |r0</p>\n<p>D2: ÿc<br />\nÿc11 ÿc22 ÿc33 ÿc44 ÿc55 ÿc66 ÿc77 ÿc88 ÿc99 ÿc00</p>\n<p>SC: Á<br />\nÁQQ ÁRR ÁZZ ÁYY ÁVV ÁTT ÁW0</p>"
         }

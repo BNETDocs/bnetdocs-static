@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/382/sid-getfiletime",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2018-05-21T22:07:04+00:00",
@@ -29,7 +29,7 @@
     "comments": [
         {
             "id": 640,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2021-09-04T06:21:48+00:00",
             "content_html": "<p>Just for the record, the request ID is more like a cookie and the given values are just what the client at some point was seen using... they aren't actually required to be set that way to make the request.</p>"
         }

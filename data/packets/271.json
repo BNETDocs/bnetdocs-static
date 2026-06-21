@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/271/sid-stopadv",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": null,
@@ -29,13 +29,13 @@
     "comments": [
         {
             "id": 614,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-02T08:46:24+00:00",
             "content_html": "<p>On Diablo 2 (Open Battle.net), the client sends this packet before sending <a href=\"/packet/340/sid-leavegame\">SID_LEAVEGAME</a>.</p>\n<p>On Diablo 2 (Closed Battle.net), this packet is never sent.</p>"
         },
         {
             "id": 626,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-18T06:17:43+00:00",
             "content_html": "<p>I observed SEXP 1.16.1 sending this packet even if client has not logged in.</p>"
         }

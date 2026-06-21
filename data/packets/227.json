@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "LordVader",
     "uri": "/packet/227/sid-joinchannel",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-10-15T07:30:34+00:00",
@@ -29,19 +29,19 @@
     "comments": [
         {
             "id": 150,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-09-26T17:47:19+00:00",
             "content_html": "<p>If you send any flags except those above, you will not get any chat events back for it (meaning you did not join the channel).</p>\n<p>If you send first join or forced join with the channel being the one you are in currently, Battle.net will make you join the channel you were in last. If you were not in a channel last, you will join The Void.</p>"
         },
         {
             "id": 581,
-            "author_username": "BNETDocs",
+            "author_username": "joe[x86]",
             "created_datetime": "2018-03-14T00:45:49+00:00",
             "content_html": "<p>As of March 2018, WarCraft III sends flags 1 and &quot;W3&quot; as the channel name.</p>\n<p>0000024A  ff 0c 0b 00 01 00 00 00  57 33 00                  ........ W3.</p>\n<p>Typing /join in chat sends 0x0E SID_CHATCOMMAND rather than using SID_JOINCHANNEL.</p>\n<p>00000269  ff 0e 13 00 2f 6a 6f 69  6e 20 63 6c 61 6e 20 62   ..../joi n clan b<br />\n00000279  6f 74 00                                           ot.</p>\n<p>D2DV was seen using flags 1 for first join, while D2XP was seen using flags 5, both with the string &quot;Diablo II&quot;.</p>\n<p>000008F1  ff 0c 12 00 01 00 00 00  44 69 61 62 6c 6f 20 49   ........ Diablo I<br />\n00000901  49 00<br />\n000008DD  ff 0c 12 00 05 00 00 00  44 69 61 62 6c 6f 20 49   ........ Diablo I<br />\n000008ED  49 00                                              I.</p>"
         },
         {
             "id": 623,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2020-10-15T07:33:11+00:00",
             "content_html": "<p>Sometime in the late 2010's the official Battle.net servers updated and started using the channel field for 0x01 (first join) to indicate the base channel name, and then followed that with a language identifier and number, rather than the traditional country code.</p>\n<p>For example the WAR3 client sent &quot;W3&quot; as the channel name and was put in &quot;W3 En-1&quot;.</p>\n<p>Also the server does not seem to care or do anything differently if you use D2 join (0x05) for non-D2 clients, and treats values not listed here (all the ones that I've tried anyways) as NoCreate join (0x00).</p>"
         }

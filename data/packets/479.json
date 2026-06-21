@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/packet/479/sid-warcraftunknown",
     "created_datetime": "2010-09-25T23:30:59+00:00",
     "edited_datetime": "2016-03-15T05:22:15+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 634,
-            "author_username": "BNETDocs",
+            "author_username": "UserLoser",
             "created_datetime": "2020-12-16T21:55:31+00:00",
             "content_html": "<p>Server responds with SID_0043 when sending a /stats request for WAR3/W3XP when the user has no stats</p>\n<p>i.e. &quot;/stats UserBot WAR3&quot; returns SID_0043 with 32-bit zero value if no stats exist on that account</p>"
         }

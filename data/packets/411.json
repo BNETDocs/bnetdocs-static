@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/411/mcp-chardelete",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-29T20:41:32+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 544,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2017-01-03T14:08:56+00:00",
             "content_html": "<p>The formatting of this message is incorrect as of writing. It should read:</p>\n<pre><code>(Word) Cookie\n(Dword) Result</code></pre>\n<p>Note the official client always sends zero for the cookie in the delete request but the value replied here is whatever you actually send. Conforming clients at least for 1.14 should send zero for the cookie.</p>"
         }

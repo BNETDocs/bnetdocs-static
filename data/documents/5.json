@@ -3,7 +3,7 @@
     "title": "File Transfer Protocol Version 1",
     "options_bitmask": 3,
     "brief_html": "<p>Battle.net's file transfer protocol (often abbreviated BNFTP or BNFTPv1) consists of two packets: the request and the response.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "RealityRipple",
     "uri": "/document/5/file-transfer-protocol-version-1",
     "created_datetime": "2012-02-26T04:14:21+00:00",
     "edited_datetime": "2021-09-24T23:47:11+00:00",
@@ -11,13 +11,13 @@
     "comments": [
         {
             "id": 168,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-08T03:03:20+00:00",
             "content_html": "<p>Why would the unknown be padding and not part of the header length making it a DWORD? It makes no sense for it to be padding if this is a header.</p>"
         },
         {
             "id": 503,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-10-02T19:26:52+00:00",
             "content_html": "<p>Why would the protocol version be 0x100 (256)? They probably are using big endian instead of little endian, and the version is probably 0x01 (1).</p>"
         }

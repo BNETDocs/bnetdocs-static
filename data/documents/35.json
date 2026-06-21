@@ -3,7 +3,7 @@
     "title": "PvPGN Tracking Protocol",
     "options_bitmask": 3,
     "brief_html": "<p>This document covers how to successfully use the <a href=\"http://track.pvpgn.org/\">PvPGN tracker system</a> with a custom unofficial Battle.net v1 server.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/document/35/pvpgn-tracking-protocol",
     "created_datetime": "2016-04-13T07:39:56+00:00",
     "edited_datetime": "2019-03-10T07:51:09+00:00",
@@ -11,7 +11,7 @@
     "comments": [
         {
             "id": 599,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2019-03-10T07:12:20+00:00",
             "content_html": "<p>Currently this document details version 2 of this protocol. I would like to have an improvement in the next iteration of this protocol, so that general flags and supported games/products that are currently part of the server's description, become its own UINT32 field instead.</p>\n<p>Each bit in the field could represent one of the products/games that PvPGN (or other custom servers) support. It would also alleviate the need for an &quot;ALL&quot; flag, since that would be re-invented to be just flipping all bits to 1.</p>\n<p>Below is a mock of what I'd interpret the UINT32 bitmask to look like, were it to be implemented how I vision it.</p>\n<ul>\n<li>0x00000001 Diablo (DRTL)</li>\n<li>0x00000002 Diablo Shareware (DSHR)</li>\n<li>0x00000004 Diablo II (D2DV)</li>\n<li>0x00000008 Diablo II LoD (D2XP)</li>\n<li>0x00000010 Starcraft (STAR)</li>\n<li>0x00000020 Starcraft Broodwar (SEXP)</li>\n<li>0x00000040 Starcraft Japan (JSTR)</li>\n<li>0x00000080 Starcraft Shareware (SSHR)</li>\n<li>0x00000100 Warcraft II (W2BN)</li>\n<li>0x00000200 Warcraft III Demo (W3DM)</li>\n<li>0x00000400 Warcraft III RoC (WAR3)</li>\n<li>0x00000800 Warcraft III TFT (W3XP)</li>\n<li>0x00001000 Chat Gateway (CHAT)</li>\n<li>0x00002000 Full Ladder</li>\n<li>0x00004000 Open Realm (D2DV/D2XP)</li>\n<li>0x00008000 Closed Realm (D2DV/D2XP)</li>\n<li>0x0000FFFF All (everything's supported)</li>\n</ul>\n<p>Also note that this current set of bits fits nicely into a UINT16, but a 16-bit unsigned integer would not allow for future flags to be added in the same version of this packet, therefore a 32-bit unsigned integer may prove beneficial in the next iteration.</p>"
         }

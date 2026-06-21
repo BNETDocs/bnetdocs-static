@@ -3,7 +3,7 @@
     "title": "Clan System Overview",
     "options_bitmask": 3,
     "brief_html": "<p>This is a description of WarCraft III's clan system on Battle.net.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/document/4/clan-system-overview",
     "created_datetime": "2011-04-02T22:53:05+00:00",
     "edited_datetime": "2024-12-19T06:58:23+00:00",
@@ -11,19 +11,19 @@
     "comments": [
         {
             "id": 46,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-02T16:44:43+00:00",
             "content_html": "<p>thanks to brew for the 0x0C status code</p>"
         },
         {
             "id": 372,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-03T19:12:16+00:00",
             "content_html": "<p>Pulled these from wc3 tft beta:<br />\n0x00 CLAN_RESULT_SUCCESS<br />\n0x01 CLAN_RESULT_NAMEINUSE<br />\n0x02 CLAN_RESULT_TOOSOON<br />\n0x03 CLAN_RESULT_NOTENOUGH<br />\n0x04 CLAN_RESULT_DECLINE<br />\n0x05 CLAN_RESULT_UNAVAILABLE<br />\n0x07 CLAN_RESULT_NOTAUTHORIZED<br />\n0x08 CLAN_RESULT_NOTALLOWED<br />\n0x09 CLAN_RESULT_CLANFULL</p>"
         },
         {
             "id": 456,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-04-03T03:53:29+00:00",
             "content_html": "<p>Updated document as per Heinermann's documenting.</p>"
         }

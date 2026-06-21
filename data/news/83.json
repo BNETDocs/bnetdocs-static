@@ -1,0 +1,13 @@
+{
+    "id": 83,
+    "title": "Beta servers are online again?",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Just a few minutes ago of this post, I was logged on to the beta servers with my very own BNRBot, along with some other people: Vector using StealthBot, Arqtekvet using MirageBot, and ColdFear using his unnamed bot. This sums up to a total of four people, not including anyone that may have been online but not in the same channel (/users didn't work and nor did /who).</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/83/beta-servers-are-online-again",
+    "created_datetime": "2011-10-24T19:12:12+00:00",
+    "edited_datetime": "2011-10-24T19:12:12+00:00",
+    "content_html": "<p>Just a few minutes ago of this post, I was logged on to the beta servers with my very own BNRBot, along with some other people: Vector using StealthBot, Arqtekvet using MirageBot, and ColdFear using his unnamed bot. This sums up to a total of four people, not including anyone that may have been online but not in the same channel (/users didn't work and nor did /who).</p>\n<p>This is to say that the Battle.net servers, beta.battle.net and classicbeta.battle.net, were accepting client logins (actual packets), instead of just disconnecting you immediately like they normally did 8-12 months ago.</p>\n<p>I felt this was news worthy because both servers have been offline for the past 8-12 months, and I spotted them being online here on my daily checkup of BnetDocs, so I went to investigate it further, and invited some friends to come along. Turns out, Blizzard disconnected all four of us after about 10-15 minutes, and the servers are now back to how they were when they were once online 8-12 months ago.</p>\n<p>I do not have any snapshots, but I hear Arkteqvet does, and Vector might possibly have one or a few, so contact both of them for proof.</p>",
+    "comments": []
+}

@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/177/mcp-creategame",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-29T20:27:26+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 552,
-            "author_username": "BNETDocs",
+            "author_username": "jtrumbull",
             "created_datetime": "2017-01-17T15:49:33+00:00",
             "content_html": "<p>The comment about the request id being incremented by 0x02 is misstated. The request id is incremented by 0x01 for each MCP_CREATEGAME request and 0x01 for each MCP_JOINGAME request. For example, if the MCP_CREATEGAME request fails, the subsequent request id would be 0x03.</p>"
         }

@@ -15,7 +15,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "LordVader",
     "uri": "/packet/106/sid-auth-check",
     "created_datetime": "2011-06-15T01:44:58+00:00",
     "edited_datetime": "2020-12-05T20:13:16+00:00",
@@ -24,37 +24,37 @@
     "comments": [
         {
             "id": 162,
-            "author_username": "BNETDocs",
+            "author_username": "KrzaQ",
             "created_datetime": "2010-04-28T10:13:41+00:00",
             "content_html": "<p>0x211 - LoD CD key is used by: string<br />\n0x101 is now being sent after a CD key has been registered on battle.net website.</p>"
         },
         {
             "id": 164,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-06-30T06:04:12+00:00",
             "content_html": "<p>I registered my Starcraft on the Battle.net website and the server doesn't send me 0x101 when I try to use my key. Do you have any proof?</p>"
         },
         {
             "id": 384,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-10T17:49:20+00:00",
             "content_html": "<p>I can still use my old key after registering it. Just both keys cannot be logged in at the same time.</p>"
         },
         {
             "id": 385,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2010-09-10T18:13:41+00:00",
             "content_html": "<p>Interesting; so if two separate CD keys are registered to a Battle.net 2.0 account, the result is that only one CD key can be logged on at a time-- meaning the Battle.net account can only be logged in one at a time?</p>"
         },
         {
             "id": 391,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-19T02:49:58+00:00",
             "content_html": "<p>No, Kryo I think you misunderstood that. If I register STAR on my Battle.net 2.0 account, I cannot login with my 13-digit STAR CDKey and my 26-digit STAR key at the same time. They're the same CDKey, they're just in two different formats.</p>\n<p>This also means that any restrictions (mute, banned, jailed, etc) will be on the new Game Key.</p>\n<p>I like to refer to the physical keys as CDKeys and the new digital keys as Game Keys.</p>"
         },
         {
             "id": 593,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2018-08-21T03:31:04+00:00",
             "content_html": "<p>No comment on prior behavior but as of 2018-08-14 this is official for D2. Registered 16-character keys will be reported as in use, regardless of if the 26-character counterpart is online.</p>\n<p><a href=\"https://bnetdocs.org/news/147/battle-net-server-upgrade-14-august-2018\">https://bnetdocs.org/news/147/battle-net-server-upgrade-14-august-2018</a></p>"
         }

@@ -13,10 +13,10 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/431/sid-warden",
     "created_datetime": "2010-07-15T02:47:39+00:00",
-    "edited_datetime": "2018-03-19T06:34:45+00:00",
+    "edited_datetime": "2026-01-18T17:58:37+00:00",
     "format": "(VOID) Encrypted Packet\r\n\r\nContents of encrypted data\r\n    (UINT8) Packet Code\r\n\r\n        0x00 - Warden Module Info\r\n            (UINT8) Success (0x00 = Don't have the module, 0x01 = Have the module)\r\n   \r\n        0x01 - Warden Module Data\r\n            (UINT8) Success (0x00 = MD5 doesn't match, 0x01 = MD5 matches)\r\n\r\n        0x02 - Data Checker\r\n            (UINT16) String Length\r\n            (UINT32) String Checksum\r\n            (VOID) String Data\r\n\r\n            MEM_CHECK:\r\n                (UINT8) Success (0x00 = Read data, 0x01 = Unable to read)\r\n                (VOID) Data (0x00 only)\r\n\r\n            PAGE_CHECK_A:\r\n                (UINT8) Success (0x00 = SHA1s match, 0x01 = SHA1s don't match)\r\n\r\n            (UINT8) IDXor\r\n\r\n        0x04 - Initialization\r\n            (UINT32)[4] Unknown\r\n",
     "remarks_html": "<p>The packet is encrypted via standard RC4 hashing, using one key for outbound data and another for inbound. Its purpose is to return executable data and checksum information from various Warden modules. Full information on how to handle this packet may be found at the <a href=\"http://forum.valhallalegends.com/index.php?topic=17356.0\">Rudimentary Warden information</a> topic.</p>\n<p>Documentation provided by iago and Ringo.</p>",
     "comments": []

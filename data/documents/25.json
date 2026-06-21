@@ -3,7 +3,7 @@
     "title": "Icons.bni",
     "options_bitmask": 3,
     "brief_html": "<p>File format and conventions for server-defined chat icons</p>",
-    "author_username": "BNETDocs",
+    "author_username": "inetknght",
     "uri": "/document/25/icons-bni",
     "created_datetime": "2011-08-25T08:43:36+00:00",
     "edited_datetime": "2021-09-23T03:52:38+00:00",
@@ -11,7 +11,7 @@
     "comments": [
         {
             "id": 624,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-15T19:21:53+00:00",
             "content_html": "<p>Icon Precedence:</p>\n<ol>\n<li>\n<p>For any user, display the first icon in <code>icons.bni</code> that has icon flags matching the bitwise-and of the icon flags and user flags (given by server in SID_CHATEVENT).</p>\n</li>\n<li>\n<p>For StarCraft users displaying icons other StarCraft users' icons, the first icon in <code>icons_STAR.bni</code> that has an icon code matching the value in the <code>Icon Code</code> field in chat statstrings.<br />\nFor WarCraft 3 users displaying other WarCraft 3 users' icons, the first icon in <code>icons-WAR3.bni</code> that has an icon code matching the value in the <code>Icon Code</code> field in chat statstrings.</p>\n</li>\n<li>\n<p>For any user displaying icons of users with different product codes, display the first icon in <code>icons.bni</code> that has icon flags matching the <code>Icon Code</code> field in chat statstrings.</p>\n</li>\n<li>\n<p>For any user displaying icons of users with the same product code, display an internal icon. See <a href=\"http://classic.battle.net/info/icons.shtml\">http://classic.battle.net/info/icons.shtml</a> and <a href=\"http://classic.battle.net/war3/ladder/w3xp-ladder-info-laddericons.aspx?Gateway=Lordaeron\">http://classic.battle.net/war3/ladder/w3xp-ladder-info-laddericons.aspx?Gateway=Lordaeron</a> for examples.</p>\n</li>\n</ol>"
         }

@@ -10,7 +10,7 @@
     "used_by": [
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/415/sid-switchproduct",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-28T05:31:12+00:00",
@@ -19,13 +19,13 @@
     "comments": [
         {
             "id": 517,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2012-04-01T20:36:27+00:00",
             "content_html": "<p>In experimenting I've found:<br />\n(client I identified as in SID_AUTH_INFO) -&gt; (client I sent in SID_SWITCHPRODUCT) = (result):<br />\nW3XP -&gt; WAR3 = intended result, using WAR3 in channel.<br />\nNon-WarCraft III -&gt; anything = short ipban.<br />\nW3XP -&gt; non-WarCraft III = kick.<br />\nWAR3 -&gt; non-WarCraft III = kick.<br />\nW3XP -&gt; W3XP = passes, but obviously does nothing.<br />\nWAR3 -&gt; WAR3 = passes, but obviously does nothing.<br />\nWAR3 -&gt; W3XP = passes, but does nothing (using WAR3 in channel).</p>"
         },
         {
             "id": 568,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-03-28T05:33:58+00:00",
             "content_html": "<p>I feel like the real purpose for this message is to:</p>\n<ol>\n<li>Ensure both <code>WAR3</code> and <code>W3XP</code> keys show as in-use on Battle.net.</li>\n<li>Allow Battle.net to treat this client as <code>WAR3</code> rather than <code>W3XP</code> as it was originally to trigger both keys being in-use.</li>\n</ol>\n<p>In short, it feels like Blizzard wants the Frozen Throne key to show as in-use even when playing Reign of Chaos.</p>"
         }

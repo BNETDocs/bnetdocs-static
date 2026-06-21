@@ -3,7 +3,7 @@
     "title": "Account Closure Codes",
     "options_bitmask": 3,
     "brief_html": "<p>This document describes the additional status codes received when attempting to login to a Battle.net account that has been terminated by Blizzard.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Ribose",
     "uri": "/document/33/account-closure-codes",
     "created_datetime": "2012-02-26T02:16:47+00:00",
     "edited_datetime": "2017-04-24T05:04:23+00:00",
@@ -11,13 +11,13 @@
     "comments": [
         {
             "id": 515,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2012-03-18T04:27:34+00:00",
             "content_html": "<p>Isn't there a 12th code?</p>"
         },
         {
             "id": 523,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2012-05-30T00:04:57+00:00",
             "content_html": "<p>Yeah, there are 12 codes total, 0-11, no #12, ;).</p>"
         }

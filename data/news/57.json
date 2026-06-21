@@ -1,0 +1,13 @@
+{
+    "id": 57,
+    "title": "New WarCraft III Patch",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/57/new-warcraft-iii-patch",
+    "created_datetime": "2009-08-04T21:25:57+00:00",
+    "edited_datetime": "2009-08-04T21:25:57+00:00",
+    "content_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>\n<p>Version: 1.24.0.6372</p>\n<pre><code>--------------------------------------------------------------------------\nPatch 1.24\n--------------------------------------------------------------------------\n\nPC WORLD EDITOR CHANGES\n\n- Added new JASS hash table functions to replace the lost functionality from \n   fixing unsafe type casting.\n   - Hash Table - Save Item Handle\n   - Hash Table - Save Unit Handle\n   - ...\n   - Hash Table - Load Item Handle\n   - Hash Table - Load Unit Handle\n   - ...\n   - Hash Table - Get Handle ID\n\nFIXES\n\n- Fixed an exploit related to unsafe type casting that allowed users to \n   execute arbitrary code in maps.\n- Fixed the JASS unsafe type casting exploit (\"return bug\").\n- Fixed several World Editor crashes.</code></pre>\n<p>As a result of this, there is also a new VerByte for both WAR3 and W3XP.</p>\n<p>VerByte: <code>0x18</code><br />\nDecimal: 24<br />\nHashes: <a href=\"http://www.BnetBeta.com/files/Battle.net/Bots/Hashes/WAR3.zip\">WAR3.zip</a></p>",
+    "comments": []
+}

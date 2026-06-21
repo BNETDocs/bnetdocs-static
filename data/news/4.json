@@ -1,0 +1,13 @@
+{
+    "id": 4,
+    "title": "Re: The Lockdown Update",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>As most of you will know, Blizzard recently updated their Checkrevision procedure for WarCraft II, StarCraft, Brood War, Diablo I and StarCraft Shareware. This new method, dubbed &quot;Lockdown&quot;, is considerably more complex then the previous ix86ver method which is still used by other Battle.net-enabled products. </p>",
+    "author_username": "Arta",
+    "uri": "/news/4/re-the-lockdown-update",
+    "created_datetime": "2007-03-21T20:02:51+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>As most of you will know, Blizzard recently updated their Checkrevision procedure for WarCraft II, StarCraft, Brood War, Diablo I and StarCraft Shareware. This new method, dubbed &quot;Lockdown&quot;, is considerably more complex then the previous ix86ver method which is still used by other Battle.net-enabled products. </p>\n<p>We fully intend to update BNETDocs with as much information about Lockdown as possible, however, much of this material has not yet been made public. BNETDocs has always relied on information volunteered by the community and will continue to be updated with information as and when it is received.</p>\n<p>In the meantime, your best available options are to reverse engineer the new system yourself -- this is not a light undertaking -- or to use BNLS.</p>",
+    "comments": []
+}

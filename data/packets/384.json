@@ -13,7 +13,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/384/sid-friendsupdate",
     "created_datetime": "2011-06-02T18:33:52+00:00",
     "edited_datetime": "2017-03-28T20:27:29+00:00",
@@ -22,13 +22,13 @@
     "comments": [
         {
             "id": 102,
-            "author_username": "BNETDocs",
+            "author_username": "idiat",
             "created_datetime": "2008-05-19T00:36:27+00:00",
             "content_html": "<p>The order of Friend Location and Friend Status should be flipped.</p>"
         },
         {
             "id": 643,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2021-09-07T00:56:14+00:00",
             "content_html": "<p>I'm not sure if/when this was updated but the correct order is status and then location.</p>\n<p>Also I do not appear to be getting sent this packet automatically from official servers anymore, even when a mutual friend changes location or status.</p>"
         }

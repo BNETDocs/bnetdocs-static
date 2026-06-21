@@ -1,0 +1,13 @@
+{
+    "id": 84,
+    "title": "Sorry about that...",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>As some of you may know, BnetDocs was down from Nov 10, 2011 - Nov 14, 2011. </p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/84/sorry-about-that",
+    "created_datetime": "2011-11-14T22:43:43+00:00",
+    "edited_datetime": "2011-11-14T22:43:43+00:00",
+    "content_html": "<p>As some of you may know, BnetDocs was down from Nov 10, 2011 - Nov 14, 2011. </p>\n<p>There was issues with the domain registrar. Those issues has been resolved and will not occur again. </p>\n<p>Providing that everyone's DNS cache is friendly to them, they should see this page immediately, otherwise give it time to update.</p>\n<p>We at BnetDocs sincerely apologize for any inconvenience this may have caused.</p>\n<p>And rest assured, all data remained untouched; that is to say no data was lost during this period, it was just inaccessible.</p>",
+    "comments": []
+}

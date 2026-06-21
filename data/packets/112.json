@@ -18,7 +18,7 @@
         1144150096,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/112/sid-readuserdata",
     "created_datetime": "2011-06-02T18:51:40+00:00",
     "edited_datetime": "2021-08-19T22:40:56+00:00",
@@ -27,7 +27,7 @@
     "comments": [
         {
             "id": 636,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2021-08-19T22:50:07+00:00",
             "content_html": "<p>Updated to include link to known keys.</p>"
         }

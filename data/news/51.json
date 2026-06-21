@@ -1,0 +1,13 @@
+{
+    "id": 51,
+    "title": "Server Move Completed",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Server move has been completed. And to save Hdx the effort of having to re-edit the packets/documents, I took the liberty of making another copy from the older server and moved it here. </p>",
+    "author_username": "Kyro",
+    "uri": "/news/51/server-move-completed",
+    "created_datetime": "2008-03-02T13:09:30+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Server move has been completed. And to save Hdx the effort of having to re-edit the packets/documents, I took the liberty of making another copy from the older server and moved it here. </p>\n<p>So it's all up to date. :-)</p>\n<p>Thanks for your patience during the transfer!</p>",
+    "comments": []
+}

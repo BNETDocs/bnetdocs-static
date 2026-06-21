@@ -1,0 +1,13 @@
+{
+    "id": 60,
+    "title": "Updates Needed?",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>It is evident that BNETDocs Redux is old and requires a little more updated information.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/60/updates-needed",
+    "created_datetime": "2009-12-31T19:45:07+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>It is evident that BNETDocs Redux is old and requires a little more updated information.</p>\n<p>Some packets remain &quot;Research required&quot; and others remain even undocumented but known. If you know of a packet that needs more information added to it, or of any packet(s) that are not added to the documentation, please contact Jailout2000 at <a href=\"http://forum.valhallalegends.com/index.php?action=profile;u=3313\">ValHalla Legends</a>. He can help get it sorted out.</p>\n<p>When you contact him, make sure you provide information such as your username, a website linking to the information if possible (proof of your information), and your own input on the packet if you have any. This will make it possible for him to compile all the data and post it up to the packet's documentation page.</p>\n<p>BNETDocs is still alive and, well, not so active. By helping update the documentation, perhaps it can become an active place once more. Due to the vast knowledge and accuracy, it is impossible for one person to update it all by them self.</p>",
+    "comments": []
+}

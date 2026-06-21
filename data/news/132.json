@@ -1,0 +1,13 @@
+{
+    "id": 132,
+    "title": "Battle.net Scheduled Maintenance",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard will be performing maintenance to all Classic Battle.net regions on Tuesday, February 14, 2017.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/132/battle-net-scheduled-maintenance",
+    "created_datetime": "2017-02-14T06:14:30+00:00",
+    "edited_datetime": "2017-02-14T06:32:35+00:00",
+    "content_html": "<p>Blizzard will be performing maintenance to all Classic Battle.net regions on Tuesday, February 14, 2017.</p>\n<p>Announcement: <a href=\"https://us.battle.net/forums/en/bnet/topic/20753167621\">https://us.battle.net/forums/en/bnet/topic/20753167621</a></p>\n<p>Blizzard will be updating the servers to address the <code>@</code> symbol and its related bugs. Blizzard wishes to emphasize the following notes:</p>\n<blockquote>\n<ol>\n<li>No accounts were harmed during iterations on this subject. </li>\n<li>Symbols will once again be available for name creation. </li>\n<li>Any cross game profile will appear as <code>#&lt;realm&gt;</code> instead of <code>@&lt;realm&gt;</code> so that they can be handled properly by chat and friend functions*.</li>\n<li>Happy Valentine's Day. Blizzard loves you.</li>\n</ol>\n<p>*Use the version of the name you see in chat to invoke chat functions.</p>\n</blockquote>\n<table>\n<thead>\n<tr>\n<th>Region</th>\n<th>Maintenance Window</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>USEast, USWest</td>\n<td>9:00-10:00 AM PST</td>\n</tr>\n<tr>\n<td>Asia</td>\n<td>1:00-2:00 PM PST</td>\n</tr>\n<tr>\n<td>Europe</td>\n<td>3:00-4:00 PM PST</td>\n</tr>\n</tbody>\n</table>\n<p>All classic games will be down during this maintenance period.</p>\n<p><strong>Editor's note:</strong> Blizzard has begun announcing this maintenance across all classic Battle.net servers via the <code>EID_ERROR</code> chat event with the following message sent upon entering any channel:<br/></p>\n<blockquote>\n<p>[Server Broadcast] Server Restart at 0900 PST (1200 EST) (<a href=\"https://us.battle.net/forums/en/bnet/topic/20753167621\">https://us.battle.net/forums/en/bnet/topic/20753167621</a>)</p>\n</blockquote>\n<p>In addition, banning in channels is currently broken across all games regardless if they have the <code>@</code> symbol.</p>",
+    "comments": []
+}

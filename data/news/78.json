@@ -1,0 +1,13 @@
+{
+    "id": 78,
+    "title": "Server Status Re-enabled",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>The statuses on the right-hand side of this website are now accurate down to the last 5 minutes.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/78/server-status-re-enabled",
+    "created_datetime": "2011-03-01T22:06:59+00:00",
+    "edited_datetime": "2011-03-01T22:06:59+00:00",
+    "content_html": "<p>The statuses on the right-hand side of this website are now accurate down to the last 5 minutes.</p>\n<p>Jailout2000's computer is still in a hot-fix situation, but is stable enough to host his JBLS server, along with the script that checks all of the servers for this website. Downtimes will be seen with both his JBLS and the updater script; you'll just have to live with the inaccuracies during these times. Jailout2000 normally keeps his PC on 24/7 unless he's doing work to it, which is always in the day (and almost never on the weekdays as well).</p>\n<p>Also, there have been two new entries added to the Battle.net server list: uswest.bnet.cc and useast.bnet.cc. These two servers used to be one running PvPGN and one redirecting to Jailout2000's RBNETD server; however, that is no more and they are both now simply redirects to his server. If vps.clan-warp.net is down, these two will be as well, and vice versa.</p>\n<p>Anyways, have a safe trip around the website and keep track of your favorite servers on the right as they appear on or off throughout the weeks to come.</p>",
+    "comments": []
+}

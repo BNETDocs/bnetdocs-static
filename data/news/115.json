@@ -1,0 +1,13 @@
+{
+    "id": 115,
+    "title": "Diablo II 1.14d Patch",
+    "category_id": 3,
+    "options_bitmask": 3,
+    "brief_html": "<p>On Tuesday, June 7, 2016, Blizzard patched Diablo II up to version 1.14d.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/115/diablo-ii-1-14d-patch",
+    "created_datetime": "2016-06-12T19:48:38+00:00",
+    "edited_datetime": "2016-06-12T19:49:19+00:00",
+    "content_html": "<p>On Tuesday, June 7, 2016, Blizzard patched Diablo II up to version 1.14d.</p>\n<p>This specific patch introduces Blizzard Error and System Survey to better troubleshoot crashes and assertions.</p>\n<p><a href=\"http://us.battle.net/en/forum/topic/20745055041\">Original Announcement</a></p>",
+    "comments": []
+}

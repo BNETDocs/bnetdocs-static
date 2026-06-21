@@ -1,0 +1,13 @@
+{
+    "id": 148,
+    "title": "Password Resets",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>It's been a long time since BNETDocs had its site makeover, a few years in fact, and during that length of time, it was impossible for a user to recover their account completely on their own. Today, users may now reset their password on this site on their own, without the aid of a staff member.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/148/password-resets",
+    "created_datetime": "2019-08-23T06:09:28+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>It's been a long time since BNETDocs had its site makeover, a few years in fact, and during that length of time, it was impossible for a user to recover their account completely on their own. Today, users may now reset their password on this site on their own, without the aid of a staff member.</p>\n<p>If you remember your username you used, you can head over to the log in form and click recover password. An email will be sent to the account's listed email address with a link to reset the password, which will allow you to log back in after all these years if you weren't able to before.</p>\n<p>Please be sure to report any issues you may find to the BNETDocs Staff so we can not only help you out but fix the issue for everyone in the future. If you lost your username but remember your email address, or your email address is now defunct, feel free to reach out and we can help you out.</p>\n<p>Additionally, if you previously received an internal error trying to register your username, it may have been because it already exists, and a patch from <a href=\"/user/62/davnit\">Davnit</a> has fixed that error message to be more appropriate.</p>\n<p>Enjoy!</p>",
+    "comments": []
+}

@@ -15,7 +15,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/240/sid-extrawork",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2019-12-27T04:30:51+00:00",
@@ -24,7 +24,7 @@
     "comments": [
         {
             "id": 607,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-05-27T04:50:28+00:00",
             "content_html": "<p>Diablo 2 1.14d sends 0x04 as the game type.</p>"
         }

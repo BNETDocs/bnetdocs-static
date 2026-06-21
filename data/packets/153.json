@@ -13,7 +13,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "LordVader",
     "uri": "/packet/153/sid-friendslist",
     "created_datetime": "2011-06-02T21:39:30+00:00",
     "edited_datetime": "2020-10-10T13:07:18+00:00",
@@ -22,7 +22,7 @@
     "comments": [
         {
             "id": 368,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-03T16:44:57+00:00",
             "content_html": "<p>Enum in wc3tft beta:</p>\n<p><strong>Unknown:</strong></p>\n<p>Couldn't find the values for these, but you can guess where they go anyway.</p>\n<pre><code>BNET_FRIEND_MUTUAL_FRIEND\nBNET_FRIEND_DND\nBNET_FRIEND_AFK\nBNET_FRIEND_ONLINE</code></pre>\n<p><strong>Location:</strong></p>\n<pre><code>0 BNET_FRIEND_OFFLINE\n2 BNET_FRIEND_IN_CHANNEL\n3 BNET_FRIEND_IN_PUBLIC_GAME\n4 BNET_FRIEND_IN_PRIVATE_GAME\n5 BNET_FRIEND_IN_PASSWORD_GAME</code></pre>"
         }

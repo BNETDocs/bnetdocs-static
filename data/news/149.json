@@ -1,0 +1,13 @@
+{
+    "id": 149,
+    "title": "Packet status",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>When the new site was launched a few years ago, it didn't include the status on packets indicating whether it was defunct/deprecated or in research, like the older revision of the site did. Today, that has been fixed, and packets now show their statuses again. Enjoy!</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/149/packet-status",
+    "created_datetime": "2019-12-28T18:59:16+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>When the new site was launched a few years ago, it didn't include the status on packets indicating whether it was defunct/deprecated or in research, like the older revision of the site did. Today, that has been fixed, and packets now show their statuses again. Enjoy!</p>",
+    "comments": []
+}

@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "LordVader",
     "uri": "/packet/189/mcp-charlist2",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-11-05T12:10:08+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 19,
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "created_datetime": "2007-11-04T04:29:40+00:00",
             "content_html": "<p>The character data chunks seem to follow this structure for &quot;each&quot; character:<br />\n[code]<br />\n(DWORD) Expiration date<br />\n(STRING) Character name -- length of this always seems to be 11 bytes<br />\n(STRING) Statstring -- length of this always seems to be 34 bytes<br />\n[/code]</p>"
         }

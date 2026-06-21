@@ -3,7 +3,7 @@
     "title": "CheckRevision",
     "options_bitmask": 3,
     "brief_html": "<p>CheckRevision is a module sent by the server during the logon process. The purpose of CheckRevision is to ensure that only official, unmodified Battle.net clients are connecting to Battle.net servers. Some PvPGN servers have been known to compile their own CheckRevision modules to add client-side features or detect hacks.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "xboi209",
     "uri": "/document/47/checkrevision",
     "created_datetime": "2019-01-07T03:20:58+00:00",
     "edited_datetime": "2021-11-14T05:50:30+00:00",
@@ -11,25 +11,25 @@
     "comments": [
         {
             "id": 596,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2019-01-17T03:43:37+00:00",
             "content_html": "<p>Added information on the new algorithm for v3.</p>"
         },
         {
             "id": 629,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-29T06:15:50+00:00",
             "content_html": "<p>I found that if D2 1.13c is served <code>IX86ver1.mpq</code>, it crashes with a <code>0xc00000005</code> error. Serving it <code>ver-IX86-1.mpq</code>, which is what Battle.net served, no longer causes it to crash. This leads me to think that Blizzard didn't <em>just</em> rename CheckRevision v1 files in 2006, they probably recompiled CheckRevision v1 with the same code or different code while keeping the output the same.</p>"
         },
         {
             "id": 638,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-08-22T06:25:14+00:00",
             "content_html": "<p><code>ix86std.dll</code> is found in an MPQ embedded in DRTL 1.02, 1.03, and 1.04 manual patches.</p>"
         },
         {
             "id": 639,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-08-22T06:50:36+00:00",
             "content_html": "<p>Recently (possibly on August 13), Blizzard removed many CheckRevision v2 files from US West, US East, and Europe servers. As of now, Asia server still retains all of the CheckRevision v2 files.</p>\n<p>I tested the following at US West:</p>\n<p><code>lockdown-IX86-{NUM}.mpq</code>: <code>00</code> still exists, <code>01</code> - <code>19</code> are removed.</p>\n<p><code>psistorm-PMAC-{NUM}.mpq</code>: <code>00</code> still exists. <code>01</code>, <code>02</code>, and presumably the rest have been removed too.</p>\n<p><code>psistorm-XMAC-{NUM}.mpq</code>: <code>00</code> - <code>02</code> no longer exists, presumably the rest have been removed too.</p>\n<p>When attempting to connect to US West, US East, or Europe with W2BN, Battle.net sends <a href=\"/packet/127/sid-startversioning\">SID_STARTVERSIONING</a> with a randomly chosen CheckRevision v2 filename despite that the chosen file may be missing. The filetime is null if the file is missing. The client hangs after receiving this packet if the filetime is null.</p>"
         }

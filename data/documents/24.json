@@ -3,7 +3,7 @@
     "title": "NLS/SRP Protocol",
     "options_bitmask": 3,
     "brief_html": "<p>The New Logon System (NLS) is based on the <a href=\"https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol\">Secure Remote Password protocol</a> (SRP) which was designed to obviate the need to send a password, or its cryptographic equivalent, across a network. This page exists to provide a basic introduction to this protocol. For detailed<br />\nexplanations and information, see <a href=\"http://www.ietf.org/rfc/rfc2945.txt\">RFC 2945</a>.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Sixen",
     "uri": "/document/24/nls-srp-protocol",
     "created_datetime": "2011-01-03T19:02:14+00:00",
     "edited_datetime": "2018-10-13T17:19:22+00:00",
@@ -11,7 +11,7 @@
     "comments": [
         {
             "id": 530,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2012-08-17T23:38:22+00:00",
             "content_html": "<p>Constants for Battle.Net 2.0<br />\n<a href=\"https://bitbucket.org/Greatwolf/starcrack/src/ccd08d31dc42/LaunchHelper/SRP6a.cpp\">https://bitbucket.org/Greatwolf/starcrack/src/ccd08d31dc42/LaunchHelper/SRP6a.cpp</a></p>\n<p>Now SRP uses 1 kbit modulus instead of 256 bit.</p>"
         }

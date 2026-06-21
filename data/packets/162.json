@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/162/mcp-gameinfo",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-29T20:35:44+00:00",
@@ -20,19 +20,19 @@
     "comments": [
         {
             "id": 537,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2016-08-19T07:08:08+00:00",
             "content_html": "<p>The game status field indicates the game type and difficulty associated with the game. The following return values were observed consistently on both USEast and USWest realms. </p>\n<pre><code>Non-Ladder Softcore Expansion (Hell)     : 0x00102004\nNon-Ladder Softcore Expansion (Nightmare): 0x00101004\nNon-Ladder Softcore Expansion (Normal)   : 0x00100004\n\nNon-Ladder Hardcore Expansion (Hell)     : 0x00102804\nNon-Ladder Hardcore Expansion (Nightmare): 0x00101804\nNon-Ladder Hardcore Expansion (Normal)   : 0x00100804\n\nNon-Ladder Softcore Classic   (Hell)     : 0x00002004\nNon-Ladder Softcore Classic   (Nightmare): 0x00001004\nNon-Ladder Softcore Classic   (Normal)   : 0x00000004\n\nNon-Ladder Hardcore Classic   (Hell)     : 0x00002804\nNon-Ladder Hardcore Classic   (Nightmare): 0x00001804\nNon-Ladder Hardcore Classic   (Normal)   : 0x00000804\n\nLadder     Softcore Expansion (Hell)     : 0x00302004\nLadder     Softcore Expansion (Nightmare): 0x00301004\nLadder     Softcore Expansion (Normal)   : 0x00300004\n\nLadder     Hardcore Expansion (Hell)     : 0x00302804\nLadder     Hardcore Expansion (Nightmare): 0x00301804\nLadder     Hardcore Expansion (Normal)   : 0x00300804\n\nLadder     Softcore Classic   (Hell)     : 0x00202004\nLadder     Softcore Classic   (Nightmare): 0x00201004\nLadder     Softcore Classic   (Normal)   : 0x00200004\n\nLadder     Hardcore Classic   (Hell)     : 0x00202804\nLadder     Hardcore Classic   (Nightmare): 0x00201804\nLadder     Hardcore Classic   (Normal)   : 0x00200804</code></pre>\n<p>In order to decode a successful response interpret it in the following way:</p>\n<p>The game difficulty is this one of:</p>\n<pre><code>Nightmare : 0x1000;\nHell      : 0x2000;\nNormal    : 0;</code></pre>\n<p>The game type is the bitwise or of any of:</p>\n<pre><code>Ladder    : 0x200000;\nExpansion : 0x100000;\nHardcore  : 0x800;</code></pre>\n<p>bitwise or the difficulty with the game type and the number <code>0x4</code> to get a successful status response.</p>\n<p>Other than the documented <code>0</code> response above, the server also returns <code>0xFFFFFFFE</code> indicating the request was not valid for a number of reasons. This was observed sending the empty string, sending characters disallowed in a game name, and sending a string of a game that did not exist. In no case did this cause me to be IP-banned. There appears to be no differentiation between passworded and public games.</p>\n<p>The field unknown appears to be the level restriction. It should be interpreted as <em>2 bytes not one word</em>. The first byte read off the wire is the level to start from. On game creation this appears to be the creator's level but it can change as the creator gains levels or leaves the game. The second byte should be interpreted as the level difference. e.g. creating a game with a level 98 character with level restriction set to 30 results in <code>0x62 0x1E</code> initially (again, this can change). To find the level restriction displayed in-game take the range to be <code>max(1, level-difference)</code> to <code>min(99, level+difference)</code>. Thus a difference of 30 for a 98 character reads as 68 to 99 in-game. If there is no restriction specified these fields are both zero.</p>\n<p>There is no restriction on requesting game information. A character need not be of the correct type, have the game password, have completed the correct difficulty, nor meet the level restriction in order to request game information.</p>"
         },
         {
             "id": 538,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2016-08-19T14:35:24+00:00",
             "content_html": "<p>Hi <a href=\"/user/4997/kaylin\">Kaylin</a>, I've imported your email as a comment.</p>\n<p>Thanks!</p>"
         },
         {
             "id": 540,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2016-10-16T22:28:09+00:00",
             "content_html": "<p>byte unused is actually string game_desc. You'll get the empty string if empty. In addition the terminating message that terminates the gamelist seems to be an additional byte in length, I'm not sure if it's always an additional byte in length.  In retrospect this should have been obvious to me as the client gets the game description from this message too.</p>"
         }

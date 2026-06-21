@@ -1,0 +1,20 @@
+{
+    "id": 74,
+    "title": "BNET.cc - Battle.net Wiki",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The website <a href=\"http://www.bnet.cc/\">BNET.cc</a> which used to house forums is now hosting the Battle.net Wiki.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/74/bnet-cc-battle-net-wiki",
+    "created_datetime": "2010-11-02T20:49:05+00:00",
+    "edited_datetime": "2010-11-02T20:49:05+00:00",
+    "content_html": "<p>The website <a href=\"http://www.bnet.cc/\">BNET.cc</a> which used to house forums is now hosting the Battle.net Wiki.</p>\n<p>There was an older BnetWiki hosted by Spht, which failed. It ended up dying and was later cancelled. Tagban now hosts the BnetWiki on BNET.cc as the main website.</p>\n<p>BNET.cc will house the wiki information for the Blizzard/Battle.net communities. It is sought to hold information, packets (an &quot;Open BNETDocs&quot;?), clans, bots, and other Battle.net-related topics. Of course, as time goes on, different information will be added and changed on the wiki. It is also the home for the Superiority bot and the Invigoration bot.</p>\n<p>Anyways, we'll see how Tagban's wiki goes.</p>",
+    "comments": [
+        {
+            "id": 541,
+            "author_username": "Caaaaarrrrlll",
+            "created_datetime": "2017-01-03T22:33:36+00:00",
+            "content_html": "<p><a href=\"/user/461/tagban\">Tagban</a> is also on BNETDocs!</p>"
+        }
+    ]
+}

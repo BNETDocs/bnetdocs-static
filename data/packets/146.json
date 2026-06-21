@@ -15,7 +15,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/146/sid-auth-info",
     "created_datetime": "2011-05-29T16:11:46+00:00",
     "edited_datetime": "2020-12-09T06:19:00+00:00",
@@ -24,7 +24,7 @@
     "comments": [
         {
             "id": 526,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2012-06-16T02:13:58+00:00",
             "content_html": "<p>(This is an old comment which was later clarified, the following may no longer be valid.)</p>\n<p><code>JSTR</code> clients on the <code>IX86</code> platform receive an empty <code>CheckRevision Formula</code> from official Battle.net, with MPQ set to <code>ver-IX86-0.mpq</code>.</p>\n<p>Packet Dump from Wireshark:</p>\n<pre><code>00000000  01 ff 50 3a 00 00 00 00  00 36 38 58 49 52 54 53 ..P:.... .68XIRTS\n00000010  4a d3 00 00 00 00 00 00  00 c0 a8 00 17 2c 01 00 J....... .....,..\n00000020  00 09 04 00 00 09 04 00  00 55 53 41 00 55 6e 69 ........ .USA.Uni\n00000030  74 65 64 20 53 74 61 74  65 73 00                ted Stat es.</code></pre>\n<pre><code>00000000  ff 25 08 00 de 37 ef 58                          .%...7.X \n00000008  ff 50 28 00 00 00 00 00  a1 8b c6 b7 ee 15 08 00 .P(..... ........\n00000018  00 8b 51 03 70 5f c7 01  76 65 72 2d 49 58 38 36 ..Q.p_.. ver-IX86\n00000028  2d 30 2e 6d 70 71 00 00                          -0.mpq.. </code></pre>"
         }

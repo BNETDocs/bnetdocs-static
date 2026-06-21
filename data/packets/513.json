@@ -8,7 +8,7 @@
     "options_bitmask": 3,
     "brief_html": "<p>Client violated protocol.</p>",
     "used_by": [],
-    "author_username": "BNETDocs",
+    "author_username": "Ribose",
     "uri": "/packet/513/botnet-protocol-violation",
     "created_datetime": "2018-03-12T01:30:04+00:00",
     "edited_datetime": "2018-03-29T02:35:11+00:00",

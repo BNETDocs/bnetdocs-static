@@ -3,7 +3,7 @@
     "title": "Chat Statstrings",
     "options_bitmask": 3,
     "brief_html": "<p>Chat statstrings are space-delimited C strings that communicate attributes of a user in a chat channel. Most notably, game clients use chat statstrings to determine which icons to display for each user. Additionally, game clients will refuse to attempt to create ladder games if not enough normal game wins have been earned.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Hdx",
     "uri": "/document/18/chat-statstrings",
     "created_datetime": "2012-06-03T07:03:05+00:00",
     "edited_datetime": "2020-12-05T23:18:02+00:00",
@@ -11,49 +11,49 @@
     "comments": [
         {
             "id": 447,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-03-10T02:38:54+00:00",
             "content_html": "<p>Diablo II Armor Types:<br />\nTorso, Legs, Arms, and Shoulders all have values from 1 to 3 (and 255 for nothing). Combined, they tell you what type of armor the character is wearing:<br />\nThe order being used is Torso + Legs + Right Arm + Left Arm + Right Shoulder + Left Shoulder</p>\n<p>111111 / 255255255255255255 = Nothing<br />\n111122 = Quilted Armor<br />\n211122 = Leather Armor<br />\n212222 = Hard Leather Armor<br />\n122122 = Studded Leather Armor<br />\n221122 = Ring Mail<br />\n222222 = Scale Mail<br />\n311133 = Breast Plate<br />\n222233 = Chain Mail<br />\n322222 = Splint Mail<br />\n223133 = Light Plate<br />\n332233 = Field Plate<br />\n333322 = Plate Mail<br />\n233333 = Gothic Plate<br />\n333333 = Full Plate Mail<br />\n332331 = Ancient Armor</p>"
         },
         {
             "id": 448,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-03-10T03:00:13+00:00",
             "content_html": "<p>Diablo II Equipment  (hex):<br />\n0 / 1 / 2 / 3 / FF = None<br />\n4 / 39 = Cap<br />\n5 / 3A = Skullcap<br />\n6 / 3B = Helm<br />\n7 / 3C = Full Helm<br />\n8 / 3D = Great Helm<br />\n9 / 3E = Crown<br />\nA / 3F = Mask<br />\n40 / 53 = Bone Helm<br />\n56 = Wolf Head<br />\n57 = Hawk Helm<br />\n58 = Antlers<br />\n59 = Jawbone Cap<br />\n5A = Horned Helm<br />\n5B = Assault Helmet</p>"
         },
         {
             "id": 449,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-03-10T03:13:41+00:00",
             "content_html": "<p>Diablo II Items (Hex):<br />\n0 / FF = None<br />\n4 = Hand Axe<br />\n5 = Axe<br />\n6 = Double Headed Axe<br />\n7 = War Axe<br />\n8 = Giant Axe<br />\n9 = Wand<br />\nA = Yew Wand<br />\nB = Grim Wand<br />\nC = Club<br />\nD = Mace<br />\nE = Warhammer<br />\nF = Flail<br />\n10 = Maul<br />\n11 = Short Sword<br />\n12 = Scimitar<br />\n13 = Falchion<br />\n14 = Crystal Sword<br />\n15 = Broadsword<br />\n16 = Longsword<br />\n17 = Claymore<br />\n18 = Bastard Sword<br />\n19 = Dagger<br />\n1A = Blade<br />\n1B = Short Spear<br />\n1C = Glaive<br />\n1D = Pilum<br />\n1E = Spear<br />\n1F = Trident<br />\n20 = Spetum<br />\n21 = Pike<br />\n22 = Bardiche<br />\n23 = Scythe<br />\n24 = Halberd<br />\n25 = Short Staff<br />\n26 = Long Staff<br />\n27 = Battle Staff<br />\n28 = War Staff<br />\n29 = Short Bow<br />\n2A = Long Bow<br />\n2B / F3 / F4 / FB = Claws<br />\n2C / F5 / F6 / FC = Scissors Katar<br />\n2D / F7 / F8 / FD = Katar<br />\n2E / F9 / FA / FE = Hatchet Hands<br />\n2F = Hunter's Bow<br />\n30 = Composite Bow<br />\n31 / 7A / F0 = Crossbow<br />\n32 / 7C / F2 = Heavy Crossbow<br />\n33 = Eagle Orb<br />\n34 = Sacred Globe<br />\n35 = Clasped Orb<br />\n36 = Stag Bow<br />\n37 = Reflex Bow<br />\n4F = Small Shield<br />\n50 = Large Shield<br />\n51 = Kite Shield<br />\n52 = Tower Shield<br />\n54 = Bone Shield<br />\n55 = Spiked Shield<br />\n5C = Targe<br />\n5D = Heraldic Shield<br />\n5E = Crown Shield<br />\n5F = Demon Head<br />\n60 = Gargoyle Head<br />\n61 = Zombie Head<br />\n75 / EB = Short Battle Bow<br />\n76 / EC = Long Battle Bow<br />\n77 / ED = Short War Bow<br />\n78 / EE = Long War Bow<br />\nEF = Light Crossbow<br />\nF1 = Repeating Crossbow</p>"
         },
         {
             "id": 450,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-03-10T03:17:24+00:00",
             "content_html": "<p>Diablo II Colors:<br />\nColor should be MOD A0'd as all values repeat.</p>\n<p>0 / 1F / FF = Normal<br />\n1 = Gray<br />\n2 = Shiny Black<br />\n3 = Dull Black<br />\n4 = Black<br />\n5 = Shiny Blue<br />\n6 = Dull Blue<br />\n7 = Blue<br />\n8 = Shiny Red<br />\n9 = Dull Red<br />\nA = Red<br />\nB = Shiny Green<br />\nC = Dull Green<br />\nD = Green<br />\nE = Shiny Yellow<br />\nF = Dull Yellow<br />\n10 = Yellow<br />\n11 = Duller Yellow<br />\n12 = Shiny Purple<br />\n13 = Purple<br />\n14 = Gold<br />\n15 = White</p>\n<p>Flags:<br />\n20 = Tinted<br />\n40 = Lightly Tinted</p>"
         },
         {
             "id": 440,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-03-17T10:21:56+00:00",
             "content_html": "<p>Some Diablo II statstring research comments:</p>\n<p>Field 1 - Usually 0x84. Larger values observed as well. No idea as to the meaning yet.<br />\nField 25 - Determined to be offhand item (necromancer heads) color.<br />\nField 27 - Flags seem to start off at 0x80. A 0x01 seems to indicate the character has not yet entered a game, although a non-expansion character will not have this flag set unless it re-enters chat before joining a game. More research to come here too.<br />\nFields 29 and 30 are 0x80 when the character has not yet entered a game, and 0xFF once he has. No other values have yet been observed.</p>"
         },
         {
             "id": 521,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2012-05-21T06:45:10+00:00",
             "content_html": "<p>Also, I just got a W3XP statstring that contained a level and clan tag but no icon data, so be aware of that possibility.</p>"
         },
         {
             "id": 525,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2012-06-04T04:03:47+00:00",
             "content_html": "<p>RealityRipple; you have editor access; I'm surprised to see you didn't put that directly into the document.</p>"
         },
         {
             "id": 617,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-06T08:54:28+00:00",
             "content_html": "<p>According to PvPGN, the <code>Tier</code> sub-field in WarCraft 3's <code>Icon Code</code> field appeared in patch 1.03.</p>\n<p>The StarCraft statstring format in this document appeared starting in patch 1.10. Previously, the latter 4 or 5 fields did not exist.</p>"
         }

@@ -18,7 +18,7 @@
         1144150096,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "RealityRipple",
     "uri": "/packet/386/sid-getadvlistex",
     "created_datetime": "2010-10-03T18:04:18+00:00",
     "edited_datetime": "2025-05-24T21:07:04+00:00",
@@ -27,31 +27,31 @@
     "comments": [
         {
             "id": 126,
-            "author_username": "BNETDocs",
+            "author_username": "Ozzapoo",
             "created_datetime": "2008-12-16T01:08:48+00:00",
             "content_html": "<p>Any chance you could revise this, and include the values for WAR3 and W3XP in?</p>"
         },
         {
             "id": 352,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-08-24T01:34:02+00:00",
             "content_html": "<p>Condition 3 is 0xFFFF for SEXP as well.</p>"
         },
         {
             "id": 353,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-08-24T01:40:22+00:00",
             "content_html": "<p>or 0xFF80 for All Games</p>"
         },
         {
             "id": 422,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-10-03T22:35:26+00:00",
             "content_html": "<p>Updated according to <a href=\"http://pastebin.com/nmzLJMAH\">Frost's documentation</a> as well as the information here.</p>\n<p>Thank you for your contributions.</p>"
         },
         {
             "id": 428,
-            "author_username": "BNETDocs",
+            "author_username": "Frostslayer",
             "created_datetime": "2010-10-06T22:48:07+00:00",
             "content_html": "<p>I don't know if the second DWORD value is zero in ALL games and ALL versions. I do know that it is hard-coded in the current version of Starcraft: Broodwar, though.</p>"
         }

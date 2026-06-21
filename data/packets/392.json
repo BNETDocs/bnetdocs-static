@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/392/sid-clanmemberrankchange",
     "created_datetime": "2011-05-21T04:56:32+00:00",
     "edited_datetime": "2018-03-29T01:40:56+00:00",
@@ -20,13 +20,13 @@
     "comments": [
         {
             "id": 562,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2017-03-14T23:54:30+00:00",
             "content_html": "<p>This packet is only received by the target of a rank change.</p>\n<p>The STRING is actually &quot;Clan member who changed your rank&quot;.</p>"
         },
         {
             "id": 563,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2017-03-14T23:57:34+00:00",
             "content_html": "<p>SID_CLANMEMBERSTATUSCHANGE is used to tell everyone else to update their list (including the rank changer, after they receive SID_CLANRANKCHANGE).</p>"
         }

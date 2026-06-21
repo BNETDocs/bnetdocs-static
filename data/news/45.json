@@ -1,0 +1,13 @@
+{
+    "id": 45,
+    "title": "Interesting statistics...",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>I just checked the stats for the visits to BNETDocs, what I saw was interesting. Here's a list of unique visits per nationality for the month of October:</p>",
+    "author_username": "Kyro",
+    "uri": "/news/45/interesting-statistics",
+    "created_datetime": "2007-11-01T15:07:54+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>I just checked the stats for the visits to BNETDocs, what I saw was interesting. Here's a list of unique visits per nationality for the month of October:</p>\n<ol>\n<li>United States   352</li>\n<li>Germany     63</li>\n<li>Australia   53</li>\n<li>Canada      46</li>\n<li>Hungary     27</li>\n<li>Poland      7</li>\n<li>France      4</li>\n<li>Mexico      4</li>\n<li>Netherlands 3</li>\n<li>Norway      3</li>\n</ol>\n<p>Personally, I was surprised to see Germany ranked second in most visits. If you're a visitor from one of the countries where English isn't the main language, my apologies BNETDocs Redux isn't in your main language. We're looking for translators, so if you'd like to volunteer to translate the documentation, feel free to make an account at our forums, and PM me about it!</p>",
+    "comments": []
+}

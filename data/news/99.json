@@ -1,0 +1,13 @@
+{
+    "id": 99,
+    "title": "News has been turned on",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>I've very nearly completed the news integration with this new BNETDocs code. I've gone ahead and hooked it up to the database as you can now plainly see.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/99/news-has-been-turned-on",
+    "created_datetime": "2015-09-14T12:33:38+00:00",
+    "edited_datetime": "2015-09-14T12:47:44+00:00",
+    "content_html": "<p>I've very nearly completed the news integration with this new BNETDocs code. I've gone ahead and hooked it up to the database as you can now plainly see.</p>\n<p>Feel free to explore the new UI and content. The news categories still need to be integrated, as you can see there is no such mention of any categorization here at all. I'd also like to see pagination in the future but that's not on the roadmap for now.</p>\n<p>Still to come:</p>\n<ul>\n<li>Documents &amp; Packets</li>\n<li>News categories (this would fix OpenGraph not having an image to display)</li>\n<li>User login, registration, and profile viewing</li>\n<li>Server viewing (although a slimmed down version of this can be found <a href=\"https://silicon.carlbennett.me/bnetdocs-servers.php\">here</a>)</li>\n<li>Comments</li>\n<li>Smaller cosmetic features</li>\n</ul>\n<p>Stay tuned!</p>",
+    "comments": []
+}

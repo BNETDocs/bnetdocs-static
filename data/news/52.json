@@ -1,0 +1,13 @@
+{
+    "id": 52,
+    "title": "Diablo II 1.12a (New Patch)",
+    "category_id": 3,
+    "options_bitmask": 3,
+    "brief_html": "<p>Verbyte: <code>0x0C</code> (12)</p>",
+    "author_username": "Kyro",
+    "uri": "/news/52/diablo-ii-1-12a-new-patch",
+    "created_datetime": "2008-06-18T18:50:21+00:00",
+    "edited_datetime": "2008-06-18T18:50:21+00:00",
+    "content_html": "<pre><code>--------------------------------------------------------------------------\n- Patch 1.12\n--------------------------------------------------------------------------\n\n     Downloadable Installer Support\n\n- If all required Diablo 2 '.MPQ' files are installed on the\n  hard drive, the game will no longer require the CD to play.\n\n   For users that originally performed a 'Full Installation'\n   and wish to run without the CD, all '.MPQ' files should\n   be copied from the Diablo 2 CDs to the Diablo 2 directory. \n   Most users will only need to copy D2Music.mpq from the\n   Diablo 2 Play CD and/or D2xMusic.mpq from the Lord of\n   Destruction CD.  Mac users will need to copy these music\n   files and rename them to 'Diablo II Music' and\n   'Diablo II Expansion Music' respectively.\n\n   Anyone who did not perform a 'Full Installation' will need\n   to re-install from CD again to ultimately play without the CD. \n   In this case, a 'Full Installation' is required, followed by file\n   copy step noted above.\n\n     Bug Fixes\n\n- Fixed an incompatibility between Rosetta and OpenGL mode on Intel Mac.</code></pre>\n<p>Verbyte: <code>0x0C</code> (12)</p>\n<p>Hashes: <a href=\"http://rcb.realityripple.com/hashes/download.php?f=D2DV\">D2DV</a> | <a href=\"http://rcb.realityripple.com/hashes/download.php?f=D2XP\">D2XP</a></p>\n<p>As reported by Andy (AKA RealityRipple)</p>",
+    "comments": []
+}

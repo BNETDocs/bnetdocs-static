@@ -1,0 +1,13 @@
+{
+    "id": 67,
+    "title": "Minor updates",
+    "category_id": 6,
+    "options_bitmask": 3,
+    "brief_html": "<p>I had taken notice that all (most, anyway) the BNLS packets were still on the Raw-setting, meaning they were new and documentation for them was changing often.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/67/minor-updates",
+    "created_datetime": "2010-08-07T00:48:38+00:00",
+    "edited_datetime": "2010-08-07T00:48:38+00:00",
+    "content_html": "<p>I had taken notice that all (most, anyway) the BNLS packets were still on the Raw-setting, meaning they were new and documentation for them was changing often.</p>\n<p>I have since then updated all of them to the Normal-setting, which means they are documented and nothing is changing anytime soon; they are considered final and any revisions will be made in a new packet id. While I was doing this, I had also noticed that the format of most of the packets were not formatted conveniently and the related links were not given or were wrong, so I also updated the formats so they display conveniently and I added the proper related links.</p>\n<p>I also added a new BNLS packet that is not really part of the official documentation, but was necessary to add since it can be received on some servers running BNLSWarden. The packet id is <code>0xFF</code>, which indicates that your IP has been restricted. All BNLS-enabled clients will operate normally without recognition of this packet, but if a client wishes to support it, they are more than welcome to. It will never be received unless the server sends it to you after you connect. More information about <a href=\"http://www.bnetdocs.org/?op=packet&amp;pid=470\">the packet</a> can be found in its remarks section.</p>\n<p>Along with that new packet, I also added the BNLS_WARDEN packets, but I did a poor job. Anyone with editor access: feel free to revise it.</p>",
+    "comments": []
+}

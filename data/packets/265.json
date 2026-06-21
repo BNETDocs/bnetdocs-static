@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/265/sid-startadvex3",
     "created_datetime": "2010-10-07T17:37:56+00:00",
     "edited_datetime": "2020-10-02T08:39:56+00:00",
@@ -29,115 +29,115 @@
     "comments": [
         {
             "id": 26,
-            "author_username": "BNETDocs",
+            "author_username": "MysT_DooM",
             "created_datetime": "2007-11-14T02:23:38+00:00",
             "content_html": "<p>Statstring:</p>\n<p>For Values in the Statstring (PacketLog it for the format of it)</p>\n<p>MapSize=Size of Map ex) 44</p>\n<p>GameSpeed=The speed of game Format is a 1 digit number see below<br />\n0 = Slowest 1 = Slower 2 = Slow 3 = Normal 4 = Fast 5 = Faster 6 = Fastest</p>\n<p>MapIcon=Icon of the map Format is 1 digit number see below<br />\n1 = Blizz icon , 2 = Ladder icon , 3 = Green GF icon , 4 = KBK icon</p>\n<p>GameType=The type of game Format is a one digit charecter see below<br />\n2 = Melee , 3 = FFA , 4 = 1 on 1 , 9 = Ladder ,  a = UMS , f = Top vs Bottom</p>\n<p>[After GameType you would see something like , &quot;,,1&quot; &amp; &quot;,34eab02f,&quot;<br />\n1 is believed to be no game penalty on disc and 0 would then be game penalty on disc and the alphanumeric thing after seems to be a timestamp maybe..<br />\n]</p>\n<p>MapType=Type of map weather sc or bw 4 = SC 5 = BW</p>\n<p>Username=Username of the host of the game (Can be spoofed)</p>\n<p>MapName=The name of the map itself ( i.e The Hunters)</p>"
         },
         {
             "id": 27,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-11-14T20:51:31+00:00",
             "content_html": "<p>still waiting for someone to bring over the old bnetdocs's page on game statstrings<br />\ni might do it today after i get some stuff done</p>"
         },
         {
             "id": 28,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-11-18T03:38:02+00:00",
             "content_html": "<p>Brought it over.</p>\n<p><a href=\"/document/13/game-statstrings\">Game Statstrings</a></p>"
         },
         {
             "id": 29,
-            "author_username": "BNETDocs",
+            "author_username": "MysT_DooM",
             "created_datetime": "2007-11-18T04:16:05+00:00",
             "content_html": "<p>yeh I thought that alphanumeric was sometype of map checksum; someone know how it is derived?</p>"
         },
         {
             "id": 31,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-11-18T05:34:02+00:00",
             "content_html": "<p>i've tested it with various different checksum functions (almost all the CRC's i could find) me and don found out that the check sum is actually different from computer to computer and product to product.... so im not quite sure how it's derived but seems to depend on some client side element also...</p>"
         },
         {
             "id": 32,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-11-18T05:43:50+00:00",
             "content_html": "<p>Are you both even sure it's the map checksum?</p>"
         },
         {
             "id": 34,
-            "author_username": "BNETDocs",
+            "author_username": "MysT_DooM",
             "created_datetime": "2007-11-18T23:00:36+00:00",
             "content_html": "<p>so it still could be a timestamp?  w/e it is, people can still join the game even if you use the same value for all ur maps</p>"
         },
         {
             "id": 35,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-11-18T23:34:06+00:00",
             "content_html": "<p>Yea, a timestamp makes more sense.</p>"
         },
         {
             "id": 36,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-11-19T12:33:50+00:00",
             "content_html": "<p>that's a very large time stamp... timestamp doesn't make since because it doesn't change based on filetime, we proved that when we tested it with kyro's map (same exact one as mine)..</p>\n<p>both me and kyro had the same exact map with the same exact filetime and all together got 2 different values... which is what leads me to believe its a hash of the map and some other element of the computer either username or ip or something hmm i haven't tested this using a different username</p>"
         },
         {
             "id": 104,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2008-05-22T14:23:00+00:00",
             "content_html": "<p>It would be cool to make Ripple Chat Bot enter a game... but the Packet Builder it has restricts that in a way that's not cool.</p>"
         },
         {
             "id": 121,
-            "author_username": "BNETDocs",
+            "author_username": "ansichart",
             "created_datetime": "2008-10-03T14:17:24+00:00",
             "content_html": "<p>I did some packet analyzing and I found that when you host a replay game, the value 0x81 is used for the game state.  And when you close all the available slots the value is 0x06.</p>\n<p>Also, 0x04 does not mean the game contains players necisary, it could also mean that the game contains slots that are filled, either by a computer or a closed slot.  So, if you close all available slots, and open one... it refreshes the game, because starcraft will update b.net on the status.</p>\n<p>Also, the Unknown DWORD I always get the value FF.</p>"
         },
         {
             "id": 370,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-03T19:29:24+00:00",
             "content_html": "<p>Parameter is more like SubType.</p>\n<pre><code>Values for GameType/SubType\n2 Melee\n3 Free For All\n4 One on One\n5 Capture The Flag\n6 Greed\n-- SubType: Resources (1 = 2500; 2 = 5000; 3 = 7500; 4 = 10000)\n7 Slaughter\n-- SubType: Minutes (1 = 15; 2 = 30; 3 = 45; 4 = 60)\n8 Sudden Death\n9 Ladder\n-- SubType: Disconnects (Specifies if a disconnect is counted as a loss or not)\n10 Use Map Settings\n11 Team Melee\n-- SubType: Number Of Teams (1 = 2; 2 = 3; 3 = 4)\n12 Team Free For All\n-- SubType: Number Of Teams (1 = 2; 2 = 3; 3 = 4)\n13 Team Capture The Flag\n-- SubType: Number Of Teams (1 = 2; 2 = 3; 3 = 4)\n15 Top Vs. Bottom\n-- SubType: Teams (1-7 specifies the ratio of players belonging to both teams)\n16 Iron Man Ladder\n32 PGL</code></pre>\n<p>Those values apply to Starcraft and W2BN</p>"
         },
         {
             "id": 423,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-10-03T22:53:14+00:00",
             "content_html": "<p>Updated according to Herinermann's documentation and <a href=\"http://pastebin.com/nmzLJMAH\">Frost's documentation</a>.</p>\n<p>Thank you for your contributions.</p>"
         },
         {
             "id": 427,
-            "author_username": "BNETDocs",
+            "author_username": "Frostslayer",
             "created_datetime": "2010-10-06T21:04:19+00:00",
             "content_html": "<p>Missing 0x80 state bitwise flag. It means a replay game.</p>\n<p>Also, the provider version constant (Gotten from storm network provider information structure +0x28) may not be 0xFF in all games and all version. It is 0xFF in the current version of Starcraft: Broodwar, however.</p>"
         },
         {
             "id": 431,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-10-07T22:38:31+00:00",
             "content_html": "<p>Added the missing flag and stuck a note in there about the provider version constant.</p>"
         },
         {
             "id": 554,
-            "author_username": "BNETDocs",
+            "author_username": "jtrumbull",
             "created_datetime": "2017-01-17T16:34:43+00:00",
             "content_html": "<p>For D2XP: The game state, uptime, type, sub type, provider, and ladder type are all set to 0x00, Only the game name, password, and description are sent. In addition, the server does not appear to respond to this packet.</p>"
         },
         {
             "id": 588,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2018-05-18T05:07:21+00:00",
             "content_html": "<p>For Game Type, PvPGN lists PGL as 0x0E.</p>"
         },
         {
             "id": 597,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2019-02-20T19:07:57+00:00",
             "content_html": "<pre><code>00000000   FF 1C 2C 00 01 00 00 00 - 00 00 00 00 08 00 00 00   ..,.............\n00000010   00 00 00 00 00 00 00 00 - 41 73 64 66 00 41 73 64   ........Asdf.Asd\n00000020   66 00 31 66 64 20 61 73 - 20 64 66 00               f.1fd as df.</code></pre>\n<p>Provider version on SSHR is <code>0x00000000</code></p>"
         },
         {
             "id": 613,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-02T08:44:14+00:00",
             "content_html": "<p>On Diablo 2 (Open Battle.net), the server responds back with <a href=\"/packet/178/sid-startadvex3\">SID_STARTADVEX3</a> and then the client sends <a href=\"/packet/339/sid-leavechat\">SID_LEAVECHAT</a>. No <a href=\"/packet/194/sid-notifyjoin\">SID_NOTIFYJOIN</a> packet is sent.</p>\n<p>On Diablo 2 (Closed Battle.net), the server does not respond to this packet. The client immediately sends <a href=\"/packet/194/sid-notifyjoin\">SID_NOTIFYJOIN</a> followed by <a href=\"/packet/339/sid-leavechat\">SID_LEAVECHAT</a>.</p>"
         }

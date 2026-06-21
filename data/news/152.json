@@ -1,0 +1,13 @@
+{
+    "id": 152,
+    "title": "Site Redesign and New Features",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Greetings, BNETDocs members! We have published a new site redesign, which includes many improvements over the old design. The old design was not as giving to modern web design, it was rigid and unforgiving. This design is a polished, sleek user interface enabled by the <a href=\"https://getbootstrap.com/\">bootstrap</a> framework, enabling responsive web design out of the box.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/152/site-redesign-and-new-features",
+    "created_datetime": "2021-07-21T07:49:06+00:00",
+    "edited_datetime": "2021-07-21T07:51:12+00:00",
+    "content_html": "<p>Greetings, BNETDocs members! We have published a new site redesign, which includes many improvements over the old design. The old design was not as giving to modern web design, it was rigid and unforgiving. This design is a polished, sleek user interface enabled by the <a href=\"https://getbootstrap.com/\">bootstrap</a> framework, enabling responsive web design out of the box.</p>\n<p>A few of the new features that users can expect with this new design include the following:</p>\n<ul>\n<li>A GDPR-compatible privacy notice has been added, clarifying user's data rights and how their data is processed.</li>\n<li>Documents and packets are now searchable!</li>\n<li>For maintainers, packets can now be added natively from the site! Before, the process necessitated making manual SQL/database commands and was fragile by being prone to human error. The new UI will surely be welcomed!</li>\n<li>Comments are now visible while editing documents, news posts, and packets.</li>\n<li>Syntax highlighting in code blocks has been made available for a variety of code languages.</li>\n<li>Emoji icons have been added in places of words for site actions, such as deleting or editing comments, documents, news posts, packets, etc.; hovering the mouse will still show the action verb as text.</li>\n<li>Many other cosmetic fixes, all changes are at GitHub for those interested.</li>\n</ul>\n<p>Please feel free to browse around and check out the site makeover. We hope that this helps users like you find their way around easier. This redesign empowers us to make more flexible changes around the site, so expect more to come soon!</p>\n<p>Warm Regards :]</p>",
+    "comments": []
+}

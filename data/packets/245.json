@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/245/d2gs-negotiatecompression",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2018-10-26T00:17:23+00:00",
@@ -20,13 +20,13 @@
     "comments": [
         {
             "id": 595,
-            "author_username": "BNETDocs",
+            "author_username": "dzik",
             "created_datetime": "2018-10-24T18:07:04+00:00",
             "content_html": "<p>As per last changes d2gs protocol is now always uncompressed (compression mode = 0x00)</p>"
         },
         {
             "id": 601,
-            "author_username": "BNETDocs",
+            "author_username": "Glyph",
             "created_datetime": "2019-11-12T20:13:25+00:00",
             "content_html": "<p>Some specific servers are modified and have 0x01 compression mode. (that work with an unmodified client [as of 1.14d, untested on other versions])</p>"
         }

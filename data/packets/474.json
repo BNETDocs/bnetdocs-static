@@ -16,7 +16,7 @@
         1146308690,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/474/sid-readmemory",
     "created_datetime": "2010-09-25T23:15:05+00:00",
     "edited_datetime": "2025-05-24T22:32:00+00:00",
@@ -25,19 +25,19 @@
     "comments": [
         {
             "id": 465,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-07-03T02:55:41+00:00",
             "content_html": "<p>It's not defunct.</p>"
         },
         {
             "id": 466,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2011-07-05T05:44:10+00:00",
             "content_html": "<p>You have logs of its use?</p>"
         },
         {
             "id": 470,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-07-19T00:14:03+00:00",
             "content_html": "<p>Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
         }

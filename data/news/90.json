@@ -1,0 +1,13 @@
+{
+    "id": 90,
+    "title": "Server Upgrade",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>The BNETDocs server is now undergoing an upgrade, so there may be temporary downtime.</p>",
+    "author_username": "Kyro",
+    "uri": "/news/90/server-upgrade",
+    "created_datetime": "2012-06-25T22:06:17+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>The BNETDocs server is now undergoing an upgrade, so there may be temporary downtime.</p>\n<p>This downtime should be extremely brief. </p>\n<p>Thanks for your patience at this time! </p>",
+    "comments": []
+}

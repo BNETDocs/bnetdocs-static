@@ -3,7 +3,7 @@
     "title": "Game Statstrings",
     "options_bitmask": 3,
     "brief_html": "<p>This document covers the game advertisement statstrings for the various Blizzard games and goes into detail on each one for each game.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/document/13/game-statstrings",
     "created_datetime": "2011-02-18T06:13:43+00:00",
     "edited_datetime": "2021-08-21T22:22:20+00:00",
@@ -11,67 +11,67 @@
     "comments": [
         {
             "id": 80,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2008-03-27T15:30:22+00:00",
             "content_html": "<p>If the map name has a 0x0D or a 0x0A, then others will not be able to join.<br />\nThey will receive a &quot;Unable to join game.&quot; message from Battle.net and the information screen will be blank.<br />\n(Tested on Starcraft Broodwar)</p>\n<p>Im going to play safe and assume that this is because Starcraft cannot parse the invalid statstring.</p>"
         },
         {
             "id": 122,
-            "author_username": "BNETDocs",
+            "author_username": "ansichart",
             "created_datetime": "2008-10-03T14:29:03+00:00",
             "content_html": "<p>I have done some packet analyzing and I found out the first unknown value.  It is the number of players allowed on the map.  If the value is blank, then it is an 8 player map, values 12-17 are 2 player maps - 7 player maps.</p>\n<p>And #7 does not seem to be the checksum of the map, since it seems to be the same value for me no matter what map I pick.</p>\n<p>The other unknown value is set to 1 for a replay game, and set to blank if not.</p>\n<p>Also, there is a parameter that lies before the map size... before the first comma and after the game password.  The field contains a DWORD in it only when you host a saved game.  I am not sure what this data means.</p>"
         },
         {
             "id": 147,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-08-23T11:51:52+00:00",
             "content_html": "<p>The statstring format for Starcraft needs to be updated... I made my bot send the SID_STARTADVEX3 following these specifications and it had the blank info come up.</p>\n<p>Now, that is not saying I do not have a working statstring, because I do. I may find time later on to update this with my working statstring, and ansichart's findings.</p>"
         },
         {
             "id": 158,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2010-04-09T21:24:04+00:00",
             "content_html": "<p>Got this info regarding Starcraft Shareware games. Will be doing the rest of them soon as well:</p>\n<p>Game Statstring: ,33,12,6,,2,1,2ac374b3,,RealityRipple(0x0D)Byways(0x0D)<br />\nMap Size: 33 3<em>32,3</em>32   96x96<br />\nPlayers: 12             2 players<br />\nGame Speed: 6              Fastest<br />\nApproval: -              Not Implemented/No Approval/Unknown<br />\nGame Type: 2              Melee<br />\nParameter: 1              See above Parameter<br />\nChecksum: 2ac374b3<br />\nTileset: blank          Badlands<br />\nCreator: RealityRipple<br />\nMapName: Byways</p>\n<p>As for the checksum, <a href=\"http://forum.valhallalegends.com/index.php?topic=17702.msg182264#msg182264\">http://forum.valhallalegends.com/index.php?topic=17702.msg182264#msg182264</a> will explain how it is created.</p>"
         },
         {
             "id": 165,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-06-30T06:07:45+00:00",
             "content_html": "<p>That looks about right.</p>"
         },
         {
             "id": 363,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-02T22:11:40+00:00",
             "content_html": "<p>Going to check back on these, it's from old research of mine.<br />\nDRTL:<br />\nStatus: 0<br />\nGame Type: 7<br />\nLanguage ID: 67698688<br />\nAddress Family: 0<br />\nPort: 2<br />\nHost IP: -1290215401<br />\n???: 0<br />\n???2: 0<br />\nGame Status: 0<br />\nTime Elapsed: 101580800<br />\nGame Name: asdf<br />\nGame Pass:<br />\nGame Statstring: 0<br />\nHost: UssRustolium16 LTRD 19 0 0 101 16 79 105 19312 0</p>"
         },
         {
             "id": 419,
-            "author_username": "BNETDocs",
+            "author_username": "MysT_DooM",
             "created_datetime": "2010-09-30T20:36:07+00:00",
             "content_html": "<p>7: the Hex Dword is actually a CDKey Hash hashed by SStrHash()</p>"
         },
         {
             "id": 420,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-30T21:16:45+00:00",
             "content_html": "<p>Mhmm. Talking to Frost now.</p>"
         },
         {
             "id": 425,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-10-03T23:24:58+00:00",
             "content_html": "<p>Updated.</p>"
         },
         {
             "id": 441,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2011-02-25T04:46:38+00:00",
             "content_html": "<p>Just want you to know that the hash is easily broken on older games and updating to an installation with a Digital Key is highly recommended.</p>"
         },
         {
             "id": 637,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2021-08-21T22:23:28+00:00",
             "content_html": "<p>Cleaned up markdown/formatting.</p>"
         }

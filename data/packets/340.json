@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/340/sid-leavegame",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": null,
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 656,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2023-03-12T19:17:45+00:00",
             "content_html": "<p>I've clarified that this is only used for Diablo II, other products send <a href=\"https://bnetdocs.org/packet/271/sid-stopadv\">SID_STOPADV</a> (if last remaining player) and <a href=\"https://bnetdocs.org/packet/145/sid-enterchat\">SID_ENTERCHAT</a> after leaving a game.</p>"
         }

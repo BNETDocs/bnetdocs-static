@@ -1,0 +1,20 @@
+{
+    "id": 59,
+    "title": "BNETDocs Continues",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Just wanted to let ya'all know the BNETDocs domain was expiring on Oct 31, so I've gone ahead and renewed the domain. So BNETDocs will continue to exist. Not much news to many of you, but there were some who were inquiring due to lack of updates on the BNETDocs core itself.</p>",
+    "author_username": "Kyro",
+    "uri": "/news/59/bnetdocs-continues",
+    "created_datetime": "2009-10-10T10:39:53+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Just wanted to let ya'all know the BNETDocs domain was expiring on Oct 31, so I've gone ahead and renewed the domain. So BNETDocs will continue to exist. Not much news to many of you, but there were some who were inquiring due to lack of updates on the BNETDocs core itself.</p>\n<p>I realize that I've been slow in updating, and I apologize. It hasn't been quite easy since I've been quite busy (I work 50 hours a week at my job as tech support for a telecommunications company, recent acquisition of PoliteTalk.com, and also started up my own corporation in marketing). But rest assured, work has most definitely NOT stopped on BNETDocs v2-- it is my goal to release BNETDocs v2 <strong>BEFORE</strong> Blizzard releases Battle.net v2!</p>",
+    "comments": [
+        {
+            "id": 334,
+            "author_username": "Kyro",
+            "created_datetime": "2009-12-30T22:15:56+00:00",
+            "content_html": "<p>Finally got around to coding ability to comment on news. Will add in editing, deleting, and BBCode later...</p>"
+        }
+    ]
+}

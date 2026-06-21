@@ -1,0 +1,13 @@
+{
+    "id": 38,
+    "title": "0x5E Warden Packet Reactivated",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>(08/22/07) Usually, if you connected to battle.net via a bot emulating Starcraft, you'd be disconnected for failure to properly respond to the 0x5E Warden packet. </p>",
+    "author_username": "Kyro",
+    "uri": "/news/38/0x5e-warden-packet-reactivated",
+    "created_datetime": "2007-08-29T19:24:48+00:00",
+    "edited_datetime": "2007-08-29T19:24:48+00:00",
+    "content_html": "<p>(08/22/07) Usually, if you connected to battle.net via a bot emulating Starcraft, you'd be disconnected for failure to properly respond to the 0x5E Warden packet. </p>\n<p>It appears that that very packet has been muted for now, so people can connect to battle.net via bots emulating the Starcraft game client. There is currently no estimate on how long the packet will remain muted. </p>\n<p>I've run tests, and am able to confirm the packet has indeed been muted.</p>\n<p>(08/29/07) Edit: The 0x5E Warden packet has been reactivated. All users emulating/using the Starcraft client will be disconnected after two minutes of not completing the correct Warden logon challenge sequence.</p>",
+    "comments": []
+}

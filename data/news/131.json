@@ -1,0 +1,13 @@
+{
+    "id": 131,
+    "title": "Classic Battle.net Illy account update",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>As of this posting, Blizzard has re-enabled the creation of illy accounts on all 4 realms of Classic Battle.net, with exception to the <code>@</code> symbol.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/131/classic-battle-net-illy-account-update",
+    "created_datetime": "2017-02-09T10:43:48+00:00",
+    "edited_datetime": "2017-02-10T18:20:53+00:00",
+    "content_html": "<p>As of this posting, Blizzard has re-enabled the creation of illy accounts on all 4 realms of Classic Battle.net, with exception to the <code>@</code> symbol.</p>\n<p>The <code>@</code> symbol has been disabled due to issues with channel banning specifically:</p>\n<blockquote>\n<p>We mistakenly reactivated the ability to create account names with &quot;@&quot;. Such names cannot be banned from channels and present other problems for the community.</p>\n</blockquote>\n<p>See Blizzard's <a href=\"https://us.battle.net/forums/en/bnet/topic/20753267053\">original announcement</a> for more info.</p>\n<p>Looks like the solution that Blizzard has moved forward with is as follows:</p>\n<ul>\n<li>Accounts with <code>@</code> symbols <del>have been deleted and</del> cannot be created.</li>\n<li>Accounts with &quot;illegal&quot; symbols, with exception to <code>@</code>, remain intact.</li>\n<li>Accounts with &quot;illegal&quot; symbols, with exception to <code>@</code>, can still be created. For instance, I just created the accounts <code>(((Carl)))@USEast</code> and <code>{Carl}@USEast</code>.</li>\n</ul>\n<p><strong>Update Feb 10, 2017:</strong> Blizzard <em>has not</em> actually deleted accounts with <code>@</code> symbols in their name and will be preserving accounts created with them. More info in <a href=\"https://us.battle.net/forums/en/bnet/topic/20753147176?page=4#post-70\">Clásico's post</a>.</p>\n<p>Best,</p>\n<p><a href=\"/user/63/carl-bennett\">Carl Bennett</a> | <a href=\"https://carlbennett.me\">carlbennett.me</a> | <a href=\"https://bnetdocs.org\">bnetdocs.org</a></p>",
+    "comments": []
+}

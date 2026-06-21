@@ -1,0 +1,26 @@
+{
+    "id": 61,
+    "title": "WarCraft III Update",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/61/warcraft-iii-update",
+    "created_datetime": "2010-01-20T09:29:36+00:00",
+    "edited_datetime": "2010-01-20T09:29:36+00:00",
+    "content_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>\n<p>Version: 1.24.3.6384</p>\n<pre><code>--------------------------------------------------------------------------\nPatch 1.24d\n--------------------------------------------------------------------------\n\nFIXES\n\n- Fixed a client crash related to queuing too many invalid build commands\n  (''crash hack'').</code></pre>\n<p>The verbyte did not change, but the hashes did. For your convenience, here is both:</p>\n<p>VerByte: <code>0x18</code><br />\nDecimal: 24<br />\nHashes: <a href=\"http://www.bnetdocs.org/archives/latesthashes/WAR3.zip\">WAR3.zip</a></p>",
+    "comments": [
+        {
+            "id": 335,
+            "author_username": "Kyro",
+            "created_datetime": "2010-02-21T16:36:55+00:00",
+            "content_html": "<p>Can you make the hashes available here at BNETDocs, and update the news article link?</p>"
+        },
+        {
+            "id": 338,
+            "author_username": "Caaaaarrrrlll",
+            "created_datetime": "2010-07-08T07:39:43+00:00",
+            "content_html": "<p>Done.</p>"
+        }
+    ]
+}

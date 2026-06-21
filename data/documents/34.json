@@ -3,7 +3,7 @@
     "title": "Storm UDP Protocol",
     "options_bitmask": 3,
     "brief_html": "<p>Used by StarCraft, Diablo, and WarCraft II use the Storm UDP Protocol to communicate during games.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Ribose",
     "uri": "/document/34/storm-udp-protocol",
     "created_datetime": "2012-03-24T13:49:09+00:00",
     "edited_datetime": "2016-04-03T12:46:49+00:00",

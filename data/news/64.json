@@ -1,0 +1,13 @@
+{
+    "id": 64,
+    "title": "StarCraft II Beta is now closed",
+    "category_id": 7,
+    "options_bitmask": 3,
+    "brief_html": "<p>The upcoming StarCraft II sequel was running in a closed beta (users had to have a beta key to get on Battle.net) open to selected players by Blizzard to be tested on their new Battle.net v2. Single-player was disabled unless you used the Galaxy Editor or used hacks/mods.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/64/starcraft-ii-beta-is-now-closed",
+    "created_datetime": "2010-07-19T19:44:20+00:00",
+    "edited_datetime": "2010-07-19T19:44:20+00:00",
+    "content_html": "<p>The upcoming StarCraft II sequel was running in a closed beta (users had to have a beta key to get on Battle.net) open to selected players by Blizzard to be tested on their new Battle.net v2. Single-player was disabled unless you used the Galaxy Editor or used hacks/mods.</p>\n<p>That beta (now nicknamed Phase 1) was shutdown, and later reopened with the title of Phase 2, and they said they would only run it for a few days. Well those few days are now up and the beta has been shutdown officially. Now all players can do is wait for the retail release on July 27th, 2010 or continue to play single-player via the Galaxy Editor or by using hacks/mods; Battle.net v2 will tell them to shove off.</p>\n<p>At that time, StarCraft II Retail will hit stores with millions of fans and players eagerly waiting to buy the game, or pick up their pre-ordered package (assuming that pre-order is not being shipped). Battle.net v2 will await the new players, being prepared for the bombardment of internet connections and packets.</p>\n<p>In other recent news (off-topic), <a href=\"http://labs.bnetdocs.org/\">BnetDocs v3</a> is still a work-in-progress. Kyro and I have been working every day to what seems like every other day making sure bugs are fixed, features are implemented, and surprises are kept secret until release. In the past week, we were fiddling with the SQL tables and we ended up messing some up, so we had to go back to a backup, so we apologize if there is anything missing that was here before.</p>",
+    "comments": []
+}

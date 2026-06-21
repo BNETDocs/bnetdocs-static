@@ -1,0 +1,13 @@
+{
+    "id": 121,
+    "title": "Simplicity 1.0",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>It has been almost 4 years since the last update, but I am pleased to once again provide an update to this program. There are a lot of minor details with this update, but the biggest change is using custom named initiates in a newly created clan instead of just using the generated initiate names. The biggest issue that was addressed was the creation of clans in general. The last public version (version 0.72) did not handle clan creation very well.</p>",
+    "author_username": "Vector",
+    "uri": "/news/121/simplicity-1-0",
+    "created_datetime": "2016-10-30T07:49:56+00:00",
+    "edited_datetime": "2017-07-30T01:47:22+00:00",
+    "content_html": "<p>It has been almost 4 years since the last update, but I am pleased to once again provide an update to this program. There are a lot of minor details with this update, but the biggest change is using custom named initiates in a newly created clan instead of just using the generated initiate names. The biggest issue that was addressed was the creation of clans in general. The last public version (version 0.72) did not handle clan creation very well.</p>\n<p>If you're new to Simplicity, it is a clan creator that requires minimal configuration to use, relies on SOCKS4 and HTTP proxies, checks for clanned keys when creating a clan, and more.</p>\n<p>You may download Simplicity here: <a href=\"http://files.codespeak.org/projects/simplicity/Simplicity.zip\">http://files.codespeak.org/projects/simplicity/Simplicity.zip</a></p>",
+    "comments": []
+}

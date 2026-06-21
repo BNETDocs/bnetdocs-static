@@ -1,0 +1,13 @@
+{
+    "id": 100,
+    "title": "emNet is back!",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p><a href=\"http://www.darkexile.com/forums/index.php?action=profile;u=3\">JoYkiLLaH</a> has announced that <strong>emNet</strong> is officially back and better than before. It's already shaping up with a lot of familiar faces coming online and chatting with everyone.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/100/emnet-is-back",
+    "created_datetime": "2015-09-20T06:42:13+00:00",
+    "edited_datetime": "2015-09-22T23:26:15+00:00",
+    "content_html": "<p><a href=\"http://www.darkexile.com/forums/index.php?action=profile;u=3\">JoYkiLLaH</a> has announced that <strong>emNet</strong> is officially back and better than before. It's already shaping up with a lot of familiar faces coming online and chatting with everyone.</p>\n<p>I've gone ahead and updated the server list on BNETDocs with the updated servers. There are now 4 different servers:</p>\n<ul>\n<li>cali.emwar.com (San Francisco, CA)</li>\n<li>dallas.emwar.com (Dallas, TX)</li>\n<li>kc.emwar.com (Kansas City, MO)</li>\n<li>ny.emwar.com (New York City, NY)</li>\n</ul>\n<p>The servers each talk to each other and emulate Battle.net sync, server splits and all.</p>\n<p>I've heard word that the Dallas server is the main hub where they each connect and that it is also where the MySQL database is at.</p>\n<p>Happy warring!</p>\n<p><a href=\"http://www.darkexile.com/forums/index.php/topic,4123.msg7638.html#msg7638\">Original Post</a></p>",
+    "comments": []
+}

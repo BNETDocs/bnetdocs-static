@@ -14,7 +14,7 @@
         1246975058,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/254/sid-getladderdata",
     "created_datetime": "2012-06-01T21:11:02+00:00",
     "edited_datetime": "2019-12-28T23:12:22+00:00",
@@ -23,7 +23,7 @@
     "comments": [
         {
             "id": 612,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-02T07:55:14+00:00",
             "content_html": "<p>When <em>Number of ranks listed</em> is 0, I observed four null bytes following the field.</p>"
         }

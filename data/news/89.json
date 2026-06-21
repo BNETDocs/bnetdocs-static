@@ -1,0 +1,13 @@
+{
+    "id": 89,
+    "title": "USEast/Azeroth Scheduled Downtime",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The USEast/Azeroth realm will have scheduled maintenance from Blizzard this week.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/89/useast-azeroth-scheduled-downtime",
+    "created_datetime": "2012-06-19T17:51:18+00:00",
+    "edited_datetime": "2012-06-19T17:51:18+00:00",
+    "content_html": "<p>The USEast/Azeroth realm will have scheduled maintenance from Blizzard this week.</p>\n<p>The new hardware that they were testing with the USTest/Stratholme realm has gone through the successful benchmarks that they sought after, and they are now upgrading the USEast/Azeroth realm to the new hardware. This is the reason for the downtime.</p>\n<p>Apparently the USEast/Azeroth will also have &quot;a potential for connection and stability improvements&quot; after the upgrade.</p>\n<p><del>It is unknown as of the time of this post if the USTest/Stratholme realm will continue to stay up after the upgrade is complete.</del> The USTest/Stratholme realm will be taken down after 24 hours of the upgrade on USEast/Azeroth. Blizzard has made it clear that the data on USEast/Azeroth will be moved over to the new hardware, instead of starting fresh.</p>\n<p><em>Maintenance:</em></p>\n<ul>\n<li>10:00 a.m. PDT, Wednesday June 20 – 10:00 a.m. PDT, Thursday June 21</li>\n<li>Expected ~24 hour maintenance duration</li>\n</ul>\n<p>Also note that Blizzard may extend the maintenance time period if they need to and if they do then the realm will stay down longer than what they have outlined above.</p>\n<p>You can see the original post by Bashiok on the Blizzard forums by clicking <a href=\"http://forums.battle.net/thread.html?topicId=27844684620&amp;sid=3000\">this link</a>.</p>",
+    "comments": []
+}

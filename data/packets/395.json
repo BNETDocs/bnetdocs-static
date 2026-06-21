@@ -8,7 +8,7 @@
     "options_bitmask": 3,
     "brief_html": "<p>This message will give you data you need for SID_AUTH_ACCOUNTUPGRADE (0x57).<br />\nThis message is used to upgrade an existing account from Old Logon System to New Logon System.<br />\nYou must send this before you can send BNLS_UPGRADEPROOF (0x08).</p>",
     "used_by": [],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/395/bnls-upgradechallenge",
     "created_datetime": "2011-02-04T22:10:56+00:00",
     "edited_datetime": null,

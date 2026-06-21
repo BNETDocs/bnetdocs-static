@@ -1,0 +1,13 @@
+{
+    "id": 94,
+    "title": "Bnetdocs ownership and a security intrusion from earlier",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Kyro has stepped down as manager and owner of Bnetdocs as he is pursuing other life events and as such, no longer has time for this project. The new manager and owner of Bnetdocs is Jailout2000.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/94/bnetdocs-ownership-and-a-security-intrusion-from-earlier",
+    "created_datetime": "2014-03-07T00:53:26+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Kyro has stepped down as manager and owner of Bnetdocs as he is pursuing other life events and as such, no longer has time for this project. The new manager and owner of Bnetdocs is Jailout2000.</p>\n<p>In addition to this change, the Bnetdocs content (html, css, images, javascript, mysql, php, etc.) has moved to Jailout2000's server, and the domain name will be transferred into Jailout2000's hands later within the next couple of months.</p>\n<p>While transferring the Bnetdocs mysql content from Kyro's server to Jailout2000's, Jailout2000 noticed that the text encodings were broken after exporting (rather than after importing). A solution was found which seems to have fixed the issue that was double encoding, however please make an effort to point out any encoding flaws if there are any. In an effort to remedy this permanently should it possibly happen in the future, a change was made to the Bnetdocs code that will set the encoding directly after connecting to mysql.</p>\n<p>In another note, a couple of months ago Kyro noticed that there was a security intrusion to Bnetdocs which caused data to be deleted. A temporary solution was put in place that disables logins until the problem can be further investigated and patched. There are logs with the original content of such deleted data, so the data is recoverable, however if there were any comments/notes, those are lost.</p>\n<p>Happy coding!</p>",
+    "comments": []
+}

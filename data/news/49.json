@@ -1,0 +1,13 @@
+{
+    "id": 49,
+    "title": "Server Move",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>In light of the frequent downtimes we've been experiencing lately, I've procured a new server and will be moving all domains/customers to that new server. </p>",
+    "author_username": "Kyro",
+    "uri": "/news/49/server-move",
+    "created_datetime": "2008-02-29T23:02:15+00:00",
+    "edited_datetime": "2008-02-29T23:02:15+00:00",
+    "content_html": "<p>In light of the frequent downtimes we've been experiencing lately, I've procured a new server and will be moving all domains/customers to that new server. </p>\n<p>What this means for BNETDocs is some downtime. This is due to DNS propagation, which will take up to 24 hours, depending on your ISP.</p>\n<p>This also includes the BNLS redirection server. I apologize for any inconvenience, but believe me, this is the best course as I believe in reliability. If there are any issues and you're unable to report it to me via BNETDocs, feel free to contact me by sending me a PM at BNETDev.net. Make sure the PM is sent to DonCullen.</p>\n<p>Once more, thanks for your patience. :)</p>",
+    "comments": []
+}

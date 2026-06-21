@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/219/sid-auth-accountupgradeproof",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-10-15T07:46:11+00:00",
@@ -20,13 +20,13 @@
     "comments": [
         {
             "id": 88,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2008-04-21T01:47:50+00:00",
             "content_html": "<p>Not real high priority, but wheres 0x58 C&gt;S?</p>\n<p>Reference:<br />\n<a href=\"http://forum.valhallalegends.com/index.php?topic=14113\">http://forum.valhallalegends.com/index.php?topic=14113</a></p>"
         },
         {
             "id": 90,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2008-04-21T02:38:48+00:00",
             "content_html": "<p>Coming right up!</p>"
         }

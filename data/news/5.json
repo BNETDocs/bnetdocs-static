@@ -1,0 +1,13 @@
+{
+    "id": 5,
+    "title": "BNLS Updates",
+    "category_id": 6,
+    "options_bitmask": 3,
+    "brief_html": "<p>BNLS has been upgraded for the latest &quot;lockdown&quot; changes on the Battle.net servers. Bot developers may now use it for requesting fast version checks on all supporting products. At this time, Diablo II, WarCraft III, and their expansions do not make use of the latest updates.</p>",
+    "author_username": "UserLoser",
+    "uri": "/news/5/bnls-updates",
+    "created_datetime": "2007-03-21T20:02:51+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>BNLS has been upgraded for the latest &quot;lockdown&quot; changes on the Battle.net servers. Bot developers may now use it for requesting fast version checks on all supporting products. At this time, Diablo II, WarCraft III, and their expansions do not make use of the latest updates.</p>\n<p>The documentation has been updated with BNLS messages BNLS_VERSIONCHECKEX and BNLS_VERSIONCHECKEX2 to support the changes.</p>",
+    "comments": []
+}

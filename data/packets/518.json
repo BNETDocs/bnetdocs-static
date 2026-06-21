@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/packet/518/sid-unknown-de",
     "created_datetime": "2019-12-27T00:43:27+00:00",
     "edited_datetime": "2019-12-29T16:02:57+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 648,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-11-14T06:36:05+00:00",
             "content_html": "<p>D2 sends 67 of these packets in a row before sending SID_EXTRAWORK. The length of the data, excluding the BNCS header, is approximately between 100 - 200 bytes.</p>"
         }

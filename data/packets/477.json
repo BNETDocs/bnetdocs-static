@@ -15,7 +15,7 @@
         1146308690,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/477/sid-readcookie",
     "created_datetime": "2010-09-25T23:25:57+00:00",
     "edited_datetime": null,
@@ -24,7 +24,7 @@
     "comments": [
         {
             "id": 479,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-09-09T21:38:57+00:00",
             "content_html": "<p>It's not defunct, Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
         }

@@ -1,0 +1,13 @@
+{
+    "id": 86,
+    "title": "BNETDocs Administration Changes",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>First off, Jailout2000 is no longer maintaining BNETDocs. What this means is: the status update checker at the right will no longer be refreshed, as those were maintained by him. He will still have editor access, although he won't be posting at BNETDocs as often as he used to.</p>",
+    "author_username": "Kyro",
+    "uri": "/news/86/bnetdocs-administration-changes",
+    "created_datetime": "2012-01-17T08:25:06+00:00",
+    "edited_datetime": "2012-01-17T08:25:06+00:00",
+    "content_html": "<p>First off, Jailout2000 is no longer maintaining BNETDocs. What this means is: the status update checker at the right will no longer be refreshed, as those were maintained by him. He will still have editor access, although he won't be posting at BNETDocs as often as he used to.</p>\n<p>Secondly, I am announcing that BNETDocs is now seeking a new owner/administrator for BNETDocs. The reason for this is because due to life events, I no longer can maintain BNETDocs, and would like to pass it on to someone who has both the time and capability. Knowledge of PHP, MySQL, CSS, and Javascript is essential. Knowledge of Battle.net programming also would be preferred. If you're interested, please head on over to <a href=\"http://www.doncullen.net\">www.doncullen.net</a> and send me a message via the 'Contact Me' page.</p>",
+    "comments": []
+}

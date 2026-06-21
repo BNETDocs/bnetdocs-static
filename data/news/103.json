@@ -1,0 +1,13 @@
+{
+    "id": 103,
+    "title": "Diablo II 1.14a Patch",
+    "category_id": 3,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard made an announcement on March 12, 2016 that they've finally come back and updated Diablo II after all this time. The new patch is labeled 1.14a and includes <a href=\"https://static.carlbennett.me/archives/Battle.net/Hashes/D2DV/\">new hashes</a>, a new version byte <code>0x0E</code>, and of course bugfixes for the actual game.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/103/diablo-ii-1-14a-patch",
+    "created_datetime": "2016-03-12T04:39:42+00:00",
+    "edited_datetime": "2016-03-16T06:40:25+00:00",
+    "content_html": "<p>Blizzard made an announcement on March 12, 2016 that they've finally come back and updated Diablo II after all this time. The new patch is labeled 1.14a and includes <a href=\"https://static.carlbennett.me/archives/Battle.net/Hashes/D2DV/\">new hashes</a>, a new version byte <code>0x0E</code>, and of course bugfixes for the actual game.</p>\n<p>Here's a copy of <a href=\"http://us.battle.net/en/forum/topic/20742864181\">the news post</a>:</p>\n<blockquote>\n<p>It’s been a long time coming, but today we’re releasing 1.14a for Diablo II. </p>\n<p>This update focuses on system glitches introduced by modern operating systems. In related news, you can finally retire those old Mac PowerPCs. Included with the update is a shiny new installer for OSX.</p>\n<p>We’ve also begun working to improve our cheat-detection and hack-prevention capabilities. There’s still work to be done, but we’re making improvements every day. </p>\n<p>There is still a large Diablo II community around the world, and we thank you for continuing to play and slay with us. This journey starts by making Diablo II run on modern platforms, but it does not end there. See you in Sanctuary, adventurers.</p>\n</blockquote>\n<p>And here are the patch notes:</p>\n<pre><code>Diablo II v1.14a Patch Notes\n\nSpecific Changes &amp; Improvements\n- No need to run in XP mode anymore, Windows 7, 8.1, and 10 compatibility complete\n- Mac installer and compatibility for 10.10 and 10.11 has arrived\n- First client run will migrate saved characters to avoid issues from Windows system \nadmin changes\n\nKnown Issues\n- Mac 10.9 and earlier are not supported</code></pre>",
+    "comments": []
+}

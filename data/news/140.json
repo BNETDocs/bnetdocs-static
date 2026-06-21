@@ -1,0 +1,13 @@
+{
+    "id": 140,
+    "title": "Discord Server!",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>We've setup an official BNETDocs Discord server!</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/140/discord-server",
+    "created_datetime": "2018-01-24T19:13:32+00:00",
+    "edited_datetime": "2018-01-24T19:20:05+00:00",
+    "content_html": "<p>We've setup an official BNETDocs Discord server!</p>\n<h3>Who's invited?</h3>\n<p>Anyone who wants to chat with BNETDocs staff or its community is welcome. A few familiar faces are there already!</p>\n<p>Here's the invite link: <a href=\"https://discord.gg/u87WVeu\">https://discord.gg/u87WVeu</a></p>\n<h3>What does this mean for the BNETDocs Slack?</h3>\n<p>We're keeping it for now, and yes that means there's a Slack and a Discord. I am trialing the Discord server to see if it's better received by the community. At a later date, we will look at getting rid of one or the other, depending on how everyone feels.</p>",
+    "comments": []
+}

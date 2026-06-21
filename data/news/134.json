@@ -1,0 +1,13 @@
+{
+    "id": 134,
+    "title": "USWest Scheduled Maintenance",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard will be performing maintenance to the USWest Classic Battle.net servers on Friday, March 3, 2017 from 8:00AM to 12:00PM PST.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/134/uswest-scheduled-maintenance",
+    "created_datetime": "2017-03-02T23:33:04+00:00",
+    "edited_datetime": "2017-03-02T23:34:42+00:00",
+    "content_html": "<p>Blizzard will be performing maintenance to the USWest Classic Battle.net servers on Friday, March 3, 2017 from 8:00AM to 12:00PM PST.</p>\n<p>Announcement: <a href=\"https://us.battle.net/forums/en/bnet/topic/20753485183\">https://us.battle.net/forums/en/bnet/topic/20753485183</a></p>\n<p>The following games will be down during this maintenance:</p>\n<ul>\n<li>Diablo</li>\n<li>Diablo II</li>\n<li>Diablo II: Lord of Destruction</li>\n<li>Starcraft</li>\n<li>Starcraft: Brood War</li>\n<li>Warcraft II: Battle.net Edition</li>\n<li>Warcraft III: Reign of Chaos</li>\n<li>Warcraft III: The Frozen Throne</li>\n</ul>\n<p>Additionally, the USWest servers are displaying the following <code>EID_ERROR</code> message upon entry to any channel in preparation for this maintenance:<br/><br/></p>\n<blockquote>\n<p>[Server Broadcast] Server maintenance Friday 0800 PST (<a href=\"https://us.battle.net/forums/en/bnet/topic/20753485183\">https://us.battle.net/forums/en/bnet/topic/20753485183</a>)</p>\n</blockquote>",
+    "comments": []
+}

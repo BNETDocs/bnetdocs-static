@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/292/sid-warcraftgeneral",
     "created_datetime": "2011-01-06T15:54:20+00:00",
     "edited_datetime": "2017-03-28T21:25:25+00:00",
@@ -20,49 +20,49 @@
     "comments": [
         {
             "id": 169,
-            "author_username": "BNETDocs",
+            "author_username": "RichardNixon",
             "created_datetime": "2010-07-19T03:40:25+00:00",
             "content_html": "<p>I'd like to submit a couple updates to this based on the PvPGN source.</p>\n<p>(<a href=\"http://svn.berlios.de/svnroot/repos/pvpgn/trunk/pvpgn/src/bnetd/handle_anongame.cpp\">http://svn.berlios.de/svnroot/repos/pvpgn/trunk/pvpgn/src/bnetd/handle_anongame.cpp</a>)</p>\n<p>(<a href=\"http://svn.berlios.de/svnroot/repos/pvpgn/trunk/pvpgn/src/common/anongame_protocol.h\">http://svn.berlios.de/svnroot/repos/pvpgn/trunk/pvpgn/src/common/anongame_protocol.h</a>)</p>\n<p>Subcommand 0x09:</p>\n<ul>\n<li>the second DWORD is the ID of the currently selected icon</li>\n<li>the second DWORD of each icon is the W3 unit ID - these IDs are listed in war3.mpq\\Units\\UnitData.slk</li>\n<li>last BYTE of each icon is 0 if disabled in user icon selection, 1 if enabled</li>\n</ul>\n<p>There's also several other subcommands related to setting up PG and AT games. The packet structures can be found in the PvPGN source files that I listed above.</p>"
         },
         {
             "id": 171,
-            "author_username": "BNETDocs",
+            "author_username": "RichardNixon",
             "created_datetime": "2010-07-19T03:40:25+00:00",
             "content_html": "<p>They apply to both.  This is how the official client interprets the 0x09 response fields, regardless of the server implementation (BNet or PvPGN).  I've tested these out with my own server.</p>"
         },
         {
             "id": 172,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-19T03:40:25+00:00",
             "content_html": "<p>Updated. Thanks for your addition, <a href=\"/user/348/richardnixon\">RichardNixon</a>.</p>"
         },
         {
             "id": 483,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-09-10T14:12:40+00:00",
             "content_html": "<blockquote>\n<p>these IDs are listed in war3.mpq\\Units\\UnitData.slk</p>\n</blockquote>\n<p>Or War3x.mpq respectively.</p>\n<p>What should this mean?</p>\n<pre><code>0x00 (WID_GAMESEARCH):\n        0x00000004: Banned CD-Key</code></pre>"
         },
         {
             "id": 496,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-09-27T18:04:37+00:00",
             "content_html": "<p>What compression algorithm is used here?</p>\n<p>Edit: nevermind.</p>"
         },
         {
             "id": 514,
-            "author_username": "BNETDocs",
+            "author_username": "BNi-PoweR.",
             "created_datetime": "2012-03-13T07:24:18+00:00",
             "content_html": "<p>For WID_GAMESEARCH, a status of 0x00000006 means you have reached the maximum games (~200 or so is the limit) and you have to wait a period of time before playing again.</p>"
         },
         {
             "id": 658,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2025-05-20T20:48:57+00:00",
             "content_html": "<pre><code class=\"language-log\">Subcommand 0x02 WID_MAPLIST: (probably should be labled QUERY, since its not only the map list information.)\n    (UINT32) Cookie\n     (UINT8) Number of responses\n     For each response:\n         (UINT32) ID\n         (UINT32) (CRC-32/BZIP2)-&gt;(uncompressed data)\n          (UINT16) Decompressed length\n          (UINT16) Compressed length\n          (VOID) Compressed data\n     (UINT8) Remaining Packets\n\ncompressed data:\ntypes:\n    (uint32_t)'\\0URL'\n        (char*) realm_url\n        (char*) profile_url\n        (char*) turnament_url\n        (char*) clan_url\n\n    (uint32_t)'\\0MAP'\n        (uint8_t) total\n        each:\n            (char*) map_path\n\n    (uint32_t)'TYPE'\n        (uint8_t) total\n        each:\n            (uint8_t) index\n            (uint8_t) total_2\n            each:\n                (uint8_t[5]) prefix_need_more_info\n                (uint8_t) total_maps\n                (uint8_t[total_maps]) maps_by_index_order\n        notes:\n            maps_by_index_order: this is the return from '\\0MAP', 0=first map in that list.\n            first occurrence of: total_maps&lt; 12\n            from every dump i have seen there is a spot in the second struct where the ending void*\n            bytes has 3 extra bytes attached to the structure. not counted and is a continuation of\n            the final byte of the counted struct {need_more_info[total_bytes]+1, \n            need_more_info[total_bytes]+2, need_more_info[total_bytes]+3}\n\n    (uint32_t)'DESC'\n        (uint8_t) total\n        each:\n            (uint8_t) index_enum_pg_at_ty\n            (uint8_t) index_in_the_pg_at_ty_list\n            (char*) short_description\n            (char*) long_description\n\n    (uint32_t)'LADR'\n        (uint8_t) total\n        each:\n            (uint32_t) type\n            (char*) category\n            (char*) url</code></pre>"
         },
         {
             "id": 659,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2025-05-20T21:00:37+00:00",
             "content_html": "<pre><code class=\"language-cpp\">namespace Standards::CRC32 {\n\n    constexpr uint32_t CRC32_BZIP2_POLYNOMIAL = 0x04C11DB7; //CRC-32/BZIP2\n    uint32_t CRC32BZIP2Table[256];\n    static bool CRC32BZIP2Initialized = false;\n\n    // Initialize CRC table for CRC-32/BZIP2\n    void constexpr InitCRC32_BZIP2() {\n        if (CRC32BZIP2Initialized)\n            return;\n        CRC32BZIP2Initialized = true;\n\n        for (size_t i = 0; i &lt; 256; i++) {\n            uint32_t crc = i &lt;&lt; 24; // Non-reflected version starts with MSB\n            for (size_t j = 0; j &lt; 8; j++) {\n                if (crc &amp; 0x80000000) {\n                    crc = (crc &lt;&lt; 1) ^ CRC32_BZIP2_POLYNOMIAL;\n                }\n                else {\n                    crc &lt;&lt;= 1;\n                }\n            }\n            CRC32BZIP2Table[i] = crc;\n        }\n    }\n\n    uint32_t BZIP2(uint8_t* data, size_t size) {\n        InitCRC32_BZIP2();\n\n        uint32_t crc = 0xFFFFFFFF;\n        while (size--) {\n            crc &amp;= 0xFFFFFFFF;\n            crc = ((crc &lt;&lt; 8)) ^ CRC32BZIP2Table[((crc &gt;&gt; 24) ^ *data++) &amp; 0xFF];\n        }\n        return ~(crc);\n    }\n\n}</code></pre>"
         }

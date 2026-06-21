@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/301/sid-clanmakechieftain",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2018-03-29T01:15:41+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 128,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-05-21T10:35:48+00:00",
             "content_html": "<p>FooLOps 1.9.9 does not handle this packet. When you attempt to make someone a Chieftain, look at the last byte for success/fail and compare it to the Clan Message Codes under Related.</p>"
         }

@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/277/sid-queryrealms2",
     "created_datetime": "2012-03-31T13:55:39+00:00",
     "edited_datetime": "2017-03-29T18:33:05+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 652,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2022-01-15T10:43:27+00:00",
             "content_html": "<p>When requesting this on non-D2 products (I've tried W2BN and DRTL) the following response is given:</p>\n<pre><code>SID_QUERYREALMS2 (id: 0x40, length: 12)\nff 40 0c 00 03 00 00 80 00 00 00 00                 .@..........</code></pre>\n<p>The first Unknown is <code>03 00 00 80</code>.</p>"
         }

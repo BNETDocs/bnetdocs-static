@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/361/bnls-versioncheck",
     "created_datetime": "2011-09-30T08:04:20+00:00",
     "edited_datetime": "2018-08-20T08:39:24+00:00",
@@ -29,13 +29,13 @@
     "comments": [
         {
             "id": 58,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-10T17:44:17+00:00",
             "content_html": "<p>if someone could, please update this list JBLS supports more products</p>"
         },
         {
             "id": 146,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-08-08T17:26:46+00:00",
             "content_html": "<p>Updated, to a comment that's 2 years old lol.</p>"
         }

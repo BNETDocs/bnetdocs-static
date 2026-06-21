@@ -1,0 +1,13 @@
+{
+    "id": 97,
+    "title": "Work in progress",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>I've been giving life back into BNETDocs: Phoenix recently. There's been lots of changes to the code repository and restructuring it. There's been lots of new designs and paradigms put in place that are better than the previous Phoenix from last year. More news coming soon.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/97/work-in-progress",
+    "created_datetime": "2015-05-26T02:53:00+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>I've been giving life back into BNETDocs: Phoenix recently. There's been lots of changes to the code repository and restructuring it. There's been lots of new designs and paradigms put in place that are better than the previous Phoenix from last year. More news coming soon.</p>",
+    "comments": []
+}

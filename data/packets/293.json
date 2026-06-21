@@ -18,7 +18,7 @@
         1144150096,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/293/bnls-hashdata",
     "created_datetime": "2011-02-04T21:55:48+00:00",
     "edited_datetime": "2017-04-22T23:48:19+00:00",
@@ -27,7 +27,7 @@
     "comments": [
         {
             "id": 140,
-            "author_username": "BNETDocs",
+            "author_username": "mikeownage",
             "created_datetime": "2009-04-21T21:53:21+00:00",
             "content_html": "<p>Flags 0x00 is for a single hash request.</p>"
         }

@@ -11,7 +11,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/packet/456/w3gs-rejectjoin",
     "created_datetime": "2011-03-13T21:30:17+00:00",
     "edited_datetime": "2018-03-30T19:41:51+00:00",
@@ -20,19 +20,19 @@
     "comments": [
         {
             "id": 442,
-            "author_username": "BNETDocs",
+            "author_username": "ToraxXx",
             "created_datetime": "2011-03-04T18:26:44+00:00",
             "content_html": "<p>0x07 seems to be returned when you send an invalid join request, atleast thats what I get when I do that.</p>"
         },
         {
             "id": 454,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-03-14T02:30:38+00:00",
             "content_html": "<p>Added 0x07 and described each reason code.</p>"
         },
         {
             "id": 455,
-            "author_username": "BNETDocs",
+            "author_username": "ToraxXx",
             "created_datetime": "2011-03-19T14:52:25+00:00",
             "content_html": "<p>Also GHost++ seems to fail sending the right DWORD (it sends 27 instead of 0x27 etc.), you can see that in the source code ofc</p>"
         }

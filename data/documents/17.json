@@ -3,7 +3,7 @@
     "title": "Chat Gateway Protocol",
     "options_bitmask": 3,
     "brief_html": "<p>The chat gateway is a text protocol on Battle.net&trade; that was deprecated in 2005. It has since been disabled entirely; sending the protocol byte for this protocol causes the server to disconnect the client. The information below is retained for completeness and historic purposes.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Caaaaarrrrlll",
     "uri": "/document/17/chat-gateway-protocol",
     "created_datetime": "2011-09-30T18:42:06+00:00",
     "edited_datetime": "2018-03-30T02:19:45+00:00",
@@ -11,25 +11,25 @@
     "comments": [
         {
             "id": 360,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-22T06:16:11+00:00",
             "content_html": "<p>Looks like you are missing some. 1016 and 3000 were also Event_Info (duplicates of 1018 or perhaps they were used for something else?).</p>\n<p>In addition, 1013, 1014, and 1015 were used. When a channel was full, you would receive 1013. If you could not join a channel from being on the restricted client, you would get 1015, and if you did a /whois of a channel that had 0 users, you would get 1014.</p>\n<p>And... Telnet still exists, just to Blizzard employees only &lt;a href=&quot;<a href=\"http://forum.valhallalegends.com/index.php/topic,17597#msg179291&quot;&gt;according\">http://forum.valhallalegends.com/index.php/topic,17597#msg179291\"&gt;according</a> to Ringo&lt;/a&gt;.</p>\n<p>From my old bot: (they match 0x0F, save for &quot;Event<em>&quot; instead of &quot;EID</em>&quot; -- also looks like there is no NULL packet from 0x0F)<br />\nCase 1001: Event_SHOWUSER<br />\nCase 1002: Event_JOIN<br />\nCase 1003: Event_LEAVE<br />\nCase 1004: Event_WHISPER<br />\nCase 1005: Event_TALK<br />\nCase 1006: Event_BROADCAST<br />\nCase 1007: Event_CHANNEL<br />\nCase 1009: Event_USERFLAGS<br />\nCase 1010: Event_WHISPERSENT<br />\nCase 1013: Event_CHANNELFULL<br />\nCase 1014: Event_CHANNELDOESNOTEXIST<br />\nCase 1015: Event_CHANNELRESTRICTED<br />\nCase 1016: Event_INFO<br />\nCase 1018: Event_INFO<br />\nCase 1019: Event_ERROR<br />\nCase 1023: Event_EMOTE<br />\nCase 2000: Event_NULL<br />\nCase 2010: Event_NAME<br />\nCase 3000: Event_INFO</p>\n<p>EDIT: Also, there were two commands that were CHAT commands only, beep and nobeep.<br />\n/beep - enable audible notifications<br />\n/nobeep - disable audible notifications</p>\n<p>As far as I know, you could /beep &lt;username&gt; and if they had it enabled, it would make their computer beep.</p>"
         },
         {
             "id": 413,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-09-26T21:58:45+00:00",
             "content_html": "<p>/time also works.</p>\n<p>Remember that you have to be on the demo.war3.battle.net server.</p>"
         },
         {
             "id": 415,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-26T22:51:00+00:00",
             "content_html": "<p>Whoops, forgot to add that back.</p>"
         },
         {
             "id": 412,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-27T04:22:59+00:00",
             "content_html": "<p>Telnet still works on the W3DM Server. You have to use the name &quot;Anonymous&quot; with no password since there are no account capabilities. Only the following commands work:<br />\n/?         -- /help<br />\n/whois     -- /where /whereis /whois<br />\n/friends   -- /f<br />\n/users<br />\n/who<br />\n/time<br />\n/stats</p>"
         }

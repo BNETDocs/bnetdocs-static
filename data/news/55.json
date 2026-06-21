@@ -1,0 +1,13 @@
+{
+    "id": 55,
+    "title": "Warcraft III Patch 1.23",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Verbyte: <code>0x17</code> (23)<br />\nHashes: <a href=\"http://rcb.realityripple.com/hashes/\">here</a></p>",
+    "author_username": "RealityRipple",
+    "uri": "/news/55/warcraft-iii-patch-1-23",
+    "created_datetime": "2009-03-20T05:26:28+00:00",
+    "edited_datetime": "2009-03-20T05:26:28+00:00",
+    "content_html": "<pre><code>--------------------------------------------------------------------------\n  WARCRAFT III: THE FROZEN THRONE VERSION HISTORY\n--------------------------------------------------------------------------\n\n--------------------------------------------------------------------------\nPatch 1.23\n--------------------------------------------------------------------------\n\nFEATURES\n\n- Battle.net now uses a new banner ad system. \n\nFIXES\n\n- Fixed an exploit where an altered custom map would be seen identical to\n   the original custom map.\n- Fixed an issue where some patches could not apply on Intel Macs.</code></pre>\n<p>Verbyte: <code>0x17</code> (23)<br />\nHashes: <a href=\"http://rcb.realityripple.com/hashes/\">here</a></p>",
+    "comments": []
+}

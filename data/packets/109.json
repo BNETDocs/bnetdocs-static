@@ -10,7 +10,7 @@
     "used_by": [
         1398030674
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/109/sid-registry",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2021-11-05T01:44:06+00:00",
@@ -19,13 +19,13 @@
     "comments": [
         {
             "id": 148,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-08-23T13:46:51+00:00",
             "content_html": "<p>You would think Blizzard would actually have the Key Value be VOID, not STRING. Shame I cannot test that to see if it really is a VOID, because Battle.net does not use this anymore.</p>\n<p>Allowing access to the Windows registry without checking what is requested first is always a security risk, even if the data being requested is not changed. Does anyone know what Battle.net used to use this for? What values (paths and keys) it told the client to send the value of?</p>"
         },
         {
             "id": 646,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-11-05T01:54:31+00:00",
             "content_html": "<p>Refer to my comment at <a href=\"https://bnetdocs.org/packet/388#comments\">https://bnetdocs.org/packet/388#comments</a> to learn more about why this packet existed.</p>"
         }

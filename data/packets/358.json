@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/358/sid-readuserdata",
     "created_datetime": "2010-12-26T19:51:11+00:00",
     "edited_datetime": "2021-09-19T07:13:37+00:00",
@@ -29,49 +29,49 @@
     "comments": [
         {
             "id": 81,
-            "author_username": "BNETDocs",
+            "author_username": "idiat",
             "created_datetime": "2008-03-28T21:23:29+00:00",
             "content_html": "<p>The System keys under &quot;Account Info&quot; can only be accessed if you are requesting your own information. Otherwise, Battle.net will send back a blank key value.</p>"
         },
         {
             "id": 125,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2008-12-13T23:55:56+00:00",
             "content_html": "<p>More under &quot;Account Info&quot;:<br />\n<em>SystemUsername<br />\n</em>SystemAuthLevel<br />\n<em>SystemLeague<br />\n</em>SystemIcon<br />\n<em>SystemMFT Bytes<br />\n</em>SystemMFT Last Write<br />\n<em>SystemMFT Time Logged<br />\n</em>SystemIP<br />\n<em>SystemPort<br />\n</em>SystemFriends<br />\n*SystemFlags</p>"
         },
         {
             "id": 151,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-04-06T00:05:20+00:00",
             "content_html": "<p>@idiat: Added the note.<br />\n@Sixen: Added the keys.</p>"
         },
         {
             "id": 160,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-04-15T22:43:58+00:00",
             "content_html": "<p>Just to further comment on this packet, I just used Starcraft Broodwar and saw that only 5 of the System keys actually return data when I use my name.</p>\n<p>System\\Account Created<br />\nSystem\\Last Logoff<br />\nSystem\\Last Logon<br />\nSystem\\Time Logged<br />\nSystem\\Username</p>\n<p>If anyone knows of any other System keys that return something, please comment.</p>"
         },
         {
             "id": 434,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2010-12-26T01:33:15+00:00",
             "content_html": "<p>Requesting 0x20 (32) or more keys at one time makes Battle.net kick you. No ban, just kick.</p>"
         },
         {
             "id": 435,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-12-27T01:49:01+00:00",
             "content_html": "<p>Added the note.</p>"
         },
         {
             "id": 571,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-04-27T01:00:26+00:00",
             "content_html": "<p>Updated document formatting to Markdown syntax.</p>"
         },
         {
             "id": 574,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-05-01T07:29:24+00:00",
             "content_html": "<p>Updated <code>profile\\description</code> to include its maximum length.</p>"
         }

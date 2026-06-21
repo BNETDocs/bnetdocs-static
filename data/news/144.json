@@ -1,0 +1,13 @@
+{
+    "id": 144,
+    "title": "Battle.net Server Upgrade/Maintenance",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>The Blizzard team behind the recent Starcraft Remastered project and other patches to Blizzard's Classic Games have announced a server upgrade/patch scheduled for today.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/144/battle-net-server-upgrade-maintenance",
+    "created_datetime": "2018-05-01T18:43:19+00:00",
+    "edited_datetime": "2018-05-01T18:48:59+00:00",
+    "content_html": "<p>The Blizzard team behind the recent Starcraft Remastered project and other patches to Blizzard's Classic Games have announced a server upgrade/patch scheduled for today.</p>\n<p>The following is a copy of the forum post:</p>\n<blockquote>\n<p>Classic Battle.net services will be upgraded on Tuesday at 1000 PDT. We expect the maintenance to last one hour.</p>\n<p><strong>Specific Changes &amp; Improvements</strong></p>\n<ul>\n<li>Increased max channel size to 255</li>\n<li>Increased max clan size to 255</li>\n<li>Fixed clan message of the day</li>\n<li>Changed default channel to be based on language not region</li>\n<li>Fixed emails not being sent in correct locale for new accounts</li>\n<li>Resolved issues with Warcraft III ladder reset</li>\n</ul>\n<p><strong>Known Issue</strong></p>\n<p>Creating clans and arranged teams with more than 40 players in the channel will cause a disconnect from Warcraft III until the next client patch.</p>\n</blockquote>\n<p>Read more <a href=\"https://us.battle.net/forums/en/bnet/topic/20762766109\">here</a>.</p>",
+    "comments": []
+}

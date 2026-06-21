@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/122/sid-writeuserdata",
     "created_datetime": "2011-06-02T18:47:11+00:00",
     "edited_datetime": "2020-10-15T20:10:33+00:00",
@@ -29,7 +29,7 @@
     "comments": [
         {
             "id": 625,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2020-10-15T19:49:23+00:00",
             "content_html": "<p>As of Starcraft version 1.15 (many many years prior to me making this comment), Blizzard removed the Sex field from user profiles and attempting to write this key will result in an IP ban.</p>\n<p>Edit: this is based off a code comment found in StealthBot, but has not been confirmed.</p>"
         }

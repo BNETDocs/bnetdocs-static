@@ -1,0 +1,13 @@
+{
+    "id": 56,
+    "title": "WarCraft III Warden Update",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>WarCraft III, as of April 14th, 2009, has an updated warden system. Most bots these days don't know how to handle the warden packet correctly, or don't know how to handle it at all.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/56/warcraft-iii-warden-update",
+    "created_datetime": "2009-04-15T16:37:11+00:00",
+    "edited_datetime": "2009-04-15T16:39:45+00:00",
+    "content_html": "<p>WarCraft III, as of April 14th, 2009, has an updated warden system. Most bots these days don't know how to handle the warden packet correctly, or don't know how to handle it at all.</p>\n<p>Here is a log received from FooLOps 1.9.9 logged on as JailBot@Lordaeron:</p>\n<pre><code>00000000  ff 5e 29 00 40 b8 fe b2  42 60 35 d6 c1 64 87 0e  |.^).@...B`5..d..|\n00000010  77 4e 88 ef f4 27 b9 33  d1 9e 19 c4 2e 84 84 cc  |wN...'.3........|\n00000020  da dc 94 e3 4f 46 9d cf  5a                       |....OF..Z|</code></pre>\n<p>This is affected for the latest WarCraft III patch 1.23. All bots that do not automatically know how to handle this will be disconnected after 2 minutes, just like if they were using StarCraft or Brood War.</p>\n<p>This will render most clans without bots for a while, so hang tight.</p>\n<p>In conclusion to this, I have updated this website by posting this news post and updating SID_WARDEN's &quot;Used By&quot; to include WarCraft III and The Frozen Throne.</p>",
+    "comments": []
+}

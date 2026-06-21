@@ -1,0 +1,13 @@
+{
+    "id": 58,
+    "title": "Just an update as to whats happening with BNLS",
+    "category_id": 6,
+    "options_bitmask": 3,
+    "brief_html": "<p>Most of you, if you use BNLS, should know that ValHalla Legends stopped hosting BNLS long ago. And now with JBLS going offline also, we are forced to depend on our own servers, or other peoples servers that we may not trust.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/58/just-an-update-as-to-whats-happening-with-bnls",
+    "created_datetime": "2009-10-07T10:50:49+00:00",
+    "edited_datetime": "2009-10-07T10:50:49+00:00",
+    "content_html": "<p>Most of you, if you use BNLS, should know that ValHalla Legends stopped hosting BNLS long ago. And now with JBLS going offline also, we are forced to depend on our own servers, or other peoples servers that we may not trust.</p>\n<p>There is a large list of servers available at the <a href=\"http://bnlschecker.net/status.php\">BNLS Checker</a> website. You can use this large list to find one that works for you. This list provides online/offline counts, percentage of uptime, owner, and even where it is located.</p>\n<p>Another list, but is not updated as much as the above, can be found at <a href=\"http://jailout2000.homeip.net/Servers/Servers/\">this website</a>.</p>",
+    "comments": []
+}

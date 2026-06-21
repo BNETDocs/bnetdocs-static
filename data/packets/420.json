@@ -13,28 +13,28 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/420/sid-warden",
     "created_datetime": "2010-07-15T02:47:39+00:00",
-    "edited_datetime": "2018-04-12T07:51:25+00:00",
+    "edited_datetime": "2026-01-18T17:59:42+00:00",
     "format": "(VOID) Encrypted Data\r\n\r\n    (UINT8) ID\r\n\r\n        0x00 - Warden Module Info\r\n        (UINT32)[4] MD5 Hash of the current Module\r\n        (UINT32)[4] Decryption key for Module\r\n        (UINT32)    Length of Module\r\n\r\n        0x01 - Warden Module Data\r\n        (UINT16) Length of data (without 3-byte header)\r\n        (VOID) Data\r\n\r\n        0x02 - Data Checker\r\n        (UINT8) String Length (Usually 0)\r\n        (VOID) String Data\r\n        (UINT8) Check ID\r\n\r\n                MEM_CHECK\r\n                (UINT8) String Index (Usually 0)\r\n                (UINT32) Address\r\n                (UINT8) Length to Read\r\n\r\n                PAGE_CHECK_A\r\n                (UINT32) Unknown (Seed?)\r\n                (UINT32)[5] SHA1\r\n                (UINT32) Address\r\n                (UINT8) Length to Read\r\n\r\n        (UINT8) IDXor\r\n\r\n        0x03 - Library Loader\r\n        (UINT16) Length of data (without 7-byte header)\r\n        (UINT32) Checksum of data (without 7-byte header)\r\n        (UINT8) Unknown (0x01)\r\n        (UINT8) Unknown (Usually 0x00)\r\n        (UINT8) Unknown (Usually 0x01)\r\n        (STRING) Library Name\r\n        (UINT32) Funct1\r\n        (UINT32) Funct2\r\n        (UINT32) Funct3\r\n        (UINT32) Funct4\r\n\r\n        0x05 - Initialization\r\n        (UINT32)[5] Unknown",
     "remarks_html": "<p>This packet is received after successfully logging onto Battle.net and usually after receiving the first initial chat events. If the client does not respond to this packet, the client gets dropped two minutes later (give or take about 10 seconds).</p>\n<p>The packet is encrypted via standard RC4 hashing, using one key for outbound data and another for inbound. Its purpose is to download and execute Warden modules. Full information on how to handle this packet may be found at the <a href=\"http://forum.valhallalegends.com/index.php?topic=17356.0\">Rudimentary Warden information</a> topic.</p>\n<p>Documentation provided by iago and Ringo.</p>",
     "comments": [
         {
             "id": 75,
-            "author_username": "BNETDocs",
+            "author_username": "Alendar",
             "created_datetime": "2008-03-09T05:02:55+00:00",
             "content_html": "<p>Warden Bypass finally made: <a href=\"http://forum.valhallalegends.com/index.php?topic=17356\">http://forum.valhallalegends.com/index.php?topic=17356</a></p>"
         },
         {
             "id": 76,
-            "author_username": "BNETDocs",
+            "author_username": "brew",
             "created_datetime": "2008-03-22T21:04:50+00:00",
             "content_html": "<p>0x00 - Warden Module<br />\n(QWORD) Name of current module (MD5 Hash)<br />\na quadword??<br />\nWow, i never knew md5 hashes could be 8 bytes.</p>\n<p>should be:<br />\n(DWORD[4]) Name of current module<br />\n(DWORD[4]) Decryption seed</p>"
         },
         {
             "id": 79,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2008-03-23T01:40:37+00:00",
             "content_html": "<p>Alendar, thanks for tip. Brew, thanks for pointing out error. Confirmed by RealityRipple. Fixed. Thanks for heads up.</p>"
         }

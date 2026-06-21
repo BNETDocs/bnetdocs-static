@@ -16,7 +16,7 @@
         1146308690,
         1462911566
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/473/sid-readmemory",
     "created_datetime": "2011-07-19T01:51:27+00:00",
     "edited_datetime": "2025-05-24T22:32:42+00:00",
@@ -25,25 +25,25 @@
     "comments": [
         {
             "id": 464,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-07-03T02:53:49+00:00",
             "content_html": "<p>Change the status, it's not defunct. It still works.</p>"
         },
         {
             "id": 467,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-07-05T14:33:53+00:00",
             "content_html": "<p>Do you have proof that any Blizzard client still uses this packet, or in fact that Battle.net still sends this?</p>"
         },
         {
             "id": 469,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-07-19T00:12:13+00:00",
             "content_html": "<p>Battle.Net clients still support it. So it can be used with Battle.Net emulators, or if someone uses man in the middle.</p>"
         },
         {
             "id": 471,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2011-07-19T06:52:15+00:00",
             "content_html": "<p>Updated packet information to include this: </p>\n<p>NOTE: No longer used, as Warden is now used to monitor for hacks. The Battle.net clients still support this though so one can code in support for it if one so desires. Due to it being no longer actively used by Battle.net, this packet is being marked as defunct. </p>\n<p>Thanks for your contribution, xpeh. :)</p>"
         }

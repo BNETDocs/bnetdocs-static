@@ -20,7 +20,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/134/bnls-requestversionbyte",
     "created_datetime": "2010-09-26T23:55:16+00:00",
     "edited_datetime": "2018-08-20T08:39:42+00:00",
@@ -29,7 +29,7 @@
     "comments": [
         {
             "id": 603,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2020-01-01T07:17:12+00:00",
             "content_html": "<p>Idea: return the requested product code in the version byte field if the returned product value is 0 (failure). This way failed requests can be matched to their requested products.</p>"
         }

@@ -1,0 +1,13 @@
+{
+    "id": 133,
+    "title": "BNETDocs and Cloudflare's Memory Leak (#Cloudbleed)",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Between <strong>September 22, 2016</strong> and <strong>February 21, 2017</strong>, Cloudflare <a href=\"https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/\">leaked memory due to a parser bug</a> in three of their features: Automatic HTTP Rewrites, Server-Side Excludes, and Email Obfuscation. A Google security researcher <a href=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1139\">discovered the bug</a> on February 17 and began <a href=\"https://twitter.com/taviso/status/832744397800214528\">cooperating with Cloudflare</a> to mitigate and patch the bug.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/133/bnetdocs-and-cloudflare-s-memory-leak-cloudbleed",
+    "created_datetime": "2017-02-24T10:13:27+00:00",
+    "edited_datetime": "2017-02-24T20:57:36+00:00",
+    "content_html": "<p>Between <strong>September 22, 2016</strong> and <strong>February 21, 2017</strong>, Cloudflare <a href=\"https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/\">leaked memory due to a parser bug</a> in three of their features: Automatic HTTP Rewrites, Server-Side Excludes, and Email Obfuscation. A Google security researcher <a href=\"https://bugs.chromium.org/p/project-zero/issues/detail?id=1139\">discovered the bug</a> on February 17 and began <a href=\"https://twitter.com/taviso/status/832744397800214528\">cooperating with Cloudflare</a> to mitigate and patch the bug.</p>\n<p>As of February 21, a patch had been put in place, and on February 24, Cloudflare announced their postmortem on their blog.</p>\n<p><a href=\"https://bnetdocs.org\">BNETDocs</a> uses Cloudflare for their CDN feature and a few other purposes, and <strong>due to this, we recommend anyone who has an account here change their password immediately.</strong> It's possible that random visitors to this site or others hosted on Cloudflare could have leaked BNETDocs session data and/or password between the time period listed earlier.</p>\n<p>The good news is, due to how BNETDocs stores passwords, reusing your password may not be an issue; BNETDocs will reset your seed and hash even if the password is the same as before. Bad news is, most people reuse passwords on other sites, so you should probably use a different password anyway.</p>\n<p>- BNETDocs Staff</p>",
+    "comments": []
+}

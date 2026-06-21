@@ -3,7 +3,7 @@
     "title": "BotNet Protocol Overview",
     "options_bitmask": 3,
     "brief_html": "<p>BotNet is a Valhalla Legends-made service designed for inter-bot communication.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Ribose",
     "uri": "/document/42/botnet-protocol-overview",
     "created_datetime": "2018-03-11T20:43:09+00:00",
     "edited_datetime": "2018-04-04T20:24:09+00:00",

@@ -1,0 +1,13 @@
+{
+    "id": 29,
+    "title": "Starcraft/Brood War Patch 1.15",
+    "category_id": 4,
+    "options_bitmask": 3,
+    "brief_html": "<p>Game: Starcraft, Starcraft: BroodWar<br />\nVersion: 1.15<br />\nVerByte: 0xD1<br />\nArchive: SEXP_IX86_114_115.mpq</p>",
+    "author_username": "Hdx",
+    "uri": "/news/29/starcraft-brood-war-patch-1-15",
+    "created_datetime": "2007-05-23T16:14:26+00:00",
+    "edited_datetime": "2007-05-23T16:14:26+00:00",
+    "content_html": "<p>Game: Starcraft, Starcraft: BroodWar<br />\nVersion: 1.15<br />\nVerByte: 0xD1<br />\nArchive: SEXP_IX86_114_115.mpq</p>\n<pre><code>-------------------------------------------------\n- Patch 1.15.0\n-------------------------------------------------\n\n  Feature Changes\n\n- Approved organizations can now operate StarCraft leagues. See\n  http://www.battle.net.\n- Replays are automatically saved as LastReplay.rep.\n\n  Bug Fixes\n\n- Fixed a bug that allowed burrowed units to be stacked.\n\n  Exploits\n\n- Fixed a vulture exploit that crashed games.\n- Fixed an exploit that allowed the rally points of others to be set.\n- Fixed a multicommand hack that crashed Macintosh players.</code></pre>",
+    "comments": []
+}

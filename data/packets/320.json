@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "RealityRipple",
     "uri": "/packet/320/mcp-startup",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2017-03-29T18:41:23+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 590,
-            "author_username": "BNETDocs",
+            "author_username": "clifford",
             "created_datetime": "2018-07-30T02:05:24+00:00",
             "content_html": "<p>It seems that the contents of the MCP Chunks has changed. I only noticed because I was doing some pretty sloppy data storage/manip in my current project that ultimately broke things when Blizzard made this change (a few months back from what I can tell). I wasn't motivated enough at the time to figure out what Blizzard changed to break my stuff...but as soon as I started looking at the packet logs, I noticed that SID_LOGONREALMEX and MCP_STARTUP looked totally different. Still the same length but the chunks look like maybe plaintext hashes of some sort?</p>"
         }

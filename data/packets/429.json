@@ -11,7 +11,7 @@
         1398030674,
         1397053520
     ],
-    "author_username": "BNETDocs",
+    "author_username": "Leaky",
     "uri": "/packet/429/sid-tournament",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2019-12-28T23:18:19+00:00",
@@ -20,19 +20,19 @@
     "comments": [
         {
             "id": 47,
-            "author_username": "BNETDocs",
+            "author_username": "brew",
             "created_datetime": "2007-12-03T21:33:26+00:00",
             "content_html": "<p>The 0x4E packet is sent to Starcraft/Brood War clients, however there is no code in battle.snp to parse that packet. Maybe it's used by warcraft 3 as well, but that's just a guess.</p>"
         },
         {
             "id": 163,
-            "author_username": "BNETDocs",
+            "author_username": "RealityRipple",
             "created_datetime": "2010-05-20T07:53:15+00:00",
             "content_html": "<p>No such packet on Warcraft 3.</p>\n<p><a href=\"http://forum.valhallalegends.com/index.php/topic,17479\">http://forum.valhallalegends.com/index.php/topic,17479</a></p>"
         },
         {
             "id": 649,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2021-12-18T05:40:06+00:00",
             "content_html": "<p>From what I can tell, SEXP 1.17.0 does handle this packet.<br />\nSee Battle.snp+0x20BF00 / 0x190217F0</p>"
         }

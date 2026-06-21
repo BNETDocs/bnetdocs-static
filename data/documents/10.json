@@ -3,7 +3,7 @@
     "title": "Battle.net Chat Server Protocol Overview",
     "options_bitmask": 3,
     "brief_html": "<p>The Battle.Net Chat Server (&quot;BNCS&quot;) is the unofficial name of the protocol that Blizzard's Battle.net-enabled games used to communicate. The games that historically used this protocol are <strong>Diablo</strong>, <strong>StarCraft</strong>, <strong>WarCraft II</strong>, <strong>Diablo II</strong>, <strong>WarCraft III</strong>, and their expansions. This is now referred to as &quot;Classic&quot; or &quot;Classic Battle.net&quot; these days. The protocol operates on <strong>TCP port 6112</strong> (and <strong>UDP port 6112</strong> for pre-Diablo II player-to-player communication).</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/document/10/battle-net-chat-server-protocol-overview",
     "created_datetime": "2013-06-19T14:01:10+00:00",
     "edited_datetime": "2021-11-25T06:13:29+00:00",
@@ -11,79 +11,79 @@
     "comments": [
         {
             "id": 12,
-            "author_username": "BNETDocs",
+            "author_username": "Unknown",
             "created_datetime": "2007-09-13T17:33:11+00:00",
             "content_html": "<p>mmm should i say you need to send game protocol byte (0x01) before starting sending the logon sequence.</p>"
         },
         {
             "id": 13,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2007-09-14T04:11:44+00:00",
             "content_html": "<p>Added. While that is more of a widely known necessity, I can see the need to point out the need, so developers will not have to deal with this issue as much from people new to Battle.net bot development. </p>"
         },
         {
             "id": 37,
-            "author_username": "BNETDocs",
+            "author_username": "Accused",
             "created_datetime": "2007-12-01T00:06:23+00:00",
             "content_html": "<p>Warcraft III</p>\n<pre><code>SEND -&gt; SID_AUTH_INFO (0x50)\nRECV &lt;- SID_PING (0x25)\nRECV &lt;- SID_AUTH_INFO (0x50)\nSEND -&gt; SID_PING (0x25) (Optional)\nSEND -&gt; SID_AUTH_CHECK (0x51)\nRECV &lt;- SID_AUTH_CHECK (0x51)\nSEND -&gt; SID_AUTH_ACCOUNTLOGON (0x53)\nRECV &lt;- SID_AUTH_ACCOUNTLOGON (0x53)\nSEND -&gt; SID_AUTH_ACCOUNTLOGONPROOF (0x54)\nRECV &lt;- SID_AUTH_ACCOUNTLOGONPROOF (0x54)\nSEND -&gt; SID_NETGAMEPORT (0x45)\nSEND -&gt; SID_ENTERCHAT (0x0A)</code></pre>\n<p>I noticed there are some gaps in the current sequences as well.</p>"
         },
         {
             "id": 39,
-            "author_username": "BNETDocs",
+            "author_username": "Leaky",
             "created_datetime": "2007-12-01T14:19:13+00:00",
             "content_html": "<p>added the wc3 login sequence</p>"
         },
         {
             "id": 72,
-            "author_username": "BNETDocs",
+            "author_username": "Hdx",
             "created_datetime": "2008-03-02T00:32:54+00:00",
             "content_html": "<p>SC/BW</p>\n<pre><code>C-&gt;S: 0x50\nS-&gt;C: 0x25\nC-&gt;S: 0x25\nS-&gt;C: 0x50\nC-&gt;S: 0x51\nS-&gt;C: 0x51\nC-&gt;S: 0x2d\nC-&gt;S: 0x33 - icons_star.bni\nC-&gt;S: 0x14\nC-&gt;S: 0x33 - tos_USA.txt\nC-&gt;S: 0x33 - bnserver.ini\nC-&gt;S: 0x26 - profile\\sex\n             profile\\age\n             profile\\description\n             Record\\GAME\\0\\wins\n             Record\\GAME\\0\\losses\n             Record\\GAME\\0\\dissconnects\n             Record\\GAME\\0\\last game\n             Record\\GAME\\0\\last game result\n             Record\\GAME\\1\\wins\n             Record\\GAME\\1\\losses\n             Record\\GAME\\1\\dissconnects\n             Record\\GAME\\1\\rating\n             Record\\GAME\\1\\high rating\n             DynKey\\GAME\\1\\rank\n             Record\\GAME\\1\\high rank\n             Record\\GAME\\1\\last game\n             Record\\GAME\\1\\last game result\nS-&gt;C: 0x2d\nS-&gt;C: 0x33 - icons_STAR.bni\nS-&gt;C: 0x33 - tos_USA.txt\nS-&gt;C: 0x33 - bnserver.ini\nS-&gt;C: 0x26\nC-&gt;S: 0x3a\nS-&gt;C: 0x3a\nC-&gt;S: 0x0a\nC-&gt;S: 0x0b\nC-&gt;S: 0x0C - \"StarCraft\", \"BroowWar\"\nS-&gt;C: 0x0b\nS-&gt;C: 0x0a</code></pre>"
         },
         {
             "id": 109,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2008-05-30T01:29:49+00:00",
             "content_html": "<p>Telnet/Chat:</p>\n<ul>\n<li>New lines are either <code>0x0A</code> or <code>0x0D</code></li>\n<li>When you send a message with multiple lines, it sends it like a queue without a wait, so don't flood offline by doing this</li>\n<li>For a full list of packets, contact me</li>\n</ul>\n<pre><code>* Connect.\nC&gt;S: 0x03 (Telnet)\nC&gt;S: 0x04 (Login)\nC&gt;S: New line\nS&gt;C: \"Enter your account name and password.\"\nS&gt;C: New line\nS&gt;C: \"Username: \"\nC&gt;S: \"Jailout2000\"\nC&gt;S: New line\nS&gt;C: \"Password: \"\nC&gt;S: \"Password\"\nC&gt;S: New line\nS&gt;C: \"Connection from [127.0.0.1]\"\nS&gt;C: New line</code></pre>\n<p>From here on, each packet will be on a new line, and will be regular ascii strings, not surrounded by quotes and not ending with a null-terminator</p>\n<pre><code>S&gt;C: 2010 NAME Jailout2000\nS&gt;C: 1007 CHANNEL \"Public Chat 1\"\n- Server will send 1001 USER to you for each user in the channel -\nS&gt;C: 1001 USER Jailout2000 0010 [CHAT]\n- Server will send 1002 JOIN to everyone in the channel except you -\nC&gt;S: /join Public Chat 100\nS&gt;C: 1007 CHANNEL \"Public Chat 100\"\nS&gt;C: 1001 USER Jailout2000 0010 [CHAT]\nS&gt;C: 1005 TALK Jailout2000 0010 \"It's just me in this channel.\"</code></pre>\n<p>I know Telnet was deprecated and can no longer be used, but what the heck, why not add it? You never know when someone will want to implement it... :P</p>"
         },
         {
             "id": 113,
-            "author_username": "BNETDocs",
+            "author_username": "LordVader",
             "created_datetime": "2008-07-04T01:00:15+00:00",
             "content_html": "<p>D2DV, D2XP:</p>\n<pre><code>C&gt;S 0x50\nS&gt;C 0x25\nC&gt;S 0x25\nS&gt;C 0x50\nC&gt;S 0x51\nS&gt;C 0x51\nC&gt;S 0x33\nS&gt;C 0x33\nC&gt;S 0x3A\nS&gt;C 0x3A\nC&gt;S 0x0B\nC&gt;S 0x0A\n-- At this point you're in the lobby and you can send 0x0C to enter a channel\nS&gt;C 0x0B\nS&gt;C 0x0A</code></pre>\n<p>This is logging into an open character thru the client.</p>"
         },
         {
             "id": 132,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-02-16T18:31:24+00:00",
             "content_html": "<p>This list is pretty and all, but its missing quite a bit of important packets in ALL of the sequences. Try <a href=\"http://www.bnetdocs.com/old/sequence.html\">http://www.bnetdocs.com/old/sequence.html</a> if you want a good list of sequences.</p>"
         },
         {
             "id": 141,
-            "author_username": "BNETDocs",
+            "author_username": "Vector",
             "created_datetime": "2009-05-08T08:47:15+00:00",
             "content_html": "<p>I suggest adding links to these packets, so users will find it a lot easier to find the exact packet.</p>"
         },
         {
             "id": 149,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-09-26T17:35:10+00:00",
             "content_html": "<p>@Myself: Fixed that, copied most of it from the older one. The STAR/SEXP/WAR3/W3XP are taken from actual logs I have on my local computer.</p>\n<p><a href=\"/user/176/vector\">@Vector</a>: Added links to all of the packets, I agree - it helps.</p>"
         },
         {
             "id": 350,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-08-17T09:34:38+00:00",
             "content_html": "<p>Hmmm... Diablo I can have a SID_UDPPINGRESPONSE (0x14) too... or at least, I think? I get a UDP plug when using it, and when I send 0x14, I don't.</p>"
         },
         {
             "id": 410,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-26T05:53:20+00:00",
             "content_html": "<p>Possibly add W3DM and shortened Telnet reference.</p>"
         },
         {
             "id": 430,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-10-07T03:47:15+00:00",
             "content_html": "<p><a href=\"/user/123/sixen\">@Sixen</a>: Added.</p>"
         }

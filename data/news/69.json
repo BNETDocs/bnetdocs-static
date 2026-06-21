@@ -1,0 +1,13 @@
+{
+    "id": 69,
+    "title": "Server Checker",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>If you have ever been to this website before, you should have noticed the BNLS Server Status panel on the right, along with the Battle.net Server Status panel. These two panels contain servers that you can use with your Battle.net bots.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/69/server-checker",
+    "created_datetime": "2010-08-25T22:17:40+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>If you have ever been to this website before, you should have noticed the BNLS Server Status panel on the right, along with the Battle.net Server Status panel. These two panels contain servers that you can use with your Battle.net bots.</p>\n<p>Now what most people probably knew, these servers do not get updated periodically, so servers would appear online when they are truly offline, and vice versa. This is no more.</p>\n<p>I have created a simple program that connects to any MySQL server, retrieves the table full of servers, connects to each server individually, and then updates its online/offline status. I also enabled a timer that I can set to any interval I want (I can make it every 30 seconds, or even once every day if I want).</p>\n<p>So basically all I am saying is that these server panels are now periodically checked for uptime status and will be updated accordingly. Right now I have that interval set to every 5 minutes, but I may variate it occasionally for my own reasons without notice. I would also like to stress that these servers are checked from my computer using my internet, this means that if I cannot connect to them or an error occurs while connecting, the server will be marked offline, even if you are able to successfully connect. If such a case occurs however, to where my internet does not function properly, then I probably would not be able to update the servers anyway, so you shouldn't worry about this.</p>",
+    "comments": []
+}

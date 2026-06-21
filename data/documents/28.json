@@ -3,7 +3,7 @@
     "title": "Diablo II Game Server Accept Sequence",
     "options_bitmask": 3,
     "brief_html": "<p>This document describes the steps needed to be accepted by the Diablo II Game Server after <a href=\"/packet/107/mcp-joingame\">[0x04] MCP_JOINGAME</a> is received from the Realm Server. If the result of that message is <code>0x00</code>, then the connection is dropped from the Realm Server and initiated with the Game Server.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Sixen",
     "uri": "/document/28/diablo-ii-game-server-accept-sequence",
     "created_datetime": "2014-03-25T22:50:21+00:00",
     "edited_datetime": "2017-07-03T15:12:03+00:00",

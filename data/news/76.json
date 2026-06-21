@@ -1,0 +1,13 @@
+{
+    "id": 76,
+    "title": "Server Updater Script Down Indefinitely",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Due to some problems with Jailout2000's machine, the script that updated each server's status on this website has been down for about 3-4 weeks.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/76/server-updater-script-down-indefinitely",
+    "created_datetime": "2010-12-16T17:16:00+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Due to some problems with Jailout2000's machine, the script that updated each server's status on this website has been down for about 3-4 weeks.</p>\n<p>The script may stay down for even longer as things get worked through on his machine, but it will surely be up again in the near future.</p>\n<p>So for now, ignore the statuses for each server on the right-side of this website as they are ALL inaccurate.</p>",
+    "comments": []
+}

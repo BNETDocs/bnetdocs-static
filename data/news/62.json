@@ -1,0 +1,38 @@
+{
+    "id": 62,
+    "title": "WarCraft III Update",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/62/warcraft-iii-update",
+    "created_datetime": "2010-03-13T16:01:40+00:00",
+    "edited_datetime": "2010-03-13T16:01:40+00:00",
+    "content_html": "<p>There is a new patch available for WarCraft III Reign of Chaos and WarCraft III The Frozen Throne.</p>\n<p>Version: 1.24.4.6387</p>\n<pre><code>--------------------------------------------------------------------------\nPatch 1.24e\n--------------------------------------------------------------------------\n\nFIXES\n\n- Fixed an exploit rendering buildings non-interactable (\"tower hack\"). \n- Fixed an exploit allowing a player to bypass a summon ability's \ncooldown (\"summon/cooldown hack\"). \n- Fixed a client crash related to workers failing to build in an \nunintended way (\"new crash hack\"). \n- Fixed an exploit allowing the Blood Mages's Phoenix to be resurrected \ninstantly (\"phoenix hack\"). \n- Fixed a bug allowing players to select an invalid matchmaking race \nresulting in all the player's units and buildings becoming sheep \n(\"sheep hack\").</code></pre>\n<p>The verbyte did not change, but the hashes did. For your convenience, here is both:</p>\n<p>VerByte: <code>0x18</code><br />\nDecimal: 24<br />\nHashes: <a href=\"http://www.bnetdocs.org/archives/latesthashes/WAR3.zip\">WAR3.zip</a></p>",
+    "comments": [
+        {
+            "id": 336,
+            "author_username": "Kyro",
+            "created_datetime": "2010-07-03T01:56:59+00:00",
+            "content_html": "<p>Any chances we can have the hashes hosted locally rather than a different site? This way we can avoid broken links if a site goes down.</p>"
+        },
+        {
+            "id": 337,
+            "author_username": "Caaaaarrrrlll",
+            "created_datetime": "2010-07-06T06:31:23+00:00",
+            "content_html": "<p>Sure.</p>"
+        },
+        {
+            "id": 339,
+            "author_username": "Caaaaarrrrlll",
+            "created_datetime": "2010-07-08T07:40:08+00:00",
+            "content_html": "<p>Done.</p>"
+        },
+        {
+            "id": 340,
+            "author_username": "Kyro",
+            "created_datetime": "2010-07-09T18:14:24+00:00",
+            "content_html": "<p>Thanks dude!</p>"
+        }
+    ]
+}

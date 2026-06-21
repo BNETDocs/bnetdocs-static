@@ -1,0 +1,13 @@
+{
+    "id": 75,
+    "title": "We're still here...",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Yes, our site has been deemed as inactive by some, but believe us, it is still used quite a bit.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/75/we-re-still-here",
+    "created_datetime": "2010-11-20T14:18:40+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Yes, our site has been deemed as inactive by some, but believe us, it is still used quite a bit.</p>\n<p>Currently our website is still the only place for a near-complete Battle.net documentation, even so it is no doubt that others will go to other places for some of our missing information such as Battle.net v2 or the Starcraft In-Game Protocol.</p>\n<p>I assure you, as soon as our contributors are less busy (I cannot give you an estimate when that will be), we will continue to work on getting missing information put up, the website fixed and/or revised, and other updates to the site itself.</p>",
+    "comments": []
+}

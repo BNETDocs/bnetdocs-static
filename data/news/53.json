@@ -1,0 +1,13 @@
+{
+    "id": 53,
+    "title": "New Patch for Starcraft/Brood War",
+    "category_id": 4,
+    "options_bitmask": 3,
+    "brief_html": "<p>SEXP_IX86_1152_1153.mpq</p>",
+    "author_username": "Kyro",
+    "uri": "/news/53/new-patch-for-starcraft-brood-war",
+    "created_datetime": "2008-09-11T14:39:04+00:00",
+    "edited_datetime": "2008-09-11T14:39:04+00:00",
+    "content_html": "<p>SEXP_IX86_1152_1153.mpq</p>\n<pre><code>Starcraft and Brood War Patch Information\n\n--------------------------------------------------------------------------------\n- patch 1.15.3\n--------------------------------------------------------------------------------\n\n  Bug Fixes\n- Fixed a communication bug affecting third party leagues.\n- Alt-F6 no longer stalls the game on Windows.\n- Game now works correctly on versions of Mac OS X which do not support 256-color\n  mode.</code></pre>\n<p>No change in VerByte, new BNUpdate icon.</p>\n<p>(Reported by Brew via vL forums)</p>",
+    "comments": []
+}

@@ -1,0 +1,13 @@
+{
+    "id": 54,
+    "title": "Starcraft Patch 1.16.1",
+    "category_id": 4,
+    "options_bitmask": 3,
+    "brief_html": "<p>Starcraft's version byte is <code>D3</code> (221).<br />\n(Reported by Jailout2000)</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/54/starcraft-patch-1-16-1",
+    "created_datetime": "2009-03-07T01:14:44+00:00",
+    "edited_datetime": "2009-03-07T01:14:44+00:00",
+    "content_html": "<pre><code>Starcraft and Brood War Patch Information\n\n--------------------------------------------------------------------------------\n- patch 1.16.1\n--------------------------------------------------------------------------------\n\nFeature Changes\n\n- In-game Speed Options menu now has a \"Enable CPU Throttling\" checkbox. \n  Enabling this option will allow StarCraft to consume fewer CPU cycles. By \n  default this option is off.\n\nBug Fixes\n\n- Fixed an issue with the reply feature where any character followed by a \"r \"\n  was being treated as a reply.\n- Removed an unnecessary delay when processing palette cycling updates.\n- Lessened the imposed delay in the CPU Throttling feature.</code></pre>\n<p>Starcraft's version byte is <code>D3</code> (221).<br />\n(Reported by Jailout2000)</p>",
+    "comments": []
+}

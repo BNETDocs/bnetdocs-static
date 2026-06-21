@@ -1,0 +1,13 @@
+{
+    "id": 146,
+    "title": "Warcraft III Patch 1.30.0.9922",
+    "category_id": 2,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard has released a hotfix patch for Warcraft III and its expansion pack.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/146/warcraft-iii-patch-1-30-0-9922",
+    "created_datetime": "2018-08-10T01:23:54+00:00",
+    "edited_datetime": "2018-08-10T01:25:14+00:00",
+    "content_html": "<p>Blizzard has released a hotfix patch for Warcraft III and its expansion pack.</p>\n<p>See the <a href=\"https://us.battle.net/forums/en/bnet/topic/20767776835\">forum thread</a> for discussion.</p>\n<blockquote>\n<p>We appreciate the bug reports and feedback. Here's our first round of iterations:</p>\n<h2>Bug Fixes</h2>\n<ul>\n<li>Custom abilities that have specialized targeting parameters no longer cause a crash</li>\n<li>Network latency restored to 1.29 levels</li>\n<li>-nativefullscr functions again</li>\n<li>Mouse cursor is on <em>point</em></li>\n<li>Siege Engine with Barrage upgrade uses 4 food</li>\n</ul>\n<h2>Known Issues</h2>\n<ul>\n<li>Certain sounds are distorted</li>\n</ul>\n<h2>Balance Changes</h2>\n<h3>Ensnare</h3>\n<p><em>Base Stats</em></p>\n<ul>\n<li>Reduced spell effect duration on units from 10 to 9 seconds</li>\n</ul>\n<h3>Items</h3>\n<h4>Boots of Speed</h4>\n<ul>\n<li>Stock Maximum, Stock Replenish Interval, and Stock Start Delay reverted to 1.28</li>\n</ul>\n</blockquote>",
+    "comments": []
+}

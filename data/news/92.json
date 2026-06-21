@@ -1,0 +1,13 @@
+{
+    "id": 92,
+    "title": "USEast/Azeroth Maintenance - Clan Data Rollback",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>Blizzard has taken the USEast/Azeroth realm down to do some maintenance to their clan data.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/92/useast-azeroth-maintenance-clan-data-rollback",
+    "created_datetime": "2012-07-11T13:32:30+00:00",
+    "edited_datetime": "2012-07-11T13:32:30+00:00",
+    "content_html": "<p>Blizzard has taken the USEast/Azeroth realm down to do some maintenance to their clan data.</p>\n<p>They will be performing a 6 hour maintenance on USEast/Azeroth tomorrow morning, July 11, beginning at 9:00 a.m. PDT.</p>\n<p>During this time they will be rolling Warcraft III clan data back to its state before the USEast migration on June 20, reinstating the wiped data. No other changes should occur with this clan data rollback, and they will provide updates should the maintenance timetable change.</p>\n<p><a href=\"https://forums.battle.net/thread.html?topicId=27844724728&amp;sid=3000\">Original post by Bashiok</a></p>\n<p>Best of luck to everyone wishing to get back onto the USEast realm!</p>",
+    "comments": []
+}

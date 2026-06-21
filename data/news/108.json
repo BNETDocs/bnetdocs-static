@@ -1,0 +1,13 @@
+{
+    "id": 108,
+    "title": "BNETDocs Phoenix is now live!",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>With all of the updates that have been happening to BNETDocs Phoenix lately, I felt it was ready to be promoted to the main site! Don't worry, <a href=\"https://redux.bnetdocs.org\">Redux</a> is still accessible.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/108/bnetdocs-phoenix-is-now-live",
+    "created_datetime": "2016-04-03T11:52:50+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>With all of the updates that have been happening to BNETDocs Phoenix lately, I felt it was ready to be promoted to the main site! Don't worry, <a href=\"https://redux.bnetdocs.org\">Redux</a> is still accessible.</p>\n<p>Feel free to look around and get familiar with the new UI/UX. There are still places that are work in progress, such as the commenting system. There's also tons of data that needs to be converted to using Markdown instead of legacy HTML/BBCode. As updates continue, this main site will change, so please be aware.</p>\n<p>Please also let me know if there's anything broken or something that could be enhanced over on <a href=\"https://github.com/BNETDocs/bnetdocs-web/issues/new?labels[]=bnetdocs-phoenix\">GitHub</a>.</p>\n<p>Now that Phoenix is live, I will be archiving Redux and not even syncing data between Phoenix and Redux anymore. It will become stagnant. This should also encourage updates to Phoenix exclusively.</p>\n<p>Enjoy!</p>",
+    "comments": []
+}

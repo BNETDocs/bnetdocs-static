@@ -3,7 +3,7 @@
     "title": "Product Identification",
     "options_bitmask": 3,
     "brief_html": "<p>This document describes how to supply product information to Classic Battle.net™.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/document/12/product-identification",
     "created_datetime": "2011-09-24T04:29:06+00:00",
     "edited_datetime": "2022-01-08T20:05:29+00:00",
@@ -11,193 +11,193 @@
     "comments": [
         {
             "id": 77,
-            "author_username": "BNETDocs",
+            "author_username": "idiat",
             "created_datetime": "2008-03-22T22:05:11+00:00",
             "content_html": "<p>W3XP verbyte is 0x15</p>"
         },
         {
             "id": 78,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2008-03-23T01:33:32+00:00",
             "content_html": "<p>Confirmed by RealityRipple. Updated W3XP verbyte to 0x15. Thanks for the heads up, idiat.</p>"
         },
         {
             "id": 111,
-            "author_username": "BNETDocs",
+            "author_username": "FrostWraith",
             "created_datetime": "2008-06-21T01:28:12+00:00",
             "content_html": "<p>D2DV Verbyte = 0x0C<br />\nD2XP Verbyte = 0x0C</p>"
         },
         {
             "id": 112,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2008-06-22T04:06:09+00:00",
             "content_html": "<p>Updated, thanks.</p>"
         },
         {
             "id": 114,
-            "author_username": "BNETDocs",
+            "author_username": "Alendar",
             "created_datetime": "2008-07-06T05:20:07+00:00",
             "content_html": "<p>WAR3 VerByte = 0x16<br />\nW3XP VerByte = 0x16</p>"
         },
         {
             "id": 124,
-            "author_username": "BNETDocs",
+            "author_username": "Ozzapoo",
             "created_datetime": "2008-11-13T00:00:43+00:00",
             "content_html": "<p>The current Wc3 Verbyte for both RoC and TFT is 0x16</p>"
         },
         {
             "id": 127,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2009-01-18T19:57:41+00:00",
             "content_html": "<p>SC/BW are now 0xD3</p>"
         },
         {
             "id": 136,
-            "author_username": "BNETDocs",
+            "author_username": "Alendar",
             "created_datetime": "2009-04-04T19:59:56+00:00",
             "content_html": "<p>WarCraft VerBytes are now 0x17</p>"
         },
         {
             "id": 138,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2009-04-10T12:20:33+00:00",
             "content_html": "<p>@Alendar, Ozzapoo, Sixen-- updated. Thanks.</p>"
         },
         {
             "id": 156,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-02-03T05:57:18+00:00",
             "content_html": "<p>I found a product code called DTST. You can find it in Starcraft.exe(1.16.1)@0x004497A4.<br />\nFrom what I can tell its the same as DRTL?</p>"
         },
         {
             "id": 342,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2010-07-19T23:52:22+00:00",
             "content_html": "<p>Probably has something to do with Diablo 3? </p>"
         },
         {
             "id": 341,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-20T00:27:28+00:00",
             "content_html": "<p>Updated D2DV/D2XP verbyte to 0x0D.</p>\n<p>@Heinermann: That product is indeed there. Further testing would have to be done to see what product it really is. I would take an educated guess that DTST stands for Diablo Test (Client).</p>"
         },
         {
             "id": 343,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-07-20T00:30:04+00:00",
             "content_html": "<p>Diablo 3 will not be seen on Classic Battle.net. In other words, the product id for Diablo 3 and StarCraft II will not be seen in any icons.bni, or in any classic game. They will only be seen in newer games that are compatible with Battle.net v2.</p>\n<p>If it really is Diablo 3, Blizzard has something to surprise the community with and hasn't announced it yet.</p>"
         },
         {
             "id": 348,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-08-08T02:15:19+00:00",
             "content_html": "<p>It was there long before Diablo 3 even began so I highly doubt it. It probably was as you said (Diablo TeST)</p>"
         },
         {
             "id": 349,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-08-10T03:47:50+00:00",
             "content_html": "<p>Interesting enough, I sent DTST in a SID_AUTH_INFO and got disconnected, but not IP banned... I could instantly reconnect after it disconnected me. It did not give me any error codes or anything, it just simply disconnected me for sending DTST as the product, nothing else followed.</p>\n<p>On a side note, you can send DRTL and DSHR in SID_AUTH_INFO and you will receive SID_AUTH_INFO from Battle.net. The packet you receive will tell you to use BSHA-1 and you will receive something like lockdown-IX86-1.mpq as your CheckRevision file. I have been told that when you use DRTL, DSHR, SSHR, or any game that does not use CD-Keys, you send SID_AUTH_CHECK without any CD-Keys appended to the packet (everything EXCEPT the CD-Key part of the packet), and Battle.net will treat that as proper communication and will not disconnect you, surprisingly enough. I will be testing this soon with my own bot later, and I will hopefully add (incorrect?) documentation for it here on BnetDocs later.</p>"
         },
         {
             "id": 356,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-01T14:32:28+00:00",
             "content_html": "<p>Warcraft III: Demo: W3DM 0x01</p>\n<p>As far as D3 goes, these games will still need to support viewing users on SC2/D3/WoW since these will all be ported to Bnet2.0 soon(tm).</p>\n<p>EDIT: Perhaps DTST needs to login through a specific server similar to W3DM?</p>"
         },
         {
             "id": 357,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2010-09-01T18:56:00+00:00",
             "content_html": "<p>Do we have a range of known battle.net server IP addresses to put that theory to the test?</p>"
         },
         {
             "id": 358,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-02T05:59:07+00:00",
             "content_html": "<p>I looked into the code in Starcraft where DTST is referenced. It grabs the icon from glue\battle.neticons.pcx from patch_rt.mpq according to the product (this function is probably no longer used).</p>\n<p>DRTL, DSHR, and DTST all have the Diablo icon according to that piece of code.</p>\n<p>Getting a hold of the Diablo Battle.net Beta might give us the answers.</p>"
         },
         {
             "id": 364,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-03T04:18:43+00:00",
             "content_html": "<p>I checked and the Alpha/Pre-release has nothing Battle.net related.</p>"
         },
         {
             "id": 361,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-03T04:34:55+00:00",
             "content_html": "<p>@Kyro: Well, the W3DM server is demo.war3.battle.net. Perhaps we should keep a list of servers... EDIT: Got a document up with a list.</p>\n<p>@Heinermann: Hrmm... Supposedly, this is a copy of D1 Alpha. I have not checked it out myself yet. <a href=\"http://www.megaupload.com/?d=HK7F9E4L\">http://www.megaupload.com/?d=HK7F9E4L</a><br />\nAccording to the Diablo Evolution website, that is the correct size (and the owner of the site put that link up). I can try and contact the guys from Diablo Evolution and see if he can upload the D1 Beta. Apparently he has a copy of it.</p>"
         },
         {
             "id": 365,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-03T07:40:16+00:00",
             "content_html": "<p>Awesome, I got in contact with Mystery, the guy who ran Diablo Evolution. He told me he'll re-upload the Diablo Beta tomorrow, :).</p>\n<p>Few other things... Do you have copies of the other game betas? D2, SC1, War2, War3? Could potentially be more information there... In addition, the D2 Beta on Battle.net had product code D2ST, this could potentially be that; not the D1 Beta. It's more than possible the D2ST could have the same icon as DRTL... That beta is located here:<br />\n<a href=\"http://www.megaupload.com/?d=UENTRDTJ\">http://www.megaupload.com/?d=UENTRDTJ</a></p>\n<p>This Beta Archives site seems to have all of them if we need any (aside from DRTL Beta which Mystery will upload for us tomorrow).</p>"
         },
         {
             "id": 374,
-            "author_username": "BNETDocs",
+            "author_username": "Sixen",
             "created_datetime": "2010-09-04T03:32:43+00:00",
             "content_html": "<p>Been talking to Heinermann a lot lately, we found out the Diablo 2 Stress Test:</p>\n<p>D2ST verbyte is 0xCA and uses the same login sequence as DRTL/DSHR.</p>\n<p>--</p>\n<p>I just need the D2 LoD Beta if anyone has access to this.</p>"
         },
         {
             "id": 375,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-04T22:48:29+00:00",
             "content_html": "<p>It might be safe to assume that DTST is a Diablo Stress Test</p>"
         },
         {
             "id": 383,
-            "author_username": "BNETDocs",
+            "author_username": "Heinermann",
             "created_datetime": "2010-09-07T13:54:53+00:00",
             "content_html": "<p>Diablo Battle.net Beta: DIAB</p>"
         },
         {
             "id": 416,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-09-27T00:02:13+00:00",
             "content_html": "<p>I updated Hdx's Java-code donation so that it is hosted here at BnetDocs instead of pastebin.</p>\n<p>It'd be nice if it could be displayed as neatly as the CPP version by DevCode.</p>"
         },
         {
             "id": 457,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2011-04-04T06:21:46+00:00",
             "content_html": "<p>Updated WAR3/W3XP verbytes to 0x1A.</p>"
         },
         {
             "id": 533,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2016-07-11T02:03:02+00:00",
             "content_html": "<p>I have added the sample code as attachments to this document.</p>"
         },
         {
             "id": 570,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2017-04-23T21:09:13+00:00",
             "content_html": "<p>Version bytes have been updated for WAR3/W3XP to <code>0x1C</code> and STAR/SEXP to <code>0xD6</code>.</p>"
         },
         {
             "id": 584,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2018-04-11T00:02:09+00:00",
             "content_html": "<p>Updated WAR3/W3XP to version 1.29.0.9055 (<code>0x1D</code>).</p>"
         },
         {
             "id": 591,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2018-08-08T20:57:16+00:00",
             "content_html": "<p>Updated WAR3/W3XP to version 1.30.0.9900 (<code>0x1E</code>).</p>"
         },
         {
             "id": 616,
-            "author_username": "BNETDocs",
+            "author_username": "xboi209",
             "created_datetime": "2020-10-04T06:27:50+00:00",
             "content_html": "<p>Missing information about StarCraft Beta. There also exists StarCraft Japanese Beta, don't know if it had Battle.net support.</p>\n<p>Diablo: Hellfire appears to have basic Battle.net support.</p>"
         },
         {
             "id": 650,
-            "author_username": "BNETDocs",
+            "author_username": "Davnit",
             "created_datetime": "2022-01-09T05:55:40+00:00",
             "content_html": "<p>Added information on additional version byte search patterns per this thread: <a href=\"https://vl.bnetdocs.org/index.php?topic=17116.msg174936#msg174936\">https://vl.bnetdocs.org/index.php?topic=17116.msg174936#msg174936</a></p>"
         }

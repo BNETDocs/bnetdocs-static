@@ -3,7 +3,7 @@
     "title": "Protocol Headers",
     "options_bitmask": 3,
     "brief_html": "<p>This document contains the protocol header specifications for the BNCS, Realm, D2GS, BNLS, W3GS, and Storm UDP protocols.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Hdx",
     "uri": "/document/16/protocol-headers",
     "created_datetime": "2012-03-10T21:39:48+00:00",
     "edited_datetime": "2018-03-30T19:51:57+00:00",
@@ -11,25 +11,25 @@
     "comments": [
         {
             "id": 108,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2008-05-27T20:38:40+00:00",
             "content_html": "<p>Thanks for porting it over, Hdx. :)</p>"
         },
         {
             "id": 123,
-            "author_username": "BNETDocs",
+            "author_username": "Ribose",
             "created_datetime": "2008-11-12T02:05:36+00:00",
             "content_html": "<p>&quot;[BNCS Headers Section]<br />\nWhen connecting to a BNCS server, you must first tell the server which protocol you wish to use. Some of the Protocol IDs are:</p>\n<pre><code>* Games: 0x01\n* FTP: 0x02\n* Chat: 0x03</code></pre>\n<p>...</p>\n<p>[last section]<br />\nOther Battle.net protocol IDs are MCP to BNCS communication (0x04) and 0x06, which we know nothing about. At a guess, it is used for interserver synchronisation.&quot;</p>\n<p>That last line looks like it belongs at the end of the first section, not at the end of the entire page.</p>\n<p>Otherwise, it doesn't appear to be documented that you must send a protocol ID byte 0x01 before sending other packets for the realm connection (MCP), just like for the BNCS.</p>\n<p>On a side note, PLEASE SANITIZE YOUR SQL INPUT! (I just got an error because of my '!) </p>"
         },
         {
             "id": 417,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2010-09-27T00:52:44+00:00",
             "content_html": "<p>@ZergMasterl: Fixed.</p>\n<p>I also cleaned up the actual document a bit so that there are less blank lines everywhere.</p>\n<p>&lt;strong&gt;EDIT:&lt;/strong&gt; I cannot see why 0x04 would be up there, I've tried using it on more than one server and it just gets me disconnected (just like any other protocol byte does that is not listed above). However, 0x06 does do something, but I cannot figure out what at this point.</p>\n<p>I have concluded this about 0x06:</p>\n<p><em>CONNECT</em><br />\nClient -&gt; 0x06<br />\nServer -&gt; DWORD (Server Token?)<br />\nClient -&gt; DWORD (Client Token?)<br />\nServer -&gt; 20-bytes (BSHA-1 hash?)</p>\n<p>Then I get disconnected for doing anything further. If anyone wants to add to what I have, you're more than welcome to. I also do not receive anything periodically from protocol 0x06, and nor do I ever get IP banned (ever), or disconnected for sitting idle.</p>"
         },
         {
             "id": 551,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2017-01-09T05:37:58+00:00",
             "content_html": "<p>Compressed Diablo II game server headers are actually a variable length header. </p>\n<p>This means the message is the following if the first byte is strictly less than 0xF0.</p>\n<pre><code>[Byte] Size of message including this header\n(void) Compressed payload</code></pre>\n<p>and if the first byte is &gt;= 0xF0 the format is:</p>\n<pre><code>[Byte] H1\n[Byte] H2\n(void) Compressed payload.</code></pre>\n<p>In this case compute the message length <strong>including the header</strong> by<br />\ncomputing (pseudo code)</p>\n<pre><code>length = ((H1 &lt;&lt; 8) + H2) &amp; 0xFFF</code></pre>\n<p>Decompressed Diablo II game server protocol looks like:</p>\n<pre><code>[Byte] Message ID\n(void) Decompressed payload</code></pre>\n<p>Each compressed message can contain multiple messages in the payload once decompressed and a compressed message may be delivered in multiple reads. The compressed data is padded with zeroes to the next byte boundary. Message lengths are in most cases fixed and can be computed from the contents when they are variable length.</p>\n<p>NOTE: Only D2GS S&gt;C messages are compressed except message id 0xAF. C&gt;S are not. See <a href=\"https://bnetdocs.org/packet/245/d2gs-startlogon\">https://bnetdocs.org/packet/245/d2gs-startlogon</a> for more information.</p>"
         }

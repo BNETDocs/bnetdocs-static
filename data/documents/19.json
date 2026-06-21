@@ -3,7 +3,7 @@
     "title": "Notational Convention (Sizes & Types)",
     "options_bitmask": 3,
     "brief_html": "<p>This document covers the standard sizes and data types that this site references across other documents and packets.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Sixen",
     "uri": "/document/19/notational-convention-sizes-types",
     "created_datetime": "2010-09-25T15:43:34+00:00",
     "edited_datetime": "2020-10-20T02:55:49+00:00",
@@ -11,13 +11,13 @@
     "comments": [
         {
             "id": 476,
-            "author_username": "BNETDocs",
+            "author_username": "xpeh",
             "created_datetime": "2011-09-09T21:09:10+00:00",
             "content_html": "<blockquote>\n<p>Please also note that Battle.net only Unicode-encodes strings for Starcraft and Brood War.</p>\n</blockquote>\n<p>It's a little outdated, at least Warcraft 3 uses UTF-8. In addition, unicode support in Starcraft is broken, text is always encoded/decoded using cp1252&lt;-&gt;utf8 schema, that's why utf-8 encoded text will be broken for all OSes that don't have locale set to cp1252 (Westeuropean). Because of that, using of non-ascii symbols in converstaion between game and non-game client with non-cp1252 OS locale is impossible.</p>\n<p>You should really add last change date to pages :)</p>"
         },
         {
             "id": 531,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2016-06-19T20:33:30+00:00",
             "content_html": "<p>Changes to documents, news posts, packets, and servers are now being tracked, as part of the new BNETDocs Phoenix website.</p>\n<p>This includes timestamps and content of before and after. :)</p>\n<p>I will see about adding that information to the page template so it's easily viewable.</p>"
         }

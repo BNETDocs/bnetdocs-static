@@ -1,0 +1,20 @@
+{
+    "id": 119,
+    "title": "Maelstrom CD-Key Tester 4.0",
+    "category_id": 1,
+    "options_bitmask": 3,
+    "brief_html": "<p>After last being updated November 1, 2012, I have finally released another update for Maelstrom CD-Key Tester on August 2, 2016. After being in development for roughly the last 2 months it has been improved in a number of ways. From a few new major additions to improvements in speed and performance.</p>",
+    "author_username": "Vector",
+    "uri": "/news/119/maelstrom-cd-key-tester-4-0",
+    "created_datetime": "2016-08-02T08:20:08+00:00",
+    "edited_datetime": "2017-07-30T01:46:25+00:00",
+    "content_html": "<p>After last being updated November 1, 2012, I have finally released another update for Maelstrom CD-Key Tester on August 2, 2016. After being in development for roughly the last 2 months it has been improved in a number of ways. From a few new major additions to improvements in speed and performance.</p>\n<p>Some of the major changes introduced in version 4.0 are:</p>\n<blockquote>\n<ul>\n<li>Added a config GUI, removing the need for several different input boxes, having a<br />\nbetter way of editing the config and a better solution to checking for errors</li>\n<li>Added CD-Key Profiles as an option\n<ul>\n<li>Saves keys tested under \\CD-Key Profiles\\&lt;profile name>\\</li>\n<li>Option to add the current realm to the profile (&lt;profile name> @ USWest for example)</li>\n</ul></li>\n<li>CD-Key loading changes\n<ul>\n<li>Maelstrom can now load CD-Keys from any file</li>\n<li>Place the files in the \\CD-Keys\\ folder (they can be inside folders as well)</li>\n<li>The folders/files in this folder will be wiped after the keys are loaded except the<br />\nstandard key files (STAR.txt, W2BN.txt, D2DV.txt, D2XP.txt, WAR3.txt, W3XP.txt)</li>\n</ul></li>\n</ul>\n</blockquote>\n<p>Maelstrom started in August 2010 at the request of a few of my friends who wanted a better key tester than what was currently available. From there it became a popular tool of choice over the years. One such useful feature that people really like is its ability to test expansion keys.</p>\n<p>It can be downloaded here: <a href=\"http://files.codespeak.org/projects/maelstrom/Maelstrom.zip\">http://files.codespeak.org/projects/maelstrom/Maelstrom.zip</a></p>",
+    "comments": [
+        {
+            "id": 569,
+            "author_username": "Caaaaarrrrlll",
+            "created_datetime": "2017-04-21T23:39:51+00:00",
+            "content_html": "<p><a href=\"/user/176/vector\">@Vector</a>, your download link appears to be broken. Adding <code>www</code> to the url works: <a href=\"http://www.codespeak.org/Maelstrom/Maelstrom.zip\">http://www.codespeak.org/Maelstrom/Maelstrom.zip</a></p>"
+        }
+    ]
+}

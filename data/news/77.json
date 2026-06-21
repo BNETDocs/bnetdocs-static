@@ -1,0 +1,13 @@
+{
+    "id": 77,
+    "title": "Minor BNETDocs v2 Update",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>Decided to put v3 on hold, and give v2 a bit of love. Here's the updates:</p>",
+    "author_username": "Kyro",
+    "uri": "/news/77/minor-bnetdocs-v2-update",
+    "created_datetime": "2011-01-11T21:29:22+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>Decided to put v3 on hold, and give v2 a bit of love. Here's the updates:</p>\n<ul>\n<li>Removed registration spam from logs</li>\n<li>Cleaned up logs so it only displays relevant info</li>\n<li>Renamed BNETDocs Redux to BNETDocs (ignore the logo @ top left)</li>\n<li>Updated TOS</li>\n<li>Fixed bad links in emails that BNETDocs sent for registration, password changes, etc</li>\n<li>Removed all references to the Demented Minds (that organization is defunct as of a couple years ago)</li>\n<li>Fixed Custom CSS Theme bug that prevented certain users from being able to save custom CSS. </li>\n</ul>\n<p>On a side note, Jailout2000 has also fixed submission bugs, so there will be no more glitches resulting from usage of ' in any submissions. </p>",
+    "comments": []
+}

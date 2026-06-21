@@ -1,0 +1,13 @@
+{
+    "id": 98,
+    "title": "Missing pages added",
+    "category_id": 5,
+    "options_bitmask": 3,
+    "brief_html": "<p>The missing pages everywhere on this site have been created with the content of not yet implemented. Building out these pages will take some time, but they will at least no longer show up as 404 Not Found.</p>",
+    "author_username": "Caaaaarrrrlll",
+    "uri": "/news/98/missing-pages-added",
+    "created_datetime": "2015-09-03T09:46:00+00:00",
+    "edited_datetime": null,
+    "content_html": "<p>The missing pages everywhere on this site have been created with the content of not yet implemented. Building out these pages will take some time, but they will at least no longer show up as 404 Not Found.</p>\n<p>And yes, this project is still getting some life put into it, just in the background scenes that aren't very visible to the end user such as yourself.</p>",
+    "comments": []
+}

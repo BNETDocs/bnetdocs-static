@@ -3,7 +3,7 @@
     "title": "Chat Flags",
     "options_bitmask": 3,
     "brief_html": "<p>This document describes the user and channel flags seen in the <code>FLAGS</code> field of <a href=\"/packet/307/sid-chatevent\">SID_CHATEVENT</a>.</p>",
-    "author_username": "BNETDocs",
+    "author_username": "Kyro",
     "uri": "/document/15/chat-flags",
     "created_datetime": "2011-11-17T01:46:55+00:00",
     "edited_datetime": "2020-10-31T20:53:02+00:00",
@@ -11,31 +11,31 @@
     "comments": [
         {
             "id": 83,
-            "author_username": "BNETDocs",
+            "author_username": "Kyro",
             "created_datetime": "2008-03-31T07:51:23+00:00",
             "content_html": "<p>Am having problems formatting the document, will do it tomorrow. Bedtime for me. :)</p>"
         },
         {
             "id": 87,
-            "author_username": "BNETDocs",
+            "author_username": "Alendar",
             "created_datetime": "2008-04-12T06:02:43+00:00",
             "content_html": "<p>If there is anyway I can help, let me know.</p>"
         },
         {
             "id": 135,
-            "author_username": "BNETDocs",
+            "author_username": "DeFirence",
             "created_datetime": "2009-03-06T19:20:24+00:00",
             "content_html": "<p>1 year later and the formatting is still screwed, guess Kyro never woke up again :P</p>"
         },
         {
             "id": 139,
-            "author_username": "BNETDocs",
+            "author_username": "Caaaaarrrrlll",
             "created_datetime": "2009-04-10T23:36:15+00:00",
             "content_html": "<p>I have fixed the issue. :)</p>"
         },
         {
             "id": 628,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2020-10-19T21:22:08+00:00",
             "content_html": "<p>0x00000001: Blizzard Representative<br />\n0x00000002: Channel Operator<br />\n0x00000004: Channel Speaker<br />\n0x00000008: Battle.net Administrator<br />\n0x00000010: No UDP Support<br />\n0x00000020: Squelched</p>\n<p>are looked for directly in the game clients them selves and are not likely to change ever with out hardcoded updates.</p>"
         }

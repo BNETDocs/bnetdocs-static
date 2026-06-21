@@ -8,7 +8,7 @@
     "options_bitmask": 3,
     "brief_html": "<p>User disconnected.</p>",
     "used_by": [],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/229/botnet-user-disc",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2018-03-12T04:48:23+00:00",
@@ -17,7 +17,7 @@
     "comments": [
         {
             "id": 587,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2018-05-03T18:47:51+00:00",
             "content_html": "<pre><code>pcid pkid length       uid                          reason\n[01] [07] [09 00] [9F 03 00 00] - [06]\n\n    switch (reason) {\n        case 0x3: { s_reason = \"[Kicked] By Admin\"; break; }\n        case 0x5: { s_reason = \"[Kicked] For Protocol Violation\"; break; }\n        case 0x6: { s_reason = \"[Connection Dropped] Network Error\"; break; }\n        case 0x7: { s_reason = \"disconnected\"; break; }\n        default: { s_reason = \"unknowen\"; break; }\n    }</code></pre>"
         }

@@ -11,7 +11,7 @@
         1144144982,
         1144150096
     ],
-    "author_username": "BNETDocs",
+    "author_username": "LordVader",
     "uri": "/packet/107/mcp-joingame",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-11-13T02:11:13+00:00",
@@ -20,7 +20,7 @@
     "comments": [
         {
             "id": 635,
-            "author_username": "BNETDocs",
+            "author_username": "jaenster",
             "created_datetime": "2021-07-03T10:36:33+00:00",
             "content_html": "<p>0x7D is also send if a ladder char tries to join a non ladder game.</p>\n<p>The shown error is decided in the client (either for ladder or non ladder)</p>\n<pre><code>      case 0x7d:\n        if (D2IniData_multiplayer-&gt;isLadder == '\\0') {\n                // Unable to enter game. A Ladder character cannot join a game created by a\n                // Non-Ladder character.\n          uVar12 = 0x2ab2;\n        }\n        else {\n                // Unable to enter game. A Non-Ladder character cannot join a game created by a\n                // Ladder character.\n          uVar12 = 0x2ab1;\n        }</code></pre>"
         }

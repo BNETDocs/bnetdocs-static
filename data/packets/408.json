@@ -15,7 +15,7 @@
         1463898675,
         1462982736
     ],
-    "author_username": "BNETDocs",
+    "author_username": "unknown",
     "uri": "/packet/408/sid-auth-check",
     "created_datetime": "2010-07-15T02:47:39+00:00",
     "edited_datetime": "2020-11-10T21:56:33+00:00",
@@ -24,13 +24,13 @@
     "comments": [
         {
             "id": 546,
-            "author_username": "BNETDocs",
+            "author_username": "Kaylin",
             "created_datetime": "2017-01-05T07:38:50+00:00",
             "content_html": "<p>While this comment applies to every message that contains a hash it is especially pertinent to the authentication check message used by WC3/D2/SC because the distinction is more obvious. Hashes are not sequences of dwords. A hash is a bit-string. This means <code>(Dword) Hashed Key Data[5]</code> is in fact <code>(Byte) Hashed Key Data[20]</code>. I make the distinction here because both bsha and sha1 are used with this message. Specifically the 26-character product codes use sha1 and the 13/16 character product codes uses bsha. Implementations of bsha and sha1 are available across the internet so I won't explain them in detail here. It is important to note that while sha1 is represented in big endian, bsha is little endian. If you presume the output of these functions are dwords not bit strings you may not send the correct data since the BNCS protocol is itself little-endian. VERY IMPORTANT: When I say <code>Dword Input</code> for some variable passed to these functions you're going to have to put the least significant byte of that dword into the least significant byte of the internal state for bsha, and into the most significant byte for sha1 and so on in order to get the correct output.</p>\n<p>In addition the hashed key data is <em>not</em> the same for the different key sizes. Note: I refer to dwords here because while the output is a bit string the internal state is indeed a set of dwords. The hashed data for bsha is as above, which I shall repeat here so the distinction between the 26-char keys is clear. Remember bsha is little endian so the least significant byte of the first resulting dword of the final internal state is the first byte of output.</p>\n<p>Input for 16/13 character product key hashes:</p>\n<pre><code>(Dword) Client Nonce (Client Token)\n(Dword) Server Nonce (Server Token)\n(Dword) Product\n(Dword) Public\n(Dword) Zero\n(Dword) Private</code></pre>\n<p>Now, the 26-character keys use <em>sha1 NOT bsha</em>. Note, sha1 is big-endian internally.  The most significant byte of the first resulting dword of the final internal state should be sent across the wire first etc. (because hash outputs aren't dwords).</p>\n<pre><code>(Dword) Client Nonce\n(Dword) Server Nonce\n(Dword) Product\n(Dword) Public\n(Byte) Private[10]</code></pre>\n<p>Note the difference: <em>there is no zero dword in the input to the hash function</em>.</p>"
         },
         {
             "id": 598,
-            "author_username": "BNETDocs",
+            "author_username": "l)ragon",
             "created_datetime": "2019-03-06T03:06:56+00:00",
             "content_html": "<p>As a reminder, for the clients that have no cdkeys the (For each Key) feild is empty, and the Number of keys reflects this aswell.</p>"
         }
